@@ -1,0 +1,1702 @@
+{
+ "polymarket": {
+  "argent_reel": true,
+  "candidats_s": 4.1,
+  "marches": 653,
+  "au_dessus_97": 224,
+  "erreur_liste": "most recent call last):\n  File \"/home/runner/work/bot-pradeau/bot-pradeau/outils/audit.py\", line 21, in <module>\n    r[\"ordre_issues_ok\"] = all(len(m[\"cotes\"]) == len(m[\"issues\"]) == len(m[\"achat\"]) for m in c)\n                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/bot-pradeau/bot-pradeau/outils/audit.py\", line 21, in <genexpr>\n    r[\"ordre_issues_ok\"] = all(len(m[\"cotes\"]) == len(m[\"issues\"]) == len(m[\"achat\"]) for m in c)\n                                                                          ~^^^^^^^^^\nKeyError: 'achat'\n",
+  "resultats_echus": [
+   {
+    "id": "5397825",
+    "question": "Will the highest temperature in Warsaw be 17°C on October 9?",
+    "idx": 0,
+    "prix": 0.994,
+    "fin": "2026-10-09T12:00:00+00:00",
+    "resultat": {
+     "fini": false
+    }
+   },
+   {
+    "id": "5397967",
+    "question": "Will the highest temperature in Kuala Lumpur be 33°C on October 9?",
+    "idx": 0,
+    "prix": 0.995,
+    "fin": "2026-10-09T12:00:00+00:00",
+    "resultat": {
+     "fini": false
+    }
+   },
+   {
+    "id": "5397826",
+    "question": "Will the highest temperature in Warsaw be 18°C on October 9?",
+    "idx": 1,
+    "prix": 0.993,
+    "fin": "2026-10-09T12:00:00+00:00",
+    "resultat": {
+     "fini": false
+    }
+   },
+   {
+    "id": "5397694",
+    "question": "Will the highest temperature in Seoul (Incheon) be 23°C on October 9?",
+    "idx": 0,
+    "prix": 0.996,
+    "fin": "2026-10-09T12:00:00+00:00",
+    "resultat": {
+     "fini": false
+    }
+   }
+  ],
+  "duree_s": 4.6
+ },
+ "kalshi": {
+  "argent_reel": true,
+  "candidats_s": 3.0,
+  "marches": 402,
+  "au_dessus_97": 95,
+  "ordre_issues_ok": true,
+  "echantillon": [
+   {
+    "id": "KXDEBATEMENTION-26OCT13-NQE",
+    "question": "What will any participating candidate say during Atlanta Press Club debate for G",
+    "cotes": [
+     0.02,
+     0.98
+    ],
+    "achat": [
+     0.03,
+     0.99
+    ],
+    "nb_adresses": 6,
+    "lecture": {
+     "id_ok": true,
+     "cotes": [
+      0.02,
+      0.98
+     ],
+     "achat": [
+      0.03,
+      0.99
+     ],
+     "ferme": false
+    },
+    "ecart_max": 0.0
+   },
+   {
+    "id": "KXRT-WILDW-70",
+    "question": "Wildwood Rotten Tomatoes score? — Above 70",
+    "cotes": [
+     0.975,
+     0.025
+    ],
+    "achat": [
+     0.98,
+     0.03
+    ],
+    "nb_adresses": 6,
+    "lecture": {
+     "id_ok": true,
+     "cotes": [
+      0.975,
+      0.025
+     ],
+     "achat": [
+      0.98,
+      0.03
+     ],
+     "ferme": false
+    },
+    "ecart_max": 0.0
+   },
+   {
+    "id": "KXRT-WILDW-65",
+    "question": "Wildwood Rotten Tomatoes score? — Above 65",
+    "cotes": [
+     0.985,
+     0.015
+    ],
+    "achat": [
+     0.99,
+     0.02
+    ],
+    "nb_adresses": 6,
+    "lecture": {
+     "id_ok": true,
+     "cotes": [
+      0.985,
+      0.015
+     ],
+     "achat": [
+      0.99,
+      0.02
+     ],
+     "ferme": false
+    },
+    "ecart_max": 0.0
+   }
+  ],
+  "resultats_echus": [],
+  "duree_s": 3.1
+ },
+ "manifold": {
+  "argent_reel": false,
+  "candidats_s": 0.9,
+  "marches": 62,
+  "au_dessus_97": 8,
+  "ordre_issues_ok": true,
+  "echantillon": [
+   {
+    "id": "9dOUIEptE8",
+    "question": "Will SPX reach 8,000 this week (by October 9, 2026)?",
+    "cotes": [
+     0.0167,
+     0.9833
+    ],
+    "achat": [
+     0.0167,
+     0.9833
+    ],
+    "nb_adresses": 6,
+    "lecture": {
+     "id_ok": true,
+     "cotes": [
+      0.0167,
+      0.9833
+     ],
+     "achat": [
+      0.0167,
+      0.9833
+     ],
+     "ferme": false
+    },
+    "ecart_max": 0.0
+   },
+   {
+    "id": "5R8Luuzs6u",
+    "question": "Will Friedrich Merz cease to be chancellor before 14th October 2026?",
+    "cotes": [
+     0.0137,
+     0.9863
+    ],
+    "achat": [
+     0.0137,
+     0.9863
+    ],
+    "nb_adresses": 6,
+    "lecture": {
+     "id_ok": true,
+     "cotes": [
+      0.0137,
+      0.9863
+     ],
+     "achat": [
+      0.0137,
+      0.9863
+     ],
+     "ferme": false
+    },
+    "ecart_max": 0.0
+   },
+   {
+    "id": "VR7k2QSPVh2fHUnEJ52P",
+    "question": "Will Jacinda Ardern return to NZ Parliament by 2026?",
+    "cotes": [
+     0.0202,
+     0.9798
+    ],
+    "achat": [
+     0.0202,
+     0.9798
+    ],
+    "nb_adresses": 6,
+    "lecture": {
+     "id_ok": true,
+     "cotes": [
+      0.0202,
+      0.9798
+     ],
+     "achat": [
+      0.0202,
+      0.9798
+     ],
+     "ferme": false
+    },
+    "ecart_max": 0.0
+   }
+  ],
+  "resultats_echus": [],
+  "duree_s": 1.2
+ },
+ "limitless": {
+  "argent_reel": true,
+  "candidats_s": 8.6,
+  "marches": 343,
+  "au_dessus_97": 6,
+  "ordre_issues_ok": true,
+  "echantillon": [
+   {
+    "id": "btc-up-or-down-daily-p-1791464715953",
+    "question": "BTC Up or Down Daily",
+    "cotes": [
+     0.976,
+     0.024
+    ],
+    "achat": [
+     0.984,
+     0.032
+    ],
+    "nb_adresses": 6,
+    "lecture": {
+     "id_ok": true,
+     "cotes": [
+      0.9725,
+      0.0275
+     ],
+     "achat": [
+      0.98,
+      0.035
+     ],
+     "ferme": false
+    },
+    "ecart_max": 0.0035
+   },
+   {
+    "id": "vitality-vs-parivision-1791406805755",
+    "question": "Vitality vs PARIVISION",
+    "cotes": [
+     0.992,
+     0.008
+    ],
+    "achat": [
+     0.999,
+     0.015
+    ],
+    "nb_adresses": 6,
+    "lecture": {
+     "id_ok": true,
+     "cotes": [
+      0.9895,
+      0.0105
+     ],
+     "achat": [
+      0.999,
+      0.02
+     ],
+     "ferme": false
+    },
+    "ecart_max": 0.0025
+   },
+   {
+    "id": "leeds-to-win-by-2-or-more-goals-vs-arsenal-1791190933945",
+    "question": "Leeds to win by 2 or more goals vs Arsenal?",
+    "cotes": [
+     0.0275,
+     0.9725
+    ],
+    "achat": [
+     0.04,
+     0.985
+    ],
+    "nb_adresses": 6,
+    "lecture": {
+     "id_ok": true,
+     "cotes": [
+      0.0275,
+      0.9725
+     ],
+     "achat": [
+      0.04,
+      0.985
+     ],
+     "ferme": false
+    },
+    "ecart_max": 0.0
+   }
+  ],
+  "resultats_echus": [],
+  "duree_s": 9.0
+ },
+ "gemini": {
+  "argent_reel": true,
+  "candidats_s": 1.9,
+  "marches": 2207,
+  "au_dessus_97": 217,
+  "ordre_issues_ok": true,
+  "echantillon": [
+   {
+    "id": "GEMI-BTC2610092100-HI85500",
+    "question": "BTC price on October 9 — $85,500 or above",
+    "cotes": [
+     0.025,
+     0.975
+    ],
+    "achat": [
+     0.04,
+     0.99
+    ],
+    "nb_adresses": 6,
+    "lecture": {
+     "id_ok": true,
+     "cotes": [
+      0.025,
+      0.975
+     ],
+     "achat": [
+      0.04,
+      0.99
+     ],
+     "ferme": false
+    },
+    "ecart_max": 0.0
+   },
+   {
+    "id": "GEMI-BTC2610092100-HI88000",
+    "question": "BTC price on October 9 — $88,000 or above",
+    "cotes": [
+     0.02,
+     0.98
+    ],
+    "achat": [
+     0.02,
+     0.88
+    ],
+    "nb_adresses": 6,
+    "lecture": {
+     "id_ok": true,
+     "cotes": [
+      0.02,
+      0.98
+     ],
+     "achat": [
+      0.02,
+      0.88
+     ],
+     "ferme": false
+    },
+    "ecart_max": 0.0
+   },
+   {
+    "id": "GEMI-ETH2610092100-HI2640",
+    "question": "ETH price on October 9 — $2,640 or above",
+    "cotes": [
+     0.02,
+     0.98
+    ],
+    "achat": [
+     0.02,
+     0.84
+    ],
+    "nb_adresses": 6,
+    "lecture": {
+     "id_ok": true,
+     "cotes": [
+      0.02,
+      0.98
+     ],
+     "achat": [
+      0.02,
+      0.84
+     ],
+     "ferme": false
+    },
+    "ecart_max": 0.0
+   }
+  ],
+  "resultats_echus": [],
+  "duree_s": 2.5
+ },
+ "smarkets": {
+  "argent_reel": true,
+  "candidats_s": 13.6,
+  "marches": 3775,
+  "au_dessus_97": 492,
+  "ordre_issues_ok": true,
+  "echantillon": [
+   {
+    "id": "169313308:467132811",
+    "question": "Ajman vs Bani Yas FC — Correct score : 0 - 3",
+    "cotes": [
+     0.0277,
+     0.9724
+    ],
+    "achat": [
+     0.0345,
+     0.9792
+    ],
+    "nb_adresses": 6,
+    "lecture": {
+     "id_ok": true,
+     "cotes": [
+      0.0277,
+      0.9724
+     ],
+     "achat": [
+      0.0345,
+      0.9792
+     ],
+     "ferme": false
+    },
+    "ecart_max": 0.0
+   },
+   {
+    "id": "169313310:467132830",
+    "question": "Ajman vs Bani Yas FC — Half-time/full-time : Ajman / Bani Yas FC",
+    "cotes": [
+     0.0224,
+     0.9776
+    ],
+    "achat": [
+     0.0357,
+     0.9909
+    ],
+    "nb_adresses": 6,
+    "erreur_lecture": "RuntimeError('lecture impossible : https://api.smarkets.com/v3/markets/169313310/quotes/ (HTTP Error 429: Too Many Requests)')"
+   },
+   {
+    "id": "169313310:467132832",
+    "question": "Ajman vs Bani Yas FC — Half-time/full-time : Bani Yas FC / Ajman",
+    "cotes": [
+     0.0251,
+     0.9748
+    ],
+    "achat": [
+     0.037,
+     0.9867
+    ],
+    "nb_adresses": 6,
+    "erreur_lecture": "RuntimeError('lecture impossible : https://api.smarkets.com/v3/markets/169313310/quotes/ (HTTP Error 429: Too Many Requests)')"
+   }
+  ],
+  "resultats_echus": [
+   {
+    "id": "168194701:464183018",
+    "question": "Persik Kediri vs Madura United FC — Correct score : 0 - 3",
+    "idx": 1,
+    "prix": 0.9829,
+    "fin": "2026-10-09T11:30:00+00:00",
+    "resultat": {
+     "fini": false
+    }
+   },
+   {
+    "id": "168194701:464183022",
+    "question": "Persik Kediri vs Madura United FC — Correct score : 1 - 3",
+    "idx": 1,
+    "prix": 0.9702,
+    "fin": "2026-10-09T11:30:00+00:00",
+    "resultat": {
+     "fini": false
+    }
+   },
+   {
+    "id": "168194703:464183039",
+    "question": "Persik Kediri vs Madura United FC — Half-time/full-time : Madura Unite",
+    "idx": 1,
+    "prix": 0.9702,
+    "fin": "2026-10-09T11:30:00+00:00",
+    "resultat": {
+     "fini": false
+    }
+   }
+  ],
+  "duree_s": 38.9
+ },
+ "espn": {
+  "argent_reel": true,
+  "candidats_s": 4.5,
+  "marches": 231,
+  "au_dessus_97": 0,
+  "ordre_issues_ok": true,
+  "echantillon": [
+   {
+    "id": "football/college-football/401858254",
+    "question": "Florida State Seminoles at Louisville Cardinals (college-football)",
+    "cotes": [
+     0.6214,
+     0.3786
+    ],
+    "achat": [
+     0.6429,
+     0.4
+    ],
+    "nb_adresses": 6,
+    "lecture": {
+     "id_ok": true,
+     "cotes": [
+      0.6214,
+      0.3786
+     ],
+     "achat": [
+      0.6429,
+      0.4
+     ],
+     "ferme": false
+    },
+    "ecart_max": 0.0
+   },
+   {
+    "id": "football/college-football/401858487",
+    "question": "Iowa Hawkeyes at Washington Huskies (college-football)",
+    "cotes": [
+     0.5752,
+     0.4248
+    ],
+    "achat": [
+     0.5968,
+     0.4464
+    ],
+    "nb_adresses": 6,
+    "lecture": {
+     "id_ok": true,
+     "cotes": [
+      0.5752,
+      0.4248
+     ],
+     "achat": [
+      0.5968,
+      0.4464
+     ],
+     "ferme": false
+    },
+    "ecart_max": 0.0
+   },
+   {
+    "id": "football/college-football/401860922",
+    "question": "Washington State Cougars at Utah State Aggies (college-football)",
+    "cotes": [
+     0.6509,
+     0.3491
+    ],
+    "achat": [
+     0.6721,
+     0.3704
+    ],
+    "nb_adresses": 6,
+    "lecture": {
+     "id_ok": true,
+     "cotes": [
+      0.6509,
+      0.3491
+     ],
+     "achat": [
+      0.6721,
+      0.3704
+     ],
+     "ferme": false
+    },
+    "ecart_max": 0.0
+   }
+  ],
+  "resultats_echus": [],
+  "duree_s": 4.7
+ },
+ "futuur": {
+  "argent_reel": false,
+  "candidats_s": 21.2,
+  "marches": 255,
+  "au_dessus_97": 1,
+  "ordre_issues_ok": true,
+  "echantillon": [
+   {
+    "id": "231747",
+    "question": "Will Mexico and _____ resume diplomatic relations in 2026?",
+    "cotes": [
+     0.99,
+     0.09
+    ],
+    "achat": [
+     0.99,
+     0.09
+    ],
+    "nb_adresses": 6,
+    "lecture": {
+     "id_ok": true,
+     "cotes": [
+      0.99,
+      0.09
+     ],
+     "achat": [
+      0.99,
+      0.09
+     ],
+     "ferme": false
+    },
+    "ecart_max": 0.0
+   }
+  ],
+  "resultats_echus": [],
+  "duree_s": 22.5
+ },
+ "azuro": {
+  "argent_reel": true,
+  "candidats_s": 14.8,
+  "marches": 12607,
+  "au_dessus_97": 0,
+  "ordre_issues_ok": true,
+  "echantillon": [
+   {
+    "id": "300610060000000000935384410000000000013112139605",
+    "question": "Arar FC - Mudhar — Total Goals (Division 2, Saudi Arabia)",
+    "cotes": [
+     0.4614,
+     0.5386
+    ],
+    "achat": [
+     0.5181,
+     0.5952
+    ],
+    "nb_adresses": 6,
+    "lecture": {
+     "id_ok": true,
+     "cotes": [
+      0.4614,
+      0.5386
+     ],
+     "achat": [
+      0.5181,
+      0.5952
+     ],
+     "ferme": false
+    },
+    "ecart_max": 0.0
+   },
+   {
+    "id": "300610060000000000935384410000000000013112139610",
+    "question": "Arar FC - Mudhar — 1st Half - Winner (Division 2, Saudi Arabia)",
+    "cotes": [
+     0.2027,
+     0.3495,
+     0.4478
+    ],
+    "achat": [
+     0.25,
+     0.3968,
+     0.495
+    ],
+    "nb_adresses": 6,
+    "lecture": {
+     "id_ok": true,
+     "cotes": [
+      0.2027,
+      0.3495,
+      0.4478
+     ],
+     "achat": [
+      0.25,
+      0.3968,
+      0.495
+     ],
+     "ferme": false
+    },
+    "ecart_max": 0.0
+   },
+   {
+    "id": "300610060000000000935384410000000000013112139613",
+    "question": "Arar FC - Mudhar — 1st Half - Total Goal (Division 2, Saudi Arabia)",
+    "cotes": [
+     0.6513,
+     0.3487
+    ],
+    "achat": [
+     0.7246,
+     0.4219
+    ],
+    "nb_adresses": 6,
+    "lecture": {
+     "id_ok": true,
+     "cotes": [
+      0.6513,
+      0.3487
+     ],
+     "achat": [
+      0.7246,
+      0.4219
+     ],
+     "ferme": false
+    },
+    "ecart_max": 0.0
+   }
+  ],
+  "resultats_echus": [],
+  "duree_s": 15.3
+ },
+ "deribit": {
+  "argent_reel": false,
+  "candidats_s": 0.4,
+  "marches": 775,
+  "au_dessus_97": 200,
+  "ordre_issues_ok": true,
+  "echantillon": [
+   {
+    "id": "BTC-10OCT26-89500-C",
+    "question": "BTC au-dessus de 89 500 $ le 10/10/2026 à 8 h UTC ?",
+    "cotes": [
+     0.0017,
+     0.9983
+    ],
+    "achat": [
+     0.0017,
+     0.9983
+    ],
+    "nb_adresses": 6,
+    "lecture": {
+     "id_ok": true,
+     "cotes": [
+      0.0017,
+      0.9983
+     ],
+     "achat": [
+      0.0017,
+      0.9983
+     ],
+     "ferme": false
+    },
+    "ecart_max": 0.0
+   },
+   {
+    "id": "BTC-10OCT26-87500-C",
+    "question": "BTC au-dessus de 87 500 $ le 10/10/2026 à 8 h UTC ?",
+    "cotes": [
+     0.0079,
+     0.9921
+    ],
+    "achat": [
+     0.0079,
+     0.9921
+    ],
+    "nb_adresses": 6,
+    "lecture": {
+     "id_ok": true,
+     "cotes": [
+      0.0079,
+      0.9921
+     ],
+     "achat": [
+      0.0079,
+      0.9921
+     ],
+     "ferme": false
+    },
+    "ecart_max": 0.0
+   },
+   {
+    "id": "BTC-27NOV26-112000-C",
+    "question": "BTC au-dessus de 112 000 $ le 27/11/2026 à 8 h UTC ?",
+    "cotes": [
+     0.0266,
+     0.9734
+    ],
+    "achat": [
+     0.0266,
+     0.9734
+    ],
+    "nb_adresses": 6,
+    "lecture": {
+     "id_ok": true,
+     "cotes": [
+      0.0266,
+      0.9734
+     ],
+     "achat": [
+      0.0266,
+      0.9734
+     ],
+     "ferme": false
+    },
+    "ecart_max": 0.0
+   }
+  ],
+  "resultats_echus": [],
+  "duree_s": 0.7
+ },
+ "okx": {
+  "argent_reel": false,
+  "candidats_s": 0.7,
+  "marches": 833,
+  "au_dessus_97": 218,
+  "ordre_issues_ok": true,
+  "echantillon": [
+   {
+    "id": "BTC-USD_UM-261011-76000-C",
+    "question": "BTC au-dessus de 76 000 $ le 11/10/2026 à 8 h UTC ?",
+    "cotes": [
+     0.9937,
+     0.0063
+    ],
+    "achat": [
+     0.9937,
+     0.0063
+    ],
+    "nb_adresses": 6,
+    "lecture": {
+     "id_ok": true,
+     "cotes": [
+      0.9937,
+      0.0063
+     ],
+     "achat": [
+      0.9937,
+      0.0063
+     ],
+     "ferme": false
+    },
+    "ecart_max": 0.0
+   },
+   {
+    "id": "BTC-USD_UM-261012-78000-C",
+    "question": "BTC au-dessus de 78 000 $ le 12/10/2026 à 8 h UTC ?",
+    "cotes": [
+     0.973,
+     0.027
+    ],
+    "achat": [
+     0.973,
+     0.027
+    ],
+    "nb_adresses": 6,
+    "lecture": {
+     "id_ok": true,
+     "cotes": [
+      0.973,
+      0.027
+     ],
+     "achat": [
+      0.973,
+      0.027
+     ],
+     "ferme": false
+    },
+    "ecart_max": 0.0
+   },
+   {
+    "id": "BTC-USD_UM-261023-96000-C",
+    "question": "BTC au-dessus de 96 000 $ le 23/10/2026 à 8 h UTC ?",
+    "cotes": [
+     0.024,
+     0.976
+    ],
+    "achat": [
+     0.024,
+     0.976
+    ],
+    "nb_adresses": 6,
+    "lecture": {
+     "id_ok": true,
+     "cotes": [
+      0.024,
+      0.976
+     ],
+     "achat": [
+      0.024,
+      0.976
+     ],
+     "ferme": false
+    },
+    "ecart_max": 0.0
+   }
+  ],
+  "resultats_echus": [],
+  "duree_s": 1.4
+ },
+ "delta_inde": {
+  "argent_reel": false,
+  "candidats_s": 1.5,
+  "marches": 388,
+  "au_dessus_97": 20,
+  "ordre_issues_ok": true,
+  "echantillon": [
+   {
+    "id": "C-BTC-93000-161026",
+    "question": "BTC au-dessus de 93 000 $ le 16/10/2026 à 12 h UTC ?",
+    "cotes": [
+     0.0198,
+     0.9802
+    ],
+    "achat": [
+     0.0198,
+     0.9802
+    ],
+    "nb_adresses": 6,
+    "lecture": {
+     "id_ok": true,
+     "cotes": [
+      0.0198,
+      0.9802
+     ],
+     "achat": [
+      0.0198,
+      0.9802
+     ],
+     "ferme": false
+    },
+    "ecart_max": 0.0
+   },
+   {
+    "id": "C-BTC-92000-161026",
+    "question": "BTC au-dessus de 92 000 $ le 16/10/2026 à 12 h UTC ?",
+    "cotes": [
+     0.0266,
+     0.9734
+    ],
+    "achat": [
+     0.0266,
+     0.9734
+    ],
+    "nb_adresses": 6,
+    "lecture": {
+     "id_ok": true,
+     "cotes": [
+      0.0267,
+      0.9733
+     ],
+     "achat": [
+      0.0267,
+      0.9733
+     ],
+     "ferme": false
+    },
+    "ecart_max": 0.0001
+   },
+   {
+    "id": "C-BTC-78400-101026",
+    "question": "BTC au-dessus de 78 400 $ le 10/10/2026 à 12 h UTC ?",
+    "cotes": [
+     0.9796,
+     0.0204
+    ],
+    "achat": [
+     0.9796,
+     0.0204
+    ],
+    "nb_adresses": 6,
+    "lecture": {
+     "id_ok": true,
+     "cotes": [
+      0.9797,
+      0.0203
+     ],
+     "achat": [
+      0.9797,
+      0.0203
+     ],
+     "ferme": false
+    },
+    "ecart_max": 0.0001
+   }
+  ],
+  "resultats_echus": [],
+  "duree_s": 2.2
+ },
+ "gate": {
+  "argent_reel": false,
+  "candidats_s": 2.5,
+  "marches": 627,
+  "au_dessus_97": 153,
+  "ordre_issues_ok": true,
+  "echantillon": [
+   {
+    "id": "BTC_USDT-20261013-89000-C",
+    "question": "BTC au-dessus de 89 000 $ le 13/10/2026 à 8 h UTC ?",
+    "cotes": [
+     0.0227,
+     0.9773
+    ],
+    "achat": [
+     0.0227,
+     0.9773
+    ],
+    "nb_adresses": 6,
+    "lecture": {
+     "id_ok": true,
+     "cotes": [
+      0.0227,
+      0.9773
+     ],
+     "achat": [
+      0.0227,
+      0.9773
+     ],
+     "ferme": false
+    },
+    "ecart_max": 0.0
+   },
+   {
+    "id": "BTC_USDT-20261012-75000-C",
+    "question": "BTC au-dessus de 75 000 $ le 12/10/2026 à 8 h UTC ?",
+    "cotes": [
+     0.9804,
+     0.0196
+    ],
+    "achat": [
+     0.9804,
+     0.0196
+    ],
+    "nb_adresses": 6,
+    "lecture": {
+     "id_ok": true,
+     "cotes": [
+      0.9805,
+      0.0195
+     ],
+     "achat": [
+      0.9805,
+      0.0195
+     ],
+     "ferme": false
+    },
+    "ecart_max": 0.0001
+   },
+   {
+    "id": "BTC_USDT-20261012-89000-C",
+    "question": "BTC au-dessus de 89 000 $ le 12/10/2026 à 8 h UTC ?",
+    "cotes": [
+     0.008,
+     0.992
+    ],
+    "achat": [
+     0.008,
+     0.992
+    ],
+    "nb_adresses": 6,
+    "lecture": {
+     "id_ok": true,
+     "cotes": [
+      0.0081,
+      0.9919
+     ],
+     "achat": [
+      0.0081,
+      0.9919
+     ],
+     "ferme": false
+    },
+    "ecart_max": 0.0001
+   }
+  ],
+  "resultats_echus": [],
+  "duree_s": 10.2
+ },
+ "aevo": {
+  "argent_reel": false,
+  "candidats_s": 3.4,
+  "marches": 896,
+  "au_dessus_97": 237,
+  "ordre_issues_ok": true,
+  "echantillon": [
+   {
+    "id": "BTC-10OCT26-75000-C",
+    "question": "BTC au-dessus de 75 000 $ le 10/10/2026 à 8 h UTC ?",
+    "cotes": [
+     0.9953,
+     0.0047
+    ],
+    "achat": [
+     0.9953,
+     0.0047
+    ],
+    "nb_adresses": 6,
+    "lecture": {
+     "id_ok": true,
+     "cotes": [
+      0.9953,
+      0.0047
+     ],
+     "achat": [
+      0.9953,
+      0.0047
+     ],
+     "ferme": false
+    },
+    "ecart_max": 0.0
+   },
+   {
+    "id": "BTC-10OCT26-76000-C",
+    "question": "BTC au-dessus de 76 000 $ le 10/10/2026 à 8 h UTC ?",
+    "cotes": [
+     0.9879,
+     0.0121
+    ],
+    "achat": [
+     0.9879,
+     0.0121
+    ],
+    "nb_adresses": 6,
+    "lecture": {
+     "id_ok": true,
+     "cotes": [
+      0.9879,
+      0.0121
+     ],
+     "achat": [
+      0.9879,
+      0.0121
+     ],
+     "ferme": false
+    },
+    "ecart_max": 0.0
+   },
+   {
+    "id": "BTC-10OCT26-77000-C",
+    "question": "BTC au-dessus de 77 000 $ le 10/10/2026 à 8 h UTC ?",
+    "cotes": [
+     0.9835,
+     0.0165
+    ],
+    "achat": [
+     0.9835,
+     0.0165
+    ],
+    "nb_adresses": 6,
+    "lecture": {
+     "id_ok": true,
+     "cotes": [
+      0.9835,
+      0.0165
+     ],
+     "achat": [
+      0.9835,
+      0.0165
+     ],
+     "ferme": false
+    },
+    "ecart_max": 0.0
+   }
+  ],
+  "resultats_echus": [],
+  "duree_s": 8.2
+ },
+ "thalex": {
+  "argent_reel": false,
+  "candidats_s": 21.4,
+  "marches": 76,
+  "au_dessus_97": 10,
+  "ordre_issues_ok": true,
+  "echantillon": [
+   {
+    "id": "BTC-16OCT26-95000-C",
+    "question": "BTC au-dessus de 95 000 $ le 16/10/2026 à 8 h UTC ?",
+    "cotes": [
+     0.0091,
+     0.9909
+    ],
+    "achat": [
+     0.0091,
+     0.9909
+    ],
+    "nb_adresses": 6,
+    "lecture": {
+     "id_ok": true,
+     "cotes": [
+      0.0092,
+      0.9908
+     ],
+     "achat": [
+      0.0092,
+      0.9908
+     ],
+     "ferme": false
+    },
+    "ecart_max": 0.0001
+   },
+   {
+    "id": "ETH-10OCT26-2650-C",
+    "question": "ETH au-dessus de 2 650 $ le 10/10/2026 à 8 h UTC ?",
+    "cotes": [
+     0.0074,
+     0.9926
+    ],
+    "achat": [
+     0.0074,
+     0.9926
+    ],
+    "nb_adresses": 6,
+    "lecture": {
+     "id_ok": true,
+     "cotes": [
+      0.0078,
+      0.9922
+     ],
+     "achat": [
+      0.0078,
+      0.9922
+     ],
+     "ferme": false
+    },
+    "ecart_max": 0.0004
+   },
+   {
+    "id": "ETH-16OCT26-3200-C",
+    "question": "ETH au-dessus de 3 200 $ le 16/10/2026 à 8 h UTC ?",
+    "cotes": [
+     0.0036,
+     0.9964
+    ],
+    "achat": [
+     0.0036,
+     0.9964
+    ],
+    "nb_adresses": 6,
+    "lecture": {
+     "id_ok": true,
+     "cotes": [
+      0.0036,
+      0.9964
+     ],
+     "achat": [
+      0.0036,
+      0.9964
+     ],
+     "ferme": false
+    },
+    "ecart_max": 0.0
+   }
+  ],
+  "resultats_echus": [],
+  "duree_s": 21.8
+ },
+ "derive": {
+  "argent_reel": false,
+  "candidats_s": 32.8,
+  "marches": 120,
+  "au_dessus_97": 81,
+  "ordre_issues_ok": true,
+  "echantillon": [
+   {
+    "id": "BTC-20261016-60000-C",
+    "question": "BTC au-dessus de 60 000 $ le 16/10/2026 à 8 h UTC ?",
+    "cotes": [
+     0.9999,
+     0.0001
+    ],
+    "achat": [
+     0.9999,
+     0.0001
+    ],
+    "nb_adresses": 6,
+    "lecture": {
+     "id_ok": true,
+     "cotes": [
+      0.9999,
+      0.0001
+     ],
+     "achat": [
+      0.9999,
+      0.0001
+     ],
+     "ferme": false
+    },
+    "ecart_max": 0.0
+   },
+   {
+    "id": "BTC-20261016-100000-C",
+    "question": "BTC au-dessus de 100 000 $ le 16/10/2026 à 8 h UTC ?",
+    "cotes": [
+     0.0013,
+     0.9987
+    ],
+    "achat": [
+     0.0013,
+     0.9987
+    ],
+    "nb_adresses": 6,
+    "lecture": {
+     "id_ok": true,
+     "cotes": [
+      0.0013,
+      0.9987
+     ],
+     "achat": [
+      0.0013,
+      0.9987
+     ],
+     "ferme": false
+    },
+    "ecart_max": 0.0
+   },
+   {
+    "id": "BTC-20261016-120000-C",
+    "question": "BTC au-dessus de 120 000 $ le 16/10/2026 à 8 h UTC ?",
+    "cotes": [
+     0.0001,
+     0.9999
+    ],
+    "achat": [
+     0.0001,
+     0.9999
+    ],
+    "nb_adresses": 6,
+    "lecture": {
+     "id_ok": true,
+     "cotes": [
+      0.0001,
+      0.9999
+     ],
+     "achat": [
+      0.0001,
+      0.9999
+     ],
+     "ferme": false
+    },
+    "ecart_max": 0.0
+   }
+  ],
+  "resultats_echus": [],
+  "duree_s": 33.6
+ },
+ "cboe": {
+  "argent_reel": false,
+  "candidats_s": 3.0,
+  "marches": 19195,
+  "au_dessus_97": 6181,
+  "ordre_issues_ok": true,
+  "echantillon": [
+   {
+    "id": "SPY261009C00500000",
+    "question": "SPY au-dessus de 500 $ à la clôture du 09/10/2026 ?",
+    "cotes": [
+     0.9999,
+     0.0001
+    ],
+    "achat": [
+     0.9999,
+     0.0001
+    ],
+    "nb_adresses": 6,
+    "lecture": {
+     "id_ok": true,
+     "cotes": [
+      0.9999,
+      0.0001
+     ],
+     "achat": [
+      0.9999,
+      0.0001
+     ],
+     "ferme": false
+    },
+    "ecart_max": 0.0
+   },
+   {
+    "id": "SPY261009C00520000",
+    "question": "SPY au-dessus de 520 $ à la clôture du 09/10/2026 ?",
+    "cotes": [
+     0.9999,
+     0.0001
+    ],
+    "achat": [
+     0.9999,
+     0.0001
+    ],
+    "nb_adresses": 6,
+    "lecture": {
+     "id_ok": true,
+     "cotes": [
+      0.9999,
+      0.0001
+     ],
+     "achat": [
+      0.9999,
+      0.0001
+     ],
+     "ferme": false
+    },
+    "ecart_max": 0.0
+   },
+   {
+    "id": "SPY261009C00535000",
+    "question": "SPY au-dessus de 535 $ à la clôture du 09/10/2026 ?",
+    "cotes": [
+     0.9999,
+     0.0001
+    ],
+    "achat": [
+     0.9999,
+     0.0001
+    ],
+    "nb_adresses": 6,
+    "lecture": {
+     "id_ok": true,
+     "cotes": [
+      0.9999,
+      0.0001
+     ],
+     "achat": [
+      0.9999,
+      0.0001
+     ],
+     "ferme": false
+    },
+    "ecart_max": 0.0
+   }
+  ],
+  "resultats_echus": [],
+  "duree_s": 4.0
+ },
+ "sxbet": {
+  "argent_reel": true,
+  "candidats_s": 14.8,
+  "marches": 191,
+  "au_dessus_97": 0,
+  "ordre_issues_ok": true,
+  "echantillon": [
+   {
+    "id": "0xf3050332f79e7b1a7a2a1e95e8e210b47088a0203f0caa92efbf8dc71a24ea8e",
+    "question": "Jacksonville Jaguars vs Philadelphia Eagles — Jacksonville Jaguars / Philadelphi",
+    "cotes": [
+     0.7656,
+     0.2344
+    ],
+    "achat": [
+     0.7688,
+     0.2375
+    ],
+    "nb_adresses": 6,
+    "lecture": {
+     "id_ok": true,
+     "cotes": [
+      0.7656,
+      0.2344
+     ],
+     "achat": [
+      0.7688,
+      0.2375
+     ],
+     "ferme": false
+    },
+    "ecart_max": 0.0
+   },
+   {
+    "id": "0xc0879a72914c64ba9fb8bf256839c1b87c577fc218a141513348522783cbb063",
+    "question": "New York Jets vs Cleveland Browns — New York Jets / Cleveland Browns (NFL)",
+    "cotes": [
+     0.5606,
+     0.4394
+    ],
+    "achat": [
+     0.5637,
+     0.4425
+    ],
+    "nb_adresses": 6,
+    "lecture": {
+     "id_ok": true,
+     "cotes": [
+      0.5606,
+      0.4394
+     ],
+     "achat": [
+      0.5637,
+      0.4425
+     ],
+     "ferme": false
+    },
+    "ecart_max": 0.0
+   },
+   {
+    "id": "0x658d972277f3b3ab8d056a3909a0c747f23514c85666268d93c0392809fe4706",
+    "question": "New York Jets vs Cleveland Browns — Over 40.0 / Under 40.0 (NFL)",
+    "cotes": [
+     0.4888,
+     0.5112
+    ],
+    "achat": [
+     0.4938,
+     0.5162
+    ],
+    "nb_adresses": 6,
+    "lecture": {
+     "id_ok": true,
+     "cotes": [
+      0.4888,
+      0.5112
+     ],
+     "achat": [
+      0.4938,
+      0.5162
+     ],
+     "ferme": false
+    },
+    "ecart_max": 0.0
+   }
+  ],
+  "resultats_echus": [],
+  "duree_s": 15.0
+ },
+ "delta_monde": {
+  "argent_reel": false,
+  "candidats_s": 1.5,
+  "marches": 20,
+  "au_dessus_97": 0,
+  "ordre_issues_ok": true,
+  "echantillon": [
+   {
+    "id": "C-BTC-85000-161026",
+    "question": "BTC au-dessus de 85 000 $ le 16/10/2026 à 12 h UTC ?",
+    "cotes": [
+     0.303,
+     0.697
+    ],
+    "achat": [
+     0.303,
+     0.697
+    ],
+    "nb_adresses": 6,
+    "lecture": {
+     "id_ok": true,
+     "cotes": [
+      0.3035,
+      0.6965
+     ],
+     "achat": [
+      0.3035,
+      0.6965
+     ],
+     "ferme": false
+    },
+    "ecart_max": 0.0005
+   },
+   {
+    "id": "C-BTC-84800-111026",
+    "question": "BTC au-dessus de 84 800 $ le 11/10/2026 à 12 h UTC ?",
+    "cotes": [
+     0.1381,
+     0.8619
+    ],
+    "achat": [
+     0.1381,
+     0.8619
+    ],
+    "nb_adresses": 6,
+    "lecture": {
+     "id_ok": true,
+     "cotes": [
+      0.1388,
+      0.8612
+     ],
+     "achat": [
+      0.1388,
+      0.8612
+     ],
+     "ferme": false
+    },
+    "ecart_max": 0.0007
+   },
+   {
+    "id": "C-BTC-83800-101026",
+    "question": "BTC au-dessus de 83 800 $ le 10/10/2026 à 12 h UTC ?",
+    "cotes": [
+     0.2893,
+     0.7107
+    ],
+    "achat": [
+     0.2893,
+     0.7107
+    ],
+    "nb_adresses": 6,
+    "lecture": {
+     "id_ok": true,
+     "cotes": [
+      0.2907,
+      0.7093
+     ],
+     "achat": [
+      0.2907,
+      0.7093
+     ],
+     "ferme": false
+    },
+    "ecart_max": 0.0014
+   }
+  ],
+  "resultats_echus": [],
+  "duree_s": 3.0
+ },
+ "polymarket_us": {
+  "argent_reel": true,
+  "candidats_s": 0.5,
+  "marches": 1200,
+  "au_dessus_97": 749,
+  "ordre_issues_ok": true,
+  "echantillon": [
+   {
+    "id": "tec-mls-winner-2026-11-07-clb",
+    "question": "Major League Soccer Champion",
+    "cotes": [
+     0.004,
+     0.996
+    ],
+    "achat": [
+     null,
+     null
+    ],
+    "nb_adresses": 6,
+    "lecture": {
+     "id_ok": true,
+     "cotes": [
+      0.0035,
+      0.9965
+     ],
+     "achat": [
+      0.004,
+      0.997
+     ],
+     "ferme": false
+    },
+    "ecart_max": 0.0005
+   },
+   {
+    "id": "tec-mls-winner-2026-11-07-orl",
+    "question": "Major League Soccer Champion",
+    "cotes": [
+     0.011,
+     0.989
+    ],
+    "achat": [
+     null,
+     null
+    ],
+    "nb_adresses": 6,
+    "lecture": {
+     "id_ok": true,
+     "cotes": [
+      0.0105,
+      0.9895
+     ],
+     "achat": [
+      0.011,
+      0.99
+     ],
+     "ferme": false
+    },
+    "ecart_max": 0.0005
+   },
+   {
+    "id": "tec-mls-winner-2026-11-07-aus",
+    "question": "Major League Soccer Champion",
+    "cotes": [
+     0.007,
+     0.993
+    ],
+    "achat": [
+     null,
+     null
+    ],
+    "nb_adresses": 6,
+    "lecture": {
+     "id_ok": true,
+     "cotes": [
+      0.0045,
+      0.9955
+     ],
+     "achat": [
+      0.007,
+      0.998
+     ],
+     "ferme": false
+    },
+    "ecart_max": 0.0025
+   }
+  ],
+  "resultats_echus": [],
+  "duree_s": 0.6
+ }
+}
