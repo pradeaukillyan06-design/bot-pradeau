@@ -337,7 +337,7 @@
    "cat": "météo",
    "fin": "2026-10-09T12:00:00+00:00",
    "date": "2026-10-09T06:24+00:00",
-   "dernier_essai": "2026-10-09T19:03+00:00"
+   "dernier_essai": "2026-10-09T19:17+00:00"
   },
   {
    "site": "polymarket",
@@ -350,7 +350,7 @@
    "cat": "météo",
    "fin": "2026-10-09T12:00:00+00:00",
    "date": "2026-10-09T06:24+00:00",
-   "dernier_essai": "2026-10-09T19:03+00:00"
+   "dernier_essai": "2026-10-09T19:17+00:00"
   },
   {
    "site": "kalshi",
@@ -687,7 +687,7 @@
    "cat": "autre",
    "fin": "2026-10-09T16:30:00+00:00",
    "date": "2026-10-09T06:46+00:00",
-   "dernier_essai": "2026-10-09T19:03+00:00"
+   "dernier_essai": "2026-10-09T19:17+00:00"
   },
   {
    "site": "polymarket",
@@ -700,7 +700,7 @@
    "cat": "autre",
    "fin": "2026-10-09T17:00:00+00:00",
    "date": "2026-10-09T06:46+00:00",
-   "dernier_essai": "2026-10-09T19:03+00:00"
+   "dernier_essai": "2026-10-09T19:17+00:00"
   },
   {
    "site": "polymarket",
@@ -1181,7 +1181,7 @@
    "cat": "foot",
    "fin": "2026-10-09T18:30:00+00:00",
    "date": "2026-10-09T06:56+00:00",
-   "dernier_essai": "2026-10-09T19:03+00:00"
+   "dernier_essai": "2026-10-09T19:17+00:00"
   },
   {
    "site": "polymarket",
@@ -1482,7 +1482,7 @@
    "cat": "météo",
    "fin": "2026-10-09T12:00:00+00:00",
    "date": "2026-10-09T07:13+00:00",
-   "dernier_essai": "2026-10-09T19:03+00:00"
+   "dernier_essai": "2026-10-09T19:17+00:00"
   },
   {
    "site": "polymarket",
@@ -2299,7 +2299,7 @@
    "cat": "météo",
    "fin": "2026-10-09T12:00:00+00:00",
    "date": "2026-10-09T07:47+00:00",
-   "dernier_essai": "2026-10-09T19:03+00:00"
+   "dernier_essai": "2026-10-09T19:17+00:00"
   },
   {
    "site": "polymarket",
@@ -2576,7 +2576,7 @@
    "cat": "météo",
    "fin": "2026-10-09T12:00:00+00:00",
    "date": "2026-10-09T07:55+00:00",
-   "dernier_essai": "2026-10-09T19:03+00:00"
+   "dernier_essai": "2026-10-09T19:17+00:00"
   },
   {
    "site": "polymarket",
@@ -3585,7 +3585,7 @@
    "cat": "météo",
    "fin": "2026-10-09T12:00:00+00:00",
    "date": "2026-10-09T08:31+00:00",
-   "dernier_essai": "2026-10-09T19:03+00:00"
+   "dernier_essai": "2026-10-09T19:17+00:00"
   },
   {
    "site": "polymarket",
@@ -6430,7 +6430,7 @@
    "cat": "météo",
    "fin": "2026-10-09T12:00:00+00:00",
    "date": "2026-10-09T09:36+00:00",
-   "dernier_essai": "2026-10-09T19:03+00:00"
+   "dernier_essai": "2026-10-09T19:17+00:00"
   },
   {
    "site": "polymarket",
@@ -6890,19 +6890,6 @@
   },
   {
    "site": "polymarket",
-   "id": "5397728",
-   "slug": "highest-temperature-in-lucknow-on-october-9-2026-31c",
-   "question": "Will the highest temperature in Lucknow be 31°C on October 9?",
-   "cote": "No",
-   "idx": 1,
-   "prix": 0.9805,
-   "cat": "météo",
-   "fin": "2026-10-09T12:00:00+00:00",
-   "date": "2026-10-09T09:58+00:00",
-   "dernier_essai": "2026-10-09T19:03+00:00"
-  },
-  {
-   "site": "polymarket",
    "id": "5397683",
    "slug": "highest-temperature-in-paris-on-october-9-2026-15c",
    "question": "Will the highest temperature in Paris be 15°C on October 9?",
@@ -6912,7 +6899,7 @@
    "cat": "météo",
    "fin": "2026-10-09T12:00:00+00:00",
    "date": "2026-10-09T09:58+00:00",
-   "dernier_essai": "2026-10-09T19:03+00:00"
+   "dernier_essai": "2026-10-09T19:17+00:00"
   },
   {
    "site": "polymarket",
@@ -7429,7 +7416,7 @@
    "cat": "météo",
    "fin": "2026-10-09T12:00:00+00:00",
    "date": "2026-10-09T10:08+00:00",
-   "dernier_essai": "2026-10-09T19:03+00:00"
+   "dernier_essai": "2026-10-09T19:17+00:00"
   },
   {
    "site": "kalshi",
@@ -8930,7 +8917,7 @@
    "cat": "météo",
    "fin": "2026-10-09T12:00:00+00:00",
    "date": "2026-10-09T10:58+00:00",
-   "dernier_essai": "2026-10-09T19:03+00:00"
+   "dernier_essai": "2026-10-09T19:17+00:00"
   },
   {
    "site": "polymarket",
@@ -8943,7 +8930,7 @@
    "cat": "météo",
    "fin": "2026-10-09T12:00:00+00:00",
    "date": "2026-10-09T10:58+00:00",
-   "dernier_essai": "2026-10-09T19:03+00:00"
+   "dernier_essai": "2026-10-09T19:17+00:00"
   },
   {
    "site": "polymarket",
@@ -8956,7 +8943,7 @@
    "cat": "autre",
    "fin": "2026-10-09T16:05:00+00:00",
    "date": "2026-10-09T10:58+00:00",
-   "dernier_essai": "2026-10-09T19:03+00:00"
+   "dernier_essai": "2026-10-09T19:17+00:00"
   },
   {
    "site": "polymarket",
@@ -10063,30 +10050,6 @@
    "date": "2026-10-09T11:31+00:00"
   },
   {
-   "site": "smarkets",
-   "id": "169366140:467254618",
-   "slug": "169366140",
-   "question": "Basket Zielona Gora vs Legia Warszawa — Half-time/full-time : Legia Warszawa / Draw",
-   "cote": "Non",
-   "idx": 1,
-   "prix": 0.9778,
-   "cat": "basket",
-   "fin": "2026-10-09T19:00:00+00:00",
-   "date": "2026-10-09T11:31+00:00"
-  },
-  {
-   "site": "smarkets",
-   "id": "169366140:467254619",
-   "slug": "169366140",
-   "question": "Basket Zielona Gora vs Legia Warszawa — Half-time/full-time : Draw / Basket Zielona Gora",
-   "cote": "Non",
-   "idx": 1,
-   "prix": 0.9868,
-   "cat": "basket",
-   "fin": "2026-10-09T19:00:00+00:00",
-   "date": "2026-10-09T11:31+00:00"
-  },
-  {
    "site": "deribit",
    "id": "BTC-16OCT26-70000-C",
    "slug": "BTC|2026-10-16|70000",
@@ -10516,42 +10479,6 @@
    "prix": 0.975,
    "cat": "crypto",
    "fin": "2026-10-09T21:00:00+00:00",
-   "date": "2026-10-09T11:49+00:00"
-  },
-  {
-   "site": "smarkets",
-   "id": "169366140:467254620",
-   "slug": "169366140",
-   "question": "Basket Zielona Gora vs Legia Warszawa — Half-time/full-time : Draw / Legia Warszawa",
-   "cote": "Non",
-   "idx": 1,
-   "prix": 0.986,
-   "cat": "basket",
-   "fin": "2026-10-09T19:00:00+00:00",
-   "date": "2026-10-09T11:49+00:00"
-  },
-  {
-   "site": "smarkets",
-   "id": "169366140:467254621",
-   "slug": "169366140",
-   "question": "Basket Zielona Gora vs Legia Warszawa — Half-time/full-time : Draw / Draw",
-   "cote": "Non",
-   "idx": 1,
-   "prix": 0.9974,
-   "cat": "basket",
-   "fin": "2026-10-09T19:00:00+00:00",
-   "date": "2026-10-09T11:49+00:00"
-  },
-  {
-   "site": "smarkets",
-   "id": "169369239:467269879",
-   "slug": "169369239",
-   "question": "Basket Zielona Gora vs Legia Warszawa — First half winner and over/under 83.5 points : Draw / under 83.5 points",
-   "cote": "Non",
-   "idx": 1,
-   "prix": 0.9868,
-   "cat": "basket",
-   "fin": "2026-10-09T19:00:00+00:00",
    "date": "2026-10-09T11:49+00:00"
   },
   {
@@ -11072,54 +10999,6 @@
   },
   {
    "site": "smarkets",
-   "id": "169366140:467254615",
-   "slug": "169366140",
-   "question": "Basket Zielona Gora vs Legia Warszawa — Half-time/full-time : Basket Zielona Gora / Draw",
-   "cote": "Non",
-   "idx": 1,
-   "prix": 0.9791,
-   "cat": "basket",
-   "fin": "2026-10-09T19:00:00+00:00",
-   "date": "2026-10-09T12:15+00:00"
-  },
-  {
-   "site": "smarkets",
-   "id": "169369239:467269876",
-   "slug": "169369239",
-   "question": "Basket Zielona Gora vs Legia Warszawa — First half winner and over/under 83.5 points : Draw / over 83.5 points",
-   "cote": "Non",
-   "idx": 1,
-   "prix": 0.986,
-   "cat": "basket",
-   "fin": "2026-10-09T19:00:00+00:00",
-   "date": "2026-10-09T12:15+00:00"
-  },
-  {
-   "site": "smarkets",
-   "id": "169346142:467209488",
-   "slug": "169346142",
-   "question": "Norrkoping Dolphins vs Sodertalje BBK — Half-time/full-time : Norrkoping Dolphins / Draw",
-   "cote": "Non",
-   "idx": 1,
-   "prix": 0.9852,
-   "cat": "basket",
-   "fin": "2026-10-09T19:00:00+00:00",
-   "date": "2026-10-09T12:15+00:00"
-  },
-  {
-   "site": "smarkets",
-   "id": "169346142:467209492",
-   "slug": "169346142",
-   "question": "Norrkoping Dolphins vs Sodertalje BBK — Half-time/full-time : Draw / Norrkoping Dolphins",
-   "cote": "Non",
-   "idx": 1,
-   "prix": 0.9791,
-   "cat": "basket",
-   "fin": "2026-10-09T19:00:00+00:00",
-   "date": "2026-10-09T12:15+00:00"
-  },
-  {
-   "site": "smarkets",
    "id": "169455519:467574710",
    "slug": "169455519",
    "question": "Florida A&M Rattlers at Alabama State Hornets — Half-time/full-time : Alabama State / Draw",
@@ -11128,7 +11007,8 @@
    "prix": 0.9896,
    "cat": "sport US",
    "fin": "2026-10-09T19:00:00+00:00",
-   "date": "2026-10-09T12:15+00:00"
+   "date": "2026-10-09T12:15+00:00",
+   "dernier_essai": "2026-10-09T19:17+00:00"
   },
   {
    "site": "smarkets",
@@ -11140,7 +11020,8 @@
    "prix": 0.995,
    "cat": "sport US",
    "fin": "2026-10-09T19:00:00+00:00",
-   "date": "2026-10-09T12:15+00:00"
+   "date": "2026-10-09T12:15+00:00",
+   "dernier_essai": "2026-10-09T19:17+00:00"
   },
   {
    "site": "deribit",
@@ -11684,42 +11565,6 @@
   },
   {
    "site": "smarkets",
-   "id": "169346142:467209491",
-   "slug": "169346142",
-   "question": "Norrkoping Dolphins vs Sodertalje BBK — Half-time/full-time : Sodertalje BBK / Draw",
-   "cote": "Non",
-   "idx": 1,
-   "prix": 0.9875,
-   "cat": "basket",
-   "fin": "2026-10-09T19:00:00+00:00",
-   "date": "2026-10-09T12:38+00:00"
-  },
-  {
-   "site": "smarkets",
-   "id": "169346142:467209493",
-   "slug": "169346142",
-   "question": "Norrkoping Dolphins vs Sodertalje BBK — Half-time/full-time : Draw / Sodertalje BBK",
-   "cote": "Non",
-   "idx": 1,
-   "prix": 0.9947,
-   "cat": "basket",
-   "fin": "2026-10-09T19:00:00+00:00",
-   "date": "2026-10-09T12:38+00:00"
-  },
-  {
-   "site": "smarkets",
-   "id": "169346146:467209510",
-   "slug": "169346146",
-   "question": "Norrkoping Dolphins vs Sodertalje BBK — First half winner and over/under 82.5 points : Draw / under 82.5 points",
-   "cote": "Non",
-   "idx": 1,
-   "prix": 0.9868,
-   "cat": "basket",
-   "fin": "2026-10-09T19:00:00+00:00",
-   "date": "2026-10-09T12:38+00:00"
-  },
-  {
-   "site": "smarkets",
    "id": "169455519:467574713",
    "slug": "169455519",
    "question": "Florida A&M Rattlers at Alabama State Hornets — Half-time/full-time : Florida A&M / Draw",
@@ -11728,7 +11573,8 @@
    "prix": 0.9916,
    "cat": "sport US",
    "fin": "2026-10-09T19:00:00+00:00",
-   "date": "2026-10-09T12:38+00:00"
+   "date": "2026-10-09T12:38+00:00",
+   "dernier_essai": "2026-10-09T19:17+00:00"
   },
   {
    "site": "deribit",
@@ -12159,32 +12005,6 @@
   },
   {
    "site": "smarkets",
-   "id": "169346142:467209494",
-   "slug": "169346142",
-   "question": "Norrkoping Dolphins vs Sodertalje BBK — Half-time/full-time : Draw / Draw",
-   "cote": "Non",
-   "idx": 1,
-   "prix": 0.9981,
-   "cat": "basket",
-   "fin": "2026-10-09T19:00:00+00:00",
-   "date": "2026-10-09T12:54+00:00",
-   "groupe": "45362840"
-  },
-  {
-   "site": "smarkets",
-   "id": "169346146:467209507",
-   "slug": "169346146",
-   "question": "Norrkoping Dolphins vs Sodertalje BBK — First half winner and over/under 82.5 points : Draw / over 82.5 points",
-   "cote": "Non",
-   "idx": 1,
-   "prix": 0.9891,
-   "cat": "basket",
-   "fin": "2026-10-09T19:00:00+00:00",
-   "date": "2026-10-09T12:54+00:00",
-   "groupe": "45362840"
-  },
-  {
-   "site": "smarkets",
    "id": "169455519:467574715",
    "slug": "169455519",
    "question": "Florida A&M Rattlers at Alabama State Hornets — Half-time/full-time : Draw / Florida A&M",
@@ -12194,33 +12014,8 @@
    "cat": "sport US",
    "fin": "2026-10-09T19:00:00+00:00",
    "date": "2026-10-09T12:54+00:00",
-   "groupe": "45363994"
-  },
-  {
-   "site": "smarkets",
-   "id": "169555431:467816365",
-   "slug": "169555431",
-   "question": "Kk Zlatibor vs Kk Nis 1996 — Half-time/full-time : Kk Zlatibor / Draw",
-   "cote": "Non",
-   "idx": 1,
-   "prix": 0.9886,
-   "cat": "basket",
-   "fin": "2026-10-09T19:00:00+00:00",
-   "date": "2026-10-09T12:54+00:00",
-   "groupe": "45367631"
-  },
-  {
-   "site": "smarkets",
-   "id": "169555431:467816368",
-   "slug": "169555431",
-   "question": "Kk Zlatibor vs Kk Nis 1996 — Half-time/full-time : Kk Nis 1996 / Draw",
-   "cote": "Non",
-   "idx": 1,
-   "prix": 0.9909,
-   "cat": "basket",
-   "fin": "2026-10-09T19:00:00+00:00",
-   "date": "2026-10-09T12:54+00:00",
-   "groupe": "45367631"
+   "groupe": "45363994",
+   "dernier_essai": "2026-10-09T19:17+00:00"
   },
   {
    "site": "deribit",
@@ -12661,58 +12456,6 @@
    "cat": "autre",
    "fin": "2026-10-10T11:30:00+00:00",
    "date": "2026-10-09T13:04+00:00"
-  },
-  {
-   "site": "smarkets",
-   "id": "169555423:467816344",
-   "slug": "169555423",
-   "question": "Kk Zlatibor vs Kk Nis 1996 — First half winner and over/under 86.5 points : Draw / over 86.5 points",
-   "cote": "Non",
-   "idx": 1,
-   "prix": 0.9916,
-   "cat": "basket",
-   "fin": "2026-10-09T19:00:00+00:00",
-   "date": "2026-10-09T13:04+00:00",
-   "groupe": "45367631"
-  },
-  {
-   "site": "smarkets",
-   "id": "169555423:467816347",
-   "slug": "169555423",
-   "question": "Kk Zlatibor vs Kk Nis 1996 — First half winner and over/under 86.5 points : Draw / under 86.5 points",
-   "cote": "Non",
-   "idx": 1,
-   "prix": 0.9891,
-   "cat": "basket",
-   "fin": "2026-10-09T19:00:00+00:00",
-   "date": "2026-10-09T13:04+00:00",
-   "groupe": "45367631"
-  },
-  {
-   "site": "smarkets",
-   "id": "169555431:467816364",
-   "slug": "169555431",
-   "question": "Kk Zlatibor vs Kk Nis 1996 — Half-time/full-time : Kk Zlatibor / Kk Nis 1996",
-   "cote": "Non",
-   "idx": 1,
-   "prix": 0.9761,
-   "cat": "basket",
-   "fin": "2026-10-09T19:00:00+00:00",
-   "date": "2026-10-09T13:04+00:00",
-   "groupe": "45367631"
-  },
-  {
-   "site": "smarkets",
-   "id": "169555431:467816370",
-   "slug": "169555431",
-   "question": "Kk Zlatibor vs Kk Nis 1996 — Half-time/full-time : Draw / Kk Nis 1996",
-   "cote": "Non",
-   "idx": 1,
-   "prix": 0.9966,
-   "cat": "basket",
-   "fin": "2026-10-09T19:00:00+00:00",
-   "date": "2026-10-09T13:04+00:00",
-   "groupe": "45367631"
   },
   {
    "site": "deribit",
@@ -14454,7 +14197,7 @@
    "fin": "2026-10-09T16:15:00+00:00",
    "date": "2026-10-09T14:47+00:00",
    "groupe": "1122659",
-   "dernier_essai": "2026-10-09T19:03+00:00"
+   "dernier_essai": "2026-10-09T19:17+00:00"
   },
   {
    "site": "polymarket",
@@ -14558,7 +14301,7 @@
    "cat": "crypto",
    "fin": "2026-10-09T16:00:00+00:00",
    "date": "2026-10-09T14:47+00:00",
-   "dernier_essai": "2026-10-09T19:03+00:00"
+   "dernier_essai": "2026-10-09T19:17+00:00"
   },
   {
    "site": "deribit",
@@ -15010,46 +14753,8 @@
    "cat": "sport US",
    "fin": "2026-10-09T19:00:00+00:00",
    "date": "2026-10-09T15:13+00:00",
-   "groupe": "45363994"
-  },
-  {
-   "site": "smarkets",
-   "id": "169555431:467816369",
-   "slug": "169555431",
-   "question": "Kk Zlatibor vs Kk Nis 1996 — Half-time/full-time : Draw / Kk Zlatibor",
-   "cote": "Non",
-   "idx": 1,
-   "prix": 0.9791,
-   "cat": "basket",
-   "fin": "2026-10-09T19:00:00+00:00",
-   "date": "2026-10-09T15:13+00:00",
-   "groupe": "45367631"
-  },
-  {
-   "site": "smarkets",
-   "id": "169555431:467816371",
-   "slug": "169555431",
-   "question": "Kk Zlatibor vs Kk Nis 1996 — Half-time/full-time : Draw / Draw",
-   "cote": "Non",
-   "idx": 1,
-   "prix": 0.9983,
-   "cat": "basket",
-   "fin": "2026-10-09T19:00:00+00:00",
-   "date": "2026-10-09T15:13+00:00",
-   "groupe": "45367631"
-  },
-  {
-   "site": "smarkets",
-   "id": "169708682:468189592",
-   "slug": "169708682",
-   "question": "Kk Zlatibor vs Kk Nis 1996 — First half winner and over/under 87.5 points : Draw / under 87.5 points",
-   "cote": "Non",
-   "idx": 1,
-   "prix": 0.9899,
-   "cat": "basket",
-   "fin": "2026-10-09T19:00:00+00:00",
-   "date": "2026-10-09T15:13+00:00",
-   "groupe": "45367631"
+   "groupe": "45363994",
+   "dernier_essai": "2026-10-09T19:17+00:00"
   },
   {
    "site": "smarkets",
@@ -17914,7 +17619,7 @@
    "fin": "2026-10-09T17:30:00+00:00",
    "date": "2026-10-09T17:09+00:00",
    "groupe": "1097144",
-   "dernier_essai": "2026-10-09T19:03+00:00"
+   "dernier_essai": "2026-10-09T19:17+00:00"
   },
   {
    "site": "polymarket",
@@ -18758,7 +18463,7 @@
    "fin": "2026-10-09T18:45:00+00:00",
    "date": "2026-10-09T17:44+00:00",
    "groupe": "1083695",
-   "dernier_essai": "2026-10-09T19:03+00:00"
+   "dernier_essai": "2026-10-09T19:17+00:00"
   },
   {
    "site": "polymarket",
@@ -20041,7 +19746,8 @@
    "prix": 0.9845,
    "cat": "crypto",
    "fin": "2026-10-09T19:00:00+00:00",
-   "date": "2026-10-09T18:43+00:00"
+   "date": "2026-10-09T18:43+00:00",
+   "dernier_essai": "2026-10-09T19:17+00:00"
   },
   {
    "site": "smarkets",
@@ -20742,7 +20448,8 @@
    "prix": 0.9875,
    "cat": "crypto",
    "fin": "2026-10-09T19:00:00+00:00",
-   "date": "2026-10-09T19:03+00:00"
+   "date": "2026-10-09T19:03+00:00",
+   "dernier_essai": "2026-10-09T19:17+00:00"
   },
   {
    "site": "limitless",
@@ -20754,7 +20461,8 @@
    "prix": 0.994,
    "cat": "crypto",
    "fin": "2026-10-09T19:00:00+00:00",
-   "date": "2026-10-09T19:03+00:00"
+   "date": "2026-10-09T19:03+00:00",
+   "dernier_essai": "2026-10-09T19:17+00:00"
   },
   {
    "site": "limitless",
@@ -21219,6 +20927,525 @@
    "cat": "bourse US",
    "fin": "2026-10-12T20:00:00+00:00",
    "date": "2026-10-09T19:03+00:00",
+   "groupe": "SPY|2026-10-12"
+  },
+  {
+   "site": "polymarket",
+   "id": "5105583",
+   "slug": "will-the-social-reckoning-opening-weekend-box-office-be-between-7m-and-9m",
+   "question": "Will \"The Social Reckoning\" Opening Weekend Box Office be between 7m and 9m?",
+   "cote": "No",
+   "idx": 1,
+   "prix": 0.9852,
+   "cat": "autre",
+   "fin": "2026-10-11T12:00:00+00:00",
+   "date": "2026-10-09T19:17+00:00",
+   "groupe": "1100797"
+  },
+  {
+   "site": "polymarket",
+   "id": "5395108",
+   "slug": "itf-scott1-reed1-2026-10-07",
+   "question": "W35 Las Vegas, NV: Katrina Scott vs Lexington Reed",
+   "cote": "Lexington Reed",
+   "idx": 1,
+   "prix": 0.9945,
+   "cat": "autre",
+   "fin": "2026-10-14T20:00:00+00:00",
+   "date": "2026-10-09T19:17+00:00",
+   "groupe": "1146016"
+  },
+  {
+   "site": "polymarket",
+   "id": "5008719",
+   "slug": "openai-resumes-training-on-october-14",
+   "question": "Will OpenAI announce that it has resumed training on October 14, 2026?",
+   "cote": "No",
+   "idx": 1,
+   "prix": 0.979,
+   "cat": "météo",
+   "fin": "2026-10-15T03:59:00+00:00",
+   "date": "2026-10-09T19:17+00:00",
+   "groupe": "1089207"
+  },
+  {
+   "site": "polymarket",
+   "id": "5329628",
+   "slug": "will-flavio-bolsonaro-win-the-most-votes-in-the-second-round-of-the-brazil-presidential-election-from-federal-district",
+   "question": "Will Flavio Bolsonaro win the most votes in the second round of the Brazil presidential election from Federal District?",
+   "cote": "Yes",
+   "idx": 0,
+   "prix": 0.991,
+   "cat": "politique",
+   "fin": "2026-10-26T03:59:00+00:00",
+   "date": "2026-10-09T19:17+00:00",
+   "groupe": "1137682"
+  },
+  {
+   "site": "polymarket",
+   "id": "1822580",
+   "slug": "will-catherine-mckenney-win-the-2026-ottawa-mayoral-election",
+   "question": "Will Catherine McKenney win the 2026 Ottawa mayoral election?",
+   "cote": "No",
+   "idx": 1,
+   "prix": 0.996,
+   "cat": "politique",
+   "fin": "2026-10-27T03:59:00+00:00",
+   "date": "2026-10-09T19:17+00:00",
+   "groupe": "334209"
+  },
+  {
+   "site": "kalshi",
+   "id": "KXHORMUZWEEKLY-26OCT18-T50",
+   "slug": "kxhormuzweekly-26oct18-t50",
+   "question": "Will there be more than 50 transit calls through the Strait of Hormuz from Oct 12, 2026 to Oct 18, 2026? — Above 50",
+   "cote": "Non",
+   "idx": 1,
+   "prix": 0.975,
+   "cat": "autre",
+   "fin": "2026-10-20T13:00:00+00:00",
+   "date": "2026-10-09T19:17+00:00",
+   "groupe": "KXHORMUZWEEKLY-26OCT18"
+  },
+  {
+   "site": "kalshi",
+   "id": "KXITFWMATCH-26OCT09REAPAC-REA",
+   "slug": "kxitfwmatch-26oct09reapac-rea",
+   "question": "Mell Elizabeth Reasco Gonzalez wins — Mell Elizabeth Reasco Gonzalez",
+   "cote": "Non",
+   "idx": 1,
+   "prix": 0.985,
+   "cat": "crypto",
+   "fin": "2026-10-23T16:00:00+00:00",
+   "date": "2026-10-09T19:17+00:00",
+   "groupe": "KXITFWMATCH-26OCT09REAPAC"
+  },
+  {
+   "site": "kalshi",
+   "id": "KXITFWMATCH-26OCT09REAPAC-PAC",
+   "slug": "kxitfwmatch-26oct09reapac-pac",
+   "question": "Francesca Pace wins — Francesca Pace",
+   "cote": "Oui",
+   "idx": 0,
+   "prix": 0.985,
+   "cat": "autre",
+   "fin": "2026-10-23T16:00:00+00:00",
+   "date": "2026-10-09T19:17+00:00",
+   "groupe": "KXITFWMATCH-26OCT09REAPAC"
+  },
+  {
+   "site": "limitless",
+   "id": "team-falcons-vs-spirit-map-2-winner-1791407101731",
+   "slug": "team-falcons-vs-spirit-map-2-winner-1791407101731",
+   "question": "Team Falcons vs Spirit: Map 2 Winner",
+   "cote": "Non",
+   "idx": 1,
+   "prix": 0.9945,
+   "cat": "autre",
+   "fin": "2026-10-10T17:00:00+00:00",
+   "date": "2026-10-09T19:17+00:00"
+  },
+  {
+   "site": "gemini",
+   "id": "GEMI-ETH2610092100-HI2440",
+   "slug": "ETH2610092100",
+   "question": "ETH price on October 9 — $2,440 or above",
+   "cote": "Oui",
+   "idx": 0,
+   "prix": 0.98,
+   "cat": "crypto",
+   "fin": "2026-10-09T21:00:00+00:00",
+   "date": "2026-10-09T19:17+00:00",
+   "groupe": "ETH2610092100"
+  },
+  {
+   "site": "smarkets",
+   "id": "166063467:458931857",
+   "slug": "166063467",
+   "question": "Braga vs Sporting — Correct score : 0 - 3",
+   "cote": "Non",
+   "idx": 1,
+   "prix": 0.9712,
+   "cat": "foot",
+   "fin": "2026-10-09T22:15:00+00:00",
+   "date": "2026-10-09T19:17+00:00",
+   "groupe": "45335266"
+  },
+  {
+   "site": "smarkets",
+   "id": "166063467:458931866",
+   "slug": "166063467",
+   "question": "Braga vs Sporting — Correct score : 3 - 0",
+   "cote": "Non",
+   "idx": 1,
+   "prix": 0.9817,
+   "cat": "foot",
+   "fin": "2026-10-09T22:15:00+00:00",
+   "date": "2026-10-09T19:17+00:00",
+   "groupe": "45335266"
+  },
+  {
+   "site": "smarkets",
+   "id": "166063467:458931867",
+   "slug": "166063467",
+   "question": "Braga vs Sporting — Correct score : 3 - 1",
+   "cote": "Non",
+   "idx": 1,
+   "prix": 0.9742,
+   "cat": "foot",
+   "fin": "2026-10-09T22:15:00+00:00",
+   "date": "2026-10-09T19:17+00:00",
+   "groupe": "45335266"
+  },
+  {
+   "site": "smarkets",
+   "id": "166063467:458931868",
+   "slug": "166063467",
+   "question": "Braga vs Sporting — Correct score : 3 - 2",
+   "cote": "Non",
+   "idx": 1,
+   "prix": 0.9805,
+   "cat": "foot",
+   "fin": "2026-10-09T22:15:00+00:00",
+   "date": "2026-10-09T19:17+00:00",
+   "groupe": "45335266"
+  },
+  {
+   "site": "smarkets",
+   "id": "169070065:466512206",
+   "slug": "169070065",
+   "question": "Edmonton Elks at Hamilton Tiger-Cats — Half-time/full-time : Draw / Draw",
+   "cote": "Non",
+   "idx": 1,
+   "prix": 0.995,
+   "cat": "sport US",
+   "fin": "2026-10-10T02:00:00+00:00",
+   "date": "2026-10-09T19:17+00:00",
+   "groupe": "45361232"
+  },
+  {
+   "site": "smarkets",
+   "id": "169070076:466512229",
+   "slug": "169070076",
+   "question": "Edmonton Elks at Hamilton Tiger-Cats — Winner (only regular time) : Draw",
+   "cote": "Non",
+   "idx": 1,
+   "prix": 0.9715,
+   "cat": "sport US",
+   "fin": "2026-10-10T02:00:00+00:00",
+   "date": "2026-10-09T19:17+00:00",
+   "groupe": "45361232"
+  },
+  {
+   "site": "smarkets",
+   "id": "169299995:467100870",
+   "slug": "169299995",
+   "question": "Columbia Lions at Marist Red Foxes — Half-time/full-time : Marist / Draw",
+   "cote": "Non",
+   "idx": 1,
+   "prix": 0.9875,
+   "cat": "sport US",
+   "fin": "2026-10-10T02:00:00+00:00",
+   "date": "2026-10-09T19:17+00:00",
+   "groupe": "45361391"
+  },
+  {
+   "site": "smarkets",
+   "id": "169618516:467967679",
+   "slug": "169618516",
+   "question": "Memphis Grizzlies at Chicago Bulls — Half-time/full-time : Bulls / Draw",
+   "cote": "Non",
+   "idx": 1,
+   "prix": 0.9833,
+   "cat": "basket",
+   "fin": "2026-10-10T03:00:00+00:00",
+   "date": "2026-10-09T19:17+00:00",
+   "groupe": "45315516"
+  },
+  {
+   "site": "smarkets",
+   "id": "169618516:467967684",
+   "slug": "169618516",
+   "question": "Memphis Grizzlies at Chicago Bulls — Half-time/full-time : Draw / Grizzlies",
+   "cote": "Non",
+   "idx": 1,
+   "prix": 0.9899,
+   "cat": "basket",
+   "fin": "2026-10-10T03:00:00+00:00",
+   "date": "2026-10-09T19:17+00:00",
+   "groupe": "45315516"
+  },
+  {
+   "site": "smarkets",
+   "id": "169618516:467967685",
+   "slug": "169618516",
+   "question": "Memphis Grizzlies at Chicago Bulls — Half-time/full-time : Draw / Draw",
+   "cote": "Non",
+   "idx": 1,
+   "prix": 0.9983,
+   "cat": "basket",
+   "fin": "2026-10-10T03:00:00+00:00",
+   "date": "2026-10-09T19:17+00:00",
+   "groupe": "45315516"
+  },
+  {
+   "site": "smarkets",
+   "id": "169427358:467500703",
+   "slug": "169427358",
+   "question": "Golden State Valkyries at Las Vegas Aces — Half-time/full-time : Golden State Valkyries / Draw",
+   "cote": "Non",
+   "idx": 1,
+   "prix": 0.9827,
+   "cat": "basket",
+   "fin": "2026-10-10T04:30:00+00:00",
+   "date": "2026-10-09T19:17+00:00",
+   "groupe": "45358032"
+  },
+  {
+   "site": "smarkets",
+   "id": "168777874:465791856",
+   "slug": "168777874",
+   "question": "North Harbour vs Taranaki — Half-time/full-time : North Harbour / Draw",
+   "cote": "Non",
+   "idx": 1,
+   "prix": 0.9899,
+   "cat": "autres sports",
+   "fin": "2026-10-10T04:35:00+00:00",
+   "date": "2026-10-09T19:17+00:00",
+   "groupe": "45359675"
+  },
+  {
+   "site": "smarkets",
+   "id": "168777874:465791861",
+   "slug": "168777874",
+   "question": "North Harbour vs Taranaki — Half-time/full-time : Draw / Taranaki",
+   "cote": "Non",
+   "idx": 1,
+   "prix": 0.9823,
+   "cat": "autres sports",
+   "fin": "2026-10-10T04:35:00+00:00",
+   "date": "2026-10-09T19:17+00:00",
+   "groupe": "45359675"
+  },
+  {
+   "site": "smarkets",
+   "id": "169690273:468143717",
+   "slug": "169690273",
+   "question": "Qualification - Grand Prix of Indonesia — Winner : Alex Marquez",
+   "cote": "Non",
+   "idx": 1,
+   "prix": 0.9752,
+   "cat": "autres sports",
+   "fin": "2026-10-10T05:50:00+00:00",
+   "date": "2026-10-09T19:17+00:00",
+   "groupe": "45368883"
+  },
+  {
+   "site": "smarkets",
+   "id": "169690273:468143706",
+   "slug": "169690273",
+   "question": "Qualification - Grand Prix of Indonesia — Winner : Brad Binder",
+   "cote": "Non",
+   "idx": 1,
+   "prix": 0.9983,
+   "cat": "autres sports",
+   "fin": "2026-10-10T05:50:00+00:00",
+   "date": "2026-10-09T19:17+00:00",
+   "groupe": "45368883"
+  },
+  {
+   "site": "okx",
+   "id": "ETH-USD-261030-1700-C",
+   "slug": "ETH|2026-10-30|1700",
+   "question": "ETH au-dessus de 1 700 $ le 30/10/2026 à 8 h UTC ?",
+   "cote": "Au-dessus",
+   "idx": 0,
+   "prix": 0.9799,
+   "cat": "crypto",
+   "fin": "2026-10-30T08:00:00+00:00",
+   "date": "2026-10-09T19:17+00:00",
+   "groupe": "ETH|2026-10-30T08"
+  },
+  {
+   "site": "okx",
+   "id": "ETH-USD-261030-1550-C",
+   "slug": "ETH|2026-10-30|1550",
+   "question": "ETH au-dessus de 1 550 $ le 30/10/2026 à 8 h UTC ?",
+   "cote": "Au-dessus",
+   "idx": 0,
+   "prix": 0.9893,
+   "cat": "crypto",
+   "fin": "2026-10-30T08:00:00+00:00",
+   "date": "2026-10-09T19:17+00:00",
+   "groupe": "ETH|2026-10-30T08"
+  },
+  {
+   "site": "okx",
+   "id": "ETH-USD-261030-1600-C",
+   "slug": "ETH|2026-10-30|1600",
+   "question": "ETH au-dessus de 1 600 $ le 30/10/2026 à 8 h UTC ?",
+   "cote": "Au-dessus",
+   "idx": 0,
+   "prix": 0.9867,
+   "cat": "crypto",
+   "fin": "2026-10-30T08:00:00+00:00",
+   "date": "2026-10-09T19:17+00:00",
+   "groupe": "ETH|2026-10-30T08"
+  },
+  {
+   "site": "okx",
+   "id": "ETH-USD-261030-1750-C",
+   "slug": "ETH|2026-10-30|1750",
+   "question": "ETH au-dessus de 1 750 $ le 30/10/2026 à 8 h UTC ?",
+   "cote": "Au-dessus",
+   "idx": 0,
+   "prix": 0.9757,
+   "cat": "crypto",
+   "fin": "2026-10-30T08:00:00+00:00",
+   "date": "2026-10-09T19:17+00:00",
+   "groupe": "ETH|2026-10-30T08"
+  },
+  {
+   "site": "okx",
+   "id": "ETH-USD-261030-1800-C",
+   "slug": "ETH|2026-10-30|1800",
+   "question": "ETH au-dessus de 1 800 $ le 30/10/2026 à 8 h UTC ?",
+   "cote": "Au-dessus",
+   "idx": 0,
+   "prix": 0.9706,
+   "cat": "crypto",
+   "fin": "2026-10-30T08:00:00+00:00",
+   "date": "2026-10-09T19:17+00:00",
+   "groupe": "ETH|2026-10-30T08"
+  },
+  {
+   "site": "aevo",
+   "id": "BTC-30OCT26-106000-C",
+   "slug": "BTC|2026-10-30|106000",
+   "question": "BTC au-dessus de 106 000 $ le 30/10/2026 à 8 h UTC ?",
+   "cote": "En dessous",
+   "idx": 1,
+   "prix": 0.9963,
+   "cat": "crypto",
+   "fin": "2026-10-30T08:00:00+00:00",
+   "date": "2026-10-09T19:17+00:00",
+   "groupe": "BTC|2026-10-30T08"
+  },
+  {
+   "site": "aevo",
+   "id": "BTC-30OCT26-110000-C",
+   "slug": "BTC|2026-10-30|110000",
+   "question": "BTC au-dessus de 110 000 $ le 30/10/2026 à 8 h UTC ?",
+   "cote": "En dessous",
+   "idx": 1,
+   "prix": 0.9976,
+   "cat": "crypto",
+   "fin": "2026-10-30T08:00:00+00:00",
+   "date": "2026-10-09T19:17+00:00",
+   "groupe": "BTC|2026-10-30T08"
+  },
+  {
+   "site": "aevo",
+   "id": "BTC-30OCT26-115000-C",
+   "slug": "BTC|2026-10-30|115000",
+   "question": "BTC au-dessus de 115 000 $ le 30/10/2026 à 8 h UTC ?",
+   "cote": "En dessous",
+   "idx": 1,
+   "prix": 0.9982,
+   "cat": "crypto",
+   "fin": "2026-10-30T08:00:00+00:00",
+   "date": "2026-10-09T19:17+00:00",
+   "groupe": "BTC|2026-10-30T08"
+  },
+  {
+   "site": "aevo",
+   "id": "ETH-30OCT26-1000-C",
+   "slug": "ETH|2026-10-30|1000",
+   "question": "ETH au-dessus de 1 000 $ le 30/10/2026 à 8 h UTC ?",
+   "cote": "Au-dessus",
+   "idx": 0,
+   "prix": 0.9983,
+   "cat": "crypto",
+   "fin": "2026-10-30T08:00:00+00:00",
+   "date": "2026-10-09T19:17+00:00",
+   "groupe": "ETH|2026-10-30T08"
+  },
+  {
+   "site": "aevo",
+   "id": "ETH-30OCT26-1200-C",
+   "slug": "ETH|2026-10-30|1200",
+   "question": "ETH au-dessus de 1 200 $ le 30/10/2026 à 8 h UTC ?",
+   "cote": "Au-dessus",
+   "idx": 0,
+   "prix": 0.9968,
+   "cat": "crypto",
+   "fin": "2026-10-30T08:00:00+00:00",
+   "date": "2026-10-09T19:17+00:00",
+   "groupe": "ETH|2026-10-30T08"
+  },
+  {
+   "site": "cboe",
+   "id": "SPY261012C00550000",
+   "slug": "SPY|2026-10-12|550",
+   "question": "SPY au-dessus de 550 $ à la clôture du 12/10/2026 ?",
+   "cote": "Au-dessus",
+   "idx": 0,
+   "prix": 0.9945,
+   "cat": "bourse US",
+   "fin": "2026-10-12T20:00:00+00:00",
+   "date": "2026-10-09T19:17+00:00",
+   "groupe": "SPY|2026-10-12"
+  },
+  {
+   "site": "cboe",
+   "id": "SPY261012C00555000",
+   "slug": "SPY|2026-10-12|555",
+   "question": "SPY au-dessus de 555 $ à la clôture du 12/10/2026 ?",
+   "cote": "Au-dessus",
+   "idx": 0,
+   "prix": 0.994,
+   "cat": "bourse US",
+   "fin": "2026-10-12T20:00:00+00:00",
+   "date": "2026-10-09T19:17+00:00",
+   "groupe": "SPY|2026-10-12"
+  },
+  {
+   "site": "cboe",
+   "id": "SPY261012C00560000",
+   "slug": "SPY|2026-10-12|560",
+   "question": "SPY au-dessus de 560 $ à la clôture du 12/10/2026 ?",
+   "cote": "Au-dessus",
+   "idx": 0,
+   "prix": 0.9932,
+   "cat": "bourse US",
+   "fin": "2026-10-12T20:00:00+00:00",
+   "date": "2026-10-09T19:17+00:00",
+   "groupe": "SPY|2026-10-12"
+  },
+  {
+   "site": "cboe",
+   "id": "SPY261012C00565000",
+   "slug": "SPY|2026-10-12|565",
+   "question": "SPY au-dessus de 565 $ à la clôture du 12/10/2026 ?",
+   "cote": "Au-dessus",
+   "idx": 0,
+   "prix": 0.9935,
+   "cat": "bourse US",
+   "fin": "2026-10-12T20:00:00+00:00",
+   "date": "2026-10-09T19:17+00:00",
+   "groupe": "SPY|2026-10-12"
+  },
+  {
+   "site": "cboe",
+   "id": "SPY261012C00570000",
+   "slug": "SPY|2026-10-12|570",
+   "question": "SPY au-dessus de 570 $ à la clôture du 12/10/2026 ?",
+   "cote": "Au-dessus",
+   "idx": 0,
+   "prix": 0.9901,
+   "cat": "bourse US",
+   "fin": "2026-10-12T20:00:00+00:00",
+   "date": "2026-10-09T19:17+00:00",
    "groupe": "SPY|2026-10-12"
   }
  ],
@@ -24904,6 +25131,354 @@
    "dernier_essai": "2026-10-09T18:43+00:00",
    "gagne": 1,
    "resolu_le": "2026-10-09T19:03+00:00"
+  },
+  {
+   "site": "polymarket",
+   "id": "5397728",
+   "slug": "highest-temperature-in-lucknow-on-october-9-2026-31c",
+   "question": "Will the highest temperature in Lucknow be 31°C on October 9?",
+   "cote": "No",
+   "idx": 1,
+   "prix": 0.9805,
+   "cat": "météo",
+   "fin": "2026-10-09T12:00:00+00:00",
+   "date": "2026-10-09T09:58+00:00",
+   "dernier_essai": "2026-10-09T19:03+00:00",
+   "gagne": 1,
+   "resolu_le": "2026-10-09T19:17+00:00"
+  },
+  {
+   "site": "smarkets",
+   "id": "169366140:467254618",
+   "slug": "169366140",
+   "question": "Basket Zielona Gora vs Legia Warszawa — Half-time/full-time : Legia Warszawa / Draw",
+   "cote": "Non",
+   "idx": 1,
+   "prix": 0.9778,
+   "cat": "basket",
+   "fin": "2026-10-09T19:00:00+00:00",
+   "date": "2026-10-09T11:31+00:00",
+   "gagne": 1,
+   "resolu_le": "2026-10-09T19:17+00:00"
+  },
+  {
+   "site": "smarkets",
+   "id": "169366140:467254619",
+   "slug": "169366140",
+   "question": "Basket Zielona Gora vs Legia Warszawa — Half-time/full-time : Draw / Basket Zielona Gora",
+   "cote": "Non",
+   "idx": 1,
+   "prix": 0.9868,
+   "cat": "basket",
+   "fin": "2026-10-09T19:00:00+00:00",
+   "date": "2026-10-09T11:31+00:00",
+   "gagne": 1,
+   "resolu_le": "2026-10-09T19:17+00:00"
+  },
+  {
+   "site": "smarkets",
+   "id": "169366140:467254620",
+   "slug": "169366140",
+   "question": "Basket Zielona Gora vs Legia Warszawa — Half-time/full-time : Draw / Legia Warszawa",
+   "cote": "Non",
+   "idx": 1,
+   "prix": 0.986,
+   "cat": "basket",
+   "fin": "2026-10-09T19:00:00+00:00",
+   "date": "2026-10-09T11:49+00:00",
+   "gagne": 1,
+   "resolu_le": "2026-10-09T19:17+00:00"
+  },
+  {
+   "site": "smarkets",
+   "id": "169366140:467254621",
+   "slug": "169366140",
+   "question": "Basket Zielona Gora vs Legia Warszawa — Half-time/full-time : Draw / Draw",
+   "cote": "Non",
+   "idx": 1,
+   "prix": 0.9974,
+   "cat": "basket",
+   "fin": "2026-10-09T19:00:00+00:00",
+   "date": "2026-10-09T11:49+00:00",
+   "gagne": 1,
+   "resolu_le": "2026-10-09T19:17+00:00"
+  },
+  {
+   "site": "smarkets",
+   "id": "169369239:467269879",
+   "slug": "169369239",
+   "question": "Basket Zielona Gora vs Legia Warszawa — First half winner and over/under 83.5 points : Draw / under 83.5 points",
+   "cote": "Non",
+   "idx": 1,
+   "prix": 0.9868,
+   "cat": "basket",
+   "fin": "2026-10-09T19:00:00+00:00",
+   "date": "2026-10-09T11:49+00:00",
+   "gagne": 1,
+   "resolu_le": "2026-10-09T19:17+00:00"
+  },
+  {
+   "site": "smarkets",
+   "id": "169366140:467254615",
+   "slug": "169366140",
+   "question": "Basket Zielona Gora vs Legia Warszawa — Half-time/full-time : Basket Zielona Gora / Draw",
+   "cote": "Non",
+   "idx": 1,
+   "prix": 0.9791,
+   "cat": "basket",
+   "fin": "2026-10-09T19:00:00+00:00",
+   "date": "2026-10-09T12:15+00:00",
+   "gagne": 1,
+   "resolu_le": "2026-10-09T19:17+00:00"
+  },
+  {
+   "site": "smarkets",
+   "id": "169369239:467269876",
+   "slug": "169369239",
+   "question": "Basket Zielona Gora vs Legia Warszawa — First half winner and over/under 83.5 points : Draw / over 83.5 points",
+   "cote": "Non",
+   "idx": 1,
+   "prix": 0.986,
+   "cat": "basket",
+   "fin": "2026-10-09T19:00:00+00:00",
+   "date": "2026-10-09T12:15+00:00",
+   "gagne": 1,
+   "resolu_le": "2026-10-09T19:17+00:00"
+  },
+  {
+   "site": "smarkets",
+   "id": "169346142:467209488",
+   "slug": "169346142",
+   "question": "Norrkoping Dolphins vs Sodertalje BBK — Half-time/full-time : Norrkoping Dolphins / Draw",
+   "cote": "Non",
+   "idx": 1,
+   "prix": 0.9852,
+   "cat": "basket",
+   "fin": "2026-10-09T19:00:00+00:00",
+   "date": "2026-10-09T12:15+00:00",
+   "gagne": 1,
+   "resolu_le": "2026-10-09T19:17+00:00"
+  },
+  {
+   "site": "smarkets",
+   "id": "169346142:467209492",
+   "slug": "169346142",
+   "question": "Norrkoping Dolphins vs Sodertalje BBK — Half-time/full-time : Draw / Norrkoping Dolphins",
+   "cote": "Non",
+   "idx": 1,
+   "prix": 0.9791,
+   "cat": "basket",
+   "fin": "2026-10-09T19:00:00+00:00",
+   "date": "2026-10-09T12:15+00:00",
+   "gagne": 1,
+   "resolu_le": "2026-10-09T19:17+00:00"
+  },
+  {
+   "site": "smarkets",
+   "id": "169346142:467209491",
+   "slug": "169346142",
+   "question": "Norrkoping Dolphins vs Sodertalje BBK — Half-time/full-time : Sodertalje BBK / Draw",
+   "cote": "Non",
+   "idx": 1,
+   "prix": 0.9875,
+   "cat": "basket",
+   "fin": "2026-10-09T19:00:00+00:00",
+   "date": "2026-10-09T12:38+00:00",
+   "gagne": 1,
+   "resolu_le": "2026-10-09T19:17+00:00"
+  },
+  {
+   "site": "smarkets",
+   "id": "169346142:467209493",
+   "slug": "169346142",
+   "question": "Norrkoping Dolphins vs Sodertalje BBK — Half-time/full-time : Draw / Sodertalje BBK",
+   "cote": "Non",
+   "idx": 1,
+   "prix": 0.9947,
+   "cat": "basket",
+   "fin": "2026-10-09T19:00:00+00:00",
+   "date": "2026-10-09T12:38+00:00",
+   "gagne": 1,
+   "resolu_le": "2026-10-09T19:17+00:00"
+  },
+  {
+   "site": "smarkets",
+   "id": "169346146:467209510",
+   "slug": "169346146",
+   "question": "Norrkoping Dolphins vs Sodertalje BBK — First half winner and over/under 82.5 points : Draw / under 82.5 points",
+   "cote": "Non",
+   "idx": 1,
+   "prix": 0.9868,
+   "cat": "basket",
+   "fin": "2026-10-09T19:00:00+00:00",
+   "date": "2026-10-09T12:38+00:00",
+   "gagne": 1,
+   "resolu_le": "2026-10-09T19:17+00:00"
+  },
+  {
+   "site": "smarkets",
+   "id": "169346142:467209494",
+   "slug": "169346142",
+   "question": "Norrkoping Dolphins vs Sodertalje BBK — Half-time/full-time : Draw / Draw",
+   "cote": "Non",
+   "idx": 1,
+   "prix": 0.9981,
+   "cat": "basket",
+   "fin": "2026-10-09T19:00:00+00:00",
+   "date": "2026-10-09T12:54+00:00",
+   "groupe": "45362840",
+   "gagne": 1,
+   "resolu_le": "2026-10-09T19:17+00:00"
+  },
+  {
+   "site": "smarkets",
+   "id": "169346146:467209507",
+   "slug": "169346146",
+   "question": "Norrkoping Dolphins vs Sodertalje BBK — First half winner and over/under 82.5 points : Draw / over 82.5 points",
+   "cote": "Non",
+   "idx": 1,
+   "prix": 0.9891,
+   "cat": "basket",
+   "fin": "2026-10-09T19:00:00+00:00",
+   "date": "2026-10-09T12:54+00:00",
+   "groupe": "45362840",
+   "gagne": 1,
+   "resolu_le": "2026-10-09T19:17+00:00"
+  },
+  {
+   "site": "smarkets",
+   "id": "169555431:467816365",
+   "slug": "169555431",
+   "question": "Kk Zlatibor vs Kk Nis 1996 — Half-time/full-time : Kk Zlatibor / Draw",
+   "cote": "Non",
+   "idx": 1,
+   "prix": 0.9886,
+   "cat": "basket",
+   "fin": "2026-10-09T19:00:00+00:00",
+   "date": "2026-10-09T12:54+00:00",
+   "groupe": "45367631",
+   "gagne": 1,
+   "resolu_le": "2026-10-09T19:17+00:00"
+  },
+  {
+   "site": "smarkets",
+   "id": "169555431:467816368",
+   "slug": "169555431",
+   "question": "Kk Zlatibor vs Kk Nis 1996 — Half-time/full-time : Kk Nis 1996 / Draw",
+   "cote": "Non",
+   "idx": 1,
+   "prix": 0.9909,
+   "cat": "basket",
+   "fin": "2026-10-09T19:00:00+00:00",
+   "date": "2026-10-09T12:54+00:00",
+   "groupe": "45367631",
+   "gagne": 1,
+   "resolu_le": "2026-10-09T19:17+00:00"
+  },
+  {
+   "site": "smarkets",
+   "id": "169555423:467816344",
+   "slug": "169555423",
+   "question": "Kk Zlatibor vs Kk Nis 1996 — First half winner and over/under 86.5 points : Draw / over 86.5 points",
+   "cote": "Non",
+   "idx": 1,
+   "prix": 0.9916,
+   "cat": "basket",
+   "fin": "2026-10-09T19:00:00+00:00",
+   "date": "2026-10-09T13:04+00:00",
+   "groupe": "45367631",
+   "gagne": 1,
+   "resolu_le": "2026-10-09T19:17+00:00"
+  },
+  {
+   "site": "smarkets",
+   "id": "169555423:467816347",
+   "slug": "169555423",
+   "question": "Kk Zlatibor vs Kk Nis 1996 — First half winner and over/under 86.5 points : Draw / under 86.5 points",
+   "cote": "Non",
+   "idx": 1,
+   "prix": 0.9891,
+   "cat": "basket",
+   "fin": "2026-10-09T19:00:00+00:00",
+   "date": "2026-10-09T13:04+00:00",
+   "groupe": "45367631",
+   "gagne": 1,
+   "resolu_le": "2026-10-09T19:17+00:00"
+  },
+  {
+   "site": "smarkets",
+   "id": "169555431:467816364",
+   "slug": "169555431",
+   "question": "Kk Zlatibor vs Kk Nis 1996 — Half-time/full-time : Kk Zlatibor / Kk Nis 1996",
+   "cote": "Non",
+   "idx": 1,
+   "prix": 0.9761,
+   "cat": "basket",
+   "fin": "2026-10-09T19:00:00+00:00",
+   "date": "2026-10-09T13:04+00:00",
+   "groupe": "45367631",
+   "gagne": 1,
+   "resolu_le": "2026-10-09T19:17+00:00"
+  },
+  {
+   "site": "smarkets",
+   "id": "169555431:467816370",
+   "slug": "169555431",
+   "question": "Kk Zlatibor vs Kk Nis 1996 — Half-time/full-time : Draw / Kk Nis 1996",
+   "cote": "Non",
+   "idx": 1,
+   "prix": 0.9966,
+   "cat": "basket",
+   "fin": "2026-10-09T19:00:00+00:00",
+   "date": "2026-10-09T13:04+00:00",
+   "groupe": "45367631",
+   "gagne": 1,
+   "resolu_le": "2026-10-09T19:17+00:00"
+  },
+  {
+   "site": "smarkets",
+   "id": "169555431:467816369",
+   "slug": "169555431",
+   "question": "Kk Zlatibor vs Kk Nis 1996 — Half-time/full-time : Draw / Kk Zlatibor",
+   "cote": "Non",
+   "idx": 1,
+   "prix": 0.9791,
+   "cat": "basket",
+   "fin": "2026-10-09T19:00:00+00:00",
+   "date": "2026-10-09T15:13+00:00",
+   "groupe": "45367631",
+   "gagne": 1,
+   "resolu_le": "2026-10-09T19:17+00:00"
+  },
+  {
+   "site": "smarkets",
+   "id": "169555431:467816371",
+   "slug": "169555431",
+   "question": "Kk Zlatibor vs Kk Nis 1996 — Half-time/full-time : Draw / Draw",
+   "cote": "Non",
+   "idx": 1,
+   "prix": 0.9983,
+   "cat": "basket",
+   "fin": "2026-10-09T19:00:00+00:00",
+   "date": "2026-10-09T15:13+00:00",
+   "groupe": "45367631",
+   "gagne": 1,
+   "resolu_le": "2026-10-09T19:17+00:00"
+  },
+  {
+   "site": "smarkets",
+   "id": "169708682:468189592",
+   "slug": "169708682",
+   "question": "Kk Zlatibor vs Kk Nis 1996 — First half winner and over/under 87.5 points : Draw / under 87.5 points",
+   "cote": "Non",
+   "idx": 1,
+   "prix": 0.9899,
+   "cat": "basket",
+   "fin": "2026-10-09T19:00:00+00:00",
+   "date": "2026-10-09T15:13+00:00",
+   "groupe": "45367631",
+   "gagne": 1,
+   "resolu_le": "2026-10-09T19:17+00:00"
   }
  ],
  "apprentissage": {
@@ -24974,15 +25549,15 @@
    "taux_reel": 0.95238
   },
   "smarkets|tranche:>=0.995": {
-   "n": 15,
-   "gagnes": 15,
-   "prix_moy": 0.99755,
+   "n": 17,
+   "gagnes": 17,
+   "prix_moy": 0.99757,
    "taux_reel": 1.0
   },
   "smarkets|tranche:>=0.975": {
-   "n": 12,
-   "gagnes": 12,
-   "prix_moy": 0.97817,
+   "n": 15,
+   "gagnes": 15,
+   "prix_moy": 0.97827,
    "taux_reel": 1.0
   },
   "smarkets|cat:autres sports": {
@@ -24992,9 +25567,9 @@
    "taux_reel": 1.0
   },
   "smarkets|tranche:>=0.99": {
-   "n": 15,
-   "gagnes": 15,
-   "prix_moy": 0.99255,
+   "n": 16,
+   "gagnes": 16,
+   "prix_moy": 0.99269,
    "taux_reel": 1.0
   },
   "smarkets|tranche:>=0.98": {
@@ -25088,9 +25663,9 @@
    "taux_reel": 1.0
   },
   "smarkets|tranche:>=0.985": {
-   "n": 10,
-   "gagnes": 10,
-   "prix_moy": 0.98696,
+   "n": 18,
+   "gagnes": 18,
+   "prix_moy": 0.98685,
    "taux_reel": 1.0
   },
   "polymarket|cat:esport": {
@@ -25124,15 +25699,15 @@
    "taux_reel": 0.96454
   },
   "smarkets|cat:basket": {
-   "n": 5,
-   "gagnes": 5,
-   "prix_moy": 0.98868,
+   "n": 19,
+   "gagnes": 19,
+   "prix_moy": 0.98754,
    "taux_reel": 1.0
   },
   "polymarket|cat:météo": {
-   "n": 36,
-   "gagnes": 36,
-   "prix_moy": 0.99242,
+   "n": 37,
+   "gagnes": 37,
+   "prix_moy": 0.9921,
    "taux_reel": 1.0
   },
   "polymarket|tranche:>=0.99": {
@@ -25160,10 +25735,10 @@
    "taux_reel": 1.0
   },
   "polymarket|tranche:>=0.98": {
-   "n": 25,
-   "gagnes": 24,
-   "prix_moy": 0.98234,
-   "taux_reel": 0.96
+   "n": 26,
+   "gagnes": 25,
+   "prix_moy": 0.98227,
+   "taux_reel": 0.96154
   },
   "limitless|tranche:>=0.97": {
    "n": 2,
@@ -25301,68 +25876,8 @@
  "fraction_kelly": 0.25,
  "pic": 1000.0,
  "dernier_ajust": 0,
- "rejets": 299,
+ "rejets": 307,
  "journal": [
-  {
-   "quand": "2026-10-09T08:47+00:00",
-   "texte": "[polymarket] ignoré (pas achetable, souvent déjà joué) : Will the price of Ethereum be greater than $3,100 on October"
-  },
-  {
-   "quand": "2026-10-09T08:47+00:00",
-   "texte": "[polymarket] ignoré (pas achetable, souvent déjà joué) : Will the price of Bitcoin be above $92,000 on October 9?"
-  },
-  {
-   "quand": "2026-10-09T08:47+00:00",
-   "texte": "[polymarket] ignoré (pas achetable, souvent déjà joué) : Will the price of Bitcoin be above $94,000 on October 9?"
-  },
-  {
-   "quand": "2026-10-09T08:47+00:00",
-   "texte": "[polymarket] ignoré (pas achetable, souvent déjà joué) : Will the price of Bitcoin be above $96,000 on October 9?"
-  },
-  {
-   "quand": "2026-10-09T08:47+00:00",
-   "texte": "[polymarket] ignoré (pas achetable, souvent déjà joué) : Will the price of Ethereum be above $3,000 on October 9?"
-  },
-  {
-   "quand": "2026-10-09T08:47+00:00",
-   "texte": "[limitless] rejet (cote relue 0.940, sous le seuil) : BNB Up or Down Hourly"
-  },
-  {
-   "quand": "2026-10-09T08:47+00:00",
-   "texte": "[gemini] ignoré (pas achetable, souvent déjà joué) : Baycurrent Classic Winner — Chandler Phillips"
-  },
-  {
-   "quand": "2026-10-09T08:47+00:00",
-   "texte": "[gemini] ignoré (pas achetable, souvent déjà joué) : Baycurrent Classic Winner — Aldrich Potgieter"
-  },
-  {
-   "quand": "2026-10-09T08:47+00:00",
-   "texte": "[gemini] ignoré (pas achetable, souvent déjà joué) : Baycurrent Classic Winner — Andrew Putnam"
-  },
-  {
-   "quand": "2026-10-09T08:47+00:00",
-   "texte": "[gemini] ignoré (pas achetable, souvent déjà joué) : Baycurrent Classic Winner — Patrick Rodgers"
-  },
-  {
-   "quand": "2026-10-09T08:47+00:00",
-   "texte": "[gemini] ignoré (pas achetable, souvent déjà joué) : Baycurrent Classic Winner — Kevin Roy"
-  },
-  {
-   "quand": "2026-10-09T08:47+00:00",
-   "texte": "[smarkets] rejet (seulement 5/6 lectures) : Andorra Women vs Faroe Islands Women — Correct score : Any o"
-  },
-  {
-   "quand": "2026-10-09T08:47+00:00",
-   "texte": "[smarkets] rejet (seulement 4/6 lectures) : Kazakhstan Women vs Republic of Ireland (W) — Full-time resu"
-  },
-  {
-   "quand": "2026-10-09T08:47+00:00",
-   "texte": "[polymarket_us] rejet (seulement 0/6 lectures) : 2026 Nobel Peace Prize Winner"
-  },
-  {
-   "quand": "2026-10-09T08:47+00:00",
-   "texte": "[polymarket_us] rejet (seulement 0/6 lectures) : 2026 Nobel Peace Prize Winner"
-  },
   {
    "quand": "2026-10-09T08:47+00:00",
    "texte": "[polymarket_us] rejet (seulement 0/6 lectures) : 2026 Nobel Peace Prize Winner"
@@ -27302,194 +27817,254 @@
   {
    "quand": "2026-10-09T19:03+00:00",
    "texte": "[smarkets] rejet (seulement 2/6 lectures) : North Harbour vs Taranaki — Half-time/full-time : North Harb"
+  },
+  {
+   "quand": "2026-10-09T19:17+00:00",
+   "texte": "[polymarket] historique illisible : lecture impossible : https://gamma-api.polymarket.com/markets?closed=true&limit=250&offset=2100&order=volumeNum&ascending=false&volume_num_min=5000 (HTTP Error 422: Unprocessable Entity)"
+  },
+  {
+   "quand": "2026-10-09T19:17+00:00",
+   "texte": "[polymarket] rejet (lectures discordantes [0.978, 0.978, 0.918, 0.931, 0.978, 0.978]) : Counter-Strike: Saint Sinners vs Just Players (BO3) - ESL Ch"
+  },
+  {
+   "quand": "2026-10-09T19:17+00:00",
+   "texte": "[polymarket] rejet (lectures discordantes [0.725, 0.9995, 0.995, 0.725, 0.9995, 0.725]) : Palermo: Massimo Giunta vs Alejandro Moro Canas"
+  },
+  {
+   "quand": "2026-10-09T19:17+00:00",
+   "texte": "[polymarket] rejet (lectures discordantes [0.9995, 0.52, 0.52, 0.52, 0.9995, 0.9995]) : Palermo: Completed Match: Massimo Giunta vs Alejandro Moro C"
+  },
+  {
+   "quand": "2026-10-09T19:17+00:00",
+   "texte": "[polymarket] ignoré (pas achetable, souvent déjà joué) : Counter-Strike: MOUZ NXT vs Leo Team - Map 2 Winner"
+  },
+  {
+   "quand": "2026-10-09T19:17+00:00",
+   "texte": "[polymarket] ignoré (pas achetable, souvent déjà joué) : Counter-Strike: Team Falcons vs Spirit (BO3) - ESL Pro Leagu"
+  },
+  {
+   "quand": "2026-10-09T19:17+00:00",
+   "texte": "[polymarket] ignoré (pas achetable, souvent déjà joué) : Counter-Strike: Team Falcons vs Spirit - Map 2 Winner"
+  },
+  {
+   "quand": "2026-10-09T19:17+00:00",
+   "texte": "[polymarket] ignoré (pas achetable, souvent déjà joué) : Map Handicap: TS (-1.5) vs Team Falcons (+1.5)"
+  },
+  {
+   "quand": "2026-10-09T19:17+00:00",
+   "texte": "[polymarket] ignoré (pas achetable, souvent déjà joué) : Will Falcons Win the ESL Pro League Season 24?"
+  },
+  {
+   "quand": "2026-10-09T19:17+00:00",
+   "texte": "[polymarket] ignoré (pas achetable, souvent déjà joué) : Will Blagomir Kotsev win the next Bulgarian presidential ele"
+  },
+  {
+   "quand": "2026-10-09T19:17+00:00",
+   "texte": "[smarkets] rejet (seulement 1/6 lectures) : Braga vs Sporting — Correct score : 2 - 3"
+  },
+  {
+   "quand": "2026-10-09T19:17+00:00",
+   "texte": "[smarkets] rejet (seulement 2/6 lectures) : Edmonton Elks at Hamilton Tiger-Cats — Half-time/full-time :"
+  },
+  {
+   "quand": "2026-10-09T19:17+00:00",
+   "texte": "[smarkets] rejet (seulement 2/6 lectures) : Columbia Lions at Marist Red Foxes — Half-time/full-time : C"
+  },
+  {
+   "quand": "2026-10-09T19:17+00:00",
+   "texte": "[smarkets] rejet (seulement 2/6 lectures) : Golden State Valkyries at Las Vegas Aces — Half-time/full-ti"
+  },
+  {
+   "quand": "2026-10-09T19:17+00:00",
+   "texte": "[smarkets] rejet (seulement 2/6 lectures) : North Harbour vs Taranaki — Half-time/full-time : Draw / Dra"
   }
  ],
- "passages": 48,
+ "passages": 49,
  "sites": {
   "polymarket": {
-   "marches_vus": 31880,
-   "candidats": 706,
-   "retenus": 575,
-   "rejets": 131,
-   "erreurs": 8,
+   "marches_vus": 32526,
+   "candidats": 720,
+   "retenus": 586,
+   "rejets": 134,
+   "erreurs": 9,
    "dernier_ok": "2026-10-09T16:50+00:00",
    "historique": 520
   },
   "kalshi": {
-   "marches_vus": 19894,
-   "candidats": 239,
-   "retenus": 233,
+   "marches_vus": 20290,
+   "candidats": 242,
+   "retenus": 236,
    "rejets": 6,
    "erreurs": 0,
-   "dernier_ok": "2026-10-09T19:03+00:00",
+   "dernier_ok": "2026-10-09T19:17+00:00",
    "historique": 0
   },
   "manifold": {
-   "marches_vus": 3003,
+   "marches_vus": 3069,
    "candidats": 9,
    "retenus": 9,
    "rejets": 0,
    "erreurs": 4,
-   "dernier_ok": "2026-10-09T19:03+00:00",
+   "dernier_ok": "2026-10-09T19:17+00:00",
    "historique": 920
   },
   "limitless": {
-   "marches_vus": 15503,
-   "candidats": 77,
-   "retenus": 67,
+   "marches_vus": 15838,
+   "candidats": 78,
+   "retenus": 68,
    "rejets": 10,
    "erreurs": 0,
-   "dernier_ok": "2026-10-09T19:03+00:00",
+   "dernier_ok": "2026-10-09T19:17+00:00",
    "historique": 0
   },
   "gemini": {
-   "marches_vus": 90707,
-   "candidats": 167,
-   "retenus": 132,
+   "marches_vus": 92803,
+   "candidats": 168,
+   "retenus": 133,
    "rejets": 35,
    "erreurs": 0,
-   "dernier_ok": "2026-10-09T19:03+00:00",
+   "dernier_ok": "2026-10-09T19:17+00:00",
    "historique": 0
   },
   "smarkets": {
-   "marches_vus": 58368,
-   "candidats": 278,
-   "retenus": 177,
-   "rejets": 101,
+   "marches_vus": 60368,
+   "candidats": 298,
+   "retenus": 192,
+   "rejets": 106,
    "erreurs": 13,
-   "dernier_ok": "2026-10-09T19:03+00:00",
+   "dernier_ok": "2026-10-09T19:17+00:00",
    "historique": 0
   },
   "espn": {
-   "marches_vus": 9423,
+   "marches_vus": 9661,
    "candidats": 0,
    "retenus": 0,
    "rejets": 0,
    "erreurs": 2,
-   "dernier_ok": "2026-10-09T19:03+00:00",
+   "dernier_ok": "2026-10-09T19:17+00:00",
    "historique": 0
   },
   "futuur": {
-   "marches_vus": 11379,
+   "marches_vus": 11639,
    "candidats": 1,
    "retenus": 1,
    "rejets": 0,
    "erreurs": 0,
-   "dernier_ok": "2026-10-09T19:03+00:00",
+   "dernier_ok": "2026-10-09T19:17+00:00",
    "historique": 0
   },
   "azuro": {
-   "marches_vus": 466380,
+   "marches_vus": 479249,
    "candidats": 0,
    "retenus": 0,
    "rejets": 0,
    "erreurs": 0,
-   "dernier_ok": "2026-10-09T19:03+00:00",
+   "dernier_ok": "2026-10-09T19:17+00:00",
    "historique": 0
   },
   "deribit": {
-   "marches_vus": 28720,
+   "marches_vus": 29503,
    "candidats": 167,
    "retenus": 167,
    "rejets": 0,
    "erreurs": 0,
-   "dernier_ok": "2026-10-09T19:03+00:00",
+   "dernier_ok": "2026-10-09T19:17+00:00",
    "historique": 0
   },
   "okx": {
-   "marches_vus": 30764,
-   "candidats": 185,
-   "retenus": 185,
+   "marches_vus": 31616,
+   "candidats": 190,
+   "retenus": 190,
    "rejets": 0,
    "erreurs": 0,
-   "dernier_ok": "2026-10-09T19:03+00:00",
+   "dernier_ok": "2026-10-09T19:17+00:00",
    "historique": 0
   },
   "delta_inde": {
-   "marches_vus": 15103,
+   "marches_vus": 15509,
    "candidats": 112,
    "retenus": 111,
    "rejets": 1,
    "erreurs": 0,
-   "dernier_ok": "2026-10-09T19:03+00:00",
+   "dernier_ok": "2026-10-09T19:17+00:00",
    "historique": 0
   },
   "gate": {
-   "marches_vus": 23199,
+   "marches_vus": 23826,
    "candidats": 168,
    "retenus": 166,
    "rejets": 2,
    "erreurs": 0,
-   "dernier_ok": "2026-10-09T19:03+00:00",
+   "dernier_ok": "2026-10-09T19:17+00:00",
    "historique": 0
   },
   "aevo": {
-   "marches_vus": 33152,
-   "candidats": 185,
-   "retenus": 183,
+   "marches_vus": 34048,
+   "candidats": 190,
+   "retenus": 188,
    "rejets": 2,
    "erreurs": 0,
-   "dernier_ok": "2026-10-09T19:03+00:00",
+   "dernier_ok": "2026-10-09T19:17+00:00",
    "historique": 0
   },
   "thalex": {
-   "marches_vus": 2821,
+   "marches_vus": 2908,
    "candidats": 25,
    "retenus": 25,
    "rejets": 0,
    "erreurs": 0,
-   "dernier_ok": "2026-10-09T19:03+00:00",
+   "dernier_ok": "2026-10-09T19:17+00:00",
    "historique": 0
   },
   "derive": {
-   "marches_vus": 4320,
+   "marches_vus": 4440,
    "candidats": 83,
    "retenus": 83,
    "rejets": 0,
    "erreurs": 0,
-   "dernier_ok": "2026-10-09T19:03+00:00",
+   "dernier_ok": "2026-10-09T19:17+00:00",
    "historique": 0
   },
   "cboe": {
-   "marches_vus": 665374,
-   "candidats": 175,
-   "retenus": 169,
+   "marches_vus": 684073,
+   "candidats": 180,
+   "retenus": 174,
    "rejets": 6,
    "erreurs": 0,
-   "dernier_ok": "2026-10-09T19:03+00:00",
+   "dernier_ok": "2026-10-09T19:17+00:00",
    "historique": 0
   },
   "sxbet": {
-   "marches_vus": 6455,
+   "marches_vus": 6637,
    "candidats": 0,
    "retenus": 0,
    "rejets": 0,
    "erreurs": 0,
-   "dernier_ok": "2026-10-09T19:03+00:00",
+   "dernier_ok": "2026-10-09T19:17+00:00",
    "historique": 0
   },
   "delta_monde": {
-   "marches_vus": 694,
+   "marches_vus": 718,
    "candidats": 11,
    "retenus": 11,
    "rejets": 0,
    "erreurs": 0,
-   "dernier_ok": "2026-10-09T19:03+00:00",
+   "dernier_ok": "2026-10-09T19:17+00:00",
    "historique": 0
   },
   "polymarket_us": {
-   "marches_vus": 39600,
+   "marches_vus": 40800,
    "candidats": 33,
    "retenus": 28,
    "rejets": 5,
    "erreurs": 0,
-   "dernier_ok": "2026-10-09T19:03+00:00",
+   "dernier_ok": "2026-10-09T19:17+00:00",
    "historique": 0
   }
  },
  "dernier_passage": {
-  "debut": "2026-10-09T18:57+00:00",
-  "duree_s": 350
+  "debut": "2026-10-09T19:11+00:00",
+  "duree_s": 364
  },
  "non_achetables": {
   "polymarket|2915095": "2026-10-10T03:59:00+00:00",
@@ -27696,30 +28271,23 @@
   "polymarket|5434042": "2026-10-16T11:30:00+00:00",
   "polymarket|5424065": "2026-10-17T02:00:00+00:00",
   "polymarket|5424066": "2026-10-17T02:00:00+00:00",
-  "polymarket|5445006": "2026-10-09T19:10:00+00:00",
   "polymarket|5442756": "2026-10-09T20:00:00+00:00",
   "polymarket|5434037": "2026-10-16T09:00:00+00:00",
   "polymarket|5434038": "2026-10-16T09:00:00+00:00",
   "polymarket|5442219": "2026-10-16T11:00:00+00:00",
   "smarkets|168649079:465464981": "2026-10-09T20:30:00+00:00",
-  "polymarket|5445002": "2026-10-09T19:10:00+00:00",
   "polymarket|5441914": "2026-10-09T19:20:00+00:00",
   "polymarket|5414682": "2026-10-09T20:15:00+00:00",
   "polymarket|5408302": "2026-10-16T09:00:00+00:00",
   "polymarket|5445270": "2026-10-16T13:30:00+00:00",
-  "polymarket|5445007": "2026-10-09T19:10:00+00:00",
   "polymarket|5445021": "2026-10-09T19:30:00+00:00",
   "polymarket|5373740": "2026-10-09T19:50:00+00:00",
-  "polymarket|5445012": "2026-10-09T19:10:00+00:00",
   "polymarket|5373738": "2026-10-09T19:50:00+00:00",
   "polymarket|5447715": "2026-10-16T14:30:00+00:00",
   "polymarket|5208759": "2026-10-16T11:30:00+00:00",
   "polymarket|5229555": "2026-10-16T12:30:00+00:00",
   "polymarket|5434047": "2026-10-16T14:00:00+00:00",
   "limitless|googl-daily-up-down-p-1791479161562": "2026-10-09T20:00:00+00:00",
-  "polymarket|5445083": "2026-10-09T19:00:00+00:00",
-  "polymarket|5445017": "2026-10-09T19:00:00+00:00",
-  "polymarket|5445013": "2026-10-09T19:10:00+00:00",
   "polymarket|5441915": "2026-10-09T19:20:00+00:00",
   "polymarket|5423822": "2026-10-10T12:00:00+00:00",
   "polymarket|5434043": "2026-10-16T09:00:00+00:00",
@@ -27758,14 +28326,19 @@
   "polymarket|5412635": "2026-10-09T22:00:00+00:00",
   "polymarket|5391205": "2026-10-09T22:45:00+00:00",
   "polymarket|5081232": "2026-10-13T03:59:00+00:00",
-  "limitless|bnb-up-or-down-hourly-p-1791558316476": "2026-10-09T19:00:00+00:00",
   "smarkets|169628020:467992291": "2026-10-09T22:20:00+00:00",
   "polymarket|5432814": "2026-10-09T22:45:00+00:00",
   "polymarket|5442222": "2026-10-16T12:30:00+00:00",
   "polymarket|5432893": "2026-10-16T13:30:00+00:00",
   "polymarket|5447598": "2026-10-16T17:30:00+00:00",
   "polymarket|3081963": "2026-10-30T03:59:00+00:00",
-  "gemini|GEMI-GOLF-BAY-T10-20261011-NEERGAARDPETERSEN": "2026-10-09T22:00:00+00:00"
+  "gemini|GEMI-GOLF-BAY-T10-20261011-NEERGAARDPETERSEN": "2026-10-09T22:00:00+00:00",
+  "polymarket|5464090": "2026-10-09T21:00:00+00:00",
+  "polymarket|5414695": "2026-10-09T23:00:00+00:00",
+  "polymarket|5414694": "2026-10-09T23:00:00+00:00",
+  "polymarket|5414697": "2026-10-09T23:00:00+00:00",
+  "polymarket|4396624": "2026-10-26T03:59:00+00:00",
+  "polymarket|1194645": "2026-10-26T03:59:00+00:00"
  },
  "historique": [
   {
@@ -45330,7 +45903,7 @@
  "curseurs": {
   "polymarket": 2100,
   "kalshi": 0,
-  "manifold": 7500,
+  "manifold": 7750,
   "limitless": 0,
   "gemini": 0,
   "smarkets": 0,
