@@ -67,7 +67,10 @@ class Polymarket:
     def resultat(self, marche):
         """{'fini': bool, 'paiement': [p_oui, p_non] ou None}"""
         lectures = []
-        for url in self.adresses(marche)[:2]:
+        # les adresses ?id= et /markets/<id> restent figées des heures après la fin : on lit les adresses
+        # « marchés fermés », qui donnent le résultat officiel tout de suite (leçon des nuits précédentes)
+        i = marche["id"]
+        for url in (f"{BASE}/markets?id={i}&closed=true", f"{BASE}/markets?id={i}&closed=true&limit=1"):
             r = lire_json(url)
             m = r[0] if isinstance(r, list) else r
             if not m or not m.get("closed") or str(m.get("umaResolutionStatus", "")).lower() != "resolved":

@@ -25,6 +25,9 @@ PM = {
     "2": {"id": "2", "slug": "btc-90k", "question": "Bitcoin above 90k?", "outcomes": '["Yes", "No"]',
           "outcomePrices": '["0.02", "0.98"]', "endDate": FIN, "volumeNum": 50000, "closed": False,
           "bestBid": 0.019, "bestAsk": 0.021},
+    "4": {"id": "4", "slug": "cs2-x-y", "question": "CS2: X vs Y (déjà joué)", "outcomes": '["X", "Y"]',
+          "outcomePrices": '["0.9995", "0.0005"]', "endDate": FIN, "volumeNum": 50000, "closed": False,
+          "bestBid": 0.999, "bestAsk": None},
     "3": {"id": "3", "slug": "who-wins", "question": "Who wins?", "outcomes": '["A", "B", "C"]',
           "outcomePrices": '["0.98", "0.01", "0.01"]', "endDate": FIN, "volumeNum": 50000, "closed": False},
 }
@@ -98,6 +101,7 @@ with tempfile.TemporaryDirectory() as d:
     verifier("Kalshi écart achat/vente énorme exclu", ("kalshi", "KXWIDE-4") not in obs)
     verifier("Kalshi combinés exclus", ("kalshi", "KXMVECOMBO-3") not in obs)
     verifier("Manifold observé", ("manifold", "m1") in obs)
+    verifier("côté sans vendeur -> pas observé (déjà joué)", ("polymarket", "4") not in obs)
     verifier("aucune mise sans expérience", e["ouverts"] == [] and e["cash"] == 1000)
     n_obs = len(e["observations"])
 

@@ -198,6 +198,10 @@ def preselection(e, site, marches):
     t = maintenant()
     deja = {(x["site"], x["id"]) for x in e["ouverts"] + e["observations"]}
     deja |= {(x["site"], x["id"]) for x in e["obs_resolues"][-20000:] + e["resolus"][-5000:]}
+    na = e.setdefault("non_achetables", {})
+    for k in [k for k, fin in na.items() if (date_iso(fin) or t) < t]:
+        del na[k]                                   # nettoyage : marchés terminés
+    deja |= {tuple(k.split("|", 1)) for k in na}
     out = []
     for m in marches:
         if (site.nom, m["id"]) in deja or not m.get("fin") or not (t < m["fin"] <= t + timedelta(days=CFG["jours_max"])):
@@ -205,7 +209,8 @@ def preselection(e, site, marches):
         for idx, prix in enumerate(m["cotes"]):
             if CFG["seuil"] < prix < 1.0:
                 out.append({**m, "idx": idx, "prix_liste": prix})
-    out.sort(key=lambda m: m["fin"])           # les plus proches de la fin : résultats plus vite
+    # les plus proches de la fin d'abord (résultats plus vite) ; les cotes >= 99,9 % en dernier (souvent déjà jouées)
+    out.sort(key=lambda m: (m["prix_liste"] >= 0.999, m["fin"]))
     choisis, par_cat = [], {}
     for m in out:                              # variété : quelques-uns par catégorie
         if par_cat.get(m["cat"], 0) < CFG["max_par_categorie"]:
@@ -244,9 +249,14 @@ def traiter(e, site, m, v):
     obs = {"site": site.nom, "id": m["id"], "slug": m.get("slug", ""), "question": m["question"],
            "cote": m["issues"][m["idx"]], "idx": m["idx"], "prix": round(v["cote"], 4), "cat": m["cat"],
            "fin": m["fin"].isoformat(), "date": maintenant().isoformat(timespec="minutes")}
-    e["observations"].append(obs)
     prix = v["achat"]
-    if not site.argent_reel or prix is None or not 0 < prix < 1:
+    if prix is None or not 0 < prix < 1:
+        # personne ne vend ce côté (souvent un match déjà joué) : on ne l'apprend pas, ça fausserait tout
+        e.setdefault("non_achetables", {})[f"{site.nom}|{m['id']}"] = m["fin"].isoformat()
+        log(e, f"[{site.nom}] ignoré (pas achetable, souvent déjà joué) : {m['question'][:60]}")
+        return
+    e["observations"].append(obs)
+    if not site.argent_reel:
         return
     p, n_exp = proba_estimee(e, site.nom, m["cat"], prix)
     frais = site.frais(prix)

@@ -6,72 +6,12 @@
  "observations": [
   {
    "site": "polymarket",
-   "id": "5429096",
-   "slug": "cs2-the9-ta2-2026-10-09",
-   "question": "Counter-Strike: The Huns Esports vs The Audacity (BO3) - MESA Pro Series Playoffs",
-   "cote": "The Huns Esports",
-   "idx": 0,
-   "prix": 0.9995,
-   "cat": "esport",
-   "fin": "2026-10-09T10:00:00+00:00",
-   "date": "2026-10-09T06:24+00:00"
-  },
-  {
-   "site": "polymarket",
-   "id": "5397716",
-   "slug": "highest-temperature-in-wellington-on-october-9-2026-18c",
-   "question": "Will the highest temperature in Wellington be 18°C on October 9?",
-   "cote": "No",
-   "idx": 1,
-   "prix": 0.9995,
-   "cat": "météo",
-   "fin": "2026-10-09T12:00:00+00:00",
-   "date": "2026-10-09T06:24+00:00"
-  },
-  {
-   "site": "polymarket",
    "id": "5397825",
    "slug": "highest-temperature-in-warsaw-on-october-9-2026-17c",
    "question": "Will the highest temperature in Warsaw be 17°C on October 9?",
    "cote": "Yes",
    "idx": 0,
    "prix": 0.994,
-   "cat": "météo",
-   "fin": "2026-10-09T12:00:00+00:00",
-   "date": "2026-10-09T06:24+00:00"
-  },
-  {
-   "site": "polymarket",
-   "id": "5397715",
-   "slug": "highest-temperature-in-wellington-on-october-9-2026-17c",
-   "question": "Will the highest temperature in Wellington be 17°C on October 9?",
-   "cote": "No",
-   "idx": 1,
-   "prix": 0.9995,
-   "cat": "météo",
-   "fin": "2026-10-09T12:00:00+00:00",
-   "date": "2026-10-09T06:24+00:00"
-  },
-  {
-   "site": "polymarket",
-   "id": "5397693",
-   "slug": "highest-temperature-in-seoul-on-october-9-2026-22c",
-   "question": "Will the highest temperature in Seoul (Incheon) be 22°C on October 9?",
-   "cote": "No",
-   "idx": 1,
-   "prix": 0.9995,
-   "cat": "météo",
-   "fin": "2026-10-09T12:00:00+00:00",
-   "date": "2026-10-09T06:24+00:00"
-  },
-  {
-   "site": "polymarket",
-   "id": "5397771",
-   "slug": "highest-temperature-in-hong-kong-on-october-9-2026-29c",
-   "question": "Will the highest temperature in Hong Kong be 29°C on October 9?",
-   "cote": "No",
-   "idx": 1,
-   "prix": 0.9995,
    "cat": "météo",
    "fin": "2026-10-09T12:00:00+00:00",
    "date": "2026-10-09T06:24+00:00"
@@ -90,42 +30,6 @@
   },
   {
    "site": "polymarket",
-   "id": "5397823",
-   "slug": "highest-temperature-in-warsaw-on-october-9-2026-15c",
-   "question": "Will the highest temperature in Warsaw be 15°C on October 9?",
-   "cote": "No",
-   "idx": 1,
-   "prix": 0.9995,
-   "cat": "météo",
-   "fin": "2026-10-09T12:00:00+00:00",
-   "date": "2026-10-09T06:24+00:00"
-  },
-  {
-   "site": "polymarket",
-   "id": "5397718",
-   "slug": "highest-temperature-in-wellington-on-october-9-2026-20c",
-   "question": "Will the highest temperature in Wellington be 20°C on October 9?",
-   "cote": "No",
-   "idx": 1,
-   "prix": 0.9995,
-   "cat": "météo",
-   "fin": "2026-10-09T12:00:00+00:00",
-   "date": "2026-10-09T06:24+00:00"
-  },
-  {
-   "site": "polymarket",
-   "id": "5397824",
-   "slug": "highest-temperature-in-warsaw-on-october-9-2026-16c",
-   "question": "Will the highest temperature in Warsaw be 16°C on October 9?",
-   "cote": "No",
-   "idx": 1,
-   "prix": 0.9995,
-   "cat": "météo",
-   "fin": "2026-10-09T12:00:00+00:00",
-   "date": "2026-10-09T06:24+00:00"
-  },
-  {
-   "site": "polymarket",
    "id": "5397826",
    "slug": "highest-temperature-in-warsaw-on-october-9-2026-18c",
    "question": "Will the highest temperature in Warsaw be 18°C on October 9?",
@@ -135,90 +39,6 @@
    "cat": "météo",
    "fin": "2026-10-09T12:00:00+00:00",
    "date": "2026-10-09T06:24+00:00"
-  },
-  {
-   "site": "polymarket",
-   "id": "5397692",
-   "slug": "highest-temperature-in-seoul-on-october-9-2026-21c",
-   "question": "Will the highest temperature in Seoul (Incheon) be 21°C on October 9?",
-   "cote": "No",
-   "idx": 1,
-   "prix": 0.9995,
-   "cat": "météo",
-   "fin": "2026-10-09T12:00:00+00:00",
-   "date": "2026-10-09T06:25+00:00"
-  },
-  {
-   "site": "polymarket",
-   "id": "5397821",
-   "slug": "highest-temperature-in-warsaw-on-october-9-2026-13corbelow",
-   "question": "Will the highest temperature in Warsaw be 13°C or below on October 9?",
-   "cote": "No",
-   "idx": 1,
-   "prix": 0.9995,
-   "cat": "météo",
-   "fin": "2026-10-09T12:00:00+00:00",
-   "date": "2026-10-09T06:25+00:00"
-  },
-  {
-   "site": "polymarket",
-   "id": "5397719",
-   "slug": "highest-temperature-in-wellington-on-october-9-2026-21c",
-   "question": "Will the highest temperature in Wellington be 21°C on October 9?",
-   "cote": "No",
-   "idx": 1,
-   "prix": 0.9995,
-   "cat": "météo",
-   "fin": "2026-10-09T12:00:00+00:00",
-   "date": "2026-10-09T06:25+00:00"
-  },
-  {
-   "site": "polymarket",
-   "id": "5397866",
-   "slug": "highest-temperature-in-beijing-on-october-9-2026-24c",
-   "question": "Will the highest temperature in Beijing be 24°C on October 9?",
-   "cote": "No",
-   "idx": 1,
-   "prix": 0.9995,
-   "cat": "météo",
-   "fin": "2026-10-09T12:00:00+00:00",
-   "date": "2026-10-09T06:25+00:00"
-  },
-  {
-   "site": "polymarket",
-   "id": "5397781",
-   "slug": "highest-temperature-in-shanghai-on-october-9-2026-24c",
-   "question": "Will the highest temperature in Shanghai be 24°C on October 9?",
-   "cote": "No",
-   "idx": 1,
-   "prix": 0.9995,
-   "cat": "météo",
-   "fin": "2026-10-09T12:00:00+00:00",
-   "date": "2026-10-09T06:25+00:00"
-  },
-  {
-   "site": "polymarket",
-   "id": "5397887",
-   "slug": "highest-temperature-in-chengdu-on-october-9-2026-21c",
-   "question": "Will the highest temperature in Chengdu be 21°C on October 9?",
-   "cote": "No",
-   "idx": 1,
-   "prix": 0.9995,
-   "cat": "météo",
-   "fin": "2026-10-09T12:00:00+00:00",
-   "date": "2026-10-09T06:25+00:00"
-  },
-  {
-   "site": "polymarket",
-   "id": "5396647",
-   "slug": "lowest-temperature-in-shanghai-on-october-9-2026-19c",
-   "question": "Will the lowest temperature in Shanghai be 19°C on October 9?",
-   "cote": "No",
-   "idx": 1,
-   "prix": 0.999,
-   "cat": "météo",
-   "fin": "2026-10-09T12:00:00+00:00",
-   "date": "2026-10-09T06:25+00:00"
   },
   {
    "site": "polymarket",
@@ -579,6 +399,10 @@
   {
    "quand": "2026-10-09T06:26+00:00",
    "texte": "[kalshi] rejet (seulement 0/6 lectures) : Jay Friend wins — Jay Friend"
+  },
+  {
+   "quand": "2026-10-09T06:29+00:00",
+   "texte": "Nettoyage : 15 observations à 99,9 % et plus retirées (marchés probablement déjà joués, ils fausseraient l'apprentissage)."
   }
  ],
  "passages": 1,
@@ -611,5 +435,22 @@
  "dernier_passage": {
   "debut": "2026-10-09T06:24+00:00",
   "duree_s": 183
+ },
+ "non_achetables": {
+  "polymarket|5429096": "2026-10-09T10:00:00+00:00",
+  "polymarket|5397716": "2026-10-09T12:00:00+00:00",
+  "polymarket|5397715": "2026-10-09T12:00:00+00:00",
+  "polymarket|5397693": "2026-10-09T12:00:00+00:00",
+  "polymarket|5397771": "2026-10-09T12:00:00+00:00",
+  "polymarket|5397823": "2026-10-09T12:00:00+00:00",
+  "polymarket|5397718": "2026-10-09T12:00:00+00:00",
+  "polymarket|5397824": "2026-10-09T12:00:00+00:00",
+  "polymarket|5397692": "2026-10-09T12:00:00+00:00",
+  "polymarket|5397821": "2026-10-09T12:00:00+00:00",
+  "polymarket|5397719": "2026-10-09T12:00:00+00:00",
+  "polymarket|5397866": "2026-10-09T12:00:00+00:00",
+  "polymarket|5397781": "2026-10-09T12:00:00+00:00",
+  "polymarket|5397887": "2026-10-09T12:00:00+00:00",
+  "polymarket|5396647": "2026-10-09T12:00:00+00:00"
  }
 }
