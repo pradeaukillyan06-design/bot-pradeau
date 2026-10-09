@@ -36,7 +36,8 @@ CFG = {
     "ecart_lectures_max": 0.005,
     "pause_lectures_s": 0.5,
     "jours_max": 21,
-    "verifs_max_par_site": 20,      # nouvelles cotes vérifiées par site et par passage
+    "verifs_max_par_site": 30,      # nouvelles cotes vérifiées par site et par passage
+    "max_par_categorie": 5,         # variété : pas plus de 5 nouvelles cotes d'une même catégorie par passage
     "resolutions_max": 60,
     "force_prior": 30,
     "fraction_kelly": 0.25,
@@ -205,7 +206,12 @@ def preselection(e, site, marches):
             if CFG["seuil"] < prix < 1.0:
                 out.append({**m, "idx": idx, "prix_liste": prix})
     out.sort(key=lambda m: m["fin"])           # les plus proches de la fin : résultats plus vite
-    return out[:CFG["verifs_max_par_site"]]
+    choisis, par_cat = [], {}
+    for m in out:                              # variété : quelques-uns par catégorie
+        if par_cat.get(m["cat"], 0) < CFG["max_par_categorie"]:
+            par_cat[m["cat"]] = par_cat.get(m["cat"], 0) + 1
+            choisis.append(m)
+    return choisis[:CFG["verifs_max_par_site"]]
 
 
 def verifier(site, m):
