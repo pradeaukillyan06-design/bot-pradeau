@@ -166,3 +166,187 @@ class Okx:
         if lectures[0] != lectures[1]:
             return {"fini": False, "contradiction": True}
         return lectures[0]
+
+
+def _annees(ech):
+    return (ech - maintenant()).total_seconds() / (365.25 * 86400)
+
+
+class DeltaInde:
+    """Delta Exchange India (Inde) : options bitcoin et ether, réglées chaque jour à 12 h UTC."""
+    nom = "delta_inde"
+    argent_reel = False
+    BASE = "https://api.india.delta.exchange/v2"
+    ACTIFS = ["BTC", "ETH"]
+
+    def frais(self, prix):
+        return 0.0
+
+    @staticmethod
+    def _decoupe(sym):
+        # C-BTC-99000-271126 -> BTC, 99000, 27/11/2026 12:00 UTC
+        sens, actif, strike, jour = sym.split("-")
+        ech = datetime(2000 + int(jour[4:6]), int(jour[2:4]), int(jour[:2]), 12, tzinfo=timezone.utc)
+        return sens, actif, float(strike), ech
+
+    def _depuis_ticker(self, r):
+        try:
+            sens, actif, strike, ech = self._decoupe(r.get("symbol", ""))
+        except (ValueError, IndexError):
+            return None
+        if sens != "C" or _annees(ech) < 2 / (365.25 * 24):
+            return None
+        spot = nombre(r.get("spot_price")) or nombre((r.get("greeks") or {}).get("spot"))
+        vol = nombre(r.get("mark_vol")) or nombre((r.get("quotes") or {}).get("mark_iv"))
+        c = _marche(self.nom, r["symbol"], actif, strike, ech, proba_au_dessus(spot, strike, vol, _annees(ech)))
+        if c:
+            c["question"] = c["question"].replace("8 h UTC", "12 h UTC")
+        return c
+
+    def candidats(self, jours_max):
+        out = []
+        for a in self.ACTIFS:
+            r = lire_json(f"{self.BASE}/tickers?contract_types=call_options&underlying_asset_symbols={a}")
+            for t in r.get("result") or []:
+                c = self._depuis_ticker(t)
+                if c and (nombre(t.get("oi")) or 0) > 0:
+                    out.append(c)
+        return out
+
+    def adresses(self, marche):
+        return [f"{self.BASE}/tickers/{marche['id']}"] * 6
+
+    def lire(self, url):
+        c = self._depuis_ticker(lire_json(url).get("result") or {})
+        if not c:
+            return None
+        return {"id": c["id"], "cotes": c["cotes"], "achat": c["achat"], "ferme": c["fin"] <= maintenant()}
+
+    def resultat(self, marche):
+        _, _, strike, _ = self._decoupe(marche["id"])
+        lectures = []
+        for _ in range(2):
+            p = lire_json(f"{self.BASE}/products/{marche['id']}").get("result") or {}
+            prix = nombre((p.get("product_specs") or {}).get("settlement_index_price")) if p.get("state") == "expired" else None
+            lectures.append(_resultat_prix(prix, strike))
+        if lectures[0] != lectures[1]:
+            return {"fini": False, "contradiction": True}
+        return lectures[0]
+
+
+class Gate:
+    """Gate (bourse crypto internationale) : options bitcoin et ether."""
+    nom = "gate"
+    argent_reel = False
+    BASE = "https://api.gateio.ws/api/v4/options"
+    ACTIFS = ["BTC_USDT", "ETH_USDT"]
+
+    def frais(self, prix):
+        return 0.0
+
+    def _depuis_ticker(self, r):
+        nom = r.get("name", "")
+        try:
+            uly, jour, strike, sens = nom.split("-")
+            strike = float(strike)
+        except ValueError:
+            return None
+        ech = datetime.fromtimestamp(int(r.get("expiration_time") or 0), tz=timezone.utc) if r.get("expiration_time") \
+            else datetime(int(jour[:4]), int(jour[4:6]), int(jour[6:8]), 8, tzinfo=timezone.utc)
+        if sens != "C" or _annees(ech) < 2 / (365.25 * 24):
+            return None
+        p = proba_au_dessus(nombre(r.get("underlying_price")), strike, nombre(r.get("mark_iv")), _annees(ech))
+        return _marche(self.nom, nom, uly.split("_")[0], strike, ech, p)
+
+    def candidats(self, jours_max):
+        out = []
+        for u in self.ACTIFS:
+            for t in lire_json(f"{self.BASE}/tickers?underlying={u}") or []:
+                c = self._depuis_ticker(t)
+                if c:
+                    out.append(c)
+        return out
+
+    def adresses(self, marche):
+        return [f"{self.BASE}/tickers?underlying={marche['id'].split('-')[0]}#{marche['id']}"] * 6
+
+    def lire(self, url):
+        base, nom = url.split("#", 1)
+        r = next((t for t in lire_json(base) or [] if t.get("name") == nom), None)
+        c = self._depuis_ticker(r) if r else None
+        if not c:
+            return None
+        return {"id": c["id"], "cotes": c["cotes"], "achat": c["achat"], "ferme": c["fin"] <= maintenant()}
+
+    def resultat(self, marche):
+        uly, _, strike, _ = marche["id"].split("-")
+        lectures = []
+        for _ in range(2):
+            lot = lire_json(f"{self.BASE}/settlements?underlying={uly}&limit=1000") or []
+            prix = next((nombre(s.get("settle_price")) for s in lot if s.get("contract") == marche["id"]), None)
+            lectures.append(_resultat_prix(prix, float(strike)))
+        if lectures[0] != lectures[1]:
+            return {"fini": False, "contradiction": True}
+        return lectures[0]
+
+
+class Aevo:
+    """Aevo (bourse d'options décentralisée, internationale) : options bitcoin et ether."""
+    nom = "aevo"
+    argent_reel = False
+    BASE = "https://api.aevo.xyz"
+    ACTIFS = ["BTC", "ETH"]
+
+    def frais(self, prix):
+        return 0.0
+
+    def _depuis_marche(self, r):
+        nom = r.get("instrument_name", "")
+        if r.get("option_type") != "call" or not r.get("is_active", True):
+            return None
+        try:
+            ech = datetime.fromtimestamp(int(r["expiry"]) / 1e9, tz=timezone.utc)
+            strike = float(r["strike"])
+        except (KeyError, TypeError, ValueError):
+            return None
+        if _annees(ech) < 2 / (365.25 * 24):
+            return None
+        p = proba_au_dessus(nombre(r.get("forward_price")), strike, nombre((r.get("greeks") or {}).get("iv")),
+                            _annees(ech))
+        return _marche(self.nom, nom, r.get("underlying_asset", nom.split("-")[0]), strike, ech, p)
+
+    def candidats(self, jours_max):
+        out = []
+        for a in self.ACTIFS:
+            for r in lire_json(f"{self.BASE}/markets?asset={a}&instrument_type=OPTION") or []:
+                c = self._depuis_marche(r)
+                if c:
+                    out.append(c)
+        return out
+
+    def adresses(self, marche):
+        return [f"{self.BASE}/markets?asset={marche['id'].split('-')[0]}&instrument_type=OPTION#{marche['id']}"] * 6
+
+    def lire(self, url):
+        base, nom = url.split("#", 1)
+        r = next((m for m in lire_json(base) or [] if m.get("instrument_name") == nom), None)
+        c = self._depuis_marche(r) if r else None
+        if not c:
+            return None
+        return {"id": c["id"], "cotes": c["cotes"], "achat": c["achat"], "ferme": c["fin"] <= maintenant()}
+
+    def resultat(self, marche):
+        actif, jour, strike = marche["slug"].split("|")
+        lectures = []
+        for _ in range(2):
+            prix = None
+            for s in lire_json(f"{self.BASE}/settlement-history?asset={actif}&limit=50") or []:
+                try:
+                    if datetime.fromtimestamp(int(s["expiry"]) / 1e9, tz=timezone.utc).strftime("%Y-%m-%d") == jour:
+                        prix = nombre(s.get("settlement_price"))
+                except (KeyError, TypeError, ValueError):
+                    continue
+            lectures.append(_resultat_prix(prix, float(strike)))
+        if lectures[0] != lectures[1]:
+            return {"fini": False, "contradiction": True}
+        return lectures[0]

@@ -94,7 +94,15 @@ OPT = {"deribit": [{"instrument_name": f"{DER}-78000-C", "underlying_price": 820
                    {"instrument_name": f"{DER}-82000-C", "underlying_price": 82000, "mark_iv": 30, "open_interest": 5}],
        "okx": [{"instId": f"{OKX}-78000-C", "fwdPx": "82000", "markVol": "0.30"},
                {"instId": f"{OKX}-78000-P", "fwdPx": "82000", "markVol": "0.30"}],
-       "livraison": None, "exercice": None}
+       "livraison": None, "exercice": None, "fini": False}
+ECH12 = ECH.replace(hour=12)
+DEL = f"C-BTC-78000-{ECH12:%d%m%y}"
+GAT = f"BTC_USDT-{ECH:%Y%m%d}-78000-C"
+AEV = f"{DER}-78000-C"
+TICK_DEL = {"symbol": DEL, "spot_price": "82000", "mark_vol": "0.30", "oi": "1"}
+TICK_GAT = {"name": GAT, "underlying_price": "82000", "mark_iv": "0.30", "expiration_time": int(ECH.timestamp())}
+MAR_AEV = {"instrument_name": AEV, "option_type": "call", "is_active": True, "expiry": str(int(ECH.timestamp()) * 10**9),
+           "strike": "78000", "forward_price": "82000", "greeks": {"iv": "0.30"}, "underlying_asset": "BTC"}
 AZ_MATCH = {"gameId": "G1", "title": "Lyon - Rodez", "startsAt": str(int((T0 + timedelta(days=1)).timestamp())),
             "sport": {"slug": "football"}, "country": {"name": "France"}, "league": {"name": "Coupe de France"},
             "turnover": "10"}
@@ -137,6 +145,24 @@ def faux_internet(url, *a, **k):
             return {"result": [r for r in OPT["deribit"] if r["instrument_name"] == nom]}
         if "get_delivery_prices" in url:
             return {"result": {"data": [OPT["livraison"]] if OPT["livraison"] else []}}
+    if "delta.exchange" in url:
+        if "/tickers?" in url:
+            return {"result": [TICK_DEL] if "symbols=BTC" in url else []}
+        if url.endswith(f"/tickers/{DEL}"):
+            return {"result": TICK_DEL}
+        if url.endswith(f"/products/{DEL}"):
+            return {"result": {"state": "expired", "product_specs": {"settlement_index_price": "81000"}}
+                    if OPT["fini"] else {"state": "live"}}
+    if "gateio.ws" in url:
+        if "/tickers?" in url:
+            return [TICK_GAT] if "BTC_USDT" in url else []
+        if "/settlements?" in url:
+            return [{"contract": GAT, "settle_price": "81000"}] if OPT["fini"] else []
+    if "aevo.xyz" in url:
+        if "/markets?" in url:
+            return [MAR_AEV] if "asset=BTC" in url else []
+        if "settlement-history" in url:
+            return [{"expiry": MAR_AEV["expiry"], "settlement_price": "77000"}] if OPT["fini"] else []
     if "okx.com" in url:
         if "opt-summary" in url:
             return {"data": OPT["okx"] if "uly=BTC-USD" in url else []}
@@ -191,7 +217,7 @@ def faux_internet(url, *a, **k):
     raise AssertionError("adresse inattendue " + url)
 
 
-for mod in (polymarket, kalshi, manifold, limitless, gemini, smarkets, espn, futuur, azuro, options_crypto):
+for mod in (polymarket, kalshi, manifold, limitless, gemini, smarkets, espn, futuur, azuro, options_crypto):  # noqa
     mod.lire_json = faux_internet
 C.CFG["pause_lectures_s"] = 0
 ERREURS = []
@@ -235,6 +261,9 @@ with tempfile.TemporaryDirectory() as d:
     verifier("Deribit : BTC au-dessus de 78 000 $ (≈ 98,7 %) observé", ("deribit", f"{DER}-78000-C") in obs)
     verifier("Deribit : strike au prix actuel (≈ 50 %) ignoré", ("deribit", f"{DER}-82000-C") not in obs)
     verifier("Deribit : options de vente (put) non dédoublées", ("deribit", f"{DER}-78000-P") not in obs)
+    verifier("Delta Exchange (Inde) observé", ("delta_inde", DEL) in obs)
+    verifier("Gate observé", ("gate", GAT) in obs)
+    verifier("Aevo observé", ("aevo", AEV) in obs)
     verifier("OKX : même calcul lu sur une autre bourse", ("okx", f"{OKX}-78000-C") in obs)
     verifier("Smarkets « pas de match nul » à 98 % observé", ("smarkets", "M1:K1") in obs)
     verifier("Smarkets contrat à 50 % ignoré", ("smarkets", "M1:K2") not in obs)
@@ -280,6 +309,7 @@ with tempfile.TemporaryDirectory() as d:
     LI[0].update(status="RESOLVED", winningOutcomeIndex=1)               # le favori Limitless perd
     AZ_COND.update(state="Resolved", wonOutcomeIds=["1"])
     OPT["livraison"] = {"date": f"{ECH:%Y-%m-%d}", "delivery_price": 81000}     # au-dessus de 78 000 : gagné
+    OPT["fini"] = True
     OPT["exercice"] = {"details": [{"insId": f"{OKX}-78000-C", "px": "77000"}]}  # en dessous : perdu
     FU.update(status="resolved", resolution={"id": 1, "title": "Brazil"})
     GE["status"] = "settled"
@@ -300,8 +330,11 @@ with tempfile.TemporaryDirectory() as d:
     verifier("Azuro favori gagnant", o.get(("azuro", "C1"), {}).get("gagne") == 1)
     verifier("Deribit : prix final au-dessus -> gagné", o.get(("deribit", f"{DER}-78000-C"), {}).get("gagne") == 1)
     verifier("OKX : prix final en dessous -> perdu", o.get(("okx", f"{OKX}-78000-C"), {}).get("gagne") == 0)
+    verifier("Delta : réglé à 81 000 -> gagné", o.get(("delta_inde", DEL), {}).get("gagne") == 1)
+    verifier("Gate : réglé à 81 000 -> gagné", o.get(("gate", GAT), {}).get("gagne") == 1)
+    verifier("Aevo : réglé à 77 000 -> perdu", o.get(("aevo", AEV), {}).get("gagne") == 0)
     verifier("jamais de mise sur les options (observation seulement)",
-             not any(x["site"] in ("deribit", "okx") for x in e["resolus"]))
+             not any(x["site"] in ("deribit", "okx", "delta_inde", "gate", "aevo") for x in e["resolus"]))
     verifier("Futuur favori gagnant", o.get(("futuur", "900"), {}).get("gagne") == 1)
     verifier("jamais de mise sur Futuur (monnaie de jeu)", not any(x["site"] == "futuur" for x in e["resolus"]))
     verifier("Gemini favori gagnant", o.get(("gemini", "GEMI-BTC-HI1"), {}).get("gagne") == 1)
