@@ -114,6 +114,8 @@ SX_CARNET = {"outcomeOne": [{"percentageOdds": "97500000000000000000"}],
 PUS = {"slug": "aec-nba-bos-was", "question": "Boston vs. Washington", "endDate": FIN, "closed": False,
        "marketSides": [{"description": "Celtics", "price": "0.9800", "team": {"league": "nba"}},
                        {"description": "Wizards", "price": "0.0200", "team": {"league": "nba"}}]}
+PUS_NOBEL = {"slug": "nobel-x", "question": "Nobel X ?", "endDate": FIN, "closed": False,
+             "marketSides": [{"description": "Yes", "price": "0.0100"}, {"description": "No", "price": None}]}
 PUS_CARNET = {"marketSlug": "aec-nba-bos-was", "state": "MARKET_STATE_OPEN",
               "bids": [{"px": {"value": "0.9790"}}], "offers": [{"px": {"value": "0.9810"}}],
               "stats": {"settlementPx": {"value": "0.9800"}}}
@@ -166,7 +168,10 @@ def faux_internet(url, *a, **k):
             return {"result": {"data": [OPT["livraison"]] if OPT["livraison"] else []}}
     if "gateway.polymarket.us" in url:
         if "/markets?" in url:
-            return {"markets": [PUS] if "offset=0" in url else []}
+            return {"markets": [PUS, PUS_NOBEL] if "offset=0" in url else []}
+        if url.endswith("/nobel-x/book"):
+            return {"marketData": {"marketSlug": "nobel-x", "state": "MARKET_STATE_OPEN", "bids": [],
+                                   "offers": [{"px": {"value": "0.0100"}}]}}
         if url.endswith("/aec-nba-bos-was/book"):
             return {"marketData": PUS_CARNET}
     if "api.sx.bet" in url:
@@ -328,6 +333,8 @@ with tempfile.TemporaryDirectory() as d:
     verifier("Thalex observé", ("thalex", THA) in obs)
     verifier("CBOE : SPY au-dessus de 755 $ observé", ("cboe", SPY) in obs)
     verifier("Polymarket US : favori à 98 % relu dans le carnet, observé", ("polymarket_us", "aec-nba-bos-was") in obs)
+    verifier("Polymarket US : « Non » sans vendeur -> mis de côté, pas observé",
+             ("polymarket_us", "nobel-x") not in obs and "polymarket_us|nobel-x" in e["non_achetables"])
     verifier("Delta international observé aussi", ("delta_monde", DEL) in obs)
     verifier("SX Bet : prix d'achat tiré des ordres d'en face, observé", ("sxbet", "0xabc") in obs)
     verifier("Derive observé", ("derive", DRV) in obs)

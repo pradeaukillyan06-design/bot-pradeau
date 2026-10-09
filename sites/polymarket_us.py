@@ -52,8 +52,14 @@ class PolymarketUs:
         d = (lire_json(url) or {}).get("marketData") or {}
         bids = [x for x in (_px(b) for b in d.get("bids") or []) if x and 0 < x < 1]
         offres = [x for x in (_px(o) for o in d.get("offers") or []) if x and 0 < x < 1]
-        if not bids or not offres:
+        if not bids and not offres:
             return None
+        if not bids or not offres:
+            # un seul côté du carnet : le prix se lit, mais l'autre issue n'a personne en face (pas achetable)
+            oui = min(offres) if offres else max(bids)
+            achat = [min(offres), None] if offres else [None, round(1 - max(bids), 4)]
+            return {"id": d.get("marketSlug"), "cotes": [round(oui, 4), round(1 - oui, 4)], "achat": achat,
+                    "ferme": d.get("state") != "MARKET_STATE_OPEN"}
         bid, offre = max(bids), min(offres)
         if bid > offre:
             return None
