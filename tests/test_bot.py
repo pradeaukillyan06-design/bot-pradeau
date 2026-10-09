@@ -1,7 +1,6 @@
 """Tests du programme chef avec un faux Internet (données au format réel de chaque site).
 Lancer : python tests/test_bot.py"""
 import copy
-import json
 import sys
 import tempfile
 from datetime import timedelta
@@ -11,7 +10,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 import cerveau as C                      # noqa: E402
 import sites.commun as SC                # noqa: E402
-from sites import kalshi, manifold, polymarket  # noqa: E402
+from sites import kalshi, limitless, manifold, polymarket  # noqa: E402
 
 T0 = SC.maintenant()
 FIN = (T0 + timedelta(days=2)).strftime("%Y-%m-%dT%H:%M:%SZ")
@@ -54,6 +53,12 @@ HIST_PM = [{"id": "h1", "slug": "nba-x", "question": "NBA: X vs Y", "outcomes": 
             "clobTokenIds": '["333", "444"]', "closed": True}]
 HIST_MA = [{"id": "r1", "slug": "will-z", "question": "Will Z happen?", "resolution": "NO", "closeTime": FIN_MS,
             "resolutionTime": FIN_MS, "uniqueBettorCount": 50, "outcomeType": "BINARY"}]
+LI = [{"slug": "sol-hourly-1", "title": "Solana Up or Down Hourly", "marketType": "single", "status": "FUNDED",
+       "prices": [0.985, 0.015], "tradePrices": {"buy": {"market": [0.987, 0.02]}}, "expirationTimestamp": FIN_MS,
+       "categories": ["Hourly"], "volumeFormatted": "1910.5", "expired": False},
+      {"slug": "btc-5min-2", "title": "BTC Up or Down - 5 Min", "marketType": "single", "status": "FUNDED",
+       "prices": [0.98, 0.02], "tradePrices": {"buy": {"market": [0.99, 0.30]}}, "expirationTimestamp": FIN_MS,
+       "categories": ["Minutely"], "volumeFormatted": "0", "expired": False}]
 ETAT_SITE = {"pm": copy.deepcopy(PM), "ka": copy.deepcopy(KA), "ma": copy.deepcopy(MA), "discord": set()}
 
 
@@ -65,6 +70,10 @@ def faux_internet(url, *a, **k):
         return {"history": [{"t": fin_obs - 7200, "p": p}, {"t": fin_obs + 3600, "p": 0.999}]}
     if "gamma-api.polymarket.com" in url and "closed=true&limit=" in url and "order=" in url:
         return HIST_PM if "offset=0" in url else []
+    if "limitless.exchange" in url:
+        if "/markets/active" in url:
+            return {"data": LI} if "page=1&" in url else {"data": []}
+        return next((m for m in LI if url.endswith(m["slug"])), {})
     if "manifold.markets" in url and "filter=resolved" in url:
         return HIST_MA if "offset=0" in url else []
     if "manifold.markets" in url and "/bets?" in url:
@@ -91,7 +100,7 @@ def faux_internet(url, *a, **k):
     raise AssertionError("adresse inattendue " + url)
 
 
-for mod in (polymarket, kalshi, manifold):
+for mod in (polymarket, kalshi, manifold, limitless):
     mod.lire_json = faux_internet
 C.CFG["pause_lectures_s"] = 0
 ERREURS = []
@@ -125,6 +134,8 @@ with tempfile.TemporaryDirectory() as d:
     verifier("historique : pas de favori > 97 % -> rien noté", not any(k[1] == "h2" for k in hist))
     verifier("historique Manifold : Non à 98 % la veille, gagnant", hist.get(("manifold", "r1", 1), {}).get("gagne") == 1)
     verifier("historique : cote lue AVANT la fin, pas après", hist.get(("polymarket", "h1", 0), {}).get("prix") == 0.985)
+    verifier("Limitless lu et observé", ("limitless", "sol-hourly-1") in obs)
+    verifier("Limitless écart achat/vente énorme -> pas achetable", ("limitless", "btc-5min-2") not in obs)
     verifier("aucune mise sans expérience", e["ouverts"] == [] and e["cash"] == 1000)
     n_obs = len(e["observations"])
 
@@ -159,6 +170,7 @@ with tempfile.TemporaryDirectory() as d:
     k2 = next(m for m in ETAT_SITE["ka"]["markets"] if m["ticker"] == "KXNBA-2")
     k2.update(status="settled", result="yes")                      # le favori (Non) perd
     ETAT_SITE["ma"][0].update(isResolved=True, resolution="MKT", resolutionProbability=0.6)
+    LI[0].update(status="RESOLVED", winningOutcomeIndex=1)               # le favori Limitless perd
     mise_pm = pari[0]["mise"]
     cash_avant = e["cash"]
     C.passage()
@@ -169,6 +181,7 @@ with tempfile.TemporaryDirectory() as d:
              and abs(e["cash"] - (cash_avant + mise_pm / pari[0]["prix"])) < 0.02)
     verifier("Kalshi annulé exclu de l'apprentissage", ("kalshi", "KXBTC-1") not in o)
     verifier("Kalshi favori perdant enregistré", ("kalshi", "KXNBA-2") in o and o[("kalshi", "KXNBA-2")]["gagne"] == 0)
+    verifier("Limitless favori perdant enregistré", o.get(("limitless", "sol-hourly-1"), {}).get("gagne") == 0)
     verifier("Manifold résolution partielle exclue", ("manifold", "m1") not in o)
     verifier("plus rien en attente", e["observations"] == [] and e["ouverts"] == [])
     verifier("apprentissage Kalshi mis à jour", e["apprentissage"].get("kalshi|cat:sport US", {}).get("n") == 1)
