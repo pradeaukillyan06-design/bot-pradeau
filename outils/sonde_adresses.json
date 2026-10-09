@@ -1,26 +1,26 @@
 [
  {
-  "url": "https://api.sofascore.com/api/v1/sport/football/scheduled-events/2026-10-10",
-  "taille": 1500
+  "url": "https://gateway.polymarket.us/v1/markets?limit=2",
+  "taille": 20000
  },
  {
-  "url": "https://www.sofascore.com/api/v1/sport/football/scheduled-events/2026-10-10",
-  "taille": 1500
+  "url": "https://gateway.polymarket.us/v1/markets?active=true&closed=false&limit=2",
+  "taille": 20000
  },
  {
-  "url": "https://api.sofascore.com/api/v1/sport/football/odds/1/2026-10-10",
-  "taille": 1500
+  "url": "https://gateway.polymarket.us/v1/markets/1",
+  "taille": 6000
  },
  {
-  "url": "https://gateway.polymarket.us/v1/markets",
-  "taille": 800
+  "url": "https://gateway.polymarket.us/v1/markets/slug/aec-nfl-lac-ten-2025-11-02",
+  "taille": 6000
  },
  {
-  "url": "https://api.polymarket.us/v1/markets",
-  "taille": 800
+  "url": "https://gateway.polymarket.us/v1/markets/aec-nfl-lac-ten-2025-11-02/book",
+  "taille": 3000
  },
  {
-  "url": "https://www.fotmob.com/api/matches?date=20261010",
-  "taille": 800
+  "url": "https://gateway.polymarket.us/v1/events?limit=1&active=true",
+  "taille": 6000
  }
 ]
