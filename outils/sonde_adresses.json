@@ -1,32 +1,8 @@
 [
  {
-  "url": "https://info.cld.hkjc.com/graphql/base/",
-  "corps": {
-   "query": "query matchList($fbOddsTypes: [FBOddsType]!, $fbOddsTypesM: [FBOddsType]!, $startIndex: Int, $endIndex: Int) { matches(fbOddsTypes: $fbOddsTypesM, startIndex: $startIndex, endIndex: $endIndex) { id frontEndId matchDate kickOffTime status homeTeam { name_en } awayTeam { name_en } tournament { name_en } runningResult { homeScore awayScore } foPools(fbOddsTypes: $fbOddsTypes) { id status oddsType lines { lineId status condition combinations { combId str status currentOdds } } } } }",
-   "variables": {
-    "fbOddsTypes": [
-     "HAD"
-    ],
-    "fbOddsTypesM": [
-     "HAD"
-    ],
-    "startIndex": 1,
-    "endIndex": 3
-   }
-  }
+  "url": "https://api.onchainfeed.org/api/v1/public/market-manager/games-by-filters?gameState=Prematch&environment=PolygonUSDT&orderBy=startsAt&orderDirection=asc&page=1&perPage=10",
+  "taille": 20000
  },
- "https://api.beta.tab.com.au/v1/tab-info-service/sports?jurisdiction=NSW",
- "https://api.beta.tab.com.au/v1/historical-results-service/VIC/racing/2026-10-08",
- "https://ero.betfair.com/www/sports/exchange/readonly/v1/bymarket?alt=json&currencyCode=EUR&locale=en&marketIds=1.250000000&types=MARKET_STATE,RUNNER_STATE",
- "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/08102026",
- "https://www.veikkaus.fi/api/sport-open-games/v1/games/EBET/draws",
- "https://www.enligne.parionssport.fdj.fr/lvs-api/next/20?originId=3&lineId=1",
- "https://webapi.sporttery.cn/gateway/jc/football/getMatchCalculatorV1.qry?poolCode=had&channel=c",
- "https://webapi.sporttery.cn/gateway/jc/football/getUniformMatchResultV1.qry?matchPage=1&pcOrWap=1",
- "https://guest.api.arcadia.pinnacle.com/0.1/sports",
- "https://api.ladbrokes.com.au/v2/sport/event-request",
- "https://api.neds.com.au/v2/sport/event-request",
- "https://api.onchainfeed.org/api/v1/public/market-manager/games-by-filters?gameState=Prematch&environment=PolygonUSDT&orderBy=startsAt&orderDirection=asc&page=1&perPage=2",
  {
   "url": "https://api.onchainfeed.org/api/v1/public/market-manager/conditions-by-game-ids",
   "corps": {
@@ -34,18 +10,21 @@
     "1006000000000085745677"
    ],
    "environment": "PolygonUSDT"
-  }
+  },
+  "taille": 6000
  },
+ "https://api.onchainfeed.org/api/v1/public/market-manager/games-by-filters?gameState=Finished&environment=PolygonUSDT&orderBy=startsAt&orderDirection=desc&page=1&perPage=10",
+ "https://api.onchainfeed.org/api/v1/public/market-manager/games-by-filters?gameState=Resolved&environment=PolygonUSDT&orderBy=startsAt&orderDirection=desc&page=1&perPage=10",
  {
-  "url": "https://api.novig.us/v1/graphql",
-  "corps": {
-   "query": "{ __typename }"
-  }
+  "url": "https://www.deribit.com/api/v2/public/get_book_summary_by_currency?currency=BTC&kind=option",
+  "taille": 4000
  },
- "https://www.deribit.com/api/v2/public/get_delivery_prices?index_name=btc_usd&count=2",
- "https://api.betdex.com/events",
- "https://www.sportsbet.com.au/apigw/sportsbook-sports/Sportsbook/Sports/Class/71/Events?displayType=default",
- "https://sports.bwin.com/cds-api/bettingoffer/fixtures?x-bwin-accessid=&lang=en",
- "https://www.unibet.fr/zones/sportnode/markets.json?nodeId=703695152",
- "https://api.prophetx.co/partner/mm/get_sport_events"
+ "https://www.okx.com/api/v5/public/opt-summary?uly=BTC-USD",
+ "https://www.okx.com/api/v5/public/delivery-exercise-history?instType=OPTION&uly=BTC-USD&limit=2",
+ "https://api.bybit.com/v5/market/tickers?category=option&baseCoin=BTC",
+ "https://api.bybit.com/v5/market/delivery-price?category=option&baseCoin=BTC&limit=2",
+ "https://eapi.binance.com/eapi/v1/mark",
+ "https://eapi.binance.com/eapi/v1/exerciseHistory?underlying=BTCUSDT&limit=2",
+ "https://guest.api.arcadia.pinnacle.com/0.1/sports/29/matchups?withSpecials=false&brandId=0",
+ "https://guest.api.arcadia.pinnacle.com/0.1/sports/29/markets/straight?primaryOnly=true&withSpecials=false"
 ]
