@@ -73,7 +73,7 @@ class Azuro:
                 "cotes": [round(min(0.9999, max(0.0001, p - marge / len(outs))), 4) for p in implicites],
                 "achat": [round(p, 4) for p in implicites],
                 "fin": debut + timedelta(hours=4), "debut": debut.isoformat(), "volume": nombre(g.get("turnover")) or 0.0,
-                "cat": SPORTS.get(sport, categorie(g.get("title", ""))), "_ids": [o["outcomeId"] for o in outs]}
+                "cat": SPORTS.get(sport, categorie(g.get("title", ""))), "_ids": [o["outcomeId"] for o in outs], "groupe": g["gameId"]}
 
     def _condition(self, game_id, cond_id):
         r = lire_json(f"{BASE}/conditions-by-game-ids", corps={"gameIds": [game_id], "environment": ENV})

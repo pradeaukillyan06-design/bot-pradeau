@@ -55,7 +55,7 @@ class Kalshi:
         return {"site": self.nom, "id": t, "slug": t.lower(), "question": titre, "issues": ["Oui", "Non"],
                 "cotes": [round(oui, 4), round(1 - oui, 4)], "achat": [ya, na],
                 "fin": date_iso(m.get("close_time")), "volume": nombre(m.get("volume_fp")) or nombre(m.get("volume")) or 0.0,
-                "cat": categorie(titre, t.lower())}
+                "cat": categorie(titre, t.lower()), "groupe": m.get("event_ticker") or None}
 
     def adresses(self, marche):
         return [f"{BASE}/markets/{marche['id']}"] * 6       # même source, relue 6 fois à quelques secondes
@@ -79,8 +79,10 @@ class Kalshi:
                 lectures.append([1.0, 0.0])
             elif res == "no":
                 lectures.append([0.0, 1.0])
+            elif statut in ("settled", "finalized"):
+                lectures.append("rembourse")            # marché réglé sans gagnant : annulé, mise rendue
             else:
-                lectures.append("rembourse")            # marché annulé : mise rendue
+                return {"fini": False}                  # « determined » sans résultat encore publié : on attend
         if lectures[0] != lectures[1]:
             return {"fini": False, "contradiction": True}
         if lectures[0] == "rembourse":

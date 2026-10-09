@@ -26,6 +26,18 @@ def lire_json(url, essais=3, pause=2.0, corps=None):
             req = urllib.request.Request(url, data=donnees, headers=entetes)
             with urllib.request.urlopen(req, timeout=20) as r:
                 return json.loads(r.read().decode("utf-8"))
+        except urllib.error.HTTPError as e:
+            derniere = e
+            if e.code == 429:                    # « trop de lectures » : on attend plus longtemps avant de relire
+                try:
+                    attente = float(e.headers.get("Retry-After") or 0)
+                except ValueError:
+                    attente = 0
+                time.sleep(min(30.0, max(attente, 5.0 * (i + 1))))
+            elif 400 <= e.code < 500:
+                break                            # adresse refusée ou inexistante : inutile d'insister
+            else:
+                time.sleep(pause * (i + 1))
         except (urllib.error.URLError, TimeoutError, json.JSONDecodeError) as e:
             derniere = e
             time.sleep(pause * (i + 1))

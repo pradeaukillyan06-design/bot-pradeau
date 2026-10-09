@@ -28,7 +28,7 @@ def _marche(site, mid, actif, strike, echeance, p):
     return {"site": site, "id": mid, "slug": f"{actif}|{echeance:%Y-%m-%d}|{strike:g}",
             "question": f"{actif} au-dessus de {strike:,.0f} $ le {echeance:%d/%m/%Y} à 8 h UTC ?".replace(",", " "),
             "issues": ["Au-dessus", "En dessous"], "cotes": [p, round(1 - p, 4)], "achat": [p, round(1 - p, 4)],
-            "fin": echeance, "volume": 0.0, "cat": "crypto"}
+            "fin": echeance, "volume": 0.0, "cat": "crypto", "groupe": f"{actif}|{echeance:%Y-%m-%dT%H}"}
 
 
 def _resultat_prix(prix_final, strike):

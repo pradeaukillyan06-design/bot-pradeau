@@ -7,6 +7,13 @@ from .commun import categorie, date_iso, lire_json, maintenant, nombre
 BASE = "https://gamma-api.polymarket.com"
 
 
+def _groupe(m):
+    """Événement auquel appartient le marché (ex. tous les « X gagne le Nobel ? ») : paris liés entre eux."""
+    ev = (m.get("events") or [{}])[0] or {}
+    g = ev.get("id") or m.get("negRiskMarketID") or ""
+    return str(g) or None
+
+
 class Polymarket:
     nom = "polymarket"
     argent_reel = True
@@ -44,7 +51,7 @@ class Polymarket:
         return {"site": self.nom, "id": str(m["id"]), "slug": m.get("slug", ""), "question": m.get("question", ""),
                 "issues": issues, "cotes": prix, "fin": date_iso(m.get("endDate")),
                 "volume": nombre(m.get("volumeNum")) or 0.0,
-                "cat": categorie(m.get("question", ""), m.get("slug", ""))}
+                "cat": categorie(m.get("question", ""), m.get("slug", "")), "groupe": _groupe(m)}
 
     def adresses(self, marche):
         i, s = marche["id"], marche.get("slug", "")
@@ -121,7 +128,8 @@ class Polymarket:
                     if 0.97 < p < 1.0:
                         out.append({"site": self.nom, "id": c["id"], "question": c["question"], "cat": c["cat"],
                                     "idx": idx, "prix": round(p, 4), "gagne": int(c["cotes"][idx] >= 0.99),
-                                    "horizon_h": heures_avant, "fin": fin.isoformat(), "source": "historique"})
+                                    "horizon_h": heures_avant, "fin": fin.isoformat(), "source": "historique",
+                                    **({"groupe": c["groupe"]} if c.get("groupe") else {})})
                 _t.sleep(0.1)
             except Exception:
                 continue

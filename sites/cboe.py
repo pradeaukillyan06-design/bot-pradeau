@@ -48,7 +48,8 @@ class Cboe:
         return {"site": self.nom, "id": o["option"], "slug": f"{racine}|{ech:%Y-%m-%d}|{strike:g}",
                 "question": f"{racine} au-dessus de {strike:g} $ à la clôture du {ech:%d/%m/%Y} ?",
                 "issues": ["Au-dessus", "En dessous"], "cotes": [p, round(1 - p, 4)], "achat": [p, round(1 - p, 4)],
-                "fin": ech, "volume": nombre(o.get("open_interest")) or 0.0, "cat": "bourse US"}
+                "fin": ech, "volume": nombre(o.get("open_interest")) or 0.0, "cat": "bourse US",
+                "groupe": f"{racine}|{ech:%Y-%m-%d}"}
 
     def candidats(self, jours_max):
         out = []

@@ -16,6 +16,7 @@ Règles de Killyan (fixes) : seuil > 97 % ; mise choisie par le bot (Kelly) ; ga
 mise.py (25 % max par pari, 80 % max engagé) ; au moins 5 lectures par cote (ici 6).
 """
 import json
+import math
 import statistics
 import sys
 import time
@@ -29,7 +30,7 @@ from sites.commun import date_iso, maintenant
 ICI = Path(__file__).parent
 ETAT = ICI / "etat" / "etat.json"
 CFG = {
-    "version": "chef-1.7",
+    "version": "chef-1.8",
     "seuil": 0.97,
     "lectures_min": 6,
     "ecart_lectures_max": 0.005,
@@ -44,6 +45,10 @@ CFG = {
     "bankroll": 1000.0,
     "historique_par_site": 250,     # marchés terminés étudiés par site et par passage (expérience immédiate)
     "historique_heures_avant": 24,  # cote regardée 24 h avant la fin
+    "prior_pertes": 3.0,            # prudence : le bot suppose d'abord que le marché a raison (3 pertes « fictives »)
+    "z_prudence": 1.28,             # marge de sécurité sur le taux de pertes (≈ 90 %)
+    "max_par_evenement": 0.10,      # au plus 10 % du capital sur un même événement (ex. tous les « Prix Nobel »)
+    "budget_agent_s": 420,          # temps max d'un agent par passage (le passage doit finir avant 14 min)
 }
 
 
@@ -100,15 +105,19 @@ def cles(site, cat, prix):
 def reapprendre(e):
     app, vus = {}, set()
     for r in e["obs_resolues"] + e["resolus"] + e["historique"]:
-        cle_unique = (r["site"], r["id"])
-        if cle_unique in vus or r.get("annule"):
+        # un même marché, ou plusieurs marchés d'un même événement (ex. les 30 candidats au Nobel),
+        # ne comptent qu'une fois : sinon un seul événement gonfle l'expérience
+        cle_unique = (r["site"], "g:" + r["groupe"]) if r.get("groupe") else (r["site"], r["id"])
+        if cle_unique in vus or (r["site"], r["id"]) in vus or r.get("annule"):
             continue
         vus.add(cle_unique)
-        for k in cles(r["site"], r["cat"], r["prix"]):
+        vus.add((r["site"], r["id"]))
+        prix = r.get("cote_juste", r["prix"])
+        for k in cles(r["site"], r["cat"], prix):
             a = app.setdefault(k, {"n": 0, "gagnes": 0, "somme_prix": 0.0})
             a["n"] += 1
             a["gagnes"] += r["gagne"]
-            a["somme_prix"] += r["prix"]
+            a["somme_prix"] += prix
     for a in app.values():
         a["prix_moy"] = round(a.pop("somme_prix") / a["n"], 5)
         a["taux_reel"] = round(a["gagnes"] / a["n"], 5)
@@ -116,16 +125,26 @@ def reapprendre(e):
 
 
 def proba_estimee(e, site, cat, prix):
-    """Cote du marché, corrigée par ce que le bot a observé sur le même site (catégorie et tranche).
-    Peu d'exemples -> il fait confiance au marché ; beaucoup -> il se fie à son expérience."""
-    k, corr, n_max = CFG["force_prior"], [], 0
+    """Probabilité de gagner = 1 - (risque annoncé par la cote) × (rapport pertes réelles / pertes annoncées).
+    Le rapport part de 1 (le marché a raison) et ne s'en éloigne qu'avec beaucoup d'expérience. On travaille
+    sur le RISQUE (1 - cote) et non sur la cote : une expérience faite à 97-99 % ne peut pas pousser une cote
+    à 99,8 % jusqu'à 100 %. Renvoie (p, p_prudent, n)."""
+    A, z = CFG["prior_pertes"], CFG["z_prudence"]
+    rap, haut, n_max = [], [], 0
     for cle in cles(site, cat, prix):
         a = e["apprentissage"].get(cle)
         if a and a["n"]:
-            corr.append((a["gagnes"] / a["n"] - a["prix_moy"]) * a["n"] / (a["n"] + k))
+            attendues = a["n"] * (1 - a["prix_moy"])
+            pertes = a["n"] - a["gagnes"]
+            rap.append((pertes + A) / (attendues + A))
+            haut.append((pertes + A + z * math.sqrt(pertes + A)) / (attendues + A))
             n_max = max(n_max, a["n"])
-    p = prix + (sum(corr) / len(corr) if corr else 0.0)
-    return max(0.0, min(0.9999, p)), n_max
+    if not rap:
+        rap, haut = [1.0], [1 + z / math.sqrt(A)]
+    r, r_haut = sum(rap) / len(rap), sum(haut) / len(haut)
+    p = 1 - (1 - prix) * r
+    p_pru = 1 - (1 - prix) * r_haut
+    return max(0.0, min(0.9999, p)), max(0.0, min(0.9999, p_pru)), n_max
 
 
 def ajuster_risque(e):
@@ -212,6 +231,17 @@ def migrer(e):
         log(e, f"Historique refait avec une cote prise avant la fin PRÉVUE ({avant - len(e['historique'])} anciens "
                f"cas retirés) ; observations sous 97 % retirées")
         faites.append("historique_v2")
+    if "paris_modele_v2" not in faites:
+        # les paris ouverts avant chef-1.8 ont été dimensionnés avec un modèle trop sûr de lui (proba 99,99 %
+        # sur des cotes à 99,8 %, historique biaisé) : annulés et mises rendues, leurs résultats restent appris
+        for o in list(e["ouverts"]):
+            e["ouverts"].remove(o)
+            e["cash"] += o["mise"]
+            e["resolus"].append({**o, "gagne": 0, "gain": 0.0, "annule": True, "raison": "ancien modèle",
+                                 "resolu_le": maintenant().isoformat(timespec="minutes")})
+            log(e, f"[FICTIF][{o['site']}] pari annulé (ancien modèle trop sûr de lui), mise rendue "
+                   f"{o['mise']:.2f} € : {o['question'][:60]}")
+        faites.append("paris_modele_v2")
 
 
 def preselection(e, site, marches):
@@ -246,6 +276,8 @@ def verifier(site, m):
             l = None
         if l and l["id"] == m["id"] and len(l["cotes"]) == len(m["cotes"]) and len(l["achat"]) == len(m["cotes"]):
             lectures.append(l)
+        else:
+            break                                 # il faut les 6 : inutile de continuer (gain de temps)
         time.sleep(getattr(site, "pause_lectures", CFG["pause_lectures_s"]) if CFG["pause_lectures_s"] else 0)
     if len(lectures) < CFG["lectures_min"]:
         return None, f"seulement {len(lectures)}/{CFG['lectures_min']} lectures"
@@ -268,6 +300,8 @@ def traiter(e, site, m, v):
     obs = {"site": site.nom, "id": m["id"], "slug": m.get("slug", ""), "question": m["question"],
            "cote": m["issues"][m["idx"]], "idx": m["idx"], "prix": round(v["cote"], 4), "cat": m["cat"],
            "fin": m["fin"].isoformat(), "date": maintenant().isoformat(timespec="minutes")}
+    if m.get("groupe"):
+        obs["groupe"] = m["groupe"]
     prix = v["achat"]
     if prix is None or not 0 < prix < 1:
         # personne ne vend ce côté (souvent un match déjà joué) : on ne l'apprend pas, ça fausserait tout
@@ -279,20 +313,26 @@ def traiter(e, site, m, v):
         return
     # l'apprentissage compare la cote juste (sans marge) au résultat : on l'interroge avec cette cote,
     # puis l'espérance se calcule avec le prix réellement payé
-    p, n_exp = proba_estimee(e, site.nom, m["cat"], v["cote"])
+    p, p_pru, n_exp = proba_estimee(e, site.nom, m["cat"], v["cote"])
     frais = site.frais(prix)
     esperance = p * (1 / prix - 1) - (1 - p) - frais
     if p <= CFG["seuil"] or esperance <= 0 or len(e["ouverts"]) >= CFG["max_paris_ouverts"]:
         return
-    p_pru = MI.proba_prudente(p, n_exp, CFG["force_prior"])
     prix_net = min(0.9999, prix * (1 + frais))
     engage = sum(o["mise"] for o in e["ouverts"])
-    montant = min(MI.mise(valeur(e), engage, MI.kelly_marche(p_pru, prix_net), e["fraction_kelly"]), e["cash"])
+    montant = min(MI.mise(valeur(e), engage, MI.kelly_marche(p_pru, prix_net), e["fraction_kelly"]),
+                  e["cash"] / (1 + frais))
+    groupe = m.get("groupe")
+    if groupe:                                   # paris liés au même événement : plafond commun
+        deja = sum(o["mise"] for o in e["ouverts"] if o["site"] == site.nom and o.get("groupe") == groupe)
+        montant = min(montant, max(0.0, CFG["max_par_evenement"] * valeur(e) - deja))
+    montant = round(montant, 2)
     if montant < 1:
         return
     pct = round(montant / valeur(e), 4)
     e["cash"] -= montant
-    e["ouverts"].append({**obs, "prix": prix, "frais": round(frais, 5), "proba_bot": round(p, 4),
+    e["ouverts"].append({**obs, "prix": prix, "cote_juste": obs["prix"], "frais": round(frais, 5),
+                         "proba_bot": round(p, 4), "version": CFG["version"],
                          "p_prudent": round(p_pru, 4), "esperance": round(esperance, 5),
                          "mise": montant, "mise_pct": pct})
     log(e, f"[FICTIF][{site.nom}] Pari {montant:.2f} € ({pct:.1%}) sur « {obs['cote']} » — "
@@ -305,13 +345,14 @@ def agent(site, e):
     rap = {"site": site.nom, "resultats": [], "verifies": [], "rejets": [], "historique": [],
            "marches_vus": 0, "candidats": 0, "erreurs": [], "curseur": e["curseurs"].get(site.nom, 0)}
     t = maintenant()
+    chrono = time.time()
     # 1) résultats des paris et observations terminés de ce site
     dus = {(x["id"]): x for x in e["ouverts"] + e["observations"]
            if x["site"] == site.nom and date_iso(x["fin"]) and date_iso(x["fin"]) <= t}
     # les moins récemment essayés d'abord : un résultat bloqué ne bloque pas les suivants
     for x in sorted(dus.values(), key=lambda x: x.get("dernier_essai", ""))[:CFG["resolutions_max"]]:
         try:
-            rap["resultats"].append((x["id"], site.resultat(x), x["question"]))
+            rap["resultats"].append((x["id"], site.resultat(x) or {"fini": False}, x["question"]))
         except Exception as err:
             rap["erreurs"].append(f"résultat illisible pour {x['id']} : {err}")
     # 2) nouveaux marchés > 97 %, vérifiés 6 fois
@@ -319,13 +360,16 @@ def agent(site, e):
         marches = site.candidats(CFG["jours_max"])
         rap["marches_vus"] = len(marches)
         for m in preselection(e, site, marches):
+            if time.time() - chrono > CFG["budget_agent_s"]:
+                rap["erreurs"].append("temps écoulé, vérifications reportées au passage suivant")
+                break
             rap["candidats"] += 1
             v, raison = verifier(site, m)
             (rap["verifies"].append((m, v)) if v else rap["rejets"].append((m["question"], raison)))
     except Exception as err:
         rap["erreurs"].append(f"liste des marchés illisible : {err}")
     # 3) expérience immédiate : marchés déjà terminés (si le site le permet)
-    if hasattr(site, "historique"):
+    if hasattr(site, "historique") and time.time() - chrono < CFG["budget_agent_s"]:
         try:
             h, rap["curseur"] = site.historique(rap["curseur"], CFG["historique_par_site"],
                                                 CFG["historique_heures_avant"])
@@ -374,7 +418,7 @@ def passage():
         e["historique"].extend(nouveaux)
         st["historique"] += len(nouveaux)
         e["curseurs"][site.nom] = rap["curseur"]
-    e["historique"] = e["historique"][-60000:]
+    e["historique"] = e["historique"][-20000:]
     expirer(e)
     reapprendre(e)
     ajuster_risque(e)
@@ -390,7 +434,10 @@ def passage():
         st["candidats"] += rap["candidats"]
         for m, v in rap["verifies"]:
             st["retenus"] += 1
-            traiter(e, site, m, v)
+            try:
+                traiter(e, site, m, v)
+            except Exception as err:
+                log(e, f"[{site.nom}] cote inutilisable ({err}) : {m.get('question', '')[:60]}")
         if not rap["erreurs"]:
             st["dernier_ok"] = maintenant().isoformat(timespec="minutes")
     e["dernier_passage"] = {"debut": debut.isoformat(timespec="minutes"),

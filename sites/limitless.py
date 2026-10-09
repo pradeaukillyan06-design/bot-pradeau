@@ -73,7 +73,7 @@ class Limitless:
             if g in (0, 1):
                 lectures.append([1.0, 0.0] if g == 0 else [0.0, 1.0])
             else:
-                lectures.append("rembourse")
+                return {"fini": False}                  # résolu mais gagnant pas encore publié : on attend
         if lectures[0] != lectures[1]:
             return {"fini": False, "contradiction": True}
         if lectures[0] == "rembourse":

@@ -1,6 +1,7 @@
 """Smarkets (bourse de paris britannique) : football de dizaines de pays, tennis, esport, politique…
 Lecture seule de l'API publique, sans compte. Chaque « contrat » (ex. « Kashima gagne », « Match nul »)
 est un pari Oui/Non : acheter = parier pour (back), le côté Non = parier contre (lay)."""
+import time
 from datetime import timedelta
 
 from .commun import categorie, date_iso, lire_json, maintenant
@@ -52,6 +53,7 @@ class Smarkets:
             url = f"{BASE}/events/{suite}"
         marches = {}
         for lot in _par_lots(evs):
+            time.sleep(0.3)
             for m in lire_json(f"{BASE}/events/{','.join(lot)}/markets/").get("markets", []):
                 if m.get("state") == "open" and not m.get("hidden") and m.get("category") == "winner":
                     marches[m["id"]] = m
@@ -60,6 +62,7 @@ class Smarkets:
             cl = ",".join(lot)
             contrats = lire_json(f"{BASE}/markets/{cl}/contracts/").get("contracts", [])
             cotations = lire_json(f"{BASE}/markets/{cl}/quotes/")
+            time.sleep(0.3)                     # le site limite le nombre de lectures par seconde
             for k in contrats:
                 m = marches.get(k.get("market_id"))
                 if not m or k.get("hidden") or k.get("state_or_outcome") != "open":
@@ -92,7 +95,7 @@ class Smarkets:
                 "question": f"{ev.get('name', '')} — {m.get('name', '')} : {k.get('name', '')}",
                 "issues": ["Oui", "Non"], "cotes": [round(oui, 4), round(1 - oui, 4)], "achat": achat,
                 "fin": debut + timedelta(hours=3), "debut": debut.isoformat(), "volume": 0.0,
-                "cat": self._categorie(ev)}
+                "cat": self._categorie(ev), "groupe": str(ev.get("id") or "") or None}
 
     def adresses(self, marche):
         mid, cid = marche["id"].split(":")
@@ -114,7 +117,7 @@ class Smarkets:
         mid, cid = marche["id"].split(":")
         lectures = []
         for _ in range(2):
-            k = next((c for c in lire_json(f"{BASE}/markets/{mid}/contracts/").get("contracts", [])
+            k = next((c for c in lire_json(f"{BASE}/markets/{mid}/contracts/?include_hidden=true").get("contracts", [])
                       if c.get("id") == cid), None)
             etat = (k or {}).get("state_or_outcome")
             if etat == "winner":

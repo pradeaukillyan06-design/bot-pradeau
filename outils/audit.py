@@ -18,10 +18,10 @@ for s in TOUS:
         r["marches"] = len(c)
         hauts = [m for m in c if m.get("fin") and maint < m["fin"] and any(0.97 < p < 1 for p in m["cotes"])]
         r["au_dessus_97"] = len(hauts)
-        r["ordre_issues_ok"] = all(len(m["cotes"]) == len(m["issues"]) == len(m["achat"]) for m in c)
+        r["ordre_issues_ok"] = all(len(m["cotes"]) == len(m["issues"]) == len(m.get("achat") or m["cotes"]) for m in c)
         echantillon = []
         for m in (hauts or c)[:3]:
-            e = {"id": m["id"], "question": m["question"][:80], "cotes": m["cotes"], "achat": m["achat"]}
+            e = {"id": m["id"], "question": m["question"][:80], "cotes": m["cotes"], "achat": m.get("achat")}
             try:
                 urls = s.adresses(m)
                 e["nb_adresses"] = len(urls)

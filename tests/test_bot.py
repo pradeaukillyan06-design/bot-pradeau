@@ -438,7 +438,39 @@ with tempfile.TemporaryDirectory() as d:
     verifier("panne Kalshi n'arrête pas Polymarket", any(x["id"] == "9" for x in e["observations"] + e["ouverts"]))
     verifier("panne notée dans le journal", any("kalshi" in j["texte"] and "illisible" in j["texte"] for j in e["journal"]))
 
-# 6) cas particuliers de lecture des résultats
+# 6) modèle de probabilité et garde-fous
+def etat_appris(n, gagnes, prix):
+    e = C.etat_vide()
+    e["apprentissage"] = {k: {"n": n, "gagnes": gagnes, "prix_moy": prix, "taux_reel": gagnes / n}
+                          for k in C.cles("x", "c", prix)}
+    return e
+p, pp, _ = C.proba_estimee(C.etat_vide(), "x", "c", 0.99)
+verifier("sans expérience : proba = cote, proba prudente en dessous", abs(p - 0.99) < 1e-9 and pp < 0.99)
+p, pp, _ = C.proba_estimee(etat_appris(20, 20, 0.972), "x", "c", 0.99)
+verifier("20 gagnés sur 20 ne suffisent pas pour miser à 0,99 (prudent < prix)", pp < 0.99 and p < 0.9999)
+p, pp, _ = C.proba_estimee(etat_appris(2000, 2000, 0.98), "x", "c", 0.998)
+verifier("une expérience faite à 98 % ne pousse pas une cote de 99,8 % à 100 %", p < 0.9999 and pp < p)
+p, pp, _ = C.proba_estimee(etat_appris(400, 380, 0.98), "x", "c", 0.98)
+verifier("favoris qui perdent plus que prévu -> proba sous la cote", p < 0.98)
+e = etat_appris(4000, 4000, 0.98)
+for cle in list(e["apprentissage"]):
+    e["apprentissage"][cle.replace("x|", "polymarket|")] = e["apprentissage"].pop(cle)
+site_pm = C.site_par_nom("polymarket")
+for i in range(3):
+    m = {"id": f"g{i}", "question": f"Nobel {i}", "issues": ["Oui", "Non"], "idx": 1, "cat": "c",
+         "fin": T0 + timedelta(days=2), "groupe": "nobel"}
+    C.traiter(e, site_pm, m, {"cote": 0.98, "achat": 0.981})
+verifier("même événement : 10 % du capital au plus en tout",
+         0 < sum(o["mise"] for o in e["ouverts"]) <= 0.10 * C.CFG["bankroll"] + 0.01)
+e = C.etat_vide()
+e["ouverts"] = [{"site": "polymarket", "id": "z", "question": "vieux pari", "mise": 120.0, "prix": 0.998, "idx": 0,
+                 "fin": FIN, "cat": "c"}]
+e["cash"] = 880.0
+C.migrer(e)
+verifier("anciens paris (ancien modèle) annulés et mises rendues",
+         e["ouverts"] == [] and abs(e["cash"] - 1000) < 1e-9 and e["resolus"][0]["annule"])
+
+# 7) cas particuliers de lecture des résultats
 E = espn.Espn()
 def foot(d, x, nom="STATUS_FULL_TIME"):
     return {"competitions": [{"status": {"type": {"completed": True, "name": nom}},

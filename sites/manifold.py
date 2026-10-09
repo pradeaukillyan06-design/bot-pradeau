@@ -64,7 +64,9 @@ class Manifold:
             elif r == "NO":
                 lectures.append([0.0, 1.0])
             elif r == "MKT":
-                q = nombre(m.get("resolutionProbability")) or 0.5
+                q = nombre(m.get("resolutionProbability"))
+                if q is None:
+                    return {"fini": False}
                 lectures.append([q, 1 - q])
             else:
                 lectures.append("rembourse")

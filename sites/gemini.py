@@ -58,7 +58,7 @@ class Gemini:
                         "issues": ["Oui", "Non"], "cotes": [round(oui, 4), round(1 - oui, 4)], "achat": achat,
                         "fin": date_iso(k.get("expiryDate") or ev.get("expiryDate")),
                         "volume": nombre(ev.get("volume")) or 0.0, "cat": cat,
-                        "_etat": k.get("marketState"), "_statut": k.get("status"),
+                        "groupe": ev.get("ticker") or None, "_etat": k.get("marketState"), "_statut": k.get("status"),
                         "_cote": k.get("resolutionSide")})
         return out
 

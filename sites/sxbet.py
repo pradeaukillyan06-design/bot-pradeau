@@ -56,7 +56,7 @@ class SxBet:
                 "issues": [m.get("outcomeOneName", "1"), m.get("outcomeTwoName", "2")],
                 "cotes": [round(oui, 4), round(1 - oui, 4)], "achat": achat,
                 "fin": debut + timedelta(hours=4), "debut": debut.isoformat(), "volume": 0.0,
-                "cat": SPORTS.get(m.get("sportLabel"), categorie(titre))}
+                "cat": SPORTS.get(m.get("sportLabel"), categorie(titre)), "groupe": m.get("sportXeventId") or None}
 
     def candidats(self, jours_max, max_carnets=200):
         out = []
