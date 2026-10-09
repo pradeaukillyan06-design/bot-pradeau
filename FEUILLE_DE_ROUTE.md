@@ -46,6 +46,15 @@ puis vérification sur un vrai passage (compteurs dans etat.json -> sites).
   tirs au but -> remboursé). Pas d'historique ESPN possible.
 - Résultats introuvables : relus à tour de rôle, abandonnés au bout de 30 jours (pari fictif remboursé).
 
+## Vérification du 9 octobre, après-midi (chef-1.8)
+- Audit en direct (outils/audit.py, workflow « audit », branche audit-resultats) : les 20 sites listent et relisent
+  correctement ; relecture = liste à 0,0025 près au plus. Résultats réels contrôlés : Delta (Inde) 45/45 justes,
+  Smarkets 19/19.
+- Proba : modèle par rapport pertes réelles / pertes annoncées (prior 3 pertes, borne prudente z = 1,28) au lieu
+  d'un écart ajouté à la cote. Plafond de 10 % par événement (champ « groupe »), un événement compté une fois.
+- Smarkets : résultats via ?include_hidden=true (les contrats perdants sont masqués après le match) ; HTTP 429
+  géré (attente) ; une lecture ratée arrête la vérification (il faut les 6).
+
 ## À faire, par ordre d'intérêt
 1. Historique Kalshi : chandeliers de prix (/series/{serie}/markets/{ticker}/candlesticks), cote 24 h avant la fin.
 2. Historique Limitless : trouver la liste des marchés résolus (status RESOLVED) et l'historique des prix.
