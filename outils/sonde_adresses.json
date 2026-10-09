@@ -1,32 +1,26 @@
 [
  {
-  "url": "https://api.coincall.com/open/public/option/settlementHistory?symbol=BTCUSD",
-  "taille": 600
+  "url": "https://api.sofascore.com/api/v1/sport/football/scheduled-events/2026-10-10",
+  "taille": 1500
  },
  {
-  "url": "https://api.coincall.com/open/option/deliveryHistory/BTCUSD",
-  "taille": 600
+  "url": "https://www.sofascore.com/api/v1/sport/football/scheduled-events/2026-10-10",
+  "taille": 1500
  },
  {
-  "url": "https://api.coincall.com/open/public/time",
-  "taille": 300
+  "url": "https://api.sofascore.com/api/v1/sport/football/odds/1/2026-10-10",
+  "taille": 1500
  },
  {
-  "url": "https://api.delta.exchange/v2/tickers/C-BTC-85500-101026",
-  "taille": 1200
+  "url": "https://gateway.polymarket.us/v1/markets",
+  "taille": 800
  },
  {
-  "url": "https://api.hyperliquid.xyz/info",
-  "corps": {
-   "type": "outcomeMeta"
-  },
-  "taille": 3000000
+  "url": "https://api.polymarket.us/v1/markets",
+  "taille": 800
  },
  {
-  "url": "https://api.hyperliquid.xyz/info",
-  "corps": {
-   "type": "allMids"
-  },
-  "taille": 100000
+  "url": "https://www.fotmob.com/api/matches?date=20261010",
+  "taille": 800
  }
 ]
