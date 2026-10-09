@@ -48,6 +48,8 @@ class Futuur:
             if len(outs) < 2 or any(_prix(o) is None for o in outs):
                 return None
             issues, cotes, ids = [o.get("title", "") for o in outs], [_prix(o) for o in outs], [o["id"] for o in outs]
+            if not 0.9 <= sum(cotes) <= 1.15:
+                return None     # issues indépendantes (« atteindra 96 $ », « 100 $ »…) : pas un seul gagnant
         if m.get("outcomes_type") == "updown" or "bitcoin" in (m.get("title", "").lower()):
             cat = "crypto"
         elif m.get("event_type") == "soccer_match":

@@ -103,9 +103,13 @@ class Polymarket:
                 jetons = json.loads(m["clobTokenIds"]) if isinstance(m.get("clobTokenIds"), str) else m.get("clobTokenIds")
                 ct = (m.get("closedTime") or "").replace(" ", "T")
                 ct = ct + ":00" if ct.endswith("+00") else ct
-                fin = date_iso(ct) or (c and c["fin"])
-                if not c or not jetons or not fin or sorted(c["cotes"]) != [0.0, 1.0]:
+                ferme, prevue = date_iso(ct), date_iso(m.get("endDate"))
+                if not c or not jetons or not ferme or not prevue or sorted(c["cotes"]) != [0.0, 1.0]:
                     continue
+                if ferme < prevue - timedelta(hours=2):
+                    continue        # fermé avant la date prévue : l'événement était déjà arrivé, cote trompeuse
+                # cote prise 24 h avant la fin PRÉVUE (et non la fermeture, parfois des jours après le résultat)
+                fin = prevue
                 t_obs = int(fin.timestamp()) - heures_avant * 3600
                 h = lire_json(f"{CLOB}/prices-history?market={jetons[0]}&startTs={t_obs - 3 * 86400}"
                               f"&endTs={t_obs}&fidelity=60").get("history", [])

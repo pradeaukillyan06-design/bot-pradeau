@@ -88,7 +88,10 @@ class Manifold:
             try:
                 if m.get("resolution") not in ("YES", "NO") or (m.get("uniqueBettorCount") or 0) < parieurs_min:
                     continue
-                fin_ms = min(x for x in (m.get("closeTime"), m.get("resolutionTime")) if x)
+                fermeture, resolution = m.get("closeTime"), m.get("resolutionTime")
+                if not fermeture or not resolution or resolution < fermeture - 2 * 3600 * 1000:
+                    continue        # résolu avant la fermeture prévue : l'événement était déjà arrivé
+                fin_ms = fermeture  # cote prise 24 h avant la fermeture prévue
                 t_obs = int(fin_ms - heures_avant * 3600 * 1000)
                 paris = lire_json(f"{BASE}/bets?contractId={m['id']}&beforeTime={t_obs}&limit=1")
                 if not paris:

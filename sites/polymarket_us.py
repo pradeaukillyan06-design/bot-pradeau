@@ -35,6 +35,7 @@ class PolymarketUs:
         cotes = m.get("marketSides") or []
         if len(cotes) != 2 or not m.get("slug") or m.get("closed"):
             return None
+        cotes = sorted(cotes, key=lambda c: not c.get("long", False))   # l'instrument « long » en premier
         p = nombre(cotes[0].get("price"))
         if p is None or not 0 < p < 1:
             return None
@@ -74,16 +75,11 @@ class PolymarketUs:
             d = (lire_json(f"{BASE}/markets/{marche['id']}/book") or {}).get("marketData") or {}
             etat = str(d.get("state", ""))
             prix = nombre(((d.get("stats") or {}).get("settlementPx") or {}).get("value"))
-            if etat in ("MARKET_STATE_OPEN", "") or prix is None:
+            # le prix de règlement existe aussi sur les marchés ouverts (cote du jour) : seul un marché
+            # EXPIRÉ est réellement réglé. Prix entre 0 et 1 (ex. 0,5 = match annulé) : le chef l'exclut.
+            if etat != "MARKET_STATE_EXPIRED" or prix is None or not 0 <= prix <= 1:
                 return {"fini": False}
-            if prix in (0.0, 1.0):
-                lectures.append([prix, 1 - prix])
-            elif abs(prix - 0.5) < 1e-9:
-                lectures.append("rembourse")            # match annulé : réglé 50-50
-            else:
-                return {"fini": False}
+            lectures.append([prix, round(1 - prix, 4)])
         if lectures[0] != lectures[1]:
             return {"fini": False, "contradiction": True}
-        if lectures[0] == "rembourse":
-            return {"fini": True, "rembourse": True}
         return {"fini": True, "paiement": lectures[0]}

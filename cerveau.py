@@ -29,7 +29,7 @@ from sites.commun import date_iso, maintenant
 ICI = Path(__file__).parent
 ETAT = ICI / "etat" / "etat.json"
 CFG = {
-    "version": "chef-1.6",
+    "version": "chef-1.7",
     "seuil": 0.97,
     "lectures_min": 6,
     "ecart_lectures_max": 0.005,
@@ -153,6 +153,10 @@ def site_par_nom(nom):
 
 def appliquer_resultat(e, site, mid, r):
     rembourse = r.get("rembourse", False)
+    concernes = [o for o in e["ouverts"] + e["observations"] if (o["site"], o["id"]) == (site, mid)]
+    if not rembourse and any(o["idx"] >= len(r.get("paiement") or []) for o in concernes):
+        log(e, f"[{site}] résultat incomplet (issues manquantes), relu plus tard : {mid}")
+        return
     for o in [o for o in e["ouverts"] if (o["site"], o["id"]) == (site, mid)]:
         paiement = o["prix"] if rembourse else r["paiement"][o["idx"]]
         gain = o["mise"] * (paiement / o["prix"] - 1) - o["mise"] * o.get("frais", 0.0) * (not rembourse)
@@ -173,6 +177,41 @@ def appliquer_resultat(e, site, mid, r):
         if not gagne:
             log(e, f"[{site}] favori à {o['prix']:.1%} PERDANT : {o['question'][:70]}")
     e["obs_resolues"] = e["obs_resolues"][-20000:]
+
+
+def expirer(e, jours=30):
+    """Résultat introuvable 30 jours après la fin : l'observation est abandonnée (sans rien apprendre) et
+    un pari fictif est remboursé, pour ne pas bloquer l'argent ni la file des résultats."""
+    limite = maintenant() - timedelta(days=jours)
+    for o in [o for o in e["observations"] if (date_iso(o["fin"]) or limite) < limite]:
+        e["observations"].remove(o)
+        log(e, f"[{o['site']}] pas de résultat après {jours} jours, abandonné : {o['question'][:60]}")
+    for o in [o for o in e["ouverts"] if (date_iso(o["fin"]) or limite) < limite]:
+        e["ouverts"].remove(o)
+        e["cash"] += o["mise"]
+        e["resolus"].append({**o, "gagne": 0, "gain": 0.0, "annule": True,
+                             "resolu_le": maintenant().isoformat(timespec="minutes")})
+        log(e, f"[FICTIF][{o['site']}] pas de résultat après {jours} jours, mise rendue : {o['question'][:60]}")
+
+
+def migrer(e):
+    """Corrections ponctuelles de l'état, faites une seule fois."""
+    faites = e.setdefault("migrations", [])
+    if "historique_v2" not in faites:
+        # l'ancien historique prenait la cote 24 h avant la FERMETURE du marché : pour un marché fermé tôt
+        # (événement déjà arrivé) ou tard (résultat déjà connu), cette cote connaissait déjà la fin
+        avant = len(e["historique"])
+        e["historique"] = [h for h in e["historique"] if h["site"] not in ("polymarket", "manifold")]
+        for s in ("polymarket", "manifold"):
+            e["curseurs"][s] = 0
+            if s in e["sites"]:
+                e["sites"][s]["historique"] = 0
+        # observations dont la cote relue était sous le seuil (avant la vérification ajoutée en chef-1.6)
+        e["observations"] = [o for o in e["observations"] if o["prix"] > CFG["seuil"]]
+        e["obs_resolues"] = [o for o in e["obs_resolues"] if o["prix"] > CFG["seuil"]]
+        log(e, f"Historique refait avec une cote prise avant la fin PRÉVUE ({avant - len(e['historique'])} anciens "
+               f"cas retirés) ; observations sous 97 % retirées")
+        faites.append("historique_v2")
 
 
 def preselection(e, site, marches):
@@ -205,7 +244,7 @@ def verifier(site, m):
             l = site.lire(url)
         except Exception:
             l = None
-        if l and l["id"] == m["id"]:
+        if l and l["id"] == m["id"] and len(l["cotes"]) == len(m["cotes"]) and len(l["achat"]) == len(m["cotes"]):
             lectures.append(l)
         time.sleep(getattr(site, "pause_lectures", CFG["pause_lectures_s"]) if CFG["pause_lectures_s"] else 0)
     if len(lectures) < CFG["lectures_min"]:
@@ -238,7 +277,9 @@ def traiter(e, site, m, v):
     e["observations"].append(obs)
     if not site.argent_reel:
         return
-    p, n_exp = proba_estimee(e, site.nom, m["cat"], prix)
+    # l'apprentissage compare la cote juste (sans marge) au résultat : on l'interroge avec cette cote,
+    # puis l'espérance se calcule avec le prix réellement payé
+    p, n_exp = proba_estimee(e, site.nom, m["cat"], v["cote"])
     frais = site.frais(prix)
     esperance = p * (1 / prix - 1) - (1 - p) - frais
     if p <= CFG["seuil"] or esperance <= 0 or len(e["ouverts"]) >= CFG["max_paris_ouverts"]:
@@ -267,7 +308,8 @@ def agent(site, e):
     # 1) résultats des paris et observations terminés de ce site
     dus = {(x["id"]): x for x in e["ouverts"] + e["observations"]
            if x["site"] == site.nom and date_iso(x["fin"]) and date_iso(x["fin"]) <= t}
-    for x in list(dus.values())[:CFG["resolutions_max"]]:
+    # les moins récemment essayés d'abord : un résultat bloqué ne bloque pas les suivants
+    for x in sorted(dus.values(), key=lambda x: x.get("dernier_essai", ""))[:CFG["resolutions_max"]]:
         try:
             rap["resultats"].append((x["id"], site.resultat(x), x["question"]))
         except Exception as err:
@@ -298,6 +340,7 @@ def passage():
     e = charger()
     e["passages"] += 1
     debut = maintenant()
+    migrer(e)
     na = e["non_achetables"]
     for k in [k for k, fin in na.items() if (date_iso(fin) or debut) < debut]:
         del na[k]                                   # nettoyage : marchés terminés
@@ -319,13 +362,20 @@ def passage():
             if r.get("contradiction"):
                 log(e, f"[{site.nom}] résultat contradictoire, relu plus tard : {question[:60]}")
             if r.get("fini"):
-                appliquer_resultat(e, site.nom, mid, r)
+                try:
+                    appliquer_resultat(e, site.nom, mid, r)
+                except Exception as err:               # un résultat bizarre ne fait pas tomber tout le passage
+                    log(e, f"[{site.nom}] résultat inutilisable pour {mid} : {err}")
+            for x in e["ouverts"] + e["observations"]:
+                if (x["site"], x["id"]) == (site.nom, mid):
+                    x["dernier_essai"] = maintenant().isoformat(timespec="minutes")
         nouveaux = [h for h in rap["historique"] if (h["site"], h["id"], h["idx"]) not in deja_hist]
         deja_hist |= {(h["site"], h["id"], h["idx"]) for h in nouveaux}
         e["historique"].extend(nouveaux)
         st["historique"] += len(nouveaux)
         e["curseurs"][site.nom] = rap["curseur"]
     e["historique"] = e["historique"][-60000:]
+    expirer(e)
     reapprendre(e)
     ajuster_risque(e)
     # Étape B : nouvelles cotes vérifiées -> observations et paris fictifs

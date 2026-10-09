@@ -4,7 +4,7 @@ universitaire et NFL, NBA, NHL, MLB… Lecture seule de l'API publique d'ESPN, s
 Les résultats viennent du même tableau des scores une fois le match terminé."""
 from datetime import timedelta
 
-from .commun import date_iso, lire_json, maintenant
+from .commun import date_iso, lire_json, maintenant, nombre
 
 BASE = "https://site.web.api.espn.com/apis/site/v2/sports"
 LIGUES = [  # (sport, ligue, catégorie du bot)
@@ -129,52 +129,48 @@ class Espn:
         return {"id": c["id"], "cotes": c["cotes"], "achat": c["achat"],
                 "ferme": c["_etat"] != "pre" or c["fin"] - timedelta(hours=4) <= maintenant()}
 
+    def _evenement(self, sport, ligue, jours, eid):
+        for jour in jours.split(","):
+            for ev in (lire_json(self._url(sport, ligue, jour)) or {}).get("events") or []:
+                if str(ev.get("id")) == eid:
+                    return ev
+        return None
+
+    def _lire_resultat(self, ev, sport):
+        """Résultat lu SANS les cotes (ESPN les retire après le match). Même ordre d'issues que les cotes :
+        domicile, extérieur, puis nul au foot."""
+        comp = (ev.get("competitions") or [{}])[0]
+        statut = ((comp.get("status") or ev.get("status") or {}).get("type") or {})
+        if not statut.get("completed"):
+            return None
+        equipes = {c.get("homeAway"): c for c in comp.get("competitors") or []}
+        if "home" not in equipes or "away" not in equipes:
+            return None
+        nom = str(statut.get("name", "")).upper() + " " + str(statut.get("detail", "")).upper()
+        if any(x in nom for x in ("CANCEL", "POSTPON", "ABANDON", "FORFEIT")):
+            return "rembourse"
+        if sport == "soccer":
+            # pari « 1 N 2 » = temps réglementaire : prolongation ou tirs au but -> on ne sait pas, remboursé
+            if any(x in nom for x in ("AET", "PEN", "EXTRA", "SHOOTOUT")):
+                return "rembourse"
+            d, x = nombre(equipes["home"].get("score")), nombre(equipes["away"].get("score"))
+            if d is None or x is None:
+                return None
+            return [float(d > x), float(x > d), float(d == x)]
+        g = [bool(equipes["home"].get("winner")), bool(equipes["away"].get("winner"))]
+        return [float(g[0]), float(g[1])] if sum(g) == 1 else "rembourse"
+
     def resultat(self, marche):
-        sport, ligue, _ = marche["id"].split("/")
-        jour = marche.get("slug") or ""
-        url = self._url(sport, ligue, jour) + f"#{marche['id']}"
+        sport, ligue, eid = marche["id"].split("/")
         lectures = []
         for _ in range(2):
-            c = self._trouver(url)
-            if not c or not c["_fini"]:
+            ev = self._evenement(sport, ligue, marche.get("slug") or "", eid)
+            r = self._lire_resultat(ev, sport) if ev else None
+            if r is None:
                 return {"fini": False}
-            g = c["_gagnants"]
-            if sum(g) == 1:
-                lectures.append([1.0 if x else 0.0 for x in g])
-            elif sum(g) == 0 and "draw" in c["_cles"]:
-                lectures.append([1.0 if k == "draw" else 0.0 for k in c["_cles"]])
-            else:
-                lectures.append("rembourse")               # égalité sans option « nul » : remboursé
+            lectures.append(r)
         if lectures[0] != lectures[1]:
             return {"fini": False, "contradiction": True}
         if lectures[0] == "rembourse":
             return {"fini": True, "rembourse": True}
         return {"fini": True, "paiement": lectures[0]}
-
-    def historique(self, curseur, nombre_max=250, heures_avant=24, ligues_par_passage=12):
-        """Matchs déjà joués : cote de clôture DraftKings (juste avant le match) et résultat.
-        Le curseur avance d'un jour en arrière à chaque passage, sur un groupe de ligues à la fois."""
-        curseur = int(curseur or 0)
-        jour = maintenant() - timedelta(days=1 + curseur // 3)
-        groupe = curseur % 3
-        out = []
-        for sport, ligue, cat in LIGUES[groupe::3][:ligues_par_passage]:
-            try:
-                r = lire_json(self._url(sport, ligue, f"{jour:%Y%m%d}"), essais=2, pause=1)
-            except Exception:
-                continue
-            for ev in (r or {}).get("events") or []:
-                c = self._normaliser(ev, sport, ligue, cat)
-                if not c or not c["_fini"] or sum(c["_gagnants"]) > 1:
-                    continue
-                g = c["_gagnants"] if sum(c["_gagnants"]) == 1 else [k == "draw" for k in c["_cles"]]
-                if not any(g):
-                    continue
-                for idx, p in enumerate(c["cotes"]):
-                    if 0.97 < p < 1.0:
-                        out.append({"site": self.nom, "id": c["id"], "question": c["question"], "cat": cat,
-                                    "idx": idx, "prix": p, "gagne": int(g[idx]), "horizon_h": 0,
-                                    "fin": c["fin"].isoformat(), "source": "historique"})
-            if len(out) >= nombre_max:
-                break
-        return out, curseur + 1

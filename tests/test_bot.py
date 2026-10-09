@@ -46,11 +46,14 @@ MA = [{"id": "m1", "slug": "will-x", "question": "Will X happen?", "outcomeType"
        "closeTime": FIN_MS, "isResolved": False, "volume": 1000, "uniqueBettorCount": 40}]
 
 HIST_PM = [{"id": "h1", "slug": "nba-x", "question": "NBA: X vs Y", "outcomes": '["X", "Y"]', "outcomePrices": '["1", "0"]',
-            "endDate": FIN, "closedTime": "2026-09-01 20:00:00+00", "umaResolutionStatus": "resolved", "volumeNum": 9e4,
+            "endDate": "2026-09-01T18:00:00Z", "closedTime": "2026-09-01 20:00:00+00", "umaResolutionStatus": "resolved", "volumeNum": 9e4,
             "clobTokenIds": '["111", "222"]', "closed": True},
            {"id": "h2", "slug": "btc-y", "question": "Bitcoin above 200k?", "outcomes": '["Yes", "No"]', "outcomePrices": '["1", "0"]',
             "endDate": FIN, "closedTime": "2026-09-02 20:00:00+00", "umaResolutionStatus": "resolved", "volumeNum": 9e4,
-            "clobTokenIds": '["333", "444"]', "closed": True}]
+            "clobTokenIds": '["333", "444"]', "closed": True},
+           {"id": "h3", "slug": "event-early", "question": "Will X happen by December?", "outcomes": '["Yes", "No"]',
+            "outcomePrices": '["1", "0"]', "endDate": "2026-12-31T00:00:00Z", "closedTime": "2026-09-01 20:00:00+00",
+            "umaResolutionStatus": "resolved", "volumeNum": 9e4, "clobTokenIds": '["111", "555"]', "closed": True}]
 HIST_MA = [{"id": "r1", "slug": "will-z", "question": "Will Z happen?", "resolution": "NO", "closeTime": FIN_MS,
             "resolutionTime": FIN_MS, "uniqueBettorCount": 50, "outcomeType": "BINARY"}]
 LI = [{"slug": "sol-hourly-1", "title": "Solana Up or Down Hourly", "marketType": "single", "status": "FUNDED",
@@ -77,11 +80,12 @@ SM = {"ev": {"id": "E1", "name": "Kashima vs Gamba", "full_slug": "/sport/footba
 
 
 def match_espn(eid, etat="pre", fini=False, gagnant=None):
-    return {"id": eid, "name": "Little College at Big State", "date": DEBUT, "competitions": [{
-        "competitors": [{"homeAway": "home", "team": {"displayName": "Big State"}, "winner": gagnant == "home"},
-                        {"homeAway": "away", "team": {"displayName": "Little College"}, "winner": gagnant == "away"}],
-        "odds": [{"moneyline": {"home": {"close": {"odds": "-20000"}}, "away": {"close": {"odds": "+2500"}}}}],
-        "status": {"type": {"state": etat, "completed": fini}}}]}
+    comp = {"competitors": [{"homeAway": "home", "team": {"displayName": "Big State"}, "winner": gagnant == "home"},
+                            {"homeAway": "away", "team": {"displayName": "Little College"}, "winner": gagnant == "away"}],
+            "status": {"type": {"state": etat, "completed": fini}}}
+    if not fini:                                   # comme le vrai ESPN : plus de cotes une fois le match fini
+        comp["odds"] = [{"moneyline": {"home": {"close": {"odds": "-20000"}}, "away": {"close": {"odds": "+2500"}}}}]
+    return {"id": eid, "name": "Little College at Big State", "date": DEBUT, "competitions": [comp]}
 
 
 ES = {"77": match_espn("77")}
@@ -315,6 +319,7 @@ with tempfile.TemporaryDirectory() as d:
     hist = {(h["site"], h["id"], h["idx"]): h for h in e["historique"]}
     verifier("historique Polymarket : favori 98,5 % la veille, gagnant", hist.get(("polymarket", "h1", 0), {}).get("gagne") == 1)
     verifier("historique : pas de favori > 97 % -> rien noté", not any(k[1] == "h2" for k in hist))
+    verifier("historique : marché fermé avant la date prévue (déjà joué) -> ignoré", not any(k[1] == "h3" for k in hist))
     verifier("historique Manifold : Non à 98 % la veille, gagnant", hist.get(("manifold", "r1", 1), {}).get("gagne") == 1)
     verifier("historique : cote lue AVANT la fin, pas après", hist.get(("polymarket", "h1", 0), {}).get("prix") == 0.985)
     verifier("Limitless lu et observé", ("limitless", "sol-hourly-1") in obs)
@@ -342,8 +347,6 @@ with tempfile.TemporaryDirectory() as d:
     verifier("Smarkets « pas de match nul » à 98 % observé", ("smarkets", "M1:K1") in obs)
     verifier("Smarkets contrat à 50 % ignoré", ("smarkets", "M1:K2") not in obs)
     verifier("ESPN gros favori (cote -20000) observé", ("espn", "football/college-football/77") in obs)
-    verifier("historique ESPN : favori gagnant noté",
-             hist.get(("espn", "football/college-football/88", 0), {}).get("gagne") == 1)
     verifier("ESPN : marge du bookmaker retirée", 0.97 < next(o["prix"] for o in e["observations"]
                                                               if o["site"] == "espn") < 0.995)
     verifier("aucune mise sans expérience", e["ouverts"] == [] and e["cash"] == 1000)
@@ -434,6 +437,22 @@ with tempfile.TemporaryDirectory() as d:
     e = C.charger()
     verifier("panne Kalshi n'arrête pas Polymarket", any(x["id"] == "9" for x in e["observations"] + e["ouverts"]))
     verifier("panne notée dans le journal", any("kalshi" in j["texte"] and "illisible" in j["texte"] for j in e["journal"]))
+
+# 6) cas particuliers de lecture des résultats
+E = espn.Espn()
+def foot(d, x, nom="STATUS_FULL_TIME"):
+    return {"competitions": [{"status": {"type": {"completed": True, "name": nom}},
+                              "competitors": [{"homeAway": "home", "score": str(d)}, {"homeAway": "away", "score": str(x)}]}]}
+verifier("ESPN foot : 2-1 -> domicile gagne", E._lire_resultat(foot(2, 1), "soccer") == [1.0, 0.0, 0.0])
+verifier("ESPN foot : 1-1 -> nul gagne", E._lire_resultat(foot(1, 1), "soccer") == [0.0, 0.0, 1.0])
+verifier("ESPN foot : tirs au but -> remboursé (pari sur 90 min)",
+         E._lire_resultat(foot(2, 1, "STATUS_FINAL_PEN"), "soccer") == "rembourse")
+verifier("CBOE : échéance à 16 h New York (21 h UTC en hiver)",
+         cboe._decoupe("SPY261218C00700000")[1].hour == 21 and cboe._decoupe("SPY261016C00700000")[1].hour == 20)
+verifier("Futuur : issues indépendantes (somme 2,2) écartées", futuur.Futuur()._normaliser(
+    {"id": 1, "title": "BTC hits?", "status": "open", "outcomes_type": "custom", "bet_end_date": FIN,
+     "outcomes": [{"id": 1, "price": {"OOM": 0.98}}, {"id": 2, "price": {"OOM": 0.67}}, {"id": 3, "price": {"OOM": 0.55}}]})
+         is None)
 
 print("\n" + ("TOUS LES TESTS PASSENT" if not ERREURS else f"{len(ERREURS)} ÉCHEC(S) : {ERREURS}"))
 sys.exit(1 if ERREURS else 0)

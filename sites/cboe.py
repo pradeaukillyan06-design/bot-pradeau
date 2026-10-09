@@ -3,19 +3,21 @@ grandes actions (Apple, Microsoft, Nvidia…). Données publiques différées de
 Comme pour les options crypto : probabilité « l'action finira au-dessus de X $ à l'échéance », tirée de la
 volatilité du marché ; le résultat est le cours de clôture officiel du jour d'échéance. Observation seulement."""
 from datetime import datetime, timezone
+from zoneinfo import ZoneInfo
 
 from .commun import lire_json, maintenant, nombre
 from .options_crypto import proba_au_dessus
 
+NEW_YORK = ZoneInfo("America/New_York")          # clôture à 16 h, heure de New York (été comme hiver)
 BASE = "https://cdn.cboe.com/api/global/delayed_quotes"
 SYMBOLES = ["SPY", "QQQ", "IWM", "AAPL", "MSFT", "NVDA", "TSLA", "AMZN"]
 
 
 def _decoupe(code):
-    """SPY261016C00700000 -> SPY, échéance 16/10/2026 20 h UTC (clôture de New York), call, 700."""
+    """SPY261016C00700000 -> SPY, échéance 16/10/2026 16 h à New York, call, 700."""
     racine = code[:-15]
     jour, sens, strike = code[-15:-9], code[-9], int(code[-8:]) / 1000
-    ech = datetime(2000 + int(jour[:2]), int(jour[2:4]), int(jour[4:6]), 20, tzinfo=timezone.utc)
+    ech = datetime(2000 + int(jour[:2]), int(jour[2:4]), int(jour[4:6]), 16, tzinfo=NEW_YORK).astimezone(timezone.utc)
     return racine, ech, sens, strike
 
 
