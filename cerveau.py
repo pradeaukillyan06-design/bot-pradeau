@@ -29,7 +29,7 @@ from sites.commun import date_iso, maintenant
 ICI = Path(__file__).parent
 ETAT = ICI / "etat" / "etat.json"
 CFG = {
-    "version": "chef-1.0",
+    "version": "chef-1.4",
     "seuil": 0.97,
     "lectures_min": 6,
     "ecart_lectures_max": 0.005,

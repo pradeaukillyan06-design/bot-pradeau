@@ -10,7 +10,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 import cerveau as C                      # noqa: E402
 import sites.commun as SC                # noqa: E402
-from sites import kalshi, limitless, manifold, polymarket  # noqa: E402
+from sites import espn, gemini, kalshi, limitless, manifold, polymarket, smarkets  # noqa: E402
 
 T0 = SC.maintenant()
 FIN = (T0 + timedelta(days=2)).strftime("%Y-%m-%dT%H:%M:%SZ")
@@ -59,6 +59,32 @@ LI = [{"slug": "sol-hourly-1", "title": "Solana Up or Down Hourly", "marketType"
       {"slug": "btc-5min-2", "title": "BTC Up or Down - 5 Min", "marketType": "single", "status": "FUNDED",
        "prices": [0.98, 0.02], "tradePrices": {"buy": {"market": [0.99, 0.30]}}, "expirationTimestamp": FIN_MS,
        "categories": ["Minutely"], "volumeFormatted": "0", "expired": False}]
+DEBUT = (T0 + timedelta(days=1)).strftime("%Y-%m-%dT%H:%M:%SZ")
+GE = {"ticker": "BTC2610", "title": "BTC price today", "category": "Crypto", "status": "active", "expiryDate": FIN,
+      "volume": "100", "contracts": [
+          {"instrumentSymbol": "GEMI-BTC-HI1", "label": "$50,000 or above", "status": "active", "marketState": "open",
+           "expiryDate": FIN, "prices": {"buy": {"yes": "0.99", "no": "0.02"}, "bestBid": "0.98", "bestAsk": "0.99"}},
+          {"instrumentSymbol": "GEMI-BTC-HI2", "label": "$90,000 or above", "status": "active", "marketState": "open",
+           "expiryDate": FIN, "prices": {"buy": {"yes": "0.50", "no": "0.51"}, "bestBid": "0.49", "bestAsk": "0.50"}}]}
+SM = {"ev": {"id": "E1", "name": "Kashima vs Gamba", "full_slug": "/sport/football/japan-j-league/x", "bettable": True,
+             "hidden": False, "start_datetime": DEBUT},
+      "marches": [{"id": "M1", "event_id": "E1", "state": "open", "hidden": False, "category": "winner",
+                   "name": "Full-time result"}],
+      "contrats": [{"id": "K1", "market_id": "M1", "name": "Match nul", "state_or_outcome": "open", "hidden": False},
+                   {"id": "K2", "market_id": "M1", "name": "Kashima", "state_or_outcome": "open", "hidden": False}],
+      "cotations": {"K1": {"bids": [{"price": 150}], "offers": [{"price": 250}]},
+                    "K2": {"bids": [{"price": 5000}], "offers": [{"price": 5100}]}}}
+
+
+def match_espn(eid, etat="pre", fini=False, gagnant=None):
+    return {"id": eid, "name": "Little College at Big State", "date": DEBUT, "competitions": [{
+        "competitors": [{"homeAway": "home", "team": {"displayName": "Big State"}, "winner": gagnant == "home"},
+                        {"homeAway": "away", "team": {"displayName": "Little College"}, "winner": gagnant == "away"}],
+        "odds": [{"moneyline": {"home": {"close": {"odds": "-20000"}}, "away": {"close": {"odds": "+2500"}}}}],
+        "status": {"type": {"state": etat, "completed": fini}}}]}
+
+
+ES = {"77": match_espn("77")}
 ETAT_SITE = {"pm": copy.deepcopy(PM), "ka": copy.deepcopy(KA), "ma": copy.deepcopy(MA), "discord": set()}
 
 
@@ -74,6 +100,27 @@ def faux_internet(url, *a, **k):
         if "/markets/active" in url:
             return {"data": LI} if "page=1&" in url else {"data": []}
         return next((m for m in LI if url.endswith(m["slug"])), {})
+    if "api.gemini.com" in url:
+        if "/events?" in url:
+            return {"data": [GE]} if "category=Crypto" in url and "offset=0" in url else {"data": []}
+        return GE if url.split("#")[0].endswith("/events/BTC2610") else {}
+    if "api.smarkets.com" in url:
+        if "/events/?" in url:
+            return {"events": [SM["ev"]], "pagination": {"next_page": None}}
+        if url.endswith("/events/E1/markets/"):
+            return {"markets": SM["marches"]}
+        if "/markets/M1/contracts/" in url:
+            return {"contracts": SM["contrats"]}
+        if "/markets/M1/quotes/" in url:
+            return SM["cotations"]
+        return {}
+    if "espn.com" in url:
+        jours = url.split("dates=")[1].split("&")[0]
+        if "college-football" not in url:
+            return {"events": []}
+        if "-" in jours:
+            return {"events": list(ES.values())}
+        return {"events": [match_espn("88", "post", True, "home")]}   # match déjà joué (historique)
     if "manifold.markets" in url and "filter=resolved" in url:
         return HIST_MA if "offset=0" in url else []
     if "manifold.markets" in url and "/bets?" in url:
@@ -100,7 +147,7 @@ def faux_internet(url, *a, **k):
     raise AssertionError("adresse inattendue " + url)
 
 
-for mod in (polymarket, kalshi, manifold, limitless):
+for mod in (polymarket, kalshi, manifold, limitless, gemini, smarkets, espn):
     mod.lire_json = faux_internet
 C.CFG["pause_lectures_s"] = 0
 ERREURS = []
@@ -136,6 +183,15 @@ with tempfile.TemporaryDirectory() as d:
     verifier("historique : cote lue AVANT la fin, pas après", hist.get(("polymarket", "h1", 0), {}).get("prix") == 0.985)
     verifier("Limitless lu et observé", ("limitless", "sol-hourly-1") in obs)
     verifier("Limitless écart achat/vente énorme -> pas achetable", ("limitless", "btc-5min-2") not in obs)
+    verifier("Gemini contrat à 98,5 % observé", ("gemini", "GEMI-BTC-HI1") in obs)
+    verifier("Gemini contrat à 50 % ignoré", ("gemini", "GEMI-BTC-HI2") not in obs)
+    verifier("Smarkets « pas de match nul » à 98 % observé", ("smarkets", "M1:K1") in obs)
+    verifier("Smarkets contrat à 50 % ignoré", ("smarkets", "M1:K2") not in obs)
+    verifier("ESPN gros favori (cote -20000) observé", ("espn", "football/college-football/77") in obs)
+    verifier("historique ESPN : favori gagnant noté",
+             hist.get(("espn", "football/college-football/88", 0), {}).get("gagne") == 1)
+    verifier("ESPN : marge du bookmaker retirée", 0.97 < next(o["prix"] for o in e["observations"]
+                                                              if o["site"] == "espn") < 0.995)
     verifier("aucune mise sans expérience", e["ouverts"] == [] and e["cash"] == 1000)
     n_obs = len(e["observations"])
 
@@ -171,6 +227,10 @@ with tempfile.TemporaryDirectory() as d:
     k2.update(status="settled", result="yes")                      # le favori (Non) perd
     ETAT_SITE["ma"][0].update(isResolved=True, resolution="MKT", resolutionProbability=0.6)
     LI[0].update(status="RESOLVED", winningOutcomeIndex=1)               # le favori Limitless perd
+    GE["status"] = "settled"
+    GE["contracts"][0].update(status="settled", marketState="closed", resolutionSide="yes")
+    SM["contrats"][0]["state_or_outcome"] = "loser"                     # pas de nul -> « Non » gagne
+    ES["77"] = match_espn("77", "post", True, "away")                   # énorme surprise : le favori perd
     mise_pm = pari[0]["mise"]
     cash_avant = e["cash"]
     C.passage()
@@ -182,6 +242,9 @@ with tempfile.TemporaryDirectory() as d:
     verifier("Kalshi annulé exclu de l'apprentissage", ("kalshi", "KXBTC-1") not in o)
     verifier("Kalshi favori perdant enregistré", ("kalshi", "KXNBA-2") in o and o[("kalshi", "KXNBA-2")]["gagne"] == 0)
     verifier("Limitless favori perdant enregistré", o.get(("limitless", "sol-hourly-1"), {}).get("gagne") == 0)
+    verifier("Gemini favori gagnant", o.get(("gemini", "GEMI-BTC-HI1"), {}).get("gagne") == 1)
+    verifier("Smarkets côté Non gagnant", o.get(("smarkets", "M1:K1"), {}).get("gagne") == 1)
+    verifier("ESPN favori perdant enregistré", o.get(("espn", "football/college-football/77"), {}).get("gagne") == 0)
     verifier("Manifold résolution partielle exclue", ("manifold", "m1") not in o)
     verifier("plus rien en attente", e["observations"] == [] and e["ouverts"] == [])
     verifier("apprentissage Kalshi mis à jour", e["apprentissage"].get("kalshi|cat:sport US", {}).get("n") == 1)
