@@ -57,7 +57,7 @@ class Espn:
                     r = lire_json(self._url(sport, ligue, f"{t0 + timedelta(days=n):%Y%m%d}"), essais=2, pause=1)
                 except Exception:
                     break                                  # ligue hors saison ou absente : on passe
-                for ev in r.get("events", []):
+                for ev in (r or {}).get("events") or []:
                     c = self._normaliser(ev, sport, ligue, cat)
                     if c and c["_etat"] == "pre" and c["id"] not in vus:
                         vus.add(c["id"])
@@ -65,6 +65,12 @@ class Espn:
         return out
 
     def _normaliser(self, ev, sport, ligue, cat, cle_cote="close"):
+        try:
+            return self._normaliser_brut(ev, sport, ligue, cat, cle_cote)
+        except (AttributeError, KeyError, IndexError, TypeError, ValueError):
+            return None                                    # match au format inattendu : ignoré
+
+    def _normaliser_brut(self, ev, sport, ligue, cat, cle_cote):
         try:
             comp = ev["competitions"][0]
             equipes = {c["homeAway"]: c for c in comp["competitors"]}
@@ -111,7 +117,7 @@ class Espn:
         racine, jours = base.split("dates=", 1)
         jours, reste = (jours.split("&", 1) + [""])[:2]
         for jour in jours.split(","):
-            for ev in lire_json(f"{racine}dates={jour}&{reste}").get("events", []):
+            for ev in (lire_json(f"{racine}dates={jour}&{reste}") or {}).get("events") or []:
                 if str(ev.get("id")) == eid:
                     return self._normaliser(ev, sport, ligue, "")
         return None
@@ -157,7 +163,7 @@ class Espn:
                 r = lire_json(self._url(sport, ligue, f"{jour:%Y%m%d}"), essais=2, pause=1)
             except Exception:
                 continue
-            for ev in r.get("events", []):
+            for ev in (r or {}).get("events") or []:
                 c = self._normaliser(ev, sport, ligue, cat)
                 if not c or not c["_fini"] or sum(c["_gagnants"]) > 1:
                     continue
