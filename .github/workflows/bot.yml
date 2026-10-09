@@ -19,6 +19,8 @@ jobs:
     timeout-minutes: 14
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main          # toujours le dernier état (un lancement manuel ne repart pas d'un état périmé)
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
