@@ -9,6 +9,7 @@ from .manifold import Manifold
 from .options_crypto import Aevo, DeltaInde, Derive, Deribit, Gate, Okx, Thalex
 from .polymarket import Polymarket
 from .smarkets import Smarkets
+from .sxbet import SxBet
 
 TOUS = [Polymarket(), Kalshi(), Manifold(), Limitless(), Gemini(), Smarkets(), Espn(), Futuur(), Azuro(), Deribit(), Okx(),
-        DeltaInde(), Gate(), Aevo(), Thalex(), Derive(), Cboe()]
+        DeltaInde(), Gate(), Aevo(), Thalex(), Derive(), Cboe(), SxBet()]

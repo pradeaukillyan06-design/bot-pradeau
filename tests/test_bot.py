@@ -10,7 +10,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 import cerveau as C                      # noqa: E402
 import sites.commun as SC                # noqa: E402
-from sites import azuro, cboe, espn, futuur, gemini, kalshi, limitless, manifold, options_crypto, polymarket, smarkets  # noqa: E402
+from sites import azuro, cboe, espn, futuur, gemini, kalshi, limitless, manifold, options_crypto, polymarket, smarkets, sxbet  # noqa: E402
 
 T0 = SC.maintenant()
 FIN = (T0 + timedelta(days=2)).strftime("%Y-%m-%dT%H:%M:%SZ")
@@ -106,6 +106,11 @@ INST_THA = {"instrument_name": THA, "type": "option", "option_type": "call", "ex
 TICK_DRV = {"instrument_name": DRV, "base_currency": "BTC", "is_active": True,
             "option_details": {"expiry": int(ECH.timestamp()), "strike": "78000", "option_type": "C"},
             "option_pricing": {"iv": "0.30", "forward_price": "82000"}}
+SX = {"marketHash": "0xabc", "status": "ACTIVE", "gameTime": int((T0 + timedelta(days=1)).timestamp()),
+      "teamOneName": "Celtics", "teamTwoName": "Wizards", "outcomeOneName": "Celtics", "outcomeTwoName": "Wizards",
+      "sportLabel": "Basketball", "leagueLabel": "NBA", "sportXeventId": "L1"}
+SX_CARNET = {"outcomeOne": [{"percentageOdds": "97500000000000000000"}],
+             "outcomeTwo": [{"percentageOdds": "1500000000000000000"}]}
 SPY = f"SPY{ECH:%y%m%d}C00755000"
 TICK_DEL = {"symbol": DEL, "spot_price": "82000", "mark_vol": "0.30", "oi": "1"}
 TICK_GAT = {"name": GAT, "underlying_price": "82000", "mark_iv": "0.30", "expiration_time": int(ECH.timestamp())}
@@ -153,6 +158,13 @@ def faux_internet(url, *a, **k):
             return {"result": [r for r in OPT["deribit"] if r["instrument_name"] == nom]}
         if "get_delivery_prices" in url:
             return {"result": {"data": [OPT["livraison"]] if OPT["livraison"] else []}}
+    if "api.sx.bet" in url:
+        if "/markets/active" in url:
+            return {"data": {"markets": [SX], "nextKey": None}}
+        if "orderbook-v3/snapshot" in url:
+            return {"data": SX_CARNET}
+        if "/markets/find" in url:
+            return {"data": [SX]}
     if "cdn.cboe.com" in url:
         if "/quotes/SPY.json" in url:
             return {"data": {"current_price": 774.0}}
@@ -255,7 +267,7 @@ def faux_internet(url, *a, **k):
     raise AssertionError("adresse inattendue " + url)
 
 
-for mod in (polymarket, kalshi, manifold, limitless, gemini, smarkets, espn, futuur, azuro, options_crypto, cboe):  # noqa
+for mod in (polymarket, kalshi, manifold, limitless, gemini, smarkets, espn, futuur, azuro, options_crypto, cboe, sxbet):  # noqa
     mod.lire_json = faux_internet
 C.CFG["pause_lectures_s"] = 0
 ERREURS = []
@@ -304,6 +316,7 @@ with tempfile.TemporaryDirectory() as d:
     verifier("Aevo observé", ("aevo", AEV) in obs)
     verifier("Thalex observé", ("thalex", THA) in obs)
     verifier("CBOE : SPY au-dessus de 755 $ observé", ("cboe", SPY) in obs)
+    verifier("SX Bet : prix d'achat tiré des ordres d'en face, observé", ("sxbet", "0xabc") in obs)
     verifier("Derive observé", ("derive", DRV) in obs)
     verifier("OKX : même calcul lu sur une autre bourse", ("okx", f"{OKX}-78000-C") in obs)
     verifier("Smarkets « pas de match nul » à 98 % observé", ("smarkets", "M1:K1") in obs)
@@ -351,6 +364,7 @@ with tempfile.TemporaryDirectory() as d:
     AZ_COND.update(state="Resolved", wonOutcomeIds=["1"])
     OPT["livraison"] = {"date": f"{ECH:%Y-%m-%d}", "delivery_price": 81000}     # au-dessus de 78 000 : gagné
     OPT["fini"] = True
+    SX.update(status="SETTLED", outcome=1)
     OPT["exercice"] = {"details": [{"insId": f"{OKX}-78000-C", "px": "77000"}]}  # en dessous : perdu
     FU.update(status="resolved", resolution={"id": 1, "title": "Brazil"})
     GE["status"] = "settled"
@@ -373,6 +387,7 @@ with tempfile.TemporaryDirectory() as d:
     verifier("OKX : prix final en dessous -> perdu", o.get(("okx", f"{OKX}-78000-C"), {}).get("gagne") == 0)
     verifier("Delta : réglé à 81 000 -> gagné", o.get(("delta_inde", DEL), {}).get("gagne") == 1)
     verifier("Gate : réglé à 81 000 -> gagné", o.get(("gate", GAT), {}).get("gagne") == 1)
+    verifier("SX Bet favori gagnant", o.get(("sxbet", "0xabc"), {}).get("gagne") == 1)
     verifier("CBOE : clôture 770 $ -> gagné", o.get(("cboe", SPY), {}).get("gagne") == 1)
     verifier("Thalex : réglé à 81 000 -> gagné", o.get(("thalex", THA), {}).get("gagne") == 1)
     verifier("Derive : réglé à 81 000 -> gagné", o.get(("derive", DRV), {}).get("gagne") == 1)
