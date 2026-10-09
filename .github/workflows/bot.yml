@@ -1,0 +1,35 @@
+# Fait tourner le Bot Pradeau (paris FICTIFS) automatiquement, gratuitement, sur les serveurs de GitHub.
+name: Bot Pradeau
+
+on:
+  schedule:
+    - cron: "*/15 * * * *"      # toutes les 15 minutes (dépôt public). Dépôt privé : mettre "0 */3 * * *"
+  workflow_dispatch: {}         # bouton « Run workflow » pour le lancer à la main
+
+concurrency:
+  group: bot-pradeau            # jamais deux passages en même temps -> pas de conflit d'écriture
+  cancel-in-progress: false
+
+permissions:
+  contents: write               # pour enregistrer etat/etat.json dans le dépôt
+
+jobs:
+  passage:
+    runs-on: ubuntu-latest
+    timeout-minutes: 14
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Tests (le passage est annulé si un test échoue)
+        run: python tests/test_bot.py > /dev/null
+      - name: Passage du bot
+        run: python cerveau.py
+      - name: Enregistrer l'état
+        run: |
+          git config user.name "bot-pradeau"
+          git config user.email "bot-pradeau@users.noreply.github.com"
+          git add etat/
+          git diff --cached --quiet || git commit -q -m "Passage du bot $(date -u +%Y-%m-%dT%H:%MZ)"
+          git pull -q --rebase && git push -q
