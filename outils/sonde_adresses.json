@@ -1,9 +1,18 @@
 [
- "https://api.smarkets.com/v3/events/45355321,45320924/markets/",
- "https://api.smarkets.com/v3/markets/168211766,164422219/quotes/",
- "https://api.smarkets.com/v3/markets/168211766,164422219/contracts/",
- "https://api.smarkets.com/v3/events/?state=upcoming&type_scope=single_event&limit=100&sort=start_datetime,id&start_datetime_min=2026-10-09T09:00:00Z&start_datetime_max=2026-10-12T00:00:00Z",
- "https://api.gemini.com/v1/prediction-markets/events?status=active&limit=100&offset=0",
- "https://api.futuur.com/api/v1/markets/?limit=50&outcomes_type=updown",
- "https://api.futuur.com/api/v1/markets/?limit=50&offset=50"
+ "https://api.sx.bet/orders/odds/best?marketHashes=0x2d6e2c24de38d38922f6ee85144d578893fb8f5f5380f0e0145a2a73f1c6f144&chainVersion=SXR",
+ "https://api.sx.bet/orders?marketHashes=0x2d6e2c24de38d38922f6ee85144d578893fb8f5f5380f0e0145a2a73f1c6f144&chainVersion=SXR",
+ "https://api.sx.bet/orders/odds/best?marketHashes=0x2d6e2c24de38d38922f6ee85144d578893fb8f5f5380f0e0145a2a73f1c6f144&baseToken=0x6629Ce1Cf35Cc1329ebB4F63202F3f197b3F050B&chainVersion=SXR",
+ "https://api.sx.bet/markets/settled?pageSize=2",
+ "https://api.sx.bet/trades/consolidated?pageSize=2",
+ "https://api.onchainfeed.org/api/v1/public/market-manager/sports?gameState=Prematch&environment=PolygonUSDT&orderBy=startsAt",
+ "https://api.onchainfeed.org/api/v1/public/market-manager/games-by-filters?gameState=Prematch&environment=PolygonUSDT&orderBy=startsAt&perPage=2",
+ "https://api.futuur.com/api/v1/markets/?limit=5&resolved_only=true&outcomes_type=yesno",
+ "https://site.web.api.espn.com/apis/site/v2/sports/football/college-football/scoreboard",
+ "https://site.web.api.espn.com/apis/site/v2/sports/soccer/esp.1/scoreboard?dates=20261004",
+ {
+  "url": "https://api.hyperliquid.xyz/info",
+  "corps": {
+   "type": "outcomeMeta"
+  }
+ }
 ]
