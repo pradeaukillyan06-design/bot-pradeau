@@ -1,44 +1,17 @@
 [
- "https://api.gemini.com/v1/prediction-markets/events/NFL-2610111330-PHI-JAX-M",
- "https://api.gemini.com/v1/prediction-markets/events?status=active&category=Crypto&limit=2",
- "https://api.gemini.com/v1/prediction-markets/events?status=active&limit=2&offset=2",
- "https://api.gemini.com/v1/prediction-markets/events/ticker/NFL-2610111330-PHI-JAX-M",
- "https://api.futuur.com/api/v1/markets/?limit=3&resolved_only=true",
- "https://api.futuur.com/api/v1/markets/?limit=3&ordering=bet_end_date",
- "https://api-v2.myriadprotocol.com/markets/up-or-down",
- "https://api-v2.myriadprotocol.com/markets?state=resolved&limit=1",
- "https://api-v2.myriadprotocol.com/markets?state=open&limit=50&token=USDC",
- "https://api.smarkets.com/v3/events/45355321/markets/",
- "https://api.smarkets.com/v3/events/?state=ended&limit=2&type_domain=football&type_scope=single_event&sort=start_datetime,id&start_datetime_min=2026-10-08T00:00:00Z",
- "https://api.matchbook.com/edge/rest/events/32522372813000051",
- "https://api.matchbook.com/edge/rest/events?per-page=2&states=closed",
- "https://api.matchbook.com/edge/rest/events?per-page=2&sport-ids=9&include-prices=true&price-depth=1",
+ "https://api.smarkets.com/v3/markets/168211766/contracts/",
+ "https://api.smarkets.com/v3/markets/168211766/quotes/",
+ "https://api.smarkets.com/v3/events/45320924/markets/",
+ "https://api.smarkets.com/v3/events/45320924/",
  {
   "url": "https://thegraph.azuro.org/subgraphs/name/azuro-protocol/azuro-api-polygon-v3",
   "corps": {
-   "query": "{ conditions(first:3, where:{status:Created}, orderBy:createdBlockTimestamp, orderDirection:desc) { conditionId status outcomes { outcomeId currentOdds } game { gameId title startsAt status sport { name } league { name country { name } } } } }"
+   "query": "{ conditions(first:3, where:{status:Created, game_:{startsAt_gt:\"1791540000\"}}, orderBy:createdBlockTimestamp, orderDirection:desc) { conditionId status outcomes { outcomeId currentOdds } game { gameId title startsAt status sport { name } league { name country { name } } } } }"
   }
  },
- {
-  "url": "https://thegraph.azuro.org/subgraphs/name/azuro-protocol/azuro-api-gnosis-v3",
-  "corps": {
-   "query": "{ _meta { block { timestamp } } }"
-  }
- },
- {
-  "url": "https://thegraph.azuro.org/subgraphs/name/azuro-protocol/azuro-api-polygon-v3",
-  "corps": {
-   "query": "{ _meta { block { timestamp } } }"
-  }
- },
- "https://api.onchainfeed.org/api/v1/public/market-manager/sports?gameState=Prematch&environment=PolygonUSDT",
- "https://site.web.api.espn.com/apis/site/v2/sports/basketball/wnba/scoreboard",
- "https://site.web.api.espn.com/apis/site/v2/sports/baseball/mlb/scoreboard",
- {
-  "url": "https://api.hyperliquid.xyz/info",
-  "corps": {
-   "type": "allMids"
-  }
- },
- "https://www.predictit.org/api/marketdata/markets/7589"
+ "https://api.matchbook.com/edge/rest/events/34540070240700023?include-prices=true",
+ "https://api.matchbook.com/edge/rest/events/34540070240700023/markets/34540070245000023",
+ "https://api.futuur.com/api/v1/markets/247690/",
+ "https://sports.core.api.espn.com/v2/sports/football/leagues/nfl/events/401872980/competitions/401872980/odds",
+ "https://api-v2.myriadprotocol.com/markets?state=open&limit=100"
 ]
