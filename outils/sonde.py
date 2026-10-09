@@ -16,6 +16,6 @@ out = {}
 for l in json.load(open(sys.argv[1])):
     url, corps = (l, None) if isinstance(l, str) else (l["url"], l.get("corps"))
     s, t = lire(url, corps)
-    out[url + (" POST" if corps else "")] = {"statut": s, "taille": len(t), "debut": t[:6000]}
+    out[url + (" POST" if corps else "")] = {"statut": s, "taille": len(t), "debut": t[:30000]}
     print(s, len(t), url)
 json.dump(out, open(sys.argv[2], "w"), indent=1, ensure_ascii=False)
