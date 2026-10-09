@@ -1,1 +1,1 @@
-[{"url": "https://api.lyra.finance/public/get_instruments", "corps": {"currency": "BTC", "instrument_type": "option", "expired": true}, "taille": 3000000}]
+[{"url": "https://api.smarkets.com/v3/markets/168194701/contracts/", "taille": 3000}, {"url": "https://api.smarkets.com/v3/markets/168194703/contracts/", "taille": 3000}, {"url": "https://api.smarkets.com/v3/markets/168194729/contracts/", "taille": 3000}, {"url": "https://api.smarkets.com/v3/markets/168888911/contracts/", "taille": 3000}]
