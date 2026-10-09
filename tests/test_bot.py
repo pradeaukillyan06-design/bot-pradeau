@@ -10,7 +10,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 import cerveau as C                      # noqa: E402
 import sites.commun as SC                # noqa: E402
-from sites import espn, futuur, gemini, kalshi, limitless, manifold, polymarket, smarkets  # noqa: E402
+from sites import azuro, espn, futuur, gemini, kalshi, limitless, manifold, options_crypto, polymarket, smarkets  # noqa: E402
 
 T0 = SC.maintenant()
 FIN = (T0 + timedelta(days=2)).strftime("%Y-%m-%dT%H:%M:%SZ")
@@ -85,6 +85,23 @@ def match_espn(eid, etat="pre", fini=False, gagnant=None):
 
 
 ES = {"77": match_espn("77")}
+ECH = (T0 + timedelta(days=2)).replace(hour=8, minute=0, second=0, microsecond=0)
+MOIS_EN = ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"]
+DER = f"BTC-{ECH.day}{MOIS_EN[ECH.month - 1]}{ECH:%y}"
+OKX = f"BTC-USD_UM-{ECH:%y%m%d}"
+OPT = {"deribit": [{"instrument_name": f"{DER}-78000-C", "underlying_price": 82000, "mark_iv": 30, "open_interest": 5},
+                   {"instrument_name": f"{DER}-78000-P", "underlying_price": 82000, "mark_iv": 30, "open_interest": 5},
+                   {"instrument_name": f"{DER}-82000-C", "underlying_price": 82000, "mark_iv": 30, "open_interest": 5}],
+       "okx": [{"instId": f"{OKX}-78000-C", "fwdPx": "82000", "markVol": "0.30"},
+               {"instId": f"{OKX}-78000-P", "fwdPx": "82000", "markVol": "0.30"}],
+       "livraison": None, "exercice": None}
+AZ_MATCH = {"gameId": "G1", "title": "Lyon - Rodez", "startsAt": str(int((T0 + timedelta(days=1)).timestamp())),
+            "sport": {"slug": "football"}, "country": {"name": "France"}, "league": {"name": "Coupe de France"},
+            "turnover": "10"}
+AZ_COND = {"conditionId": "C1", "state": "Active", "hidden": False, "title": "Full Time Result", "game": {"gameId": "G1"},
+           "wonOutcomeIds": [], "outcomes": [{"outcomeId": "2", "odds": "30", "state": "Active"},
+                                             {"outcomeId": "1", "odds": "1.01", "state": "Active"},
+                                             {"outcomeId": "3", "odds": "60", "state": "Active"}]}
 FU = {"id": 900, "title": "Brazil vs. Bolivia", "slug": "brazil-bolivia", "status": "open", "outcomes_type": "custom",
       "event_type": "soccer_match", "bet_end_date": FIN, "resolution": None,
       "outcomes": [{"id": 3, "title": "Bolivia", "price": {"OOM": 0.01}}, {"id": 1, "title": "Brazil", "price": {"OOM": 0.985}},
@@ -108,6 +125,23 @@ def faux_internet(url, *a, **k):
         if "/events?" in url:
             return {"data": [GE]} if "category=Crypto" in url and "offset=0" in url else {"data": []}
         return GE if url.split("#")[0].endswith("/events/BTC2610") else {}
+    if "onchainfeed.org" in url:
+        if "games-by-filters" in url:
+            return {"games": [AZ_MATCH] if "page=1&" in url else []}
+        return {"conditions": [copy.deepcopy(AZ_COND)]}
+    if "deribit.com" in url:
+        if "get_book_summary_by_currency" in url:
+            return {"result": OPT["deribit"] if "currency=BTC" in url else []}
+        if "get_book_summary_by_instrument" in url:
+            nom = url.split("instrument_name=")[1]
+            return {"result": [r for r in OPT["deribit"] if r["instrument_name"] == nom]}
+        if "get_delivery_prices" in url:
+            return {"result": {"data": [OPT["livraison"]] if OPT["livraison"] else []}}
+    if "okx.com" in url:
+        if "opt-summary" in url:
+            return {"data": OPT["okx"] if "uly=BTC-USD" in url else []}
+        if "delivery-exercise-history" in url:
+            return {"data": [OPT["exercice"]] if OPT["exercice"] else []}
     if "api.futuur.com" in url:
         if "/markets/?" in url:
             return {"results": [FU] if "offset=0" in url else [], "pagination": {"next": None}}
@@ -157,7 +191,7 @@ def faux_internet(url, *a, **k):
     raise AssertionError("adresse inattendue " + url)
 
 
-for mod in (polymarket, kalshi, manifold, limitless, gemini, smarkets, espn, futuur):
+for mod in (polymarket, kalshi, manifold, limitless, gemini, smarkets, espn, futuur, azuro, options_crypto):
     mod.lire_json = faux_internet
 C.CFG["pause_lectures_s"] = 0
 ERREURS = []
@@ -197,6 +231,11 @@ with tempfile.TemporaryDirectory() as d:
     verifier("Gemini contrat à 50 % ignoré", ("gemini", "GEMI-BTC-HI2") not in obs)
     verifier("Futuur favori à 98,5 % observé (ordre des issues stable)",
              any(o["site"] == "futuur" and o["cote"] == "Brazil" for o in e["observations"]))
+    verifier("Azuro favori à 1,01 observé (marge retirée)", ("azuro", "C1") in obs)
+    verifier("Deribit : BTC au-dessus de 78 000 $ (≈ 98,7 %) observé", ("deribit", f"{DER}-78000-C") in obs)
+    verifier("Deribit : strike au prix actuel (≈ 50 %) ignoré", ("deribit", f"{DER}-82000-C") not in obs)
+    verifier("Deribit : options de vente (put) non dédoublées", ("deribit", f"{DER}-78000-P") not in obs)
+    verifier("OKX : même calcul lu sur une autre bourse", ("okx", f"{OKX}-78000-C") in obs)
     verifier("Smarkets « pas de match nul » à 98 % observé", ("smarkets", "M1:K1") in obs)
     verifier("Smarkets contrat à 50 % ignoré", ("smarkets", "M1:K2") not in obs)
     verifier("ESPN gros favori (cote -20000) observé", ("espn", "football/college-football/77") in obs)
@@ -239,6 +278,9 @@ with tempfile.TemporaryDirectory() as d:
     k2.update(status="settled", result="yes")                      # le favori (Non) perd
     ETAT_SITE["ma"][0].update(isResolved=True, resolution="MKT", resolutionProbability=0.6)
     LI[0].update(status="RESOLVED", winningOutcomeIndex=1)               # le favori Limitless perd
+    AZ_COND.update(state="Resolved", wonOutcomeIds=["1"])
+    OPT["livraison"] = {"date": f"{ECH:%Y-%m-%d}", "delivery_price": 81000}     # au-dessus de 78 000 : gagné
+    OPT["exercice"] = {"details": [{"insId": f"{OKX}-78000-C", "px": "77000"}]}  # en dessous : perdu
     FU.update(status="resolved", resolution={"id": 1, "title": "Brazil"})
     GE["status"] = "settled"
     GE["contracts"][0].update(status="settled", marketState="closed", resolutionSide="yes")
@@ -255,6 +297,11 @@ with tempfile.TemporaryDirectory() as d:
     verifier("Kalshi annulé exclu de l'apprentissage", ("kalshi", "KXBTC-1") not in o)
     verifier("Kalshi favori perdant enregistré", ("kalshi", "KXNBA-2") in o and o[("kalshi", "KXNBA-2")]["gagne"] == 0)
     verifier("Limitless favori perdant enregistré", o.get(("limitless", "sol-hourly-1"), {}).get("gagne") == 0)
+    verifier("Azuro favori gagnant", o.get(("azuro", "C1"), {}).get("gagne") == 1)
+    verifier("Deribit : prix final au-dessus -> gagné", o.get(("deribit", f"{DER}-78000-C"), {}).get("gagne") == 1)
+    verifier("OKX : prix final en dessous -> perdu", o.get(("okx", f"{OKX}-78000-C"), {}).get("gagne") == 0)
+    verifier("jamais de mise sur les options (observation seulement)",
+             not any(x["site"] in ("deribit", "okx") for x in e["resolus"]))
     verifier("Futuur favori gagnant", o.get(("futuur", "900"), {}).get("gagne") == 1)
     verifier("jamais de mise sur Futuur (monnaie de jeu)", not any(x["site"] == "futuur" for x in e["resolus"]))
     verifier("Gemini favori gagnant", o.get(("gemini", "GEMI-BTC-HI1"), {}).get("gagne") == 1)

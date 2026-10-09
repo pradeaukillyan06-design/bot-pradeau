@@ -12,12 +12,18 @@ def maintenant():
     return datetime.now(timezone.utc)
 
 
-def lire_json(url, essais=3, pause=2.0):
-    """GET JSON avec quelques nouvelles tentatives. Lève une exception si tout échoue."""
+def lire_json(url, essais=3, pause=2.0, corps=None):
+    """Lecture JSON (GET, ou POST de lecture quand `corps` est donné, ex. GraphQL) avec quelques nouvelles
+    tentatives. Lève une exception si tout échoue."""
     derniere = None
     for i in range(essais):
         try:
-            req = urllib.request.Request(url, headers={"User-Agent": AGENT, "Accept": "application/json"})
+            entetes = {"User-Agent": AGENT, "Accept": "application/json"}
+            donnees = None
+            if corps is not None:
+                donnees = json.dumps(corps).encode("utf-8")
+                entetes["Content-Type"] = "application/json"
+            req = urllib.request.Request(url, data=donnees, headers=entetes)
             with urllib.request.urlopen(req, timeout=20) as r:
                 return json.loads(r.read().decode("utf-8"))
         except (urllib.error.URLError, TimeoutError, json.JSONDecodeError) as e:
