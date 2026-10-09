@@ -1,26 +1,6 @@
 [
  {
-  "url": "https://api.sx.bet/orders-v3/odds/best?marketHashes=0x2d6e2c24de38d38922f6ee85144d578893fb8f5f5380f0e0145a2a73f1c6f144",
-  "taille": 2000
- },
- {
-  "url": "https://api.sx.bet/orderbook-v3/snapshot?marketHash=0x2d6e2c24de38d38922f6ee85144d578893fb8f5f5380f0e0145a2a73f1c6f144",
-  "taille": 3000
- },
- {
-  "url": "https://api.sx.bet/markets/active?onlyMainLine=true&pageSize=50",
-  "taille": 300
- },
- {
-  "url": "https://api.sx.bet/fixture/status?sportXEventIds=L18876509",
-  "taille": 1500
- },
- {
-  "url": "https://api.sx.bet/markets/find?marketHashes=0x903d6db8019c9778f8d82d1e07f63000af0d1cb67188a028fbd917e7554e5db1",
-  "taille": 1500
- },
- {
-  "url": "https://api.sx.bet/markets/popular",
-  "taille": 300
+  "url": "https://api.sx.bet/orderbook-v3/snapshot?marketHash=0x903d6db8019c9778f8d82d1e07f63000af0d1cb67188a028fbd917e7554e5db1",
+  "taille": 2500
  }
 ]
