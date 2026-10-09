@@ -99,6 +99,13 @@ ECH12 = ECH.replace(hour=12)
 DEL = f"C-BTC-78000-{ECH12:%d%m%y}"
 GAT = f"BTC_USDT-{ECH:%Y%m%d}-78000-C"
 AEV = f"{DER}-78000-C"
+THA = f"BTC-{ECH.day:02d}{MOIS_EN[ECH.month - 1]}{ECH:%y}-78000-C"
+DRV = f"BTC-{ECH:%Y%m%d}-78000-C"
+INST_THA = {"instrument_name": THA, "type": "option", "option_type": "call", "expiration_timestamp": int(ECH.timestamp()),
+            "strike_price": 78000.0}
+TICK_DRV = {"instrument_name": DRV, "base_currency": "BTC", "is_active": True,
+            "option_details": {"expiry": int(ECH.timestamp()), "strike": "78000", "option_type": "C"},
+            "option_pricing": {"iv": "0.30", "forward_price": "82000"}}
 TICK_DEL = {"symbol": DEL, "spot_price": "82000", "mark_vol": "0.30", "oi": "1"}
 TICK_GAT = {"name": GAT, "underlying_price": "82000", "mark_iv": "0.30", "expiration_time": int(ECH.timestamp())}
 MAR_AEV = {"instrument_name": AEV, "option_type": "call", "is_active": True, "expiry": str(int(ECH.timestamp()) * 10**9),
@@ -145,6 +152,24 @@ def faux_internet(url, *a, **k):
             return {"result": [r for r in OPT["deribit"] if r["instrument_name"] == nom]}
         if "get_delivery_prices" in url:
             return {"result": {"data": [OPT["livraison"]] if OPT["livraison"] else []}}
+    if "thalex.com" in url:
+        if url.endswith("/instruments"):
+            return {"result": [INST_THA]}
+        if "/ticker?" in url:
+            return {"result": {"iv": 0.30, "forward": 82000}}
+        if url.endswith("/all_instruments"):
+            return {"result": [{**INST_THA, "settlement_index_price": 81000}] if OPT["fini"] else [INST_THA]}
+    if "lyra.finance" in url:
+        if "get_instruments" in url:
+            corps = k.get("corps") or {}
+            if corps.get("currency") != "BTC":
+                return {"result": []}
+            if corps.get("expired"):
+                return {"result": [{**TICK_DRV, "option_details": {**TICK_DRV["option_details"],
+                                                                   "settlement_price": "81000"}}] if OPT["fini"] else []}
+            return {"result": [TICK_DRV]}
+        if "get_ticker" in url:
+            return {"result": TICK_DRV}
     if "delta.exchange" in url:
         if "/tickers?" in url:
             return {"result": [TICK_DEL] if "symbols=BTC" in url else []}
@@ -264,6 +289,8 @@ with tempfile.TemporaryDirectory() as d:
     verifier("Delta Exchange (Inde) observé", ("delta_inde", DEL) in obs)
     verifier("Gate observé", ("gate", GAT) in obs)
     verifier("Aevo observé", ("aevo", AEV) in obs)
+    verifier("Thalex observé", ("thalex", THA) in obs)
+    verifier("Derive observé", ("derive", DRV) in obs)
     verifier("OKX : même calcul lu sur une autre bourse", ("okx", f"{OKX}-78000-C") in obs)
     verifier("Smarkets « pas de match nul » à 98 % observé", ("smarkets", "M1:K1") in obs)
     verifier("Smarkets contrat à 50 % ignoré", ("smarkets", "M1:K2") not in obs)
@@ -332,9 +359,11 @@ with tempfile.TemporaryDirectory() as d:
     verifier("OKX : prix final en dessous -> perdu", o.get(("okx", f"{OKX}-78000-C"), {}).get("gagne") == 0)
     verifier("Delta : réglé à 81 000 -> gagné", o.get(("delta_inde", DEL), {}).get("gagne") == 1)
     verifier("Gate : réglé à 81 000 -> gagné", o.get(("gate", GAT), {}).get("gagne") == 1)
+    verifier("Thalex : réglé à 81 000 -> gagné", o.get(("thalex", THA), {}).get("gagne") == 1)
+    verifier("Derive : réglé à 81 000 -> gagné", o.get(("derive", DRV), {}).get("gagne") == 1)
     verifier("Aevo : réglé à 77 000 -> perdu", o.get(("aevo", AEV), {}).get("gagne") == 0)
     verifier("jamais de mise sur les options (observation seulement)",
-             not any(x["site"] in ("deribit", "okx", "delta_inde", "gate", "aevo") for x in e["resolus"]))
+             not any(x["site"] in ("deribit", "okx", "delta_inde", "gate", "aevo", "thalex", "derive") for x in e["resolus"]))
     verifier("Futuur favori gagnant", o.get(("futuur", "900"), {}).get("gagne") == 1)
     verifier("jamais de mise sur Futuur (monnaie de jeu)", not any(x["site"] == "futuur" for x in e["resolus"]))
     verifier("Gemini favori gagnant", o.get(("gemini", "GEMI-BTC-HI1"), {}).get("gagne") == 1)

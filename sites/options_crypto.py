@@ -350,3 +350,136 @@ class Aevo:
         if lectures[0] != lectures[1]:
             return {"fini": False, "contradiction": True}
         return lectures[0]
+
+
+class Thalex:
+    """Thalex (bourse d'options crypto, Gibraltar) : options bitcoin et ether."""
+    nom = "thalex"
+    argent_reel = False
+    BASE = "https://thalex.com/api/v2/public"
+    jours_lus = 7                                # options à moins de 7 jours : une lecture par option
+
+    def frais(self, prix):
+        return 0.0
+
+    def _calls(self, liste="instruments"):
+        return [i for i in lire_json(f"{self.BASE}/{liste}").get("result") or []
+                if i.get("type") == "option" and i.get("option_type") == "call"]
+
+    def _depuis(self, inst, t):
+        if not inst or not t:
+            return None
+        ech = datetime.fromtimestamp(int(inst["expiration_timestamp"]), tz=timezone.utc)
+        if _annees(ech) < 2 / (365.25 * 24):
+            return None
+        strike = float(inst["strike_price"])
+        p = proba_au_dessus(nombre(t.get("forward")), strike, nombre(t.get("iv")), _annees(ech))
+        return _marche(self.nom, inst["instrument_name"], inst["instrument_name"].split("-")[0], strike, ech, p)
+
+    def candidats(self, jours_max, max_lectures=120):
+        limite = maintenant().timestamp() + min(jours_max, self.jours_lus) * 86400
+        out = []
+        for inst in [i for i in self._calls() if i.get("expiration_timestamp", 0) <= limite][:max_lectures]:
+            try:
+                t = lire_json(f"{self.BASE}/ticker?instrument_name={inst['instrument_name']}", essais=2, pause=1)
+            except Exception:
+                continue
+            c = self._depuis(inst, (t or {}).get("result"))
+            if c:
+                out.append(c)
+        return out
+
+    def adresses(self, marche):
+        e = marche["fin"]
+        return [f"{self.BASE}/ticker?instrument_name={marche['id']}#{int(e.timestamp())}"] * 6
+
+    def lire(self, url):
+        base, ts = url.split("#", 1)
+        nom = base.split("instrument_name=")[1]
+        inst = {"instrument_name": nom, "expiration_timestamp": int(ts), "strike_price": nom.split("-")[2]}
+        c = self._depuis(inst, lire_json(base).get("result"))
+        if not c:
+            return None
+        return {"id": c["id"], "cotes": c["cotes"], "achat": c["achat"], "ferme": c["fin"] <= maintenant()}
+
+    def resultat(self, marche):
+        strike = float(marche["id"].split("-")[2])
+        lectures = []
+        for _ in range(2):
+            inst = next((i for i in lire_json(f"{self.BASE}/all_instruments").get("result") or []
+                         if i.get("instrument_name") == marche["id"]), None)
+            lectures.append(_resultat_prix(nombre((inst or {}).get("settlement_index_price")), strike))
+        if lectures[0] != lectures[1]:
+            return {"fini": False, "contradiction": True}
+        return lectures[0]
+
+
+class Derive:
+    """Derive, ex-Lyra (bourse d'options décentralisée, internationale) : options bitcoin et ether."""
+    nom = "derive"
+    argent_reel = False
+    BASE = "https://api.lyra.finance/public"
+    ACTIFS = ["BTC", "ETH"]
+    jours_lus = 7
+
+    def frais(self, prix):
+        return 0.0
+
+    def _depuis(self, t):
+        if not t:
+            return None
+        d = t.get("option_details") or {}
+        if d.get("option_type") != "C" or not t.get("is_active", True):
+            return None
+        ech = datetime.fromtimestamp(int(d.get("expiry") or 0), tz=timezone.utc)
+        if _annees(ech) < 2 / (365.25 * 24):
+            return None
+        strike = float(d.get("strike") or 0)
+        pr = t.get("option_pricing") or {}
+        p = proba_au_dessus(nombre(pr.get("forward_price")), strike, nombre(pr.get("iv")), _annees(ech))
+        return _marche(self.nom, t["instrument_name"], t.get("base_currency") or t["instrument_name"].split("-")[0],
+                       strike, ech, p)
+
+    def candidats(self, jours_max, max_lectures=120):
+        limite = maintenant().timestamp() + min(jours_max, self.jours_lus) * 86400
+        noms = []
+        for a in self.ACTIFS:
+            r = lire_json(f"{self.BASE}/get_instruments",
+                          corps={"currency": a, "instrument_type": "option", "expired": False})
+            noms += [i["instrument_name"] for i in r.get("result") or []
+                     if (i.get("option_details") or {}).get("option_type") == "C"
+                     and (i.get("option_details") or {}).get("expiry", 0) <= limite]
+        out = []
+        for nom in noms[:max_lectures]:
+            try:
+                t = lire_json(f"{self.BASE}/get_ticker", corps={"instrument_name": nom}, essais=2, pause=1)
+            except Exception:
+                continue
+            c = self._depuis((t or {}).get("result"))
+            if c:
+                out.append(c)
+        return out
+
+    def adresses(self, marche):
+        return [f"{self.BASE}/get_ticker#{marche['id']}"] * 6
+
+    def lire(self, url):
+        base, nom = url.split("#", 1)
+        c = self._depuis(lire_json(base, corps={"instrument_name": nom}).get("result"))
+        if not c:
+            return None
+        return {"id": c["id"], "cotes": c["cotes"], "achat": c["achat"], "ferme": c["fin"] <= maintenant()}
+
+    def resultat(self, marche):
+        actif = marche["id"].split("-")[0]
+        strike = float(marche["id"].split("-")[2])
+        lectures = []
+        for _ in range(2):
+            r = lire_json(f"{self.BASE}/get_instruments",
+                          corps={"currency": actif, "instrument_type": "option", "expired": True})
+            inst = next((i for i in r.get("result") or [] if i.get("instrument_name") == marche["id"]), None)
+            prix = nombre(((inst or {}).get("option_details") or {}).get("settlement_price"))
+            lectures.append(_resultat_prix(prix, strike))
+        if lectures[0] != lectures[1]:
+            return {"fini": False, "contradiction": True}
+        return lectures[0]

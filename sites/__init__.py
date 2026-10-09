@@ -5,9 +5,9 @@ from .gemini import Gemini
 from .kalshi import Kalshi
 from .limitless import Limitless
 from .manifold import Manifold
-from .options_crypto import Aevo, DeltaInde, Deribit, Gate, Okx
+from .options_crypto import Aevo, DeltaInde, Derive, Deribit, Gate, Okx, Thalex
 from .polymarket import Polymarket
 from .smarkets import Smarkets
 
 TOUS = [Polymarket(), Kalshi(), Manifold(), Limitless(), Gemini(), Smarkets(), Espn(), Futuur(), Azuro(), Deribit(), Okx(),
-        DeltaInde(), Gate(), Aevo()]
+        DeltaInde(), Gate(), Aevo(), Thalex(), Derive()]
