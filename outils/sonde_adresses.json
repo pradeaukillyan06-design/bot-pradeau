@@ -1,1 +1,1 @@
-[{"url": "https://gateway.polymarket.us/v1/markets/tac-nobel-peace-2026-10-09-julass/book", "taille": 3000}, {"url": "https://gateway.polymarket.us/v1/markets/tac-nobel-peace-2026-10-09-unrwa/book", "taille": 3000}, {"url": "https://gateway.polymarket.us/v1/markets/tac-nobel-peace-2026-10-09-icj/book", "taille": 3000}]
+[{"url": "https://api.lyra.finance/public/get_instruments", "corps": {"currency": "BTC", "instrument_type": "option", "expired": true}, "taille": 3000000}]
