@@ -337,7 +337,7 @@
    "cat": "météo",
    "fin": "2026-10-09T12:00:00+00:00",
    "date": "2026-10-09T06:24+00:00",
-   "dernier_essai": "2026-10-09T20:12+00:00"
+   "dernier_essai": "2026-10-09T20:31+00:00"
   },
   {
    "site": "polymarket",
@@ -350,7 +350,7 @@
    "cat": "météo",
    "fin": "2026-10-09T12:00:00+00:00",
    "date": "2026-10-09T06:24+00:00",
-   "dernier_essai": "2026-10-09T20:12+00:00"
+   "dernier_essai": "2026-10-09T20:31+00:00"
   },
   {
    "site": "kalshi",
@@ -591,7 +591,7 @@
    "cat": "autre",
    "fin": "2026-10-09T20:00:00+00:00",
    "date": "2026-10-09T06:26+00:00",
-   "dernier_essai": "2026-10-09T20:12+00:00"
+   "dernier_essai": "2026-10-09T20:31+00:00"
   },
   {
    "site": "manifold",
@@ -679,19 +679,6 @@
   },
   {
    "site": "polymarket",
-   "id": "5224543",
-   "slug": "wwcquefa-gre-eng-2026-10-09-gre",
-   "question": "Will Greece win on 2026-10-09?",
-   "cote": "No",
-   "idx": 1,
-   "prix": 0.9815,
-   "cat": "autre",
-   "fin": "2026-10-09T16:30:00+00:00",
-   "date": "2026-10-09T06:46+00:00",
-   "dernier_essai": "2026-10-09T20:12+00:00"
-  },
-  {
-   "site": "polymarket",
    "id": "5224552",
    "slug": "wwcquefa-rom-nor-2026-10-09-rom",
    "question": "Will Romania win on 2026-10-09?",
@@ -701,7 +688,7 @@
    "cat": "autre",
    "fin": "2026-10-09T17:00:00+00:00",
    "date": "2026-10-09T06:46+00:00",
-   "dernier_essai": "2026-10-09T20:12+00:00"
+   "dernier_essai": "2026-10-09T20:31+00:00"
   },
   {
    "site": "polymarket",
@@ -1182,7 +1169,7 @@
    "cat": "foot",
    "fin": "2026-10-09T18:30:00+00:00",
    "date": "2026-10-09T06:56+00:00",
-   "dernier_essai": "2026-10-09T20:12+00:00"
+   "dernier_essai": "2026-10-09T20:31+00:00"
   },
   {
    "site": "polymarket",
@@ -1483,7 +1470,7 @@
    "cat": "météo",
    "fin": "2026-10-09T12:00:00+00:00",
    "date": "2026-10-09T07:13+00:00",
-   "dernier_essai": "2026-10-09T20:12+00:00"
+   "dernier_essai": "2026-10-09T20:31+00:00"
   },
   {
    "site": "polymarket",
@@ -2300,7 +2287,7 @@
    "cat": "météo",
    "fin": "2026-10-09T12:00:00+00:00",
    "date": "2026-10-09T07:47+00:00",
-   "dernier_essai": "2026-10-09T20:12+00:00"
+   "dernier_essai": "2026-10-09T20:31+00:00"
   },
   {
    "site": "polymarket",
@@ -2577,7 +2564,7 @@
    "cat": "météo",
    "fin": "2026-10-09T12:00:00+00:00",
    "date": "2026-10-09T07:55+00:00",
-   "dernier_essai": "2026-10-09T20:12+00:00"
+   "dernier_essai": "2026-10-09T20:31+00:00"
   },
   {
    "site": "polymarket",
@@ -3586,7 +3573,7 @@
    "cat": "météo",
    "fin": "2026-10-09T12:00:00+00:00",
    "date": "2026-10-09T08:31+00:00",
-   "dernier_essai": "2026-10-09T20:12+00:00"
+   "dernier_essai": "2026-10-09T20:31+00:00"
   },
   {
    "site": "polymarket",
@@ -6456,7 +6443,7 @@
    "cat": "météo",
    "fin": "2026-10-09T12:00:00+00:00",
    "date": "2026-10-09T09:36+00:00",
-   "dernier_essai": "2026-10-09T20:12+00:00"
+   "dernier_essai": "2026-10-09T20:31+00:00"
   },
   {
    "site": "polymarket",
@@ -6930,7 +6917,7 @@
    "cat": "météo",
    "fin": "2026-10-09T12:00:00+00:00",
    "date": "2026-10-09T09:58+00:00",
-   "dernier_essai": "2026-10-09T20:12+00:00"
+   "dernier_essai": "2026-10-09T20:31+00:00"
   },
   {
    "site": "polymarket",
@@ -7452,7 +7439,7 @@
    "cat": "météo",
    "fin": "2026-10-09T12:00:00+00:00",
    "date": "2026-10-09T10:08+00:00",
-   "dernier_essai": "2026-10-09T20:12+00:00"
+   "dernier_essai": "2026-10-09T20:31+00:00"
   },
   {
    "site": "kalshi",
@@ -8968,7 +8955,7 @@
    "cat": "météo",
    "fin": "2026-10-09T12:00:00+00:00",
    "date": "2026-10-09T10:58+00:00",
-   "dernier_essai": "2026-10-09T20:12+00:00"
+   "dernier_essai": "2026-10-09T20:31+00:00"
   },
   {
    "site": "polymarket",
@@ -8981,7 +8968,7 @@
    "cat": "météo",
    "fin": "2026-10-09T12:00:00+00:00",
    "date": "2026-10-09T10:58+00:00",
-   "dernier_essai": "2026-10-09T20:12+00:00"
+   "dernier_essai": "2026-10-09T20:31+00:00"
   },
   {
    "site": "polymarket",
@@ -8994,7 +8981,7 @@
    "cat": "marchés",
    "fin": "2026-10-09T20:00:00+00:00",
    "date": "2026-10-09T10:58+00:00",
-   "dernier_essai": "2026-10-09T20:12+00:00"
+   "dernier_essai": "2026-10-09T20:31+00:00"
   },
   {
    "site": "polymarket",
@@ -10408,7 +10395,8 @@
    "prix": 0.9956,
    "cat": "bourse US",
    "fin": "2026-10-09T20:00:00+00:00",
-   "date": "2026-10-09T11:31+00:00"
+   "date": "2026-10-09T11:31+00:00",
+   "dernier_essai": "2026-10-09T20:31+00:00"
   },
   {
    "site": "cboe",
@@ -10420,7 +10408,8 @@
    "prix": 0.9982,
    "cat": "bourse US",
    "fin": "2026-10-09T20:00:00+00:00",
-   "date": "2026-10-09T11:31+00:00"
+   "date": "2026-10-09T11:31+00:00",
+   "dernier_essai": "2026-10-09T20:31+00:00"
   },
   {
    "site": "cboe",
@@ -10432,7 +10421,8 @@
    "prix": 0.9965,
    "cat": "bourse US",
    "fin": "2026-10-09T20:00:00+00:00",
-   "date": "2026-10-09T11:31+00:00"
+   "date": "2026-10-09T11:31+00:00",
+   "dernier_essai": "2026-10-09T20:31+00:00"
   },
   {
    "site": "cboe",
@@ -10444,7 +10434,8 @@
    "prix": 0.993,
    "cat": "bourse US",
    "fin": "2026-10-09T20:00:00+00:00",
-   "date": "2026-10-09T11:31+00:00"
+   "date": "2026-10-09T11:31+00:00",
+   "dernier_essai": "2026-10-09T20:31+00:00"
   },
   {
    "site": "cboe",
@@ -10456,7 +10447,8 @@
    "prix": 0.9958,
    "cat": "bourse US",
    "fin": "2026-10-09T20:00:00+00:00",
-   "date": "2026-10-09T11:31+00:00"
+   "date": "2026-10-09T11:31+00:00",
+   "dernier_essai": "2026-10-09T20:31+00:00"
   },
   {
    "site": "polymarket",
@@ -10840,7 +10832,8 @@
    "prix": 0.9987,
    "cat": "bourse US",
    "fin": "2026-10-09T20:00:00+00:00",
-   "date": "2026-10-09T11:49+00:00"
+   "date": "2026-10-09T11:49+00:00",
+   "dernier_essai": "2026-10-09T20:31+00:00"
   },
   {
    "site": "cboe",
@@ -10852,7 +10845,8 @@
    "prix": 0.9948,
    "cat": "bourse US",
    "fin": "2026-10-09T20:00:00+00:00",
-   "date": "2026-10-09T11:49+00:00"
+   "date": "2026-10-09T11:49+00:00",
+   "dernier_essai": "2026-10-09T20:31+00:00"
   },
   {
    "site": "cboe",
@@ -10864,7 +10858,8 @@
    "prix": 0.9927,
    "cat": "bourse US",
    "fin": "2026-10-09T20:00:00+00:00",
-   "date": "2026-10-09T11:49+00:00"
+   "date": "2026-10-09T11:49+00:00",
+   "dernier_essai": "2026-10-09T20:31+00:00"
   },
   {
    "site": "cboe",
@@ -10876,7 +10871,8 @@
    "prix": 0.9977,
    "cat": "bourse US",
    "fin": "2026-10-09T20:00:00+00:00",
-   "date": "2026-10-09T11:49+00:00"
+   "date": "2026-10-09T11:49+00:00",
+   "dernier_essai": "2026-10-09T20:31+00:00"
   },
   {
    "site": "cboe",
@@ -10888,7 +10884,8 @@
    "prix": 0.9939,
    "cat": "bourse US",
    "fin": "2026-10-09T20:00:00+00:00",
-   "date": "2026-10-09T11:49+00:00"
+   "date": "2026-10-09T11:49+00:00",
+   "dernier_essai": "2026-10-09T20:31+00:00"
   },
   {
    "site": "polymarket",
@@ -11416,7 +11413,8 @@
    "prix": 0.9836,
    "cat": "bourse US",
    "fin": "2026-10-09T20:00:00+00:00",
-   "date": "2026-10-09T12:15+00:00"
+   "date": "2026-10-09T12:15+00:00",
+   "dernier_essai": "2026-10-09T20:31+00:00"
   },
   {
    "site": "cboe",
@@ -11428,7 +11426,8 @@
    "prix": 0.9945,
    "cat": "bourse US",
    "fin": "2026-10-09T20:00:00+00:00",
-   "date": "2026-10-09T12:15+00:00"
+   "date": "2026-10-09T12:15+00:00",
+   "dernier_essai": "2026-10-09T20:31+00:00"
   },
   {
    "site": "cboe",
@@ -11440,7 +11439,8 @@
    "prix": 0.9792,
    "cat": "bourse US",
    "fin": "2026-10-09T20:00:00+00:00",
-   "date": "2026-10-09T12:15+00:00"
+   "date": "2026-10-09T12:15+00:00",
+   "dernier_essai": "2026-10-09T20:31+00:00"
   },
   {
    "site": "cboe",
@@ -11452,7 +11452,8 @@
    "prix": 0.9891,
    "cat": "bourse US",
    "fin": "2026-10-09T20:00:00+00:00",
-   "date": "2026-10-09T12:15+00:00"
+   "date": "2026-10-09T12:15+00:00",
+   "dernier_essai": "2026-10-09T20:31+00:00"
   },
   {
    "site": "cboe",
@@ -11464,7 +11465,8 @@
    "prix": 0.9974,
    "cat": "bourse US",
    "fin": "2026-10-09T20:00:00+00:00",
-   "date": "2026-10-09T12:15+00:00"
+   "date": "2026-10-09T12:15+00:00",
+   "dernier_essai": "2026-10-09T20:31+00:00"
   },
   {
    "site": "polymarket",
@@ -11860,7 +11862,8 @@
    "prix": 0.983,
    "cat": "bourse US",
    "fin": "2026-10-09T20:00:00+00:00",
-   "date": "2026-10-09T12:38+00:00"
+   "date": "2026-10-09T12:38+00:00",
+   "dernier_essai": "2026-10-09T20:31+00:00"
   },
   {
    "site": "cboe",
@@ -11872,7 +11875,8 @@
    "prix": 0.9954,
    "cat": "bourse US",
    "fin": "2026-10-09T20:00:00+00:00",
-   "date": "2026-10-09T12:38+00:00"
+   "date": "2026-10-09T12:38+00:00",
+   "dernier_essai": "2026-10-09T20:31+00:00"
   },
   {
    "site": "cboe",
@@ -11884,7 +11888,8 @@
    "prix": 0.9988,
    "cat": "bourse US",
    "fin": "2026-10-09T20:00:00+00:00",
-   "date": "2026-10-09T12:38+00:00"
+   "date": "2026-10-09T12:38+00:00",
+   "dernier_essai": "2026-10-09T20:31+00:00"
   },
   {
    "site": "cboe",
@@ -11896,7 +11901,8 @@
    "prix": 0.9985,
    "cat": "bourse US",
    "fin": "2026-10-09T20:00:00+00:00",
-   "date": "2026-10-09T12:38+00:00"
+   "date": "2026-10-09T12:38+00:00",
+   "dernier_essai": "2026-10-09T20:31+00:00"
   },
   {
    "site": "cboe",
@@ -11908,7 +11914,8 @@
    "prix": 0.9989,
    "cat": "bourse US",
    "fin": "2026-10-09T20:00:00+00:00",
-   "date": "2026-10-09T12:38+00:00"
+   "date": "2026-10-09T12:38+00:00",
+   "dernier_essai": "2026-10-09T20:31+00:00"
   },
   {
    "site": "polymarket",
@@ -12297,7 +12304,8 @@
    "cat": "bourse US",
    "fin": "2026-10-09T20:00:00+00:00",
    "date": "2026-10-09T12:54+00:00",
-   "groupe": "NVDA|2026-10-09"
+   "groupe": "NVDA|2026-10-09",
+   "dernier_essai": "2026-10-09T20:31+00:00"
   },
   {
    "site": "cboe",
@@ -12310,7 +12318,8 @@
    "cat": "bourse US",
    "fin": "2026-10-09T20:00:00+00:00",
    "date": "2026-10-09T12:54+00:00",
-   "groupe": "NVDA|2026-10-09"
+   "groupe": "NVDA|2026-10-09",
+   "dernier_essai": "2026-10-09T20:31+00:00"
   },
   {
    "site": "cboe",
@@ -12323,7 +12332,8 @@
    "cat": "bourse US",
    "fin": "2026-10-09T20:00:00+00:00",
    "date": "2026-10-09T12:54+00:00",
-   "groupe": "NVDA|2026-10-09"
+   "groupe": "NVDA|2026-10-09",
+   "dernier_essai": "2026-10-09T20:31+00:00"
   },
   {
    "site": "cboe",
@@ -12336,7 +12346,8 @@
    "cat": "bourse US",
    "fin": "2026-10-09T20:00:00+00:00",
    "date": "2026-10-09T12:54+00:00",
-   "groupe": "NVDA|2026-10-09"
+   "groupe": "NVDA|2026-10-09",
+   "dernier_essai": "2026-10-09T20:31+00:00"
   },
   {
    "site": "cboe",
@@ -12349,21 +12360,8 @@
    "cat": "bourse US",
    "fin": "2026-10-09T20:00:00+00:00",
    "date": "2026-10-09T12:54+00:00",
-   "groupe": "NVDA|2026-10-09"
-  },
-  {
-   "site": "polymarket",
-   "id": "5428036",
-   "slug": "googl-close-above-340-on-october-9-2026",
-   "question": "Will Google (GOOGL) close above $340 on October 9?",
-   "cote": "Yes",
-   "idx": 0,
-   "prix": 0.9855,
-   "cat": "autre",
-   "fin": "2026-10-09T20:00:00+00:00",
-   "date": "2026-10-09T13:04+00:00",
-   "groupe": "1153379",
-   "dernier_essai": "2026-10-09T20:12+00:00"
+   "groupe": "NVDA|2026-10-09",
+   "dernier_essai": "2026-10-09T20:31+00:00"
   },
   {
    "site": "kalshi",
@@ -12738,7 +12736,8 @@
    "cat": "bourse US",
    "fin": "2026-10-09T20:00:00+00:00",
    "date": "2026-10-09T13:04+00:00",
-   "groupe": "IWM|2026-10-09"
+   "groupe": "IWM|2026-10-09",
+   "dernier_essai": "2026-10-09T20:31+00:00"
   },
   {
    "site": "cboe",
@@ -12751,7 +12750,8 @@
    "cat": "bourse US",
    "fin": "2026-10-09T20:00:00+00:00",
    "date": "2026-10-09T13:04+00:00",
-   "groupe": "TSLA|2026-10-09"
+   "groupe": "TSLA|2026-10-09",
+   "dernier_essai": "2026-10-09T20:31+00:00"
   },
   {
    "site": "cboe",
@@ -12764,7 +12764,8 @@
    "cat": "bourse US",
    "fin": "2026-10-09T20:00:00+00:00",
    "date": "2026-10-09T13:04+00:00",
-   "groupe": "TSLA|2026-10-09"
+   "groupe": "TSLA|2026-10-09",
+   "dernier_essai": "2026-10-09T20:31+00:00"
   },
   {
    "site": "cboe",
@@ -12777,7 +12778,8 @@
    "cat": "bourse US",
    "fin": "2026-10-09T20:00:00+00:00",
    "date": "2026-10-09T13:04+00:00",
-   "groupe": "TSLA|2026-10-09"
+   "groupe": "TSLA|2026-10-09",
+   "dernier_essai": "2026-10-09T20:31+00:00"
   },
   {
    "site": "cboe",
@@ -12790,7 +12792,8 @@
    "cat": "bourse US",
    "fin": "2026-10-09T20:00:00+00:00",
    "date": "2026-10-09T13:04+00:00",
-   "groupe": "TSLA|2026-10-09"
+   "groupe": "TSLA|2026-10-09",
+   "dernier_essai": "2026-10-09T20:31+00:00"
   },
   {
    "site": "polymarket",
@@ -13179,7 +13182,8 @@
    "cat": "bourse US",
    "fin": "2026-10-09T20:00:00+00:00",
    "date": "2026-10-09T13:33+00:00",
-   "groupe": "MSFT|2026-10-09"
+   "groupe": "MSFT|2026-10-09",
+   "dernier_essai": "2026-10-09T20:31+00:00"
   },
   {
    "site": "cboe",
@@ -13192,7 +13196,8 @@
    "cat": "bourse US",
    "fin": "2026-10-09T20:00:00+00:00",
    "date": "2026-10-09T13:33+00:00",
-   "groupe": "MSFT|2026-10-09"
+   "groupe": "MSFT|2026-10-09",
+   "dernier_essai": "2026-10-09T20:31+00:00"
   },
   {
    "site": "cboe",
@@ -13205,7 +13210,8 @@
    "cat": "bourse US",
    "fin": "2026-10-09T20:00:00+00:00",
    "date": "2026-10-09T13:33+00:00",
-   "groupe": "MSFT|2026-10-09"
+   "groupe": "MSFT|2026-10-09",
+   "dernier_essai": "2026-10-09T20:31+00:00"
   },
   {
    "site": "cboe",
@@ -13218,7 +13224,8 @@
    "cat": "bourse US",
    "fin": "2026-10-09T20:00:00+00:00",
    "date": "2026-10-09T13:33+00:00",
-   "groupe": "MSFT|2026-10-09"
+   "groupe": "MSFT|2026-10-09",
+   "dernier_essai": "2026-10-09T20:31+00:00"
   },
   {
    "site": "cboe",
@@ -13231,7 +13238,8 @@
    "cat": "bourse US",
    "fin": "2026-10-09T20:00:00+00:00",
    "date": "2026-10-09T13:33+00:00",
-   "groupe": "TSLA|2026-10-09"
+   "groupe": "TSLA|2026-10-09",
+   "dernier_essai": "2026-10-09T20:31+00:00"
   },
   {
    "site": "polymarket",
@@ -13686,7 +13694,8 @@
    "cat": "bourse US",
    "fin": "2026-10-09T20:00:00+00:00",
    "date": "2026-10-09T13:59+00:00",
-   "groupe": "SPY|2026-10-09"
+   "groupe": "SPY|2026-10-09",
+   "dernier_essai": "2026-10-09T20:31+00:00"
   },
   {
    "site": "cboe",
@@ -13699,7 +13708,8 @@
    "cat": "bourse US",
    "fin": "2026-10-09T20:00:00+00:00",
    "date": "2026-10-09T13:59+00:00",
-   "groupe": "SPY|2026-10-09"
+   "groupe": "SPY|2026-10-09",
+   "dernier_essai": "2026-10-09T20:31+00:00"
   },
   {
    "site": "cboe",
@@ -13712,7 +13722,8 @@
    "cat": "bourse US",
    "fin": "2026-10-09T20:00:00+00:00",
    "date": "2026-10-09T13:59+00:00",
-   "groupe": "SPY|2026-10-09"
+   "groupe": "SPY|2026-10-09",
+   "dernier_essai": "2026-10-09T20:31+00:00"
   },
   {
    "site": "cboe",
@@ -13725,7 +13736,8 @@
    "cat": "bourse US",
    "fin": "2026-10-09T20:00:00+00:00",
    "date": "2026-10-09T13:59+00:00",
-   "groupe": "SPY|2026-10-09"
+   "groupe": "SPY|2026-10-09",
+   "dernier_essai": "2026-10-09T20:31+00:00"
   },
   {
    "site": "polymarket",
@@ -14128,7 +14140,8 @@
    "cat": "bourse US",
    "fin": "2026-10-09T20:00:00+00:00",
    "date": "2026-10-09T14:17+00:00",
-   "groupe": "SPY|2026-10-09"
+   "groupe": "SPY|2026-10-09",
+   "dernier_essai": "2026-10-09T20:31+00:00"
   },
   {
    "site": "cboe",
@@ -14141,7 +14154,8 @@
    "cat": "bourse US",
    "fin": "2026-10-09T20:00:00+00:00",
    "date": "2026-10-09T14:17+00:00",
-   "groupe": "SPY|2026-10-09"
+   "groupe": "SPY|2026-10-09",
+   "dernier_essai": "2026-10-09T20:31+00:00"
   },
   {
    "site": "cboe",
@@ -14154,7 +14168,8 @@
    "cat": "bourse US",
    "fin": "2026-10-09T20:00:00+00:00",
    "date": "2026-10-09T14:17+00:00",
-   "groupe": "SPY|2026-10-09"
+   "groupe": "SPY|2026-10-09",
+   "dernier_essai": "2026-10-09T20:31+00:00"
   },
   {
    "site": "cboe",
@@ -14167,7 +14182,8 @@
    "cat": "bourse US",
    "fin": "2026-10-09T20:00:00+00:00",
    "date": "2026-10-09T14:17+00:00",
-   "groupe": "SPY|2026-10-09"
+   "groupe": "SPY|2026-10-09",
+   "dernier_essai": "2026-10-09T20:31+00:00"
   },
   {
    "site": "cboe",
@@ -14180,21 +14196,8 @@
    "cat": "bourse US",
    "fin": "2026-10-09T20:00:00+00:00",
    "date": "2026-10-09T14:17+00:00",
-   "groupe": "SPY|2026-10-09"
-  },
-  {
-   "site": "polymarket",
-   "id": "5224540",
-   "slug": "wwcquefa-bela-ita-2026-10-09-bela",
-   "question": "Will Belarus win on 2026-10-09?",
-   "cote": "No",
-   "idx": 1,
-   "prix": 0.978,
-   "cat": "autre",
-   "fin": "2026-10-09T16:15:00+00:00",
-   "date": "2026-10-09T14:47+00:00",
-   "groupe": "1122659",
-   "dernier_essai": "2026-10-09T20:12+00:00"
+   "groupe": "SPY|2026-10-09",
+   "dernier_essai": "2026-10-09T20:31+00:00"
   },
   {
    "site": "polymarket",
@@ -14298,7 +14301,7 @@
    "cat": "crypto",
    "fin": "2026-10-09T16:00:00+00:00",
    "date": "2026-10-09T14:47+00:00",
-   "dernier_essai": "2026-10-09T20:12+00:00"
+   "dernier_essai": "2026-10-09T20:31+00:00"
   },
   {
    "site": "deribit",
@@ -14571,7 +14574,8 @@
    "cat": "bourse US",
    "fin": "2026-10-09T20:00:00+00:00",
    "date": "2026-10-09T14:47+00:00",
-   "groupe": "SPY|2026-10-09"
+   "groupe": "SPY|2026-10-09",
+   "dernier_essai": "2026-10-09T20:31+00:00"
   },
   {
    "site": "cboe",
@@ -14584,7 +14588,8 @@
    "cat": "bourse US",
    "fin": "2026-10-09T20:00:00+00:00",
    "date": "2026-10-09T14:47+00:00",
-   "groupe": "SPY|2026-10-09"
+   "groupe": "SPY|2026-10-09",
+   "dernier_essai": "2026-10-09T20:31+00:00"
   },
   {
    "site": "cboe",
@@ -14597,7 +14602,8 @@
    "cat": "bourse US",
    "fin": "2026-10-09T20:00:00+00:00",
    "date": "2026-10-09T14:47+00:00",
-   "groupe": "SPY|2026-10-09"
+   "groupe": "SPY|2026-10-09",
+   "dernier_essai": "2026-10-09T20:31+00:00"
   },
   {
    "site": "cboe",
@@ -14610,7 +14616,8 @@
    "cat": "bourse US",
    "fin": "2026-10-09T20:00:00+00:00",
    "date": "2026-10-09T14:47+00:00",
-   "groupe": "SPY|2026-10-09"
+   "groupe": "SPY|2026-10-09",
+   "dernier_essai": "2026-10-09T20:31+00:00"
   },
   {
    "site": "cboe",
@@ -14623,7 +14630,8 @@
    "cat": "bourse US",
    "fin": "2026-10-09T20:00:00+00:00",
    "date": "2026-10-09T14:47+00:00",
-   "groupe": "SPY|2026-10-09"
+   "groupe": "SPY|2026-10-09",
+   "dernier_essai": "2026-10-09T20:31+00:00"
   },
   {
    "site": "kalshi",
@@ -15075,7 +15083,8 @@
    "cat": "bourse US",
    "fin": "2026-10-09T20:00:00+00:00",
    "date": "2026-10-09T15:13+00:00",
-   "groupe": "SPY|2026-10-09"
+   "groupe": "SPY|2026-10-09",
+   "dernier_essai": "2026-10-09T20:31+00:00"
   },
   {
    "site": "cboe",
@@ -15088,7 +15097,8 @@
    "cat": "bourse US",
    "fin": "2026-10-09T20:00:00+00:00",
    "date": "2026-10-09T15:13+00:00",
-   "groupe": "SPY|2026-10-09"
+   "groupe": "SPY|2026-10-09",
+   "dernier_essai": "2026-10-09T20:31+00:00"
   },
   {
    "site": "cboe",
@@ -15101,7 +15111,8 @@
    "cat": "bourse US",
    "fin": "2026-10-09T20:00:00+00:00",
    "date": "2026-10-09T15:13+00:00",
-   "groupe": "SPY|2026-10-09"
+   "groupe": "SPY|2026-10-09",
+   "dernier_essai": "2026-10-09T20:31+00:00"
   },
   {
    "site": "cboe",
@@ -15114,7 +15125,8 @@
    "cat": "bourse US",
    "fin": "2026-10-09T20:00:00+00:00",
    "date": "2026-10-09T15:13+00:00",
-   "groupe": "SPY|2026-10-09"
+   "groupe": "SPY|2026-10-09",
+   "dernier_essai": "2026-10-09T20:31+00:00"
   },
   {
    "site": "cboe",
@@ -15127,7 +15139,8 @@
    "cat": "bourse US",
    "fin": "2026-10-09T20:00:00+00:00",
    "date": "2026-10-09T15:13+00:00",
-   "groupe": "SPY|2026-10-09"
+   "groupe": "SPY|2026-10-09",
+   "dernier_essai": "2026-10-09T20:31+00:00"
   },
   {
    "site": "polymarket",
@@ -15231,7 +15244,7 @@
    "cat": "crypto",
    "fin": "2026-10-09T20:00:00+00:00",
    "date": "2026-10-09T15:31+00:00",
-   "dernier_essai": "2026-10-09T20:12+00:00"
+   "dernier_essai": "2026-10-09T20:31+00:00"
   },
   {
    "site": "limitless",
@@ -15244,7 +15257,7 @@
    "cat": "crypto",
    "fin": "2026-10-09T20:00:00+00:00",
    "date": "2026-10-09T15:31+00:00",
-   "dernier_essai": "2026-10-09T20:12+00:00"
+   "dernier_essai": "2026-10-09T20:31+00:00"
   },
   {
    "site": "deribit",
@@ -15556,7 +15569,8 @@
    "cat": "bourse US",
    "fin": "2026-10-09T20:00:00+00:00",
    "date": "2026-10-09T15:31+00:00",
-   "groupe": "SPY|2026-10-09"
+   "groupe": "SPY|2026-10-09",
+   "dernier_essai": "2026-10-09T20:31+00:00"
   },
   {
    "site": "cboe",
@@ -15569,7 +15583,8 @@
    "cat": "bourse US",
    "fin": "2026-10-09T20:00:00+00:00",
    "date": "2026-10-09T15:31+00:00",
-   "groupe": "SPY|2026-10-09"
+   "groupe": "SPY|2026-10-09",
+   "dernier_essai": "2026-10-09T20:31+00:00"
   },
   {
    "site": "cboe",
@@ -15582,7 +15597,8 @@
    "cat": "bourse US",
    "fin": "2026-10-09T20:00:00+00:00",
    "date": "2026-10-09T15:31+00:00",
-   "groupe": "SPY|2026-10-09"
+   "groupe": "SPY|2026-10-09",
+   "dernier_essai": "2026-10-09T20:31+00:00"
   },
   {
    "site": "cboe",
@@ -15595,7 +15611,8 @@
    "cat": "bourse US",
    "fin": "2026-10-09T20:00:00+00:00",
    "date": "2026-10-09T15:31+00:00",
-   "groupe": "SPY|2026-10-09"
+   "groupe": "SPY|2026-10-09",
+   "dernier_essai": "2026-10-09T20:31+00:00"
   },
   {
    "site": "cboe",
@@ -15608,21 +15625,8 @@
    "cat": "bourse US",
    "fin": "2026-10-09T20:00:00+00:00",
    "date": "2026-10-09T15:31+00:00",
-   "groupe": "SPY|2026-10-09"
-  },
-  {
-   "site": "polymarket",
-   "id": "5218339",
-   "slug": "will-aapl-dip-to-324-by-october-5-2026",
-   "question": "Will Apple (AAPL) hit (LOW) $324 Week of October 5 2026?",
-   "cote": "No",
-   "idx": 1,
-   "prix": 0.9895,
-   "cat": "autre",
-   "fin": "2026-10-09T20:00:00+00:00",
-   "date": "2026-10-09T15:50+00:00",
-   "groupe": "1121257",
-   "dernier_essai": "2026-10-09T20:12+00:00"
+   "groupe": "SPY|2026-10-09",
+   "dernier_essai": "2026-10-09T20:31+00:00"
   },
   {
    "site": "polymarket",
@@ -15998,7 +16002,8 @@
    "cat": "bourse US",
    "fin": "2026-10-09T20:00:00+00:00",
    "date": "2026-10-09T15:50+00:00",
-   "groupe": "SPY|2026-10-09"
+   "groupe": "SPY|2026-10-09",
+   "dernier_essai": "2026-10-09T20:31+00:00"
   },
   {
    "site": "cboe",
@@ -16205,7 +16210,7 @@
    "cat": "crypto",
    "fin": "2026-10-09T20:00:00+00:00",
    "date": "2026-10-09T16:11+00:00",
-   "dernier_essai": "2026-10-09T20:12+00:00"
+   "dernier_essai": "2026-10-09T20:31+00:00"
   },
   {
    "site": "limitless",
@@ -16567,7 +16572,7 @@
    "fin": "2026-10-09T20:00:00+00:00",
    "date": "2026-10-09T16:31+00:00",
    "groupe": "1153395",
-   "dernier_essai": "2026-10-09T20:12+00:00"
+   "dernier_essai": "2026-10-09T20:31+00:00"
   },
   {
    "site": "polymarket",
@@ -17048,35 +17053,7 @@
    "fin": "2026-10-09T20:00:00+00:00",
    "date": "2026-10-09T16:50+00:00",
    "groupe": "1153386",
-   "dernier_essai": "2026-10-09T20:12+00:00"
-  },
-  {
-   "site": "polymarket",
-   "id": "5218845",
-   "slug": "will-open-reach-2-50-by-october-5-2026",
-   "question": "Will Opendoor Technologies Inc. (OPEN) hit (HIGH) $2.50 Week of October 5 2026?",
-   "cote": "No",
-   "idx": 1,
-   "prix": 0.9945,
-   "cat": "autre",
-   "fin": "2026-10-09T20:00:00+00:00",
-   "date": "2026-10-09T16:50+00:00",
-   "groupe": "1121299",
-   "dernier_essai": "2026-10-09T20:12+00:00"
-  },
-  {
-   "site": "polymarket",
-   "id": "5218883",
-   "slug": "mu-above-1100-on-october-9-2026",
-   "question": "Will Micron (MU) finish week of October 5 above $1,100?",
-   "cote": "No",
-   "idx": 1,
-   "prix": 0.978,
-   "cat": "autre",
-   "fin": "2026-10-09T20:00:00+00:00",
-   "date": "2026-10-09T16:50+00:00",
-   "groupe": "1121301",
-   "dernier_essai": "2026-10-09T20:12+00:00"
+   "dernier_essai": "2026-10-09T20:31+00:00"
   },
   {
    "site": "polymarket",
@@ -17090,7 +17067,7 @@
    "fin": "2026-10-09T20:00:00+00:00",
    "date": "2026-10-09T16:50+00:00",
    "groupe": "1121315",
-   "dernier_essai": "2026-10-09T20:12+00:00"
+   "dernier_essai": "2026-10-09T20:31+00:00"
   },
   {
    "site": "polymarket",
@@ -17104,7 +17081,7 @@
    "fin": "2026-10-09T20:00:00+00:00",
    "date": "2026-10-09T16:50+00:00",
    "groupe": "1121305",
-   "dernier_essai": "2026-10-09T20:12+00:00"
+   "dernier_essai": "2026-10-09T20:31+00:00"
   },
   {
    "site": "polymarket",
@@ -17118,7 +17095,7 @@
    "fin": "2026-10-09T20:00:00+00:00",
    "date": "2026-10-09T16:50+00:00",
    "groupe": "1153374",
-   "dernier_essai": "2026-10-09T20:12+00:00"
+   "dernier_essai": "2026-10-09T20:31+00:00"
   },
   {
    "site": "polymarket",
@@ -18430,7 +18407,7 @@
    "fin": "2026-10-09T18:45:00+00:00",
    "date": "2026-10-09T17:44+00:00",
    "groupe": "1083695",
-   "dernier_essai": "2026-10-09T20:12+00:00"
+   "dernier_essai": "2026-10-09T20:31+00:00"
   },
   {
    "site": "polymarket",
@@ -18780,7 +18757,7 @@
    "fin": "2026-10-09T20:00:00+00:00",
    "date": "2026-10-09T17:59+00:00",
    "groupe": "1153374",
-   "dernier_essai": "2026-10-09T20:12+00:00"
+   "dernier_essai": "2026-10-09T20:31+00:00"
   },
   {
    "site": "polymarket",
@@ -21389,7 +21366,7 @@
    "fin": "2026-10-09T20:00:00+00:00",
    "date": "2026-10-09T19:35+00:00",
    "groupe": "1153379",
-   "dernier_essai": "2026-10-09T20:12+00:00"
+   "dernier_essai": "2026-10-09T20:31+00:00"
   },
   {
    "site": "polymarket",
@@ -22716,6 +22693,419 @@
    "fin": "2026-10-10T12:00:00+00:00",
    "date": "2026-10-09T20:12+00:00",
    "groupe": "BTC|2026-10-10T12"
+  },
+  {
+   "site": "polymarket",
+   "id": "5433266",
+   "slug": "will-wti-dip-to-90-by-october-5-2026-from-october-8",
+   "question": "Will WTI Crude Oil (WTI) hit (LOW) $90 Week of October 5 2026?",
+   "cote": "No",
+   "idx": 1,
+   "prix": 0.9935,
+   "cat": "autre",
+   "fin": "2026-10-09T22:00:00+00:00",
+   "date": "2026-10-09T20:31+00:00",
+   "groupe": "1121320"
+  },
+  {
+   "site": "polymarket",
+   "id": "5448272",
+   "slug": "will-ethereum-dip-to-2400-on-october-9-2026",
+   "question": "Will Ethereum dip to $2,400 on October 9?",
+   "cote": "No",
+   "idx": 1,
+   "prix": 0.9703,
+   "cat": "crypto",
+   "fin": "2026-10-10T04:00:00+00:00",
+   "date": "2026-10-09T20:31+00:00",
+   "groupe": "1157194"
+  },
+  {
+   "site": "polymarket",
+   "id": "5286512",
+   "slug": "bitcoin-above-90k-on-october-11-2026",
+   "question": "Will the price of Bitcoin be above $90,000 on October 11?",
+   "cote": "No",
+   "idx": 1,
+   "prix": 0.9985,
+   "cat": "crypto",
+   "fin": "2026-10-11T16:00:00+00:00",
+   "date": "2026-10-09T20:31+00:00",
+   "groupe": "1131499"
+  },
+  {
+   "site": "polymarket",
+   "id": "2100982",
+   "slug": "will-together-win-the-most-seats-in-the-2026-israeli-legislative-election",
+   "question": "Will Together win the most seats in the 2026 Israeli legislative election?",
+   "cote": "No",
+   "idx": 1,
+   "prix": 0.996,
+   "cat": "politique",
+   "fin": "2026-10-28T03:59:00+00:00",
+   "date": "2026-10-09T20:31+00:00",
+   "groupe": "425728"
+  },
+  {
+   "site": "kalshi",
+   "id": "KXFEDDISSENT-26OCT-JERO",
+   "slug": "kxfeddissent-26oct-jero",
+   "question": "Who will dissent at the October 2026 FOMC meeting? — Jerome Powell",
+   "cote": "Non",
+   "idx": 1,
+   "prix": 0.985,
+   "cat": "autre",
+   "fin": "2026-10-28T17:59:00+00:00",
+   "date": "2026-10-09T20:31+00:00",
+   "groupe": "KXFEDDISSENT-26OCT"
+  },
+  {
+   "site": "limitless",
+   "id": "movistar-koi-fenix-vs-tln-pirates-1791396001928",
+   "slug": "movistar-koi-fenix-vs-tln-pirates-1791396001928",
+   "question": "⁠Movistar KOI Fénix vs TLN Pirates",
+   "cote": "Oui",
+   "idx": 0,
+   "prix": 0.9945,
+   "cat": "marchés",
+   "fin": "2026-10-10T16:45:00+00:00",
+   "date": "2026-10-09T20:31+00:00"
+  },
+  {
+   "site": "limitless",
+   "id": "borussia-dortmund-and-werder-bremen-have-3-or-more-total-goals-1791106200560",
+   "slug": "borussia-dortmund-and-werder-bremen-have-3-or-more-total-goals-1791106200560",
+   "question": "Borussia Dortmund and Werder Bremen have 3 or more total goals?",
+   "cote": "Oui",
+   "idx": 0,
+   "prix": 0.992,
+   "cat": "autre",
+   "fin": "2026-10-10T18:30:00+00:00",
+   "date": "2026-10-09T20:31+00:00"
+  },
+  {
+   "site": "limitless",
+   "id": "borussia-dortmund-and-werder-bremen-both-to-score-1791106203748",
+   "slug": "borussia-dortmund-and-werder-bremen-both-to-score-1791106203748",
+   "question": "Borussia Dortmund and Werder Bremen both to score?",
+   "cote": "Oui",
+   "idx": 0,
+   "prix": 0.9945,
+   "cat": "autre",
+   "fin": "2026-10-10T18:30:00+00:00",
+   "date": "2026-10-09T20:31+00:00"
+  },
+  {
+   "site": "gemini",
+   "id": "GEMI-ETH2610102100-HI2400",
+   "slug": "ETH2610102100",
+   "question": "ETH price on October 10 — $2,400 or above",
+   "cote": "Oui",
+   "idx": 0,
+   "prix": 0.975,
+   "cat": "crypto",
+   "fin": "2026-10-10T21:00:00+00:00",
+   "date": "2026-10-09T20:31+00:00",
+   "groupe": "ETH2610102100"
+  },
+  {
+   "site": "smarkets",
+   "id": "168904740:466108375",
+   "slug": "168904740",
+   "question": "Delfin SC vs Mushuc Runa — Correct score : 1 - 3",
+   "cote": "Non",
+   "idx": 1,
+   "prix": 0.9825,
+   "cat": "foot",
+   "fin": "2026-10-09T23:30:00+00:00",
+   "date": "2026-10-09T20:31+00:00",
+   "groupe": "45361156"
+  },
+  {
+   "site": "smarkets",
+   "id": "168904742:466108390",
+   "slug": "168904742",
+   "question": "Delfin SC vs Mushuc Runa — Half-time/full-time : Delfin SC / Mushuc Runa",
+   "cote": "Non",
+   "idx": 1,
+   "prix": 0.9831,
+   "cat": "foot",
+   "fin": "2026-10-09T23:30:00+00:00",
+   "date": "2026-10-09T20:31+00:00",
+   "groupe": "45361156"
+  },
+  {
+   "site": "smarkets",
+   "id": "168904742:466108392",
+   "slug": "168904742",
+   "question": "Delfin SC vs Mushuc Runa — Half-time/full-time : Mushuc Runa / Delfin SC",
+   "cote": "Non",
+   "idx": 1,
+   "prix": 0.9786,
+   "cat": "foot",
+   "fin": "2026-10-09T23:30:00+00:00",
+   "date": "2026-10-09T20:31+00:00",
+   "groupe": "45361156"
+  },
+  {
+   "site": "smarkets",
+   "id": "168904768:466108496",
+   "slug": "168904768",
+   "question": "Delfin SC vs Mushuc Runa — Winner and over/under 4.5 : Draw / over 4.5 goals",
+   "cote": "Non",
+   "idx": 1,
+   "prix": 0.9922,
+   "cat": "foot",
+   "fin": "2026-10-09T23:30:00+00:00",
+   "date": "2026-10-09T20:31+00:00",
+   "groupe": "45361156"
+  },
+  {
+   "site": "smarkets",
+   "id": "168900914:466098834",
+   "slug": "168900914",
+   "question": "Iowa Hawkeyes at Washington Huskies — Half-time/full-time : Draw / Draw",
+   "cote": "Non",
+   "idx": 1,
+   "prix": 0.9899,
+   "cat": "sport US",
+   "fin": "2026-10-10T04:00:00+00:00",
+   "date": "2026-10-09T20:31+00:00",
+   "groupe": "45340798"
+  },
+  {
+   "site": "smarkets",
+   "id": "168901640:466100600",
+   "slug": "168901640",
+   "question": "Washington State Cougars at Utah State Aggies — Half-time/full-time : Utah State / Draw",
+   "cote": "Non",
+   "idx": 1,
+   "prix": 0.9856,
+   "cat": "sport US",
+   "fin": "2026-10-10T04:00:00+00:00",
+   "date": "2026-10-09T20:31+00:00",
+   "groupe": "45354115"
+  },
+  {
+   "site": "smarkets",
+   "id": "168901640:466100603",
+   "slug": "168901640",
+   "question": "Washington State Cougars at Utah State Aggies — Half-time/full-time : Washington State / Draw",
+   "cote": "Non",
+   "idx": 1,
+   "prix": 0.9875,
+   "cat": "sport US",
+   "fin": "2026-10-10T04:00:00+00:00",
+   "date": "2026-10-09T20:31+00:00",
+   "groupe": "45354115"
+  },
+  {
+   "site": "smarkets",
+   "id": "168777904:465791929",
+   "slug": "168777904",
+   "question": "Otago vs Hawke's Bay — Half-time/full-time : Otago / Draw",
+   "cote": "Non",
+   "idx": 1,
+   "prix": 0.9909,
+   "cat": "autres sports",
+   "fin": "2026-10-10T06:05:00+00:00",
+   "date": "2026-10-09T20:31+00:00",
+   "groupe": "45359676"
+  },
+  {
+   "site": "smarkets",
+   "id": "168777904:465791933",
+   "slug": "168777904",
+   "question": "Otago vs Hawke's Bay — Half-time/full-time : Draw / Otago",
+   "cote": "Non",
+   "idx": 1,
+   "prix": 0.9777,
+   "cat": "autres sports",
+   "fin": "2026-10-10T06:05:00+00:00",
+   "date": "2026-10-09T20:31+00:00",
+   "groupe": "45359676"
+  },
+  {
+   "site": "smarkets",
+   "id": "168777904:465791934",
+   "slug": "168777904",
+   "question": "Otago vs Hawke's Bay — Half-time/full-time : Draw / Hawke's Bay",
+   "cote": "Non",
+   "idx": 1,
+   "prix": 0.9896,
+   "cat": "autres sports",
+   "fin": "2026-10-10T06:05:00+00:00",
+   "date": "2026-10-09T20:31+00:00",
+   "groupe": "45359676"
+  },
+  {
+   "site": "smarkets",
+   "id": "169712772:468199544",
+   "slug": "169712772",
+   "question": "Qualification - Grand Prix of Indonesia 2026 — Winner : Casey O Gorman",
+   "cote": "Non",
+   "idx": 1,
+   "prix": 0.9922,
+   "cat": "autres sports",
+   "fin": "2026-10-10T07:45:00+00:00",
+   "date": "2026-10-09T20:31+00:00",
+   "groupe": "45369376"
+  },
+  {
+   "site": "smarkets",
+   "id": "169730140:468240573",
+   "slug": "169730140",
+   "question": "KCC Egis vs Wonju DB New Generation — First half winner and over/under 92.5 points : Draw / over 92.5 points",
+   "cote": "Non",
+   "idx": 1,
+   "prix": 0.9886,
+   "cat": "basket",
+   "fin": "2026-10-10T08:00:00+00:00",
+   "date": "2026-10-09T20:31+00:00",
+   "groupe": "45255917"
+  },
+  {
+   "site": "okx",
+   "id": "BTC-USD_UM-261011-80000-C",
+   "slug": "BTC|2026-10-11|80000",
+   "question": "BTC au-dessus de 80 000 $ le 11/10/2026 à 8 h UTC ?",
+   "cote": "Au-dessus",
+   "idx": 0,
+   "prix": 0.9844,
+   "cat": "crypto",
+   "fin": "2026-10-11T08:00:00+00:00",
+   "date": "2026-10-09T20:31+00:00",
+   "groupe": "BTC|2026-10-11T08"
+  },
+  {
+   "site": "aevo",
+   "id": "BTC-10OCT26-92000-C",
+   "slug": "BTC|2026-10-10|92000",
+   "question": "BTC au-dessus de 92 000 $ le 10/10/2026 à 8 h UTC ?",
+   "cote": "En dessous",
+   "idx": 1,
+   "prix": 0.9999,
+   "cat": "crypto",
+   "fin": "2026-10-10T08:00:00+00:00",
+   "date": "2026-10-09T20:31+00:00",
+   "groupe": "BTC|2026-10-10T08"
+  },
+  {
+   "site": "aevo",
+   "id": "BTC-10OCT26-93000-C",
+   "slug": "BTC|2026-10-10|93000",
+   "question": "BTC au-dessus de 93 000 $ le 10/10/2026 à 8 h UTC ?",
+   "cote": "En dessous",
+   "idx": 1,
+   "prix": 0.9999,
+   "cat": "crypto",
+   "fin": "2026-10-10T08:00:00+00:00",
+   "date": "2026-10-09T20:31+00:00",
+   "groupe": "BTC|2026-10-10T08"
+  },
+  {
+   "site": "aevo",
+   "id": "BTC-10OCT26-94000-C",
+   "slug": "BTC|2026-10-10|94000",
+   "question": "BTC au-dessus de 94 000 $ le 10/10/2026 à 8 h UTC ?",
+   "cote": "En dessous",
+   "idx": 1,
+   "prix": 0.9999,
+   "cat": "crypto",
+   "fin": "2026-10-10T08:00:00+00:00",
+   "date": "2026-10-09T20:31+00:00",
+   "groupe": "BTC|2026-10-10T08"
+  },
+  {
+   "site": "aevo",
+   "id": "BTC-10OCT26-95000-C",
+   "slug": "BTC|2026-10-10|95000",
+   "question": "BTC au-dessus de 95 000 $ le 10/10/2026 à 8 h UTC ?",
+   "cote": "En dessous",
+   "idx": 1,
+   "prix": 0.9999,
+   "cat": "crypto",
+   "fin": "2026-10-10T08:00:00+00:00",
+   "date": "2026-10-09T20:31+00:00",
+   "groupe": "BTC|2026-10-10T08"
+  },
+  {
+   "site": "aevo",
+   "id": "BTC-10OCT26-96000-C",
+   "slug": "BTC|2026-10-10|96000",
+   "question": "BTC au-dessus de 96 000 $ le 10/10/2026 à 8 h UTC ?",
+   "cote": "En dessous",
+   "idx": 1,
+   "prix": 0.9999,
+   "cat": "crypto",
+   "fin": "2026-10-10T08:00:00+00:00",
+   "date": "2026-10-09T20:31+00:00",
+   "groupe": "BTC|2026-10-10T08"
+  },
+  {
+   "site": "cboe",
+   "id": "SPY261012C00710000",
+   "slug": "SPY|2026-10-12|710",
+   "question": "SPY au-dessus de 710 $ à la clôture du 12/10/2026 ?",
+   "cote": "Au-dessus",
+   "idx": 0,
+   "prix": 0.9984,
+   "cat": "bourse US",
+   "fin": "2026-10-12T20:00:00+00:00",
+   "date": "2026-10-09T20:31+00:00",
+   "groupe": "SPY|2026-10-12"
+  },
+  {
+   "site": "cboe",
+   "id": "SPY261012C00741000",
+   "slug": "SPY|2026-10-12|741",
+   "question": "SPY au-dessus de 741 $ à la clôture du 12/10/2026 ?",
+   "cote": "Au-dessus",
+   "idx": 0,
+   "prix": 0.992,
+   "cat": "bourse US",
+   "fin": "2026-10-12T20:00:00+00:00",
+   "date": "2026-10-09T20:31+00:00",
+   "groupe": "SPY|2026-10-12"
+  },
+  {
+   "site": "cboe",
+   "id": "SPY261012C00742000",
+   "slug": "SPY|2026-10-12|742",
+   "question": "SPY au-dessus de 742 $ à la clôture du 12/10/2026 ?",
+   "cote": "Au-dessus",
+   "idx": 0,
+   "prix": 0.9879,
+   "cat": "bourse US",
+   "fin": "2026-10-12T20:00:00+00:00",
+   "date": "2026-10-09T20:31+00:00",
+   "groupe": "SPY|2026-10-12"
+  },
+  {
+   "site": "cboe",
+   "id": "SPY261012C00751000",
+   "slug": "SPY|2026-10-12|751",
+   "question": "SPY au-dessus de 751 $ à la clôture du 12/10/2026 ?",
+   "cote": "Au-dessus",
+   "idx": 0,
+   "prix": 0.9952,
+   "cat": "bourse US",
+   "fin": "2026-10-12T20:00:00+00:00",
+   "date": "2026-10-09T20:31+00:00",
+   "groupe": "SPY|2026-10-12"
+  },
+  {
+   "site": "cboe",
+   "id": "SPY261012C00752000",
+   "slug": "SPY|2026-10-12|752",
+   "question": "SPY au-dessus de 752 $ à la clôture du 12/10/2026 ?",
+   "cote": "Au-dessus",
+   "idx": 0,
+   "prix": 0.9894,
+   "cat": "bourse US",
+   "fin": "2026-10-12T20:00:00+00:00",
+   "date": "2026-10-09T20:31+00:00",
+   "groupe": "SPY|2026-10-12"
   }
  ],
  "obs_resolues": [
@@ -26945,6 +27335,101 @@
    "groupe": "45361570",
    "gagne": 1,
    "resolu_le": "2026-10-09T20:12+00:00"
+  },
+  {
+   "site": "polymarket",
+   "id": "5224543",
+   "slug": "wwcquefa-gre-eng-2026-10-09-gre",
+   "question": "Will Greece win on 2026-10-09?",
+   "cote": "No",
+   "idx": 1,
+   "prix": 0.9815,
+   "cat": "autre",
+   "fin": "2026-10-09T16:30:00+00:00",
+   "date": "2026-10-09T06:46+00:00",
+   "dernier_essai": "2026-10-09T20:12+00:00",
+   "gagne": 1,
+   "resolu_le": "2026-10-09T20:31+00:00"
+  },
+  {
+   "site": "polymarket",
+   "id": "5428036",
+   "slug": "googl-close-above-340-on-october-9-2026",
+   "question": "Will Google (GOOGL) close above $340 on October 9?",
+   "cote": "Yes",
+   "idx": 0,
+   "prix": 0.9855,
+   "cat": "autre",
+   "fin": "2026-10-09T20:00:00+00:00",
+   "date": "2026-10-09T13:04+00:00",
+   "groupe": "1153379",
+   "dernier_essai": "2026-10-09T20:12+00:00",
+   "gagne": 1,
+   "resolu_le": "2026-10-09T20:31+00:00"
+  },
+  {
+   "site": "polymarket",
+   "id": "5224540",
+   "slug": "wwcquefa-bela-ita-2026-10-09-bela",
+   "question": "Will Belarus win on 2026-10-09?",
+   "cote": "No",
+   "idx": 1,
+   "prix": 0.978,
+   "cat": "autre",
+   "fin": "2026-10-09T16:15:00+00:00",
+   "date": "2026-10-09T14:47+00:00",
+   "groupe": "1122659",
+   "dernier_essai": "2026-10-09T20:12+00:00",
+   "gagne": 1,
+   "resolu_le": "2026-10-09T20:31+00:00"
+  },
+  {
+   "site": "polymarket",
+   "id": "5218339",
+   "slug": "will-aapl-dip-to-324-by-october-5-2026",
+   "question": "Will Apple (AAPL) hit (LOW) $324 Week of October 5 2026?",
+   "cote": "No",
+   "idx": 1,
+   "prix": 0.9895,
+   "cat": "autre",
+   "fin": "2026-10-09T20:00:00+00:00",
+   "date": "2026-10-09T15:50+00:00",
+   "groupe": "1121257",
+   "dernier_essai": "2026-10-09T20:12+00:00",
+   "gagne": 1,
+   "resolu_le": "2026-10-09T20:31+00:00"
+  },
+  {
+   "site": "polymarket",
+   "id": "5218845",
+   "slug": "will-open-reach-2-50-by-october-5-2026",
+   "question": "Will Opendoor Technologies Inc. (OPEN) hit (HIGH) $2.50 Week of October 5 2026?",
+   "cote": "No",
+   "idx": 1,
+   "prix": 0.9945,
+   "cat": "autre",
+   "fin": "2026-10-09T20:00:00+00:00",
+   "date": "2026-10-09T16:50+00:00",
+   "groupe": "1121299",
+   "dernier_essai": "2026-10-09T20:12+00:00",
+   "gagne": 1,
+   "resolu_le": "2026-10-09T20:31+00:00"
+  },
+  {
+   "site": "polymarket",
+   "id": "5218883",
+   "slug": "mu-above-1100-on-october-9-2026",
+   "question": "Will Micron (MU) finish week of October 5 above $1,100?",
+   "cote": "No",
+   "idx": 1,
+   "prix": 0.978,
+   "cat": "autre",
+   "fin": "2026-10-09T20:00:00+00:00",
+   "date": "2026-10-09T16:50+00:00",
+   "groupe": "1121301",
+   "dernier_essai": "2026-10-09T20:12+00:00",
+   "gagne": 1,
+   "resolu_le": "2026-10-09T20:31+00:00"
   }
  ],
  "apprentissage": {
@@ -26967,10 +27452,10 @@
    "taux_reel": 1.0
   },
   "polymarket|tranche:>=0.985": {
-   "n": 23,
-   "gagnes": 22,
-   "prix_moy": 0.98737,
-   "taux_reel": 0.95652
+   "n": 25,
+   "gagnes": 24,
+   "prix_moy": 0.98738,
+   "taux_reel": 0.96
   },
   "limitless|tranche:>=0.985": {
    "n": 9,
@@ -27159,10 +27644,10 @@
    "taux_reel": 1.0
   },
   "polymarket|cat:autre": {
-   "n": 142,
-   "gagnes": 137,
-   "prix_moy": 0.9947,
-   "taux_reel": 0.96479
+   "n": 148,
+   "gagnes": 143,
+   "prix_moy": 0.99428,
+   "taux_reel": 0.96622
   },
   "smarkets|cat:basket": {
    "n": 20,
@@ -27177,10 +27662,10 @@
    "taux_reel": 1.0
   },
   "polymarket|tranche:>=0.99": {
-   "n": 62,
-   "gagnes": 60,
-   "prix_moy": 0.99273,
-   "taux_reel": 0.96774
+   "n": 63,
+   "gagnes": 61,
+   "prix_moy": 0.99276,
+   "taux_reel": 0.96825
   },
   "limitless|tranche:>=0.995": {
    "n": 4,
@@ -27195,16 +27680,16 @@
    "taux_reel": 1.0
   },
   "polymarket|tranche:>=0.975": {
-   "n": 17,
-   "gagnes": 17,
-   "prix_moy": 0.97759,
+   "n": 19,
+   "gagnes": 19,
+   "prix_moy": 0.97763,
    "taux_reel": 1.0
   },
   "polymarket|tranche:>=0.98": {
-   "n": 26,
-   "gagnes": 25,
-   "prix_moy": 0.98227,
-   "taux_reel": 0.96154
+   "n": 27,
+   "gagnes": 26,
+   "prix_moy": 0.98224,
+   "taux_reel": 0.96296
   },
   "limitless|tranche:>=0.97": {
    "n": 2,
@@ -27354,48 +27839,8 @@
  "fraction_kelly": 0.25,
  "pic": 1000.0,
  "dernier_ajust": 0,
- "rejets": 337,
+ "rejets": 342,
  "journal": [
-  {
-   "quand": "2026-10-09T09:36+00:00",
-   "texte": "[polymarket] ignoré (pas achetable, souvent déjà joué) : Counter-Strike: 1WIN vs Aurora Gaming - Map 1 Winner"
-  },
-  {
-   "quand": "2026-10-09T09:36+00:00",
-   "texte": "[polymarket] ignoré (pas achetable, souvent déjà joué) : Shanghai Rolex Masters: Alejandro Davidovich Fokina vs Jenso"
-  },
-  {
-   "quand": "2026-10-09T09:36+00:00",
-   "texte": "[polymarket] ignoré (pas achetable, souvent déjà joué) : W50 Heraklion: Alice Tubello vs Martha MATOULA"
-  },
-  {
-   "quand": "2026-10-09T09:36+00:00",
-   "texte": "[gemini] rejet (cote relue 0.720, sous le seuil) : ETH price today at 5:40am EDT — Up"
-  },
-  {
-   "quand": "2026-10-09T09:36+00:00",
-   "texte": "[gemini] rejet (cote relue 0.695, sous le seuil) : SOL price today at 5:40am EDT — Up"
-  },
-  {
-   "quand": "2026-10-09T09:36+00:00",
-   "texte": "[gemini] rejet (lectures discordantes [0.69, 0.695, 0.695, 0.695, 0.695, 0.695]) : XRP price today at 5:40am EDT — Up"
-  },
-  {
-   "quand": "2026-10-09T09:36+00:00",
-   "texte": "[gemini] ignoré (pas achetable, souvent déjà joué) : Baycurrent Classic Winner — Kevin Yu"
-  },
-  {
-   "quand": "2026-10-09T09:36+00:00",
-   "texte": "[gemini] ignoré (pas achetable, souvent déjà joué) : Baycurrent Classic Top 10 Finish — Yoshinori Fujimoto"
-  },
-  {
-   "quand": "2026-10-09T09:36+00:00",
-   "texte": "[gemini] ignoré (pas achetable, souvent déjà joué) : Baycurrent Classic Top 10 Finish — Sang-hee Lee"
-  },
-  {
-   "quand": "2026-10-09T09:36+00:00",
-   "texte": "[gemini] ignoré (pas achetable, souvent déjà joué) : Baycurrent Classic Top 10 Finish — Maverick McNealy"
-  },
   {
    "quand": "2026-10-09T09:36+00:00",
    "texte": "[gemini] ignoré (pas achetable, souvent déjà joué) : Baycurrent Classic Top 10 Finish — Alex Smalley"
@@ -29355,194 +29800,234 @@
   {
    "quand": "2026-10-09T20:12+00:00",
    "texte": "[smarkets] rejet (seulement 2/6 lectures) : KCC Egis vs Wonju DB New Generation — First half winner and "
+  },
+  {
+   "quand": "2026-10-09T20:31+00:00",
+   "texte": "[polymarket] historique illisible : lecture impossible : https://gamma-api.polymarket.com/markets?closed=true&limit=250&offset=2100&order=volumeNum&ascending=false&volume_num_min=5000 (HTTP Error 422: Unprocessable Entity)"
+  },
+  {
+   "quand": "2026-10-09T20:31+00:00",
+   "texte": "[polymarket] rejet (lectures discordantes [0.971, 0.9945, 0.9755, 0.9755, 0.9945, 0.9945]) : Counter-Strike: Sangal vs G2 Ares (BO3) - Roman Imperium Cup"
+  },
+  {
+   "quand": "2026-10-09T20:31+00:00",
+   "texte": "[polymarket] ignoré (pas achetable, souvent déjà joué) : LoL: ⁠Movistar KOI Fénix vs TLN Pirates (BO5) - EMEA Masters"
+  },
+  {
+   "quand": "2026-10-09T20:31+00:00",
+   "texte": "[polymarket] ignoré (pas achetable, souvent déjà joué) : LoL: ⁠Movistar KOI Fénix vs TLN Pirates - Game 4 Winner"
+  },
+  {
+   "quand": "2026-10-09T20:31+00:00",
+   "texte": "[polymarket] ignoré (pas achetable, souvent déjà joué) : Games Total: O/U 4.5"
+  },
+  {
+   "quand": "2026-10-09T20:31+00:00",
+   "texte": "[polymarket] ignoré (pas achetable, souvent déjà joué) : Counter-Strike: MOUZ NXT vs Leo Team (BO3) - ESL Challenger "
+  },
+  {
+   "quand": "2026-10-09T20:31+00:00",
+   "texte": "[smarkets] rejet (seulement 0/6 lectures) : Delfin SC vs Mushuc Runa — Correct score : Any other away wi"
+  },
+  {
+   "quand": "2026-10-09T20:31+00:00",
+   "texte": "[smarkets] rejet (seulement 2/6 lectures) : Edmonton Elks at Hamilton Tiger-Cats — First Half Winner (3-"
+  },
+  {
+   "quand": "2026-10-09T20:31+00:00",
+   "texte": "[smarkets] rejet (seulement 2/6 lectures) : Washington State Cougars at Utah State Aggies — Half-time/fu"
+  },
+  {
+   "quand": "2026-10-09T20:31+00:00",
+   "texte": "[smarkets] rejet (seulement 2/6 lectures) : Otago vs Hawke's Bay — Half-time/full-time : Draw / Draw"
   }
  ],
- "passages": 52,
+ "passages": 53,
  "sites": {
   "polymarket": {
-   "marches_vus": 34469,
-   "candidats": 760,
-   "retenus": 619,
-   "rejets": 141,
-   "erreurs": 12,
+   "marches_vus": 35117,
+   "candidats": 769,
+   "retenus": 627,
+   "rejets": 142,
+   "erreurs": 13,
    "dernier_ok": "2026-10-09T16:50+00:00",
    "historique": 520
   },
   "kalshi": {
-   "marches_vus": 21389,
-   "candidats": 242,
-   "retenus": 236,
+   "marches_vus": 21767,
+   "candidats": 243,
+   "retenus": 237,
    "rejets": 6,
    "erreurs": 0,
-   "dernier_ok": "2026-10-09T20:12+00:00",
+   "dernier_ok": "2026-10-09T20:31+00:00",
    "historique": 0
   },
   "manifold": {
-   "marches_vus": 3265,
+   "marches_vus": 3329,
    "candidats": 9,
    "retenus": 9,
    "rejets": 0,
    "erreurs": 4,
-   "dernier_ok": "2026-10-09T20:12+00:00",
+   "dernier_ok": "2026-10-09T20:31+00:00",
    "historique": 920
   },
   "limitless": {
-   "marches_vus": 16828,
-   "candidats": 83,
-   "retenus": 70,
+   "marches_vus": 17158,
+   "candidats": 86,
+   "retenus": 73,
    "rejets": 13,
    "erreurs": 0,
-   "dernier_ok": "2026-10-09T20:12+00:00",
+   "dernier_ok": "2026-10-09T20:31+00:00",
    "historique": 0
   },
   "gemini": {
-   "marches_vus": 99035,
-   "candidats": 174,
-   "retenus": 134,
+   "marches_vus": 101145,
+   "candidats": 175,
+   "retenus": 135,
    "rejets": 40,
    "erreurs": 0,
-   "dernier_ok": "2026-10-09T20:12+00:00",
+   "dernier_ok": "2026-10-09T20:31+00:00",
    "historique": 0
   },
   "smarkets": {
-   "marches_vus": 67106,
-   "candidats": 356,
-   "retenus": 235,
-   "rejets": 121,
+   "marches_vus": 69507,
+   "candidats": 372,
+   "retenus": 247,
+   "rejets": 125,
    "erreurs": 13,
-   "dernier_ok": "2026-10-09T20:12+00:00",
+   "dernier_ok": "2026-10-09T20:31+00:00",
    "historique": 0
   },
   "espn": {
-   "marches_vus": 10372,
+   "marches_vus": 10610,
    "candidats": 0,
    "retenus": 0,
    "rejets": 0,
    "erreurs": 2,
-   "dernier_ok": "2026-10-09T20:12+00:00",
+   "dernier_ok": "2026-10-09T20:31+00:00",
    "historique": 0
   },
   "futuur": {
-   "marches_vus": 12425,
+   "marches_vus": 12685,
    "candidats": 1,
    "retenus": 1,
    "rejets": 0,
    "erreurs": 0,
-   "dernier_ok": "2026-10-09T20:12+00:00",
+   "dernier_ok": "2026-10-09T20:31+00:00",
    "historique": 0
   },
   "azuro": {
-   "marches_vus": 517221,
+   "marches_vus": 529652,
    "candidats": 0,
    "retenus": 0,
    "rejets": 0,
    "erreurs": 0,
-   "dernier_ok": "2026-10-09T20:12+00:00",
+   "dernier_ok": "2026-10-09T20:31+00:00",
    "historique": 0
   },
   "deribit": {
-   "marches_vus": 31852,
+   "marches_vus": 32635,
    "candidats": 167,
    "retenus": 167,
    "rejets": 0,
    "erreurs": 0,
-   "dernier_ok": "2026-10-09T20:12+00:00",
+   "dernier_ok": "2026-10-09T20:31+00:00",
    "historique": 0
   },
   "okx": {
-   "marches_vus": 34179,
-   "candidats": 205,
-   "retenus": 205,
+   "marches_vus": 35035,
+   "candidats": 206,
+   "retenus": 206,
    "rejets": 0,
    "erreurs": 0,
-   "dernier_ok": "2026-10-09T20:12+00:00",
+   "dernier_ok": "2026-10-09T20:31+00:00",
    "historique": 0
   },
   "delta_inde": {
-   "marches_vus": 16727,
+   "marches_vus": 17133,
    "candidats": 114,
    "retenus": 113,
    "rejets": 1,
    "erreurs": 0,
-   "dernier_ok": "2026-10-09T20:12+00:00",
+   "dernier_ok": "2026-10-09T20:31+00:00",
    "historique": 0
   },
   "gate": {
-   "marches_vus": 25707,
+   "marches_vus": 26334,
    "candidats": 168,
    "retenus": 166,
    "rejets": 2,
    "erreurs": 0,
-   "dernier_ok": "2026-10-09T20:12+00:00",
+   "dernier_ok": "2026-10-09T20:31+00:00",
    "historique": 0
   },
   "aevo": {
-   "marches_vus": 36736,
-   "candidats": 205,
-   "retenus": 203,
+   "marches_vus": 37632,
+   "candidats": 210,
+   "retenus": 208,
    "rejets": 2,
    "erreurs": 0,
-   "dernier_ok": "2026-10-09T20:12+00:00",
+   "dernier_ok": "2026-10-09T20:31+00:00",
    "historique": 0
   },
   "thalex": {
-   "marches_vus": 3171,
+   "marches_vus": 3259,
    "candidats": 25,
    "retenus": 25,
    "rejets": 0,
    "erreurs": 0,
-   "dernier_ok": "2026-10-09T20:12+00:00",
+   "dernier_ok": "2026-10-09T20:31+00:00",
    "historique": 0
   },
   "derive": {
-   "marches_vus": 4800,
+   "marches_vus": 4920,
    "candidats": 83,
    "retenus": 83,
    "rejets": 0,
    "erreurs": 0,
-   "dernier_ok": "2026-10-09T20:12+00:00",
+   "dernier_ok": "2026-10-09T20:31+00:00",
    "historique": 0
   },
   "cboe": {
-   "marches_vus": 740876,
-   "candidats": 195,
-   "retenus": 189,
+   "marches_vus": 760029,
+   "candidats": 200,
+   "retenus": 194,
    "rejets": 6,
    "erreurs": 0,
-   "dernier_ok": "2026-10-09T20:12+00:00",
+   "dernier_ok": "2026-10-09T20:31+00:00",
    "historique": 0
   },
   "sxbet": {
-   "marches_vus": 7194,
+   "marches_vus": 7378,
    "candidats": 0,
    "retenus": 0,
    "rejets": 0,
    "erreurs": 0,
-   "dernier_ok": "2026-10-09T20:12+00:00",
+   "dernier_ok": "2026-10-09T20:31+00:00",
    "historique": 0
   },
   "delta_monde": {
-   "marches_vus": 792,
+   "marches_vus": 818,
    "candidats": 12,
    "retenus": 12,
    "rejets": 0,
    "erreurs": 0,
-   "dernier_ok": "2026-10-09T20:12+00:00",
+   "dernier_ok": "2026-10-09T20:31+00:00",
    "historique": 0
   },
   "polymarket_us": {
-   "marches_vus": 44400,
+   "marches_vus": 45600,
    "candidats": 33,
    "retenus": 28,
    "rejets": 5,
    "erreurs": 0,
-   "dernier_ok": "2026-10-09T20:12+00:00",
+   "dernier_ok": "2026-10-09T20:31+00:00",
    "historique": 0
   }
  },
  "dernier_passage": {
-  "debut": "2026-10-09T20:06+00:00",
-  "duree_s": 352
+  "debut": "2026-10-09T20:27+00:00",
+  "duree_s": 292
  },
  "non_achetables": {
   "polymarket|2915095": "2026-10-10T03:59:00+00:00",
@@ -29751,7 +30236,6 @@
   "polymarket|5434038": "2026-10-16T09:00:00+00:00",
   "polymarket|5442219": "2026-10-16T11:00:00+00:00",
   "smarkets|168649079:465464981": "2026-10-09T20:30:00+00:00",
-  "polymarket|5414682": "2026-10-09T20:15:00+00:00",
   "polymarket|5408302": "2026-10-16T09:00:00+00:00",
   "polymarket|5445270": "2026-10-16T13:30:00+00:00",
   "polymarket|5447715": "2026-10-16T14:30:00+00:00",
@@ -29771,7 +30255,6 @@
   "gemini|GEMI-GOLF-BAY-T10-20261011-NAKAJIMA": "2026-10-09T22:00:00+00:00",
   "gemini|GEMI-GOLF-BAY-T10-20261011-PHILLIPS": "2026-10-09T22:00:00+00:00",
   "polymarket|4587244": "2026-10-27T00:15:00+00:00",
-  "polymarket|5441686": "2026-10-09T20:10:00+00:00",
   "polymarket|5405897": "2026-10-09T21:15:00+00:00",
   "polymarket|5412636": "2026-10-09T22:00:00+00:00",
   "polymarket|5391204": "2026-10-09T22:45:00+00:00",
@@ -29821,7 +30304,11 @@
   "polymarket|5434411": "2026-10-10T00:30:00+00:00",
   "polymarket|5434410": "2026-10-10T00:30:00+00:00",
   "polymarket|4585607": "2026-10-15T03:59:00+00:00",
-  "polymarket|5447597": "2026-10-16T15:30:00+00:00"
+  "polymarket|5447597": "2026-10-16T15:30:00+00:00",
+  "polymarket|5391208": "2026-10-09T22:45:00+00:00",
+  "polymarket|5391207": "2026-10-09T22:45:00+00:00",
+  "polymarket|5391210": "2026-10-09T22:45:00+00:00",
+  "polymarket|5464091": "2026-10-09T23:00:00+00:00"
  },
  "historique": [
   {
@@ -47386,7 +47873,7 @@
  "curseurs": {
   "polymarket": 2100,
   "kalshi": 0,
-  "manifold": 8500,
+  "manifold": 8750,
   "limitless": 0,
   "gemini": 0,
   "smarkets": 0,
