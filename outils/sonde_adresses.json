@@ -1,17 +1,9 @@
 [
- "https://api.smarkets.com/v3/markets/168211766/contracts/",
- "https://api.smarkets.com/v3/markets/168211766/quotes/",
- "https://api.smarkets.com/v3/events/45320924/markets/",
- "https://api.smarkets.com/v3/events/45320924/",
- {
-  "url": "https://thegraph.azuro.org/subgraphs/name/azuro-protocol/azuro-api-polygon-v3",
-  "corps": {
-   "query": "{ conditions(first:3, where:{status:Created, game_:{startsAt_gt:\"1791540000\"}}, orderBy:createdBlockTimestamp, orderDirection:desc) { conditionId status outcomes { outcomeId currentOdds } game { gameId title startsAt status sport { name } league { name country { name } } } } }"
-  }
- },
- "https://api.matchbook.com/edge/rest/events/34540070240700023?include-prices=true",
- "https://api.matchbook.com/edge/rest/events/34540070240700023/markets/34540070245000023",
- "https://api.futuur.com/api/v1/markets/247690/",
- "https://sports.core.api.espn.com/v2/sports/football/leagues/nfl/events/401872980/competitions/401872980/odds",
- "https://api-v2.myriadprotocol.com/markets?state=open&limit=100"
+ "https://api.smarkets.com/v3/events/45355321,45320924/markets/",
+ "https://api.smarkets.com/v3/markets/168211766,164422219/quotes/",
+ "https://api.smarkets.com/v3/markets/168211766,164422219/contracts/",
+ "https://api.smarkets.com/v3/events/?state=upcoming&type_scope=single_event&limit=100&sort=start_datetime,id&start_datetime_min=2026-10-09T09:00:00Z&start_datetime_max=2026-10-12T00:00:00Z",
+ "https://api.gemini.com/v1/prediction-markets/events?status=active&limit=100&offset=0",
+ "https://api.futuur.com/api/v1/markets/?limit=50&outcomes_type=updown",
+ "https://api.futuur.com/api/v1/markets/?limit=50&offset=50"
 ]
