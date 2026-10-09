@@ -37,6 +37,15 @@ puis vérification sur un vrai passage (compteurs dans etat.json -> sites).
 - HKJC (Hong Kong), TAB (Australie), Betfair, Sportsbet, bwin, FDJ, Sporttery (Chine), Sofascore : bloqués
   ou clé obligatoire. Pinnacle : cotes lisibles mais pas de résultats. PMU : rapports jamais > 97 %.
 
+## Vérification du 9 octobre (chef-1.7)
+- Historique : la cote était prise 24 h avant la FERMETURE du marché ; pour un marché fermé tôt (événement déjà
+  arrivé) ou tard (résultat connu des jours avant), elle connaissait déjà la fin -> 1 082 favoris gagnants sur
+  1 082, trop beau. Désormais : cote 24 h avant la fin PRÉVUE, marchés fermés en avance ignorés. Premier
+  résultat honnête : 24 gagnants sur 26 (≈ 92 %). Surveiller ce taux : c'est lui qui règle la confiance du bot.
+- ESPN retire les cotes après le match : les résultats sont lus sans elles ; foot = 90 minutes (prolongation ou
+  tirs au but -> remboursé). Pas d'historique ESPN possible.
+- Résultats introuvables : relus à tour de rôle, abandonnés au bout de 30 jours (pari fictif remboursé).
+
 ## À faire, par ordre d'intérêt
 1. Historique Kalshi : chandeliers de prix (/series/{serie}/markets/{ticker}/candlesticks), cote 24 h avant la fin.
 2. Historique Limitless : trouver la liste des marchés résolus (status RESOLVED) et l'historique des prix.
