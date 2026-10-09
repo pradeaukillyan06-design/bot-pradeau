@@ -42,7 +42,7 @@ CFG = {
     "fraction_kelly": 0.25,
     "max_paris_ouverts": 60,
     "bankroll": 1000.0,
-    "historique_par_site": 100,     # marchés terminés étudiés par site et par passage (expérience immédiate)
+    "historique_par_site": 250,     # marchés terminés étudiés par site et par passage (expérience immédiate)
     "historique_heures_avant": 24,  # cote regardée 24 h avant la fin
 }
 
