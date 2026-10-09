@@ -10,7 +10,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 import cerveau as C                      # noqa: E402
 import sites.commun as SC                # noqa: E402
-from sites import azuro, espn, futuur, gemini, kalshi, limitless, manifold, options_crypto, polymarket, smarkets  # noqa: E402
+from sites import azuro, cboe, espn, futuur, gemini, kalshi, limitless, manifold, options_crypto, polymarket, smarkets  # noqa: E402
 
 T0 = SC.maintenant()
 FIN = (T0 + timedelta(days=2)).strftime("%Y-%m-%dT%H:%M:%SZ")
@@ -106,6 +106,7 @@ INST_THA = {"instrument_name": THA, "type": "option", "option_type": "call", "ex
 TICK_DRV = {"instrument_name": DRV, "base_currency": "BTC", "is_active": True,
             "option_details": {"expiry": int(ECH.timestamp()), "strike": "78000", "option_type": "C"},
             "option_pricing": {"iv": "0.30", "forward_price": "82000"}}
+SPY = f"SPY{ECH:%y%m%d}C00755000"
 TICK_DEL = {"symbol": DEL, "spot_price": "82000", "mark_vol": "0.30", "oi": "1"}
 TICK_GAT = {"name": GAT, "underlying_price": "82000", "mark_iv": "0.30", "expiration_time": int(ECH.timestamp())}
 MAR_AEV = {"instrument_name": AEV, "option_type": "call", "is_active": True, "expiry": str(int(ECH.timestamp()) * 10**9),
@@ -152,6 +153,18 @@ def faux_internet(url, *a, **k):
             return {"result": [r for r in OPT["deribit"] if r["instrument_name"] == nom]}
         if "get_delivery_prices" in url:
             return {"result": {"data": [OPT["livraison"]] if OPT["livraison"] else []}}
+    if "cdn.cboe.com" in url:
+        if "/quotes/SPY.json" in url:
+            return {"data": {"current_price": 774.0}}
+        if "/quotes/" in url:
+            return {"data": {}}
+        if "/options/SPY.json" in url:
+            return {"data": {"options": [{"option": SPY, "iv": 0.15, "open_interest": 10},
+                                         {"option": SPY.replace("C", "P", 1), "iv": 0.15, "open_interest": 10}]}}
+        if "/options/" in url:
+            return {"data": {"options": []}}
+        if "/historical/SPY.json" in url:
+            return {"data": [{"date": f"{ECH:%Y-%m-%d}", "close": 770.0}] if OPT["fini"] else []}
     if "thalex.com" in url:
         if url.endswith("/instruments"):
             return {"result": [INST_THA]}
@@ -242,7 +255,7 @@ def faux_internet(url, *a, **k):
     raise AssertionError("adresse inattendue " + url)
 
 
-for mod in (polymarket, kalshi, manifold, limitless, gemini, smarkets, espn, futuur, azuro, options_crypto):  # noqa
+for mod in (polymarket, kalshi, manifold, limitless, gemini, smarkets, espn, futuur, azuro, options_crypto, cboe):  # noqa
     mod.lire_json = faux_internet
 C.CFG["pause_lectures_s"] = 0
 ERREURS = []
@@ -290,6 +303,7 @@ with tempfile.TemporaryDirectory() as d:
     verifier("Gate observé", ("gate", GAT) in obs)
     verifier("Aevo observé", ("aevo", AEV) in obs)
     verifier("Thalex observé", ("thalex", THA) in obs)
+    verifier("CBOE : SPY au-dessus de 755 $ observé", ("cboe", SPY) in obs)
     verifier("Derive observé", ("derive", DRV) in obs)
     verifier("OKX : même calcul lu sur une autre bourse", ("okx", f"{OKX}-78000-C") in obs)
     verifier("Smarkets « pas de match nul » à 98 % observé", ("smarkets", "M1:K1") in obs)
@@ -359,6 +373,7 @@ with tempfile.TemporaryDirectory() as d:
     verifier("OKX : prix final en dessous -> perdu", o.get(("okx", f"{OKX}-78000-C"), {}).get("gagne") == 0)
     verifier("Delta : réglé à 81 000 -> gagné", o.get(("delta_inde", DEL), {}).get("gagne") == 1)
     verifier("Gate : réglé à 81 000 -> gagné", o.get(("gate", GAT), {}).get("gagne") == 1)
+    verifier("CBOE : clôture 770 $ -> gagné", o.get(("cboe", SPY), {}).get("gagne") == 1)
     verifier("Thalex : réglé à 81 000 -> gagné", o.get(("thalex", THA), {}).get("gagne") == 1)
     verifier("Derive : réglé à 81 000 -> gagné", o.get(("derive", DRV), {}).get("gagne") == 1)
     verifier("Aevo : réglé à 77 000 -> perdu", o.get(("aevo", AEV), {}).get("gagne") == 0)

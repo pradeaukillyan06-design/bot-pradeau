@@ -1,4 +1,5 @@
 from .azuro import Azuro
+from .cboe import Cboe
 from .espn import Espn
 from .futuur import Futuur
 from .gemini import Gemini
@@ -10,4 +11,4 @@ from .polymarket import Polymarket
 from .smarkets import Smarkets
 
 TOUS = [Polymarket(), Kalshi(), Manifold(), Limitless(), Gemini(), Smarkets(), Espn(), Futuur(), Azuro(), Deribit(), Okx(),
-        DeltaInde(), Gate(), Aevo(), Thalex(), Derive()]
+        DeltaInde(), Gate(), Aevo(), Thalex(), Derive(), Cboe()]
