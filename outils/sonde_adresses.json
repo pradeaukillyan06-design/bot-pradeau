@@ -1,70 +1,52 @@
 [
- "https://api.sx.bet/markets/active?onlyMainLine=true",
- "https://api.sx.bet/orders/odds/best?baseToken=0x6629Ce1Cf35Cc1329ebB4F63202F3f197b3F050B",
- "https://api.sx.bet/trades?settled=true&pageSize=3",
- "https://api.sx.bet/summary",
- "https://api.smarkets.com/v3/events/?state=upcoming&limit=3&sort=start_datetime,id",
- "https://api.smarkets.com/v3/events/?state=settled&limit=3",
- "https://api.smarkets.com/v3/popular/event_ids/",
+ "https://api.sx.bet/orders?marketHashes=0x2d6e2c24de38d38922f6ee85144d578893fb8f5f5380f0e0145a2a73f1c6f144",
+ "https://api.sx.bet/orders/odds/best?marketHashes=0x2d6e2c24de38d38922f6ee85144d578893fb8f5f5380f0e0145a2a73f1c6f144",
+ "https://api.sx.bet/markets/find?marketHashes=0x2d6e2c24de38d38922f6ee85144d578893fb8f5f5380f0e0145a2a73f1c6f144",
+ "https://api.sx.bet/markets/active?onlyMainLine=true&pageSize=2&paginationKey=",
+ "https://api.sx.bet/trades?pageSize=3",
+ "https://api.sx.bet/metadata",
+ "https://api.smarkets.com/v3/events/?state=upcoming&type_domain=football&type_scope=single_event&limit=3&sort=start_datetime,id&start_datetime_min=2026-10-09T08:00:00Z",
+ "https://api.smarkets.com/v3/events/45299126/markets/",
+ "https://api.smarkets.com/v3/events/?state=ended&limit=2&sort=-start_datetime,id&type_domain=football",
+ "https://api.onchainfeed.org/api/v1/public/market-manager/sports?gameState=Prematch",
  {
   "url": "https://thegraph.azuro.org/subgraphs/name/azuro-protocol/azuro-api-polygon-v3",
   "corps": {
-   "query": "{ conditions(first:3, where:{status:Created}) { conditionId status outcomes { outcomeId currentOdds } game { title startsAt sport { name } league { name country { name } } } } }"
+   "query": "{ conditions(first:3, orderBy:createdBlockTimestamp, orderDirection:desc) { conditionId status wonOutcomeIds createdBlockTimestamp outcomes { outcomeId currentOdds } game { title startsAt status sport { name } league { name country { name } } } } }"
   }
  },
  {
-  "url": "https://thegraph.azuro.org/subgraphs/name/azuro-protocol/azuro-api-gnosis-v3",
+  "url": "https://thegraph.onchainfeed.org/subgraphs/name/azuro-protocol/azuro-data-feed-polygon",
   "corps": {
-   "query": "{ conditions(first:3, where:{status:Created}) { conditionId status outcomes { outcomeId currentOdds } game { title startsAt sport { name } league { name country { name } } } } }"
+   "query": "{ conditions(first:3, orderBy:turnover, orderDirection:desc) { conditionId state wonOutcomeIds outcomes { outcomeId currentOdds } game { title startsAt } } }"
+  }
+ },
+ "https://api-v2.myriadprotocol.com/markets?state=open&limit=2",
+ "https://api-v2.myriadprotocol.com/markets/490",
+ "https://api.futuur.com/api/v1/markets/?limit=2&status=resolved",
+ "https://api.futuur.com/api/v1/markets/247653/",
+ "https://api.gemini.com/v1/prediction-markets/events?status=settled&limit=2",
+ "https://api.gemini.com/v1/prediction-markets/events?limit=2&status=active",
+ "https://api.gemini.com/v1/prediction-markets/events/315029",
+ "https://sports.core.api.espn.com/v2/sports/football/leagues/nfl/events/401872980/competitions/401872980/odds",
+ "https://sports.core.api.espn.com/v2/sports/football/leagues/nfl/events/401872980/competitions/401872980",
+ "https://sports.core.api.espn.com/v2/sports/soccer/leagues/eng.1/events?limit=2",
+ "https://site.web.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard",
+ "https://eu-offering-api.kambicdn.com/offering/v2018/ub/listView/tennis.json?lang=fr_FR&market=FR",
+ "https://www.football-data.co.uk/mmz4281/2526/E0.csv",
+ "http://www.tennis-data.co.uk/2025/2025.xlsx",
+ "https://api.matchbook.com/edge/rest/events?per-page=2",
+ {
+  "url": "https://api.hyperliquid.xyz/info",
+  "corps": {
+   "type": "outcomeMeta"
   }
  },
  {
-  "url": "https://thegraph.azuro.org/subgraphs/name/azuro-protocol/azuro-api-polygon-v3",
+  "url": "https://zeitgeist-squid-mainnet.zeitgeist.pm/graphql",
   "corps": {
-   "query": "{ conditions(first:3, where:{status:Resolved}) { conditionId status wonOutcomeIds outcomes { outcomeId currentOdds } game { title startsAt } } }"
+   "query": "{ markets(limit:2) { marketId question status } }"
   }
  },
- {
-  "url": "https://thegraph.azuro.org/subgraphs/name/azuro-protocol/azuro-api-base-v3",
-  "corps": {
-   "query": "{ conditions(first:3, where:{status:Created}) { conditionId status outcomes { outcomeId currentOdds } game { title startsAt sport { name } league { name country { name } } } } }"
-  }
- },
- {
-  "url": "https://thegraph.azuro.org/subgraphs/name/azuro-protocol/azuro-api-chiliz-v3",
-  "corps": {
-   "query": "{ conditions(first:3, where:{status:Created}) { conditionId status outcomes { outcomeId currentOdds } game { title startsAt sport { name } league { name country { name } } } } }"
-  }
- },
- "https://api.onchainfeed.org/api/v1/public/market-manager/sports",
- "https://overtimemarketsv2.xyz/overtime-v2/networks/10/markets?ungroup=true",
- "https://api.overtime.io/overtime-v2/networks/10/markets",
- "https://api-v2.myriadprotocol.com/markets?limit=3",
- "https://api.polkamarkets.com/markets?network_id=2741",
- "https://api.futuur.com/api/v1/markets/?limit=3",
- "https://www.metaculus.com/api/posts/?statuses=open&limit=3",
- "https://insightprediction.com/api/markets",
- {
-  "url": "https://processor.rpc-0.zeitgeist.pm/graphql",
-  "corps": {
-   "query": "{ markets(limit:3, where:{status_eq:Active}) { marketId question status outcomeAssets categories { name } period { end } assets { price } } }"
-  }
- },
- "https://api.gemini.com/v1/prediction-markets/events",
- "https://api.predict.fun/v1/markets",
- "https://data.api.drift.trade/stats/markets",
- "https://www.predictit.org/api/marketdata/all/",
- "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard",
- "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard",
- "https://sports.core.api.espn.com/v2/sports/football/leagues/nfl/events?limit=2",
- "https://api.manifold.markets/v0/markets?limit=1",
- "https://www.forecastex.com/api/v1/contracts",
- "https://api.hedgehog.markets/markets",
- "https://api.truemarkets.org/markets",
- "https://api.opinion.trade/openapi/market",
- "https://clob.polymarket.com/sampling-markets",
- "https://www.deribit.com/api/v2/public/get_instruments?currency=BTC&kind=option&expired=false",
- "https://api.elections.kalshi.com/trade-api/v2/series?limit=2",
- "https://api.probable.markets/markets",
- "https://www.betfair.com/www/sports/exchange/readonly/v1/bymarket?alt=json&currencyCode=EUR&locale=fr"
+ "https://www.bovada.lv/services/sports/event/coupon/events/A/description/tennis?marketFilterId=def&preMatchOnly=true&lang=en"
 ]
