@@ -483,3 +483,9 @@ class Derive:
         if lectures[0] != lectures[1]:
             return {"fini": False, "contradiction": True}
         return lectures[0]
+
+
+class DeltaMonde(DeltaInde):
+    """Delta Exchange international (bourse distincte de Delta India : autres prix, autre carnet)."""
+    nom = "delta_monde"
+    BASE = "https://api.delta.exchange/v2"

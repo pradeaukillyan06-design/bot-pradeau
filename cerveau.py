@@ -29,7 +29,7 @@ from sites.commun import date_iso, maintenant
 ICI = Path(__file__).parent
 ETAT = ICI / "etat" / "etat.json"
 CFG = {
-    "version": "chef-1.5",
+    "version": "chef-1.6",
     "seuil": 0.97,
     "lectures_min": 6,
     "ecart_lectures_max": 0.005,
@@ -219,6 +219,8 @@ def verifier(site, m):
     achats = [l["achat"][i] for l in lectures if l["achat"][i] is not None]
     if len(achats) >= CFG["lectures_min"] // 2 and max(achats) - min(achats) > CFG["ecart_lectures_max"]:
         return None, f"prix d'achat discordants {achats}"
+    if statistics.median(cotes) <= CFG["seuil"]:
+        return None, f"cote relue {statistics.median(cotes):.3f}, sous le seuil"
     return {"cote": statistics.median(cotes),
             "achat": statistics.median(achats) if len(achats) >= CFG["lectures_min"] // 2 else None}, None
 
