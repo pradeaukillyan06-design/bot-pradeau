@@ -15,7 +15,8 @@ def lire(url, corps=None):
 out = {}
 for l in json.load(open(sys.argv[1])):
     url, corps = (l, None) if isinstance(l, str) else (l["url"], l.get("corps"))
+    n = 30000 if isinstance(l, str) else l.get("taille", 30000)
     s, t = lire(url, corps)
-    out[url + (" POST" if corps else "")] = {"statut": s, "taille": len(t), "debut": t[:30000]}
+    out[url + (" POST" if corps else "")] = {"statut": s, "taille": len(t), "debut": t[:n]}
     print(s, len(t), url)
 json.dump(out, open(sys.argv[2], "w"), indent=1, ensure_ascii=False)

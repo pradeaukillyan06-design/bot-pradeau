@@ -1,5 +1,1 @@
-[
- "https://site.web.api.espn.com/apis/site/v2/sports/football/college-football/scoreboard?dates=20261009-20261012&limit=300",
- "https://site.web.api.espn.com/apis/site/v2/sports/football/college-football/scoreboard?dates=20261004&limit=300",
- "https://site.web.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard?dates=20261009-20261012&limit=300"
-]
+[{"url": "https://site.web.api.espn.com/apis/site/v2/sports/football/college-football/scoreboard?dates=20261010&limit=300", "taille": 3000000}]
