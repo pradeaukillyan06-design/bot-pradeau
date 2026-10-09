@@ -3994,6 +3994,570 @@
    "cat": "autres sports",
    "fin": "2026-10-09T15:30:00+00:00",
    "date": "2026-10-09T08:16+00:00"
+  },
+  {
+   "site": "polymarket",
+   "id": "5397858",
+   "slug": "highest-temperature-in-chongqing-on-october-9-2026-26c",
+   "question": "Will the highest temperature in Chongqing be 26°C on October 9?",
+   "cote": "Yes",
+   "idx": 0,
+   "prix": 0.991,
+   "cat": "météo",
+   "fin": "2026-10-09T12:00:00+00:00",
+   "date": "2026-10-09T08:26+00:00"
+  },
+  {
+   "site": "polymarket",
+   "id": "5114501",
+   "slug": "elon-musk-of-tweets-october-2-october-9-2026-360-379",
+   "question": "Will Elon Musk post 360-379 tweets from October 2 to October 9, 2026?",
+   "cote": "No",
+   "idx": 1,
+   "prix": 0.9712,
+   "cat": "tweets",
+   "fin": "2026-10-09T16:00:00+00:00",
+   "date": "2026-10-09T08:26+00:00"
+  },
+  {
+   "site": "polymarket",
+   "id": "5311906",
+   "slug": "will-ethereum-reach-3000-october-5-11-2026",
+   "question": "Will Ethereum reach $3,000 October 5-11?",
+   "cote": "No",
+   "idx": 1,
+   "prix": 0.995,
+   "cat": "crypto",
+   "fin": "2026-10-12T04:00:00+00:00",
+   "date": "2026-10-09T08:26+00:00"
+  },
+  {
+   "site": "polymarket",
+   "id": "5311911",
+   "slug": "will-ethereum-reach-2900-october-5-11-2026",
+   "question": "Will Ethereum reach $2,900 October 5-11?",
+   "cote": "No",
+   "idx": 1,
+   "prix": 0.9958,
+   "cat": "crypto",
+   "fin": "2026-10-12T04:00:00+00:00",
+   "date": "2026-10-09T08:26+00:00"
+  },
+  {
+   "site": "polymarket",
+   "id": "5311917",
+   "slug": "will-ethereum-reach-2800-october-5-11-2026",
+   "question": "Will Ethereum reach $2,800 October 5-11?",
+   "cote": "No",
+   "idx": 1,
+   "prix": 0.9872,
+   "cat": "crypto",
+   "fin": "2026-10-12T04:00:00+00:00",
+   "date": "2026-10-09T08:26+00:00"
+  },
+  {
+   "site": "polymarket",
+   "id": "5311927",
+   "slug": "will-ethereum-dip-to-2300-october-5-11-2026",
+   "question": "Will Ethereum dip to $2,300 October 5-11?",
+   "cote": "No",
+   "idx": 1,
+   "prix": 0.98,
+   "cat": "crypto",
+   "fin": "2026-10-12T04:00:00+00:00",
+   "date": "2026-10-09T08:26+00:00"
+  },
+  {
+   "site": "polymarket",
+   "id": "5192110",
+   "slug": "will-choi-wan-peak-as-a-violent-typhoon",
+   "question": "Will Choi-wan peak as a Violent typhoon?",
+   "cote": "No",
+   "idx": 1,
+   "prix": 0.9795,
+   "cat": "autre",
+   "fin": "2026-10-16T03:59:00+00:00",
+   "date": "2026-10-09T08:26+00:00"
+  },
+  {
+   "site": "polymarket",
+   "id": "5192109",
+   "slug": "will-choi-wan-peak-as-a-very-strong-typhoon",
+   "question": "Will Choi-wan peak as a Very strong typhoon?",
+   "cote": "Yes",
+   "idx": 0,
+   "prix": 0.9775,
+   "cat": "autre",
+   "fin": "2026-10-16T03:59:00+00:00",
+   "date": "2026-10-09T08:26+00:00"
+  },
+  {
+   "site": "polymarket",
+   "id": "3778059",
+   "slug": "kbo-lg-lot-2026-08-28",
+   "question": "KBO: LG Twins vs. Lotte Giants",
+   "cote": "Lotte Giants",
+   "idx": 1,
+   "prix": 0.9945,
+   "cat": "autre",
+   "fin": "2026-10-16T05:00:00+00:00",
+   "date": "2026-10-09T08:26+00:00"
+  },
+  {
+   "site": "polymarket",
+   "id": "3852826",
+   "slug": "will-david-west-win-the-2026-richmond-hill-mayoral-election",
+   "question": "Will David West win the 2026 Richmond Hill mayoral election?",
+   "cote": "Yes",
+   "idx": 0,
+   "prix": 0.972,
+   "cat": "politique",
+   "fin": "2026-10-27T03:59:00+00:00",
+   "date": "2026-10-09T08:26+00:00"
+  },
+  {
+   "site": "kalshi",
+   "id": "KXITFMATCH-26OCT09SENFAU-SEN",
+   "slug": "kxitfmatch-26oct09senfau-sen",
+   "question": "Nicola Senn wins — Nicola Senn",
+   "cote": "Non",
+   "idx": 1,
+   "prix": 0.975,
+   "cat": "autre",
+   "fin": "2026-10-23T07:00:00+00:00",
+   "date": "2026-10-09T08:26+00:00"
+  },
+  {
+   "site": "kalshi",
+   "id": "KXITFMATCH-26OCT09SENFAU-FAU",
+   "slug": "kxitfmatch-26oct09senfau-fau",
+   "question": "Romain Faucon wins — Romain Faucon",
+   "cote": "Oui",
+   "idx": 0,
+   "prix": 0.975,
+   "cat": "autre",
+   "fin": "2026-10-23T07:00:00+00:00",
+   "date": "2026-10-09T08:26+00:00"
+  },
+  {
+   "site": "kalshi",
+   "id": "KXDPWORLDTOUR-OPDEPBM26-TVAI",
+   "slug": "kxdpworldtour-opdepbm26-tvai",
+   "question": "Open de España presented by Madrid: Tom Vaillant wins — Tom Vaillant",
+   "cote": "Non",
+   "idx": 1,
+   "prix": 0.996,
+   "cat": "autre",
+   "fin": "2026-10-25T00:00:00+00:00",
+   "date": "2026-10-09T08:26+00:00"
+  },
+  {
+   "site": "kalshi",
+   "id": "KXDPWORLDTOUR-OPDEPBM26-TROS",
+   "slug": "kxdpworldtour-opdepbm26-tros",
+   "question": "Open de España presented by Madrid: Thomas Rosenmueller wins — Thomas Rosenmueller",
+   "cote": "Non",
+   "idx": 1,
+   "prix": 0.998,
+   "cat": "autre",
+   "fin": "2026-10-25T00:00:00+00:00",
+   "date": "2026-10-09T08:26+00:00"
+  },
+  {
+   "site": "kalshi",
+   "id": "KXDPWORLDTOUR-OPDEPBM26-TMCK",
+   "slug": "kxdpworldtour-opdepbm26-tmck",
+   "question": "Open de España presented by Madrid: Tom McKibbin wins — Tom McKibbin",
+   "cote": "Non",
+   "idx": 1,
+   "prix": 0.9945,
+   "cat": "autre",
+   "fin": "2026-10-25T00:00:00+00:00",
+   "date": "2026-10-09T08:26+00:00"
+  },
+  {
+   "site": "limitless",
+   "id": "quentin-halys-vs-alexander-blockx-1791439202411",
+   "slug": "quentin-halys-vs-alexander-blockx-1791439202411",
+   "question": "Quentin Halys vs Alexander Blockx",
+   "cote": "Oui",
+   "idx": 0,
+   "prix": 0.9945,
+   "cat": "autre",
+   "fin": "2026-10-10T05:30:00+00:00",
+   "date": "2026-10-09T08:26+00:00"
+  },
+  {
+   "site": "smarkets",
+   "id": "168888911:466069854",
+   "slug": "168888911",
+   "question": "F1 Practice 1 - Singapore Grand Prix 2026 — Winner : Sergio Perez",
+   "cote": "Non",
+   "idx": 1,
+   "prix": 0.9983,
+   "cat": "autres sports",
+   "fin": "2026-10-09T11:30:00+00:00",
+   "date": "2026-10-09T08:26+00:00"
+  },
+  {
+   "site": "smarkets",
+   "id": "168211795:464226699",
+   "slug": "168211795",
+   "question": "Kashima Antlers vs Gamba Osaka — Winner and over/under 4.5 : Draw / over 4.5 goals",
+   "cote": "Non",
+   "idx": 1,
+   "prix": 0.9833,
+   "cat": "foot",
+   "fin": "2026-10-09T13:00:00+00:00",
+   "date": "2026-10-09T08:26+00:00"
+  },
+  {
+   "site": "smarkets",
+   "id": "168212237:464228014",
+   "slug": "168212237",
+   "question": "Kashiwa Reysol vs Vissel Kobe — Correct score : 1 - 3",
+   "cote": "Non",
+   "idx": 1,
+   "prix": 0.9708,
+   "cat": "foot",
+   "fin": "2026-10-09T13:00:00+00:00",
+   "date": "2026-10-09T08:26+00:00"
+  },
+  {
+   "site": "smarkets",
+   "id": "168922644:466151247",
+   "slug": "168922644",
+   "question": "F1 Sprint Qualifying - Singapore Grand Prix 2026 — Singapore Grand Prix Sprint Qualifying - Winner : Esteban Ocon",
+   "cote": "Non",
+   "idx": 1,
+   "prix": 0.999,
+   "cat": "autres sports",
+   "fin": "2026-10-09T15:30:00+00:00",
+   "date": "2026-10-09T08:26+00:00"
+  },
+  {
+   "site": "smarkets",
+   "id": "168922644:466151248",
+   "slug": "168922644",
+   "question": "F1 Sprint Qualifying - Singapore Grand Prix 2026 — Singapore Grand Prix Sprint Qualifying - Winner : Fernando Alonso",
+   "cote": "Non",
+   "idx": 1,
+   "prix": 0.999,
+   "cat": "autres sports",
+   "fin": "2026-10-09T15:30:00+00:00",
+   "date": "2026-10-09T08:26+00:00"
+  },
+  {
+   "site": "smarkets",
+   "id": "168922644:466151242",
+   "slug": "168922644",
+   "question": "F1 Sprint Qualifying - Singapore Grand Prix 2026 — Singapore Grand Prix Sprint Qualifying - Winner : Franco Colapinto",
+   "cote": "Non",
+   "idx": 1,
+   "prix": 0.999,
+   "cat": "autres sports",
+   "fin": "2026-10-09T15:30:00+00:00",
+   "date": "2026-10-09T08:26+00:00"
+  },
+  {
+   "site": "deribit",
+   "id": "BTC-10OCT26-89500-C",
+   "slug": "BTC|2026-10-10|89500",
+   "question": "BTC au-dessus de 89 500 $ le 10/10/2026 à 8 h UTC ?",
+   "cote": "En dessous",
+   "idx": 1,
+   "prix": 0.9975,
+   "cat": "crypto",
+   "fin": "2026-10-10T08:00:00+00:00",
+   "date": "2026-10-09T08:26+00:00"
+  },
+  {
+   "site": "deribit",
+   "id": "BTC-10OCT26-87500-C",
+   "slug": "BTC|2026-10-10|87500",
+   "question": "BTC au-dessus de 87 500 $ le 10/10/2026 à 8 h UTC ?",
+   "cote": "En dessous",
+   "idx": 1,
+   "prix": 0.9898,
+   "cat": "crypto",
+   "fin": "2026-10-10T08:00:00+00:00",
+   "date": "2026-10-09T08:26+00:00"
+  },
+  {
+   "site": "deribit",
+   "id": "BTC-10OCT26-86000-C",
+   "slug": "BTC|2026-10-10|86000",
+   "question": "BTC au-dessus de 86 000 $ le 10/10/2026 à 8 h UTC ?",
+   "cote": "En dessous",
+   "idx": 1,
+   "prix": 0.9766,
+   "cat": "crypto",
+   "fin": "2026-10-10T08:00:00+00:00",
+   "date": "2026-10-09T08:26+00:00"
+  },
+  {
+   "site": "deribit",
+   "id": "BTC-10OCT26-89000-C",
+   "slug": "BTC|2026-10-10|89000",
+   "question": "BTC au-dessus de 89 000 $ le 10/10/2026 à 8 h UTC ?",
+   "cote": "En dessous",
+   "idx": 1,
+   "prix": 0.9957,
+   "cat": "crypto",
+   "fin": "2026-10-10T08:00:00+00:00",
+   "date": "2026-10-09T08:26+00:00"
+  },
+  {
+   "site": "deribit",
+   "id": "BTC-10OCT26-87000-C",
+   "slug": "BTC|2026-10-10|87000",
+   "question": "BTC au-dessus de 87 000 $ le 10/10/2026 à 8 h UTC ?",
+   "cote": "En dessous",
+   "idx": 1,
+   "prix": 0.9853,
+   "cat": "crypto",
+   "fin": "2026-10-10T08:00:00+00:00",
+   "date": "2026-10-09T08:26+00:00"
+  },
+  {
+   "site": "okx",
+   "id": "BTC-USD_UM-261010-79500-C",
+   "slug": "BTC|2026-10-10|79500",
+   "question": "BTC au-dessus de 79 500 $ le 10/10/2026 à 8 h UTC ?",
+   "cote": "Au-dessus",
+   "idx": 0,
+   "prix": 0.979,
+   "cat": "crypto",
+   "fin": "2026-10-10T08:00:00+00:00",
+   "date": "2026-10-09T08:26+00:00"
+  },
+  {
+   "site": "okx",
+   "id": "BTC-USD_UM-261010-78500-C",
+   "slug": "BTC|2026-10-10|78500",
+   "question": "BTC au-dessus de 78 500 $ le 10/10/2026 à 8 h UTC ?",
+   "cote": "Au-dessus",
+   "idx": 0,
+   "prix": 0.9933,
+   "cat": "crypto",
+   "fin": "2026-10-10T08:00:00+00:00",
+   "date": "2026-10-09T08:26+00:00"
+  },
+  {
+   "site": "okx",
+   "id": "BTC-USD_UM-261010-78000-C",
+   "slug": "BTC|2026-10-10|78000",
+   "question": "BTC au-dessus de 78 000 $ le 10/10/2026 à 8 h UTC ?",
+   "cote": "Au-dessus",
+   "idx": 0,
+   "prix": 0.996,
+   "cat": "crypto",
+   "fin": "2026-10-10T08:00:00+00:00",
+   "date": "2026-10-09T08:26+00:00"
+  },
+  {
+   "site": "okx",
+   "id": "BTC-USD_UM-261010-88000-C",
+   "slug": "BTC|2026-10-10|88000",
+   "question": "BTC au-dessus de 88 000 $ le 10/10/2026 à 8 h UTC ?",
+   "cote": "En dessous",
+   "idx": 1,
+   "prix": 0.9992,
+   "cat": "crypto",
+   "fin": "2026-10-10T08:00:00+00:00",
+   "date": "2026-10-09T08:26+00:00"
+  },
+  {
+   "site": "okx",
+   "id": "BTC-USD_UM-261010-87000-C",
+   "slug": "BTC|2026-10-10|87000",
+   "question": "BTC au-dessus de 87 000 $ le 10/10/2026 à 8 h UTC ?",
+   "cote": "En dessous",
+   "idx": 1,
+   "prix": 0.9955,
+   "cat": "crypto",
+   "fin": "2026-10-10T08:00:00+00:00",
+   "date": "2026-10-09T08:26+00:00"
+  },
+  {
+   "site": "delta_inde",
+   "id": "C-BTC-88000-091026",
+   "slug": "BTC|2026-10-09|88000",
+   "question": "BTC au-dessus de 88 000 $ le 09/10/2026 à 12 h UTC ?",
+   "cote": "En dessous",
+   "idx": 1,
+   "prix": 0.9989,
+   "cat": "crypto",
+   "fin": "2026-10-09T12:00:00+00:00",
+   "date": "2026-10-09T08:26+00:00"
+  },
+  {
+   "site": "delta_inde",
+   "id": "C-BTC-87500-091026",
+   "slug": "BTC|2026-10-09|87500",
+   "question": "BTC au-dessus de 87 500 $ le 09/10/2026 à 12 h UTC ?",
+   "cote": "En dessous",
+   "idx": 1,
+   "prix": 0.9988,
+   "cat": "crypto",
+   "fin": "2026-10-09T12:00:00+00:00",
+   "date": "2026-10-09T08:26+00:00"
+  },
+  {
+   "site": "delta_inde",
+   "id": "C-BTC-87400-091026",
+   "slug": "BTC|2026-10-09|87400",
+   "question": "BTC au-dessus de 87 400 $ le 09/10/2026 à 12 h UTC ?",
+   "cote": "En dessous",
+   "idx": 1,
+   "prix": 0.9988,
+   "cat": "crypto",
+   "fin": "2026-10-09T12:00:00+00:00",
+   "date": "2026-10-09T08:26+00:00"
+  },
+  {
+   "site": "delta_inde",
+   "id": "C-BTC-87200-091026",
+   "slug": "BTC|2026-10-09|87200",
+   "question": "BTC au-dessus de 87 200 $ le 09/10/2026 à 12 h UTC ?",
+   "cote": "En dessous",
+   "idx": 1,
+   "prix": 0.9988,
+   "cat": "crypto",
+   "fin": "2026-10-09T12:00:00+00:00",
+   "date": "2026-10-09T08:26+00:00"
+  },
+  {
+   "site": "delta_inde",
+   "id": "C-BTC-87000-091026",
+   "slug": "BTC|2026-10-09|87000",
+   "question": "BTC au-dessus de 87 000 $ le 09/10/2026 à 12 h UTC ?",
+   "cote": "En dessous",
+   "idx": 1,
+   "prix": 0.9987,
+   "cat": "crypto",
+   "fin": "2026-10-09T12:00:00+00:00",
+   "date": "2026-10-09T08:26+00:00"
+  },
+  {
+   "site": "gate",
+   "id": "BTC_USDT-20261010-77000-C",
+   "slug": "BTC|2026-10-10|77000",
+   "question": "BTC au-dessus de 77 000 $ le 10/10/2026 à 8 h UTC ?",
+   "cote": "Au-dessus",
+   "idx": 0,
+   "prix": 0.9912,
+   "cat": "crypto",
+   "fin": "2026-10-10T08:00:00+00:00",
+   "date": "2026-10-09T08:26+00:00"
+  },
+  {
+   "site": "gate",
+   "id": "BTC_USDT-20261010-76000-C",
+   "slug": "BTC|2026-10-10|76000",
+   "question": "BTC au-dessus de 76 000 $ le 10/10/2026 à 8 h UTC ?",
+   "cote": "Au-dessus",
+   "idx": 0,
+   "prix": 0.995,
+   "cat": "crypto",
+   "fin": "2026-10-10T08:00:00+00:00",
+   "date": "2026-10-09T08:26+00:00"
+  },
+  {
+   "site": "gate",
+   "id": "BTC_USDT-20261010-90000-C",
+   "slug": "BTC|2026-10-10|90000",
+   "question": "BTC au-dessus de 90 000 $ le 10/10/2026 à 8 h UTC ?",
+   "cote": "En dessous",
+   "idx": 1,
+   "prix": 0.9987,
+   "cat": "crypto",
+   "fin": "2026-10-10T08:00:00+00:00",
+   "date": "2026-10-09T08:26+00:00"
+  },
+  {
+   "site": "gate",
+   "id": "BTC_USDT-20261010-89000-C",
+   "slug": "BTC|2026-10-10|89000",
+   "question": "BTC au-dessus de 89 000 $ le 10/10/2026 à 8 h UTC ?",
+   "cote": "En dessous",
+   "idx": 1,
+   "prix": 0.9959,
+   "cat": "crypto",
+   "fin": "2026-10-10T08:00:00+00:00",
+   "date": "2026-10-09T08:26+00:00"
+  },
+  {
+   "site": "gate",
+   "id": "BTC_USDT-20261010-88000-C",
+   "slug": "BTC|2026-10-10|88000",
+   "question": "BTC au-dessus de 88 000 $ le 10/10/2026 à 8 h UTC ?",
+   "cote": "En dessous",
+   "idx": 1,
+   "prix": 0.9909,
+   "cat": "crypto",
+   "fin": "2026-10-10T08:00:00+00:00",
+   "date": "2026-10-09T08:26+00:00"
+  },
+  {
+   "site": "aevo",
+   "id": "BTC-10OCT26-75000-C",
+   "slug": "BTC|2026-10-10|75000",
+   "question": "BTC au-dessus de 75 000 $ le 10/10/2026 à 8 h UTC ?",
+   "cote": "Au-dessus",
+   "idx": 0,
+   "prix": 0.9965,
+   "cat": "crypto",
+   "fin": "2026-10-10T08:00:00+00:00",
+   "date": "2026-10-09T08:26+00:00"
+  },
+  {
+   "site": "aevo",
+   "id": "BTC-10OCT26-76000-C",
+   "slug": "BTC|2026-10-10|76000",
+   "question": "BTC au-dessus de 76 000 $ le 10/10/2026 à 8 h UTC ?",
+   "cote": "Au-dessus",
+   "idx": 0,
+   "prix": 0.993,
+   "cat": "crypto",
+   "fin": "2026-10-10T08:00:00+00:00",
+   "date": "2026-10-09T08:26+00:00"
+  },
+  {
+   "site": "aevo",
+   "id": "BTC-10OCT26-77000-C",
+   "slug": "BTC|2026-10-10|77000",
+   "question": "BTC au-dessus de 77 000 $ le 10/10/2026 à 8 h UTC ?",
+   "cote": "Au-dessus",
+   "idx": 0,
+   "prix": 0.9911,
+   "cat": "crypto",
+   "fin": "2026-10-10T08:00:00+00:00",
+   "date": "2026-10-09T08:26+00:00"
+  },
+  {
+   "site": "aevo",
+   "id": "BTC-10OCT26-78000-C",
+   "slug": "BTC|2026-10-10|78000",
+   "question": "BTC au-dessus de 78 000 $ le 10/10/2026 à 8 h UTC ?",
+   "cote": "Au-dessus",
+   "idx": 0,
+   "prix": 0.9835,
+   "cat": "crypto",
+   "fin": "2026-10-10T08:00:00+00:00",
+   "date": "2026-10-09T08:26+00:00"
+  },
+  {
+   "site": "aevo",
+   "id": "BTC-10OCT26-86000-C",
+   "slug": "BTC|2026-10-10|86000",
+   "question": "BTC au-dessus de 86 000 $ le 10/10/2026 à 8 h UTC ?",
+   "cote": "En dessous",
+   "idx": 1,
+   "prix": 0.9772,
+   "cat": "crypto",
+   "fin": "2026-10-10T08:00:00+00:00",
+   "date": "2026-10-09T08:26+00:00"
   }
  ],
  "obs_resolues": [
@@ -4110,15 +4674,15 @@
    "taux_reel": 1.0
   },
   "polymarket|cat:crypto": {
-   "n": 27,
-   "gagnes": 27,
-   "prix_moy": 0.99781,
+   "n": 33,
+   "gagnes": 33,
+   "prix_moy": 0.99745,
    "taux_reel": 1.0
   },
   "polymarket|tranche:>=0.985": {
-   "n": 19,
-   "gagnes": 19,
-   "prix_moy": 0.98768,
+   "n": 21,
+   "gagnes": 21,
+   "prix_moy": 0.98755,
    "taux_reel": 1.0
   },
   "limitless|tranche:>=0.985": {
@@ -4134,57 +4698,57 @@
    "taux_reel": 1.0
   },
   "polymarket|cat:marchés": {
-   "n": 84,
-   "gagnes": 84,
-   "prix_moy": 0.99533,
+   "n": 85,
+   "gagnes": 85,
+   "prix_moy": 0.99535,
    "taux_reel": 1.0
   },
   "polymarket|tranche:>=0.98": {
-   "n": 17,
-   "gagnes": 17,
-   "prix_moy": 0.98276,
+   "n": 18,
+   "gagnes": 18,
+   "prix_moy": 0.98261,
    "taux_reel": 1.0
   },
   "polymarket|cat:sport US": {
-   "n": 49,
-   "gagnes": 49,
-   "prix_moy": 0.99601,
+   "n": 51,
+   "gagnes": 51,
+   "prix_moy": 0.99606,
    "taux_reel": 1.0
   },
   "polymarket|tranche:>=0.999": {
-   "n": 360,
-   "gagnes": 360,
+   "n": 386,
+   "gagnes": 386,
    "prix_moy": 0.99949,
    "taux_reel": 1.0
   },
   "polymarket|tranche:>=0.99": {
-   "n": 50,
-   "gagnes": 50,
-   "prix_moy": 0.99309,
+   "n": 53,
+   "gagnes": 53,
+   "prix_moy": 0.99304,
    "taux_reel": 1.0
   },
   "polymarket|cat:politique": {
-   "n": 145,
-   "gagnes": 145,
-   "prix_moy": 0.99789,
+   "n": 162,
+   "gagnes": 162,
+   "prix_moy": 0.99782,
    "taux_reel": 1.0
   },
   "polymarket|cat:autre": {
-   "n": 302,
-   "gagnes": 302,
+   "n": 329,
+   "gagnes": 329,
    "prix_moy": 0.9965,
    "taux_reel": 1.0
   },
   "polymarket|tranche:>=0.995": {
-   "n": 212,
-   "gagnes": 212,
-   "prix_moy": 0.9976,
+   "n": 232,
+   "gagnes": 232,
+   "prix_moy": 0.99763,
    "taux_reel": 1.0
   },
   "polymarket|tranche:>=0.97": {
-   "n": 9,
-   "gagnes": 9,
-   "prix_moy": 0.97233,
+   "n": 10,
+   "gagnes": 10,
+   "prix_moy": 0.9725,
    "taux_reel": 1.0
   },
   "polymarket|cat:foot": {
@@ -4194,28 +4758,28 @@
    "taux_reel": 1.0
   },
   "polymarket|tranche:>=0.975": {
-   "n": 16,
-   "gagnes": 16,
-   "prix_moy": 0.9775,
+   "n": 17,
+   "gagnes": 17,
+   "prix_moy": 0.97738,
    "taux_reel": 1.0
   },
   "manifold|cat:autre": {
-   "n": 346,
-   "gagnes": 344,
+   "n": 356,
+   "gagnes": 354,
    "prix_moy": 0.98523,
-   "taux_reel": 0.99422
+   "taux_reel": 0.99438
   },
   "manifold|tranche:>=0.985": {
-   "n": 111,
-   "gagnes": 110,
+   "n": 114,
+   "gagnes": 113,
    "prix_moy": 0.9877,
-   "taux_reel": 0.99099
+   "taux_reel": 0.99123
   },
   "manifold|tranche:>=0.99": {
-   "n": 154,
-   "gagnes": 153,
-   "prix_moy": 0.9911,
-   "taux_reel": 0.99351
+   "n": 158,
+   "gagnes": 157,
+   "prix_moy": 0.99107,
+   "taux_reel": 0.99367
   },
   "manifold|cat:politique": {
    "n": 86,
@@ -4236,8 +4800,8 @@
    "taux_reel": 1.0
   },
   "manifold|tranche:>=0.98": {
-   "n": 82,
-   "gagnes": 82,
+   "n": 84,
+   "gagnes": 84,
    "prix_moy": 0.98246,
    "taux_reel": 1.0
   },
@@ -4248,14 +4812,14 @@
    "taux_reel": 1.0
   },
   "manifold|tranche:>=0.975": {
-   "n": 61,
-   "gagnes": 61,
-   "prix_moy": 0.9771,
+   "n": 63,
+   "gagnes": 63,
+   "prix_moy": 0.97714,
    "taux_reel": 1.0
   },
   "polymarket|cat:météo": {
-   "n": 7,
-   "gagnes": 7,
+   "n": 8,
+   "gagnes": 8,
    "prix_moy": 0.9985,
    "taux_reel": 1.0
   },
@@ -4278,9 +4842,9 @@
    "taux_reel": 1.0
   },
   "manifold|cat:crypto": {
-   "n": 11,
-   "gagnes": 11,
-   "prix_moy": 0.98612,
+   "n": 12,
+   "gagnes": 12,
+   "prix_moy": 0.98644,
    "taux_reel": 1.0
   },
   "manifold|tranche:>=0.999": {
@@ -4299,7 +4863,7 @@
  "fraction_kelly": 0.25,
  "pic": 1000.0,
  "dernier_ajust": 0,
- "rejets": 41,
+ "rejets": 49,
  "journal": [
   {
    "quand": "2026-10-09T06:26+00:00",
@@ -4956,86 +5520,208 @@
   {
    "quand": "2026-10-09T08:16+00:00",
    "texte": "[smarkets] rejet (seulement 4/6 lectures) : F1 Sprint Qualifying - Singapore Grand Prix 2026 — Singapore"
+  },
+  {
+   "quand": "2026-10-09T08:26+00:00",
+   "texte": "[polymarket] rejet (lectures discordantes [0.9725, 0.9725, 0.953, 0.9725, 0.9655, 0.9655]) : Will Google (GOOGL) close above $340 on October 9?"
+  },
+  {
+   "quand": "2026-10-09T08:26+00:00",
+   "texte": "[polymarket] rejet (lectures discordantes [0.945, 0.995, 0.945, 0.995, 0.9995, 0.885]) : Shanghai Rolex Masters: Quentin Halys vs Alexander Blockx"
+  },
+  {
+   "quand": "2026-10-09T08:26+00:00",
+   "texte": "[polymarket] rejet (lectures discordantes [0.9995, 0.5255, 0.9995, 0.9995, 0.9995, 0.9995]) : Shanghai Rolex Masters: Completed Match: Yannick Hanfmann vs"
+  },
+  {
+   "quand": "2026-10-09T08:26+00:00",
+   "texte": "[polymarket] ignoré (pas achetable, souvent déjà joué) : Will the price of Ethereum be above $2,900 on October 10?"
+  },
+  {
+   "quand": "2026-10-09T08:26+00:00",
+   "texte": "[polymarket] ignoré (pas achetable, souvent déjà joué) : Will Choi-wan peak at severe tropical storm grade or weaker?"
+  },
+  {
+   "quand": "2026-10-09T08:26+00:00",
+   "texte": "[polymarket] ignoré (pas achetable, souvent déjà joué) : Will The Democrats win the most seats in the 2026 Israeli le"
+  },
+  {
+   "quand": "2026-10-09T08:26+00:00",
+   "texte": "[polymarket] ignoré (pas achetable, souvent déjà joué) : Will Shas win the most seats in the 2026 Israeli legislative"
+  },
+  {
+   "quand": "2026-10-09T08:26+00:00",
+   "texte": "[gemini] rejet (lectures discordantes [0.925, 0.935, 0.94, 0.945, 0.945, 0.955]) : SOL price today at 4:30am EDT — Up"
+  },
+  {
+   "quand": "2026-10-09T08:26+00:00",
+   "texte": "[gemini] ignoré (pas achetable, souvent déjà joué) : Baycurrent Classic Winner — Beau Hossler"
+  },
+  {
+   "quand": "2026-10-09T08:26+00:00",
+   "texte": "[gemini] ignoré (pas achetable, souvent déjà joué) : Baycurrent Classic Winner — Tomohiro Ishizaka"
+  },
+  {
+   "quand": "2026-10-09T08:26+00:00",
+   "texte": "[gemini] ignoré (pas achetable, souvent déjà joué) : Baycurrent Classic Winner — Aguri Iwasaki"
+  },
+  {
+   "quand": "2026-10-09T08:26+00:00",
+   "texte": "[gemini] ignoré (pas achetable, souvent déjà joué) : Baycurrent Classic Winner — Hiroshi Iwata"
+  },
+  {
+   "quand": "2026-10-09T08:26+00:00",
+   "texte": "[gemini] ignoré (pas achetable, souvent déjà joué) : Baycurrent Classic Winner — Takumi Kanaya"
+  },
+  {
+   "quand": "2026-10-09T08:26+00:00",
+   "texte": "[smarkets] rejet (seulement 5/6 lectures) : Kashima Antlers vs Gamba Osaka — Correct score : Any other a"
+  },
+  {
+   "quand": "2026-10-09T08:26+00:00",
+   "texte": "[smarkets] rejet (seulement 4/6 lectures) : Kashima Antlers vs Gamba Osaka — Correct score : Any other d"
+  },
+  {
+   "quand": "2026-10-09T08:26+00:00",
+   "texte": "[smarkets] rejet (seulement 4/6 lectures) : Kashiwa Reysol vs Vissel Kobe — Correct score : 2 - 3"
+  },
+  {
+   "quand": "2026-10-09T08:26+00:00",
+   "texte": "[smarkets] rejet (seulement 4/6 lectures) : F1 Sprint Qualifying - Singapore Grand Prix 2026 — Singapore"
   }
  ],
- "passages": 11,
+ "passages": 12,
  "sites": {
   "polymarket": {
-   "marches_vus": 7251,
-   "candidats": 275,
-   "retenus": 255,
-   "rejets": 20,
+   "marches_vus": 7912,
+   "candidats": 292,
+   "retenus": 269,
+   "rejets": 23,
    "erreurs": 1,
-   "dernier_ok": "2026-10-09T08:16+00:00",
-   "historique": 682
+   "dernier_ok": "2026-10-09T08:26+00:00",
+   "historique": 736
   },
   "kalshi": {
-   "marches_vus": 4655,
-   "candidats": 75,
-   "retenus": 74,
+   "marches_vus": 5072,
+   "candidats": 80,
+   "retenus": 79,
    "rejets": 1,
    "erreurs": 0,
-   "dernier_ok": "2026-10-09T08:16+00:00",
+   "dernier_ok": "2026-10-09T08:26+00:00",
    "historique": 0
   },
   "manifold": {
-   "marches_vus": 693,
+   "marches_vus": 756,
    "candidats": 8,
    "retenus": 8,
    "rejets": 0,
    "erreurs": 4,
-   "dernier_ok": "2026-10-09T08:16+00:00",
-   "historique": 491
+   "dernier_ok": "2026-10-09T08:26+00:00",
+   "historique": 502
   },
   "limitless": {
-   "marches_vus": 2784,
-   "candidats": 11,
-   "retenus": 11,
+   "marches_vus": 3132,
+   "candidats": 12,
+   "retenus": 12,
    "rejets": 0,
    "erreurs": 0,
-   "dernier_ok": "2026-10-09T08:16+00:00",
+   "dernier_ok": "2026-10-09T08:26+00:00",
    "historique": 0
   },
   "gemini": {
-   "marches_vus": 10714,
-   "candidats": 51,
-   "retenus": 51,
-   "rejets": 0,
+   "marches_vus": 12858,
+   "candidats": 57,
+   "retenus": 56,
+   "rejets": 1,
    "erreurs": 0,
-   "dernier_ok": "2026-10-09T08:16+00:00",
+   "dernier_ok": "2026-10-09T08:26+00:00",
    "historique": 0
   },
   "smarkets": {
-   "marches_vus": 6212,
-   "candidats": 58,
-   "retenus": 38,
-   "rejets": 20,
+   "marches_vus": 7621,
+   "candidats": 68,
+   "retenus": 44,
+   "rejets": 24,
    "erreurs": 0,
-   "dernier_ok": "2026-10-09T08:16+00:00",
+   "dernier_ok": "2026-10-09T08:26+00:00",
    "historique": 0
   },
   "espn": {
-   "marches_vus": 702,
+   "marches_vus": 936,
    "candidats": 0,
    "retenus": 0,
    "rejets": 0,
    "erreurs": 2,
-   "dernier_ok": "2026-10-09T08:16+00:00",
+   "dernier_ok": "2026-10-09T08:26+00:00",
    "historique": 0
   },
   "futuur": {
-   "marches_vus": 1292,
+   "marches_vus": 1615,
    "candidats": 0,
    "retenus": 0,
    "rejets": 0,
    "erreurs": 0,
-   "dernier_ok": "2026-10-09T08:16+00:00",
+   "dernier_ok": "2026-10-09T08:26+00:00",
+   "historique": 0
+  },
+  "azuro": {
+   "marches_vus": 12841,
+   "candidats": 0,
+   "retenus": 0,
+   "rejets": 0,
+   "erreurs": 0,
+   "dernier_ok": "2026-10-09T08:26+00:00",
+   "historique": 0
+  },
+  "deribit": {
+   "marches_vus": 764,
+   "candidats": 5,
+   "retenus": 5,
+   "rejets": 0,
+   "erreurs": 0,
+   "dernier_ok": "2026-10-09T08:26+00:00",
+   "historique": 0
+  },
+  "okx": {
+   "marches_vus": 787,
+   "candidats": 5,
+   "retenus": 5,
+   "rejets": 0,
+   "erreurs": 0,
+   "dernier_ok": "2026-10-09T08:26+00:00",
+   "historique": 0
+  },
+  "delta_inde": {
+   "marches_vus": 469,
+   "candidats": 5,
+   "retenus": 5,
+   "rejets": 0,
+   "erreurs": 0,
+   "dernier_ok": "2026-10-09T08:26+00:00",
+   "historique": 0
+  },
+  "gate": {
+   "marches_vus": 627,
+   "candidats": 5,
+   "retenus": 5,
+   "rejets": 0,
+   "erreurs": 0,
+   "dernier_ok": "2026-10-09T08:26+00:00",
+   "historique": 0
+  },
+  "aevo": {
+   "marches_vus": 896,
+   "candidats": 5,
+   "retenus": 5,
+   "rejets": 0,
+   "erreurs": 0,
+   "dernier_ok": "2026-10-09T08:26+00:00",
    "historique": 0
   }
  },
  "dernier_passage": {
-  "debut": "2026-10-09T08:13+00:00",
-  "duree_s": 198
+  "debut": "2026-10-09T08:23+00:00",
+  "duree_s": 203
  },
  "non_achetables": {
   "polymarket|5429096": "2026-10-09T10:00:00+00:00",
@@ -5154,7 +5840,16 @@
   "gemini|GEMI-GOLF-BAY-WIN-20261011-HODGES": "2026-10-09T22:00:00+00:00",
   "gemini|GEMI-GOLF-BAY-WIN-20261011-HOGE": "2026-10-09T22:00:00+00:00",
   "gemini|GEMI-GOLF-BAY-WIN-20261011-HORSCHEL": "2026-10-09T22:00:00+00:00",
-  "gemini|GEMI-GOLF-BAY-WIN-20261011-HOSONO": "2026-10-09T22:00:00+00:00"
+  "gemini|GEMI-GOLF-BAY-WIN-20261011-HOSONO": "2026-10-09T22:00:00+00:00",
+  "polymarket|5238595": "2026-10-10T16:00:00+00:00",
+  "polymarket|5192107": "2026-10-16T03:59:00+00:00",
+  "polymarket|2100985": "2026-10-28T03:59:00+00:00",
+  "polymarket|2100983": "2026-10-28T03:59:00+00:00",
+  "gemini|GEMI-GOLF-BAY-WIN-20261011-HOSSLER": "2026-10-09T22:00:00+00:00",
+  "gemini|GEMI-GOLF-BAY-WIN-20261011-ISHIZAKA": "2026-10-09T22:00:00+00:00",
+  "gemini|GEMI-GOLF-BAY-WIN-20261011-IWASAKI": "2026-10-09T22:00:00+00:00",
+  "gemini|GEMI-GOLF-BAY-WIN-20261011-IWATA": "2026-10-09T22:00:00+00:00",
+  "gemini|GEMI-GOLF-BAY-WIN-20261011-KANAYA": "2026-10-09T22:00:00+00:00"
  },
  "historique": [
   {
@@ -19232,16 +19927,802 @@
    "horizon_h": 24,
    "fin": "2026-09-14T23:59:00+00:00",
    "source": "historique"
+  },
+  {
+   "site": "polymarket",
+   "id": "2308196",
+   "question": "Will the Iran ceasefire continue through May 22?",
+   "cat": "autre",
+   "idx": 0,
+   "prix": 0.9975,
+   "gagne": 1,
+   "horizon_h": 24,
+   "fin": "2026-05-24T06:11:51+00:00",
+   "source": "historique"
+  },
+  {
+   "site": "polymarket",
+   "id": "1559394",
+   "question": "Trump out as President by June 30?",
+   "cat": "politique",
+   "idx": 1,
+   "prix": 0.9995,
+   "gagne": 1,
+   "horizon_h": 24,
+   "fin": "2026-07-01T06:08:38+00:00",
+   "source": "historique"
+  },
+  {
+   "site": "polymarket",
+   "id": "690390",
+   "question": "Epstein blackmail evidence released in 2025? ",
+   "cat": "autre",
+   "idx": 0,
+   "prix": 0.9995,
+   "gagne": 1,
+   "horizon_h": 24,
+   "fin": "2025-12-28T03:50:11+00:00",
+   "source": "historique"
+  },
+  {
+   "site": "polymarket",
+   "id": "513168",
+   "question": "Will James Fishback be appointed as the next Florida senator?",
+   "cat": "autre",
+   "idx": 1,
+   "prix": 0.9985,
+   "gagne": 1,
+   "horizon_h": 24,
+   "fin": "2025-01-22T01:54:50+00:00",
+   "source": "historique"
+  },
+  {
+   "site": "polymarket",
+   "id": "2099595",
+   "question": "Will no listed leader be out before 2027?",
+   "cat": "autre",
+   "idx": 1,
+   "prix": 0.9995,
+   "gagne": 1,
+   "horizon_h": 24,
+   "fin": "2026-07-20T13:13:13+00:00",
+   "source": "historique"
+  },
+  {
+   "site": "polymarket",
+   "id": "253643",
+   "question": "Will Kanye West win the 2024 US Presidential Election?",
+   "cat": "politique",
+   "idx": 1,
+   "prix": 0.9995,
+   "gagne": 1,
+   "horizon_h": 24,
+   "fin": "2024-11-06T19:50:06+00:00",
+   "source": "historique"
+  },
+  {
+   "site": "polymarket",
+   "id": "1088141",
+   "question": "Will Laura Siegemund be the 2026 Women’s Wimbledon Winner?",
+   "cat": "autre",
+   "idx": 1,
+   "prix": 0.998,
+   "gagne": 1,
+   "horizon_h": 24,
+   "fin": "2026-06-30T20:07:55+00:00",
+   "source": "historique"
+  },
+  {
+   "site": "polymarket",
+   "id": "504585",
+   "question": "Fed decreases interest rates by 50 bps after December 2024 meeting?",
+   "cat": "marchés",
+   "idx": 1,
+   "prix": 0.997,
+   "gagne": 1,
+   "horizon_h": 24,
+   "fin": "2024-12-18T22:24:36+00:00",
+   "source": "historique"
+  },
+  {
+   "site": "polymarket",
+   "id": "897817",
+   "question": "Will OpenAI release a new frontier model on December 11?",
+   "cat": "autre",
+   "idx": 0,
+   "prix": 0.9995,
+   "gagne": 1,
+   "horizon_h": 24,
+   "fin": "2025-12-16T04:15:13+00:00",
+   "source": "historique"
+  },
+  {
+   "site": "polymarket",
+   "id": "529277",
+   "question": "Will Peter Casey win the Irish Presidential Election?",
+   "cat": "politique",
+   "idx": 1,
+   "prix": 0.9995,
+   "gagne": 1,
+   "horizon_h": 24,
+   "fin": "2025-10-25T21:42:41+00:00",
+   "source": "historique"
+  },
+  {
+   "site": "polymarket",
+   "id": "516818",
+   "question": "Will NVIDIA be the largest company in the world by market cap on December 31?",
+   "cat": "autre",
+   "idx": 0,
+   "prix": 0.998,
+   "gagne": 1,
+   "horizon_h": 24,
+   "fin": "2026-01-01T01:11:41+00:00",
+   "source": "historique"
+  },
+  {
+   "site": "polymarket",
+   "id": "503319",
+   "question": "Will the Saints win Super Bowl 2025?",
+   "cat": "autre",
+   "idx": 1,
+   "prix": 0.9995,
+   "gagne": 1,
+   "horizon_h": 24,
+   "fin": "2024-12-23T01:00:10+00:00",
+   "source": "historique"
+  },
+  {
+   "site": "polymarket",
+   "id": "898417",
+   "question": "Will Fernando Alonso be the 2026 F1 Drivers' Champion?",
+   "cat": "autre",
+   "idx": 1,
+   "prix": 0.9995,
+   "gagne": 1,
+   "horizon_h": 24,
+   "fin": "2026-09-09T11:45:30+00:00",
+   "source": "historique"
+  },
+  {
+   "site": "polymarket",
+   "id": "506027",
+   "question": "Will the Panthers win the NFC Championship?",
+   "cat": "autre",
+   "idx": 1,
+   "prix": 0.998,
+   "gagne": 1,
+   "horizon_h": 24,
+   "fin": "2024-12-16T00:49:26+00:00",
+   "source": "historique"
+  },
+  {
+   "site": "polymarket",
+   "id": "566097",
+   "question": "Will Trump meet with Xi Jinping by October 31?",
+   "cat": "politique",
+   "idx": 0,
+   "prix": 0.98,
+   "gagne": 1,
+   "horizon_h": 24,
+   "fin": "2025-10-30T05:39:11+00:00",
+   "source": "historique"
+  },
+  {
+   "site": "polymarket",
+   "id": "569428",
+   "question": "Will Aristides Teixeira win the 2026 Portugal presidential election?",
+   "cat": "politique",
+   "idx": 1,
+   "prix": 0.9995,
+   "gagne": 1,
+   "horizon_h": 24,
+   "fin": "2026-02-09T04:14:21+00:00",
+   "source": "historique"
+  },
+  {
+   "site": "polymarket",
+   "id": "512638",
+   "question": "Will Republicans control 227 seats in the House after the election?",
+   "cat": "politique",
+   "idx": 1,
+   "prix": 0.9995,
+   "gagne": 1,
+   "horizon_h": 24,
+   "fin": "2024-12-04T10:07:44+00:00",
+   "source": "historique"
+  },
+  {
+   "site": "polymarket",
+   "id": "503175",
+   "question": "Will Pete Buttigieg be the 2024 Democratic VP nominee?",
+   "cat": "autre",
+   "idx": 1,
+   "prix": 0.9945,
+   "gagne": 1,
+   "horizon_h": 24,
+   "fin": "2024-08-06T23:16:30+00:00",
+   "source": "historique"
+  },
+  {
+   "site": "polymarket",
+   "id": "504880",
+   "question": "Will Josh Shapiro be D-nom for VP on Election Day?",
+   "cat": "politique",
+   "idx": 1,
+   "prix": 0.9995,
+   "gagne": 1,
+   "horizon_h": 24,
+   "fin": "2024-11-05T14:19:01+00:00",
+   "source": "historique"
+  },
+  {
+   "site": "polymarket",
+   "id": "540408",
+   "question": "Will Bitcoin dip to $90k in May?",
+   "cat": "crypto",
+   "idx": 1,
+   "prix": 0.9915,
+   "gagne": 1,
+   "horizon_h": 24,
+   "fin": "2025-06-01T07:25:55+00:00",
+   "source": "historique"
+  },
+  {
+   "site": "polymarket",
+   "id": "254253",
+   "question": "Will 'Inside Out 2' gross most in 2024?",
+   "cat": "autre",
+   "idx": 0,
+   "prix": 0.9995,
+   "gagne": 1,
+   "horizon_h": 24,
+   "fin": "2025-01-03T08:05:11+00:00",
+   "source": "historique"
+  },
+  {
+   "site": "polymarket",
+   "id": "512635",
+   "question": "Will Republicans control 224 seats in the House after the election?",
+   "cat": "politique",
+   "idx": 1,
+   "prix": 0.9995,
+   "gagne": 1,
+   "horizon_h": 24,
+   "fin": "2024-12-04T10:12:44+00:00",
+   "source": "historique"
+  },
+  {
+   "site": "polymarket",
+   "id": "541615",
+   "question": "Will Jeannette Jara win the Chilean presidential election?",
+   "cat": "politique",
+   "idx": 1,
+   "prix": 0.985,
+   "gagne": 1,
+   "horizon_h": 24,
+   "fin": "2025-12-15T02:46:17+00:00",
+   "source": "historique"
+  },
+  {
+   "site": "polymarket",
+   "id": "546272",
+   "question": "Will Crin Antonescu be the next Mayor of Bucharest?",
+   "cat": "autre",
+   "idx": 1,
+   "prix": 0.9995,
+   "gagne": 1,
+   "horizon_h": 24,
+   "fin": "2025-12-08T04:22:07+00:00",
+   "source": "historique"
+  },
+  {
+   "site": "polymarket",
+   "id": "240613",
+   "question": "Which party wins 2024 US Presidential Election?",
+   "cat": "politique",
+   "idx": 1,
+   "prix": 0.9985,
+   "gagne": 1,
+   "horizon_h": 24,
+   "fin": "2024-11-14T23:58:16+00:00",
+   "source": "historique"
+  },
+  {
+   "site": "polymarket",
+   "id": "574072",
+   "question": "Will Bitcoin reach $140,000 by December 31, 2025?",
+   "cat": "crypto",
+   "idx": 1,
+   "prix": 0.9995,
+   "gagne": 1,
+   "horizon_h": 24,
+   "fin": "2026-01-01T07:17:25+00:00",
+   "source": "historique"
+  },
+  {
+   "site": "polymarket",
+   "id": "1303357",
+   "question": "Will Ethereum reach $4,400 in February?",
+   "cat": "crypto",
+   "idx": 1,
+   "prix": 0.9995,
+   "gagne": 1,
+   "horizon_h": 24,
+   "fin": "2026-03-01T09:23:07+00:00",
+   "source": "historique"
+  },
+  {
+   "site": "polymarket",
+   "id": "1367169",
+   "question": "US strikes Iran by February 19, 2026?",
+   "cat": "autre",
+   "idx": 1,
+   "prix": 0.9755,
+   "gagne": 1,
+   "horizon_h": 24,
+   "fin": "2026-02-20T07:26:38+00:00",
+   "source": "historique"
+  },
+  {
+   "site": "polymarket",
+   "id": "508829",
+   "question": "Will the Utah Jazz win the Western Conference?",
+   "cat": "autre",
+   "idx": 1,
+   "prix": 0.9985,
+   "gagne": 1,
+   "horizon_h": 24,
+   "fin": "2025-03-11T06:37:29+00:00",
+   "source": "historique"
+  },
+  {
+   "site": "polymarket",
+   "id": "537194",
+   "question": "Russia x Ukraine ceasefire before October?",
+   "cat": "météo",
+   "idx": 1,
+   "prix": 0.9985,
+   "gagne": 1,
+   "horizon_h": 24,
+   "fin": "2025-10-01T06:30:47+00:00",
+   "source": "historique"
+  },
+  {
+   "site": "polymarket",
+   "id": "533253",
+   "question": "Will another party win the most seats in Prince Edward Island in the next Canadian Election?",
+   "cat": "politique",
+   "idx": 1,
+   "prix": 0.998,
+   "gagne": 1,
+   "horizon_h": 24,
+   "fin": "2025-04-30T09:37:33+00:00",
+   "source": "historique"
+  },
+  {
+   "site": "polymarket",
+   "id": "254248",
+   "question": "Will 'Deadpool 3' gross most in 2024?",
+   "cat": "autre",
+   "idx": 1,
+   "prix": 0.9995,
+   "gagne": 1,
+   "horizon_h": 24,
+   "fin": "2025-01-03T08:09:45+00:00",
+   "source": "historique"
+  },
+  {
+   "site": "polymarket",
+   "id": "534195",
+   "question": "Will Yoo Seong-min be elected the next president of South Korea?",
+   "cat": "politique",
+   "idx": 1,
+   "prix": 0.9995,
+   "gagne": 1,
+   "horizon_h": 24,
+   "fin": "2025-06-03T22:14:14+00:00",
+   "source": "historique"
+  },
+  {
+   "site": "polymarket",
+   "id": "2034747",
+   "question": "Will the US confirm that aliens exist by May 31?",
+   "cat": "autre",
+   "idx": 1,
+   "prix": 0.9995,
+   "gagne": 1,
+   "horizon_h": 24,
+   "fin": "2026-06-01T08:12:33+00:00",
+   "source": "historique"
+  },
+  {
+   "site": "polymarket",
+   "id": "631279",
+   "question": "Will Saudi Aramco be the second-largest company in the world by market cap on December 31?",
+   "cat": "autre",
+   "idx": 1,
+   "prix": 0.9995,
+   "gagne": 1,
+   "horizon_h": 24,
+   "fin": "2026-01-01T01:16:55+00:00",
+   "source": "historique"
+  },
+  {
+   "site": "polymarket",
+   "id": "553872",
+   "question": "Will the Milwaukee Bucks win the 2026 NBA Finals?",
+   "cat": "sport US",
+   "idx": 1,
+   "prix": 0.9995,
+   "gagne": 1,
+   "horizon_h": 24,
+   "fin": "2026-03-29T02:08:22+00:00",
+   "source": "historique"
+  },
+  {
+   "site": "polymarket",
+   "id": "2508397",
+   "question": "US announces new Iran agreement/ceasefire extension by June 13?",
+   "cat": "autre",
+   "idx": 1,
+   "prix": 0.9975,
+   "gagne": 1,
+   "horizon_h": 24,
+   "fin": "2026-06-18T04:05:32+00:00",
+   "source": "historique"
+  },
+  {
+   "site": "polymarket",
+   "id": "569431",
+   "question": "Will Pedro Tinoco de Faria win the 2026 Portugal presidential election?",
+   "cat": "politique",
+   "idx": 1,
+   "prix": 0.9995,
+   "gagne": 1,
+   "horizon_h": 24,
+   "fin": "2026-02-09T04:07:27+00:00",
+   "source": "historique"
+  },
+  {
+   "site": "polymarket",
+   "id": "553860",
+   "question": "Will the Houston Rockets win the 2026 NBA Finals?",
+   "cat": "sport US",
+   "idx": 1,
+   "prix": 0.995,
+   "gagne": 1,
+   "horizon_h": 24,
+   "fin": "2026-05-02T07:28:50+00:00",
+   "source": "historique"
+  },
+  {
+   "site": "polymarket",
+   "id": "2942024",
+   "question": "Exact Score: Spain 3 - 3 Argentina?",
+   "cat": "autre",
+   "idx": 1,
+   "prix": 0.9905,
+   "gagne": 1,
+   "horizon_h": 24,
+   "fin": "2026-07-19T22:27:45+00:00",
+   "source": "historique"
+  },
+  {
+   "site": "polymarket",
+   "id": "516969",
+   "question": "Will Microsoft have the top AI model on December 31?",
+   "cat": "autre",
+   "idx": 1,
+   "prix": 0.9995,
+   "gagne": 1,
+   "horizon_h": 24,
+   "fin": "2025-12-31T20:44:55+00:00",
+   "source": "historique"
+  },
+  {
+   "site": "polymarket",
+   "id": "1823776",
+   "question": "Will Bitcoin reach $80,000 in April?",
+   "cat": "crypto",
+   "idx": 1,
+   "prix": 0.9875,
+   "gagne": 1,
+   "horizon_h": 24,
+   "fin": "2026-05-01T07:17:54+00:00",
+   "source": "historique"
+  },
+  {
+   "site": "polymarket",
+   "id": "508803",
+   "question": "Will the Chicago Bulls win the Eastern Conference?",
+   "cat": "autre",
+   "idx": 1,
+   "prix": 0.9985,
+   "gagne": 1,
+   "horizon_h": 24,
+   "fin": "2025-04-17T06:05:43+00:00",
+   "source": "historique"
+  },
+  {
+   "site": "polymarket",
+   "id": "1473066",
+   "question": "Will Bitcoin reach $80,000 in March?",
+   "cat": "crypto",
+   "idx": 1,
+   "prix": 0.9985,
+   "gagne": 1,
+   "horizon_h": 24,
+   "fin": "2026-04-01T08:04:07+00:00",
+   "source": "historique"
+  },
+  {
+   "site": "polymarket",
+   "id": "504676",
+   "question": "GOP wins popular vote by 4-5%?",
+   "cat": "politique",
+   "idx": 1,
+   "prix": 0.9995,
+   "gagne": 1,
+   "horizon_h": 24,
+   "fin": "2024-12-18T01:02:58+00:00",
+   "source": "historique"
+  },
+  {
+   "site": "polymarket",
+   "id": "503302",
+   "question": "Will the Bears win Super Bowl 2025?",
+   "cat": "autre",
+   "idx": 1,
+   "prix": 0.9985,
+   "gagne": 1,
+   "horizon_h": 24,
+   "fin": "2024-12-16T00:39:16+00:00",
+   "source": "historique"
+  },
+  {
+   "site": "polymarket",
+   "id": "558942",
+   "question": "Will Italy win the 2026 FIFA World Cup?",
+   "cat": "autre",
+   "idx": 1,
+   "prix": 0.974,
+   "gagne": 1,
+   "horizon_h": 24,
+   "fin": "2026-04-01T01:13:09+00:00",
+   "source": "historique"
+  },
+  {
+   "site": "polymarket",
+   "id": "255088",
+   "question": "Will a candidate from another party win Georgia Presidential Election?",
+   "cat": "politique",
+   "idx": 1,
+   "prix": 0.9995,
+   "gagne": 1,
+   "horizon_h": 24,
+   "fin": "2024-11-07T14:38:23+00:00",
+   "source": "historique"
+  },
+  {
+   "site": "polymarket",
+   "id": "523558",
+   "question": "Was Milei hacked?",
+   "cat": "autre",
+   "idx": 1,
+   "prix": 0.9985,
+   "gagne": 1,
+   "horizon_h": 24,
+   "fin": "2025-02-17T08:01:17+00:00",
+   "source": "historique"
+  },
+  {
+   "site": "polymarket",
+   "id": "505409",
+   "question": "Will LSU win the 2025 College Football Playoff?",
+   "cat": "autre",
+   "idx": 1,
+   "prix": 0.9975,
+   "gagne": 1,
+   "horizon_h": 24,
+   "fin": "2024-12-08T21:44:17+00:00",
+   "source": "historique"
+  },
+  {
+   "site": "polymarket",
+   "id": "515766",
+   "question": "Will Friedrich Merz be the next Chancellor of Germany?",
+   "cat": "autre",
+   "idx": 0,
+   "prix": 0.9975,
+   "gagne": 1,
+   "horizon_h": 24,
+   "fin": "2025-05-06T19:36:16+00:00",
+   "source": "historique"
+  },
+  {
+   "site": "polymarket",
+   "id": "525726",
+   "question": "Trump releases Epstein list today?",
+   "cat": "politique",
+   "idx": 0,
+   "prix": 0.998,
+   "gagne": 1,
+   "horizon_h": 24,
+   "fin": "2025-03-03T00:52:48+00:00",
+   "source": "historique"
+  },
+  {
+   "site": "polymarket",
+   "id": "516871",
+   "question": "Will Bitcoin dip to $70,000 by December 31, 2025?",
+   "cat": "crypto",
+   "idx": 1,
+   "prix": 0.9985,
+   "gagne": 1,
+   "horizon_h": 24,
+   "fin": "2026-01-01T07:17:23+00:00",
+   "source": "historique"
+  },
+  {
+   "site": "polymarket",
+   "id": "504884",
+   "question": "Will another candidate be D-nom for VP on Election Day?",
+   "cat": "politique",
+   "idx": 1,
+   "prix": 0.9995,
+   "gagne": 1,
+   "horizon_h": 24,
+   "fin": "2024-11-05T10:05:15+00:00",
+   "source": "historique"
+  },
+  {
+   "site": "manifold",
+   "id": "EgUptqcOsL",
+   "question": "US Average Gas Price Is $4.100 or more on September 14 2026?",
+   "cat": "autre",
+   "idx": 0,
+   "prix": 0.9859,
+   "gagne": 1,
+   "horizon_h": 24,
+   "fin": "2026-09-14T05:30:18.796000+00:00",
+   "source": "historique"
+  },
+  {
+   "site": "manifold",
+   "id": "gE9ZZlRQpz",
+   "question": "Bitcoin price reaches 75k USD at any point before the end of the month",
+   "cat": "crypto",
+   "idx": 1,
+   "prix": 0.99,
+   "gagne": 1,
+   "horizon_h": 24,
+   "fin": "2026-09-30T23:59:00+00:00",
+   "source": "historique"
+  },
+  {
+   "site": "manifold",
+   "id": "t2U9SSO0AS",
+   "question": "US Average Gas Price Is $4.000 or more on September 21 2026?",
+   "cat": "autre",
+   "idx": 0,
+   "prix": 0.99,
+   "gagne": 1,
+   "horizon_h": 24,
+   "fin": "2026-09-21T03:56:28.866000+00:00",
+   "source": "historique"
+  },
+  {
+   "site": "manifold",
+   "id": "EOAnpOc0Nn",
+   "question": "US Average Gas Price Is $4.000 or more on September 14 2026?",
+   "cat": "autre",
+   "idx": 0,
+   "prix": 0.9877,
+   "gagne": 1,
+   "horizon_h": 24,
+   "fin": "2026-09-14T05:30:07.039000+00:00",
+   "source": "historique"
+  },
+  {
+   "site": "manifold",
+   "id": "CRP8EsQ8sh",
+   "question": "US Average Gas Price Is $4.000 or more on October 1st 2026?",
+   "cat": "autre",
+   "idx": 0,
+   "prix": 0.99,
+   "gagne": 1,
+   "horizon_h": 24,
+   "fin": "2026-10-01T08:24:10.623000+00:00",
+   "source": "historique"
+  },
+  {
+   "site": "manifold",
+   "id": "yngEZPtpS0",
+   "question": "Will SpaceX Crew-13 launch by September 30, 2026?",
+   "cat": "autre",
+   "idx": 1,
+   "prix": 0.99,
+   "gagne": 1,
+   "horizon_h": 24,
+   "fin": "2026-09-28T20:59:00+00:00",
+   "source": "historique"
+  },
+  {
+   "site": "manifold",
+   "id": "AOpSCntNpA",
+   "question": "If Fable 5.1 is listed on arena.ai on September 14th will it have a higher agent arena score than Fable 5?",
+   "cat": "autre",
+   "idx": 0,
+   "prix": 0.9834,
+   "gagne": 1,
+   "horizon_h": 24,
+   "fin": "2026-09-13T23:59:00+00:00",
+   "source": "historique"
+  },
+  {
+   "site": "manifold",
+   "id": "gqOp2yyhUA",
+   "question": "Will the silver spot price be above $75 USD on October 1st?",
+   "cat": "autre",
+   "idx": 1,
+   "prix": 0.9798,
+   "gagne": 1,
+   "horizon_h": 24,
+   "fin": "2026-10-01T23:59:00+00:00",
+   "source": "historique"
+  },
+  {
+   "site": "manifold",
+   "id": "ECAUyg6IZQ",
+   "question": "SpaceX closes above $170 at end of month?",
+   "cat": "autre",
+   "idx": 1,
+   "prix": 0.9814,
+   "gagne": 1,
+   "horizon_h": 24,
+   "fin": "2026-09-30T23:59:00+00:00",
+   "source": "historique"
+  },
+  {
+   "site": "manifold",
+   "id": "dysAsR88nu",
+   "question": "September 2026 the hottest ever?",
+   "cat": "autre",
+   "idx": 1,
+   "prix": 0.9774,
+   "gagne": 1,
+   "horizon_h": 24,
+   "fin": "2026-09-30T23:59:00+00:00",
+   "source": "historique"
+  },
+  {
+   "site": "manifold",
+   "id": "2RLI6tspSs",
+   "question": "Will the WTI Crude Oil Spot Price be above $83 on September 10, 2026?",
+   "cat": "autre",
+   "idx": 0,
+   "prix": 0.9889,
+   "gagne": 1,
+   "horizon_h": 24,
+   "fin": "2026-09-10T23:59:00+00:00",
+   "source": "historique"
   }
  ],
  "curseurs": {
-  "polymarket": 1000,
+  "polymarket": 1100,
   "kalshi": 0,
-  "manifold": 1350,
+  "manifold": 1600,
   "limitless": 0,
   "gemini": 0,
   "smarkets": 0,
-  "espn": 4,
-  "futuur": 0
+  "espn": 5,
+  "futuur": 0,
+  "azuro": 0,
+  "deribit": 0,
+  "okx": 0,
+  "delta_inde": 0,
+  "gate": 0,
+  "aevo": 0
  }
 }
