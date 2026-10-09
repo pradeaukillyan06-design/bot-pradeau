@@ -1,18 +1,14 @@
 [
- "https://api.sx.bet/orders/odds/best?marketHashes=0x2d6e2c24de38d38922f6ee85144d578893fb8f5f5380f0e0145a2a73f1c6f144&chainVersion=SXR",
- "https://api.sx.bet/orders?marketHashes=0x2d6e2c24de38d38922f6ee85144d578893fb8f5f5380f0e0145a2a73f1c6f144&chainVersion=SXR",
- "https://api.sx.bet/orders/odds/best?marketHashes=0x2d6e2c24de38d38922f6ee85144d578893fb8f5f5380f0e0145a2a73f1c6f144&baseToken=0x6629Ce1Cf35Cc1329ebB4F63202F3f197b3F050B&chainVersion=SXR",
- "https://api.sx.bet/markets/settled?pageSize=2",
- "https://api.sx.bet/trades/consolidated?pageSize=2",
- "https://api.onchainfeed.org/api/v1/public/market-manager/sports?gameState=Prematch&environment=PolygonUSDT&orderBy=startsAt",
- "https://api.onchainfeed.org/api/v1/public/market-manager/games-by-filters?gameState=Prematch&environment=PolygonUSDT&orderBy=startsAt&perPage=2",
- "https://api.futuur.com/api/v1/markets/?limit=5&resolved_only=true&outcomes_type=yesno",
- "https://site.web.api.espn.com/apis/site/v2/sports/football/college-football/scoreboard",
- "https://site.web.api.espn.com/apis/site/v2/sports/soccer/esp.1/scoreboard?dates=20261004",
+ "https://api.onchainfeed.org/api/v1/public/market-manager/games-by-filters?gameState=Prematch&environment=PolygonUSDT&orderBy=startsAt&orderDirection=asc&perPage=2",
+ "https://api.onchainfeed.org/api/v1/public/market-manager/sports?gameState=Prematch&environment=PolygonUSDT&orderBy=startsAt&orderDirection=asc",
+ "https://api.futuur.com/api/v1/markets/?limit=100&offset=100",
+ "https://api.futuur.com/api/v1/markets/?limit=20&resolved_only=true&offset=300",
  {
   "url": "https://api.hyperliquid.xyz/info",
   "corps": {
-   "type": "outcomeMeta"
+   "type": "outcomeSettlements"
   }
- }
+ },
+ "https://eu-offering-api.kambicdn.com/offering/v2018/ub/event/1029422876.json?lang=fr_FR&market=FR",
+ "https://eu-offering-api.kambicdn.com/offering/v2018/ub/betoffer/event/1029422876.json?lang=fr_FR&market=FR"
 ]
