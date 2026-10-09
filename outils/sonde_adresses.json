@@ -1,14 +1,1 @@
-[
- {
-  "url": "https://gateway.polymarket.us/v1/markets/tec-mlb-nlchamp-2026-09-27-lad/book",
-  "taille": 3000
- },
- {
-  "url": "https://gateway.polymarket.us/v1/markets?active=true&closed=false&limit=200&offset=0",
-  "taille": 200
- },
- {
-  "url": "https://gateway.polymarket.us/v1/markets?active=true&closed=false&limit=200&offset=200",
-  "taille": 200
- }
-]
+[{"url": "https://gateway.polymarket.us/v1/markets?active=true&closed=false&limit=200&offset=0", "taille": 2000000}, {"url": "https://gateway.polymarket.us/v1/markets?active=true&closed=false&limit=200&offset=200", "taille": 2000000}, {"url": "https://gateway.polymarket.us/v1/markets?active=true&closed=false&limit=200&offset=400", "taille": 2000000}, {"url": "https://gateway.polymarket.us/v1/markets?active=true&closed=false&limit=200&offset=600", "taille": 2000000}]
