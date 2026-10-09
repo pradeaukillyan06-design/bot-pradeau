@@ -1,1 +1,1 @@
-[{"url": "https://api.smarkets.com/v3/markets/168194701/contracts/", "taille": 200000}, {"url": "https://api.smarkets.com/v3/markets/168194701/contracts/?limit=200", "taille": 200000}]
+[{"url": "https://api.smarkets.com/v3/markets/168194701/contracts/?include_hidden=true", "taille": 200000}, {"url": "https://api.smarkets.com/v3/markets/168194701/", "taille": 3000}]
