@@ -77,8 +77,12 @@ class Manifold:
     def historique(self, curseur, nombre_max=60, heures_avant=24, parieurs_min=10):
         """Marchés Manifold terminés : probabilité `heures_avant` heures avant la fin (dernier pari
         avant ce moment). Si un côté était > 97 %, on note s'il a gagné."""
+        # le site refuse les décalages au-delà de 1000 : on change d'ordre de tri tous les 1000 marchés
+        tris = ["most-popular", "newest", "resolve-date", "liquidity", "24-hour-vol", "score", "last-updated"]
+        tri, decalage = tris[(curseur // 1000) % len(tris)], curseur % 1000
+        nombre_max = min(nombre_max, 1000 - decalage)
         lot = lire_json(f"{BASE}/search-markets?term=&filter=resolved&contractType=BINARY"
-                        f"&sort=most-popular&limit={nombre_max}&offset={curseur}")
+                        f"&sort={tri}&limit={nombre_max}&offset={decalage}")
         out = []
         for m in lot or []:
             try:
@@ -101,4 +105,4 @@ class Manifold:
                                     "fin": date_iso(fin_ms).isoformat(), "source": "historique"})
             except Exception:
                 continue
-        return out, curseur + len(lot or [])
+        return out, (curseur + len(lot)) if lot else (curseur // 1000 + 1) * 1000   # liste finie : tri suivant
