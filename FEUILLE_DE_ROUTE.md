@@ -18,20 +18,30 @@ puis vérification sur un vrai passage (compteurs dans etat.json -> sites).
   Arabie saoudite, Mexique, NFL, NCAA, NBA, NHL, MLB…) + historique (cote de clôture et résultat).
 - Futuur (Brésil / international, surtout monnaie de jeu) : foot du monde entier, bitcoin heure par heure.
   Jamais de mise (apprentissage seulement).
+- Azuro (paris sportifs décentralisés, monde entier : France, Japon, Brésil, Turquie…), via
+  api.onchainfeed.org (POST conditions-by-game-ids).
+- SX Bet (bourse de paris sportifs décentralisée) : carnet d'ordres public v3 (orderbook-v3/snapshot).
+- Polymarket US (bourse américaine régulée, distincte de Polymarket) : gateway.polymarket.us.
+- Options crypto, observation seulement (probabilité N(d2) tirée de la volatilité, résultat = prix de règlement
+  officiel) : Deribit (Panama/Dubaï), OKX (Seychelles), Delta Exchange India et Delta Exchange international,
+  Gate, Aevo, Thalex (Gibraltar), Derive (ex-Lyra).
+- CBOE (Chicago) : options sur actions américaines (SPY, QQQ, IWM, Apple, Microsoft, Nvidia, Tesla, Amazon),
+  observation seulement ; résultat = cours de clôture du jour d'échéance.
 
 ## Sondés et écartés pour l'instant (voir outils/sonde.py, branche sonde-resultats)
 - Metaculus, Insight Prediction, Overtime, Predict.fun, Opinion : compte ou clé obligatoire.
 - PredictIt, Matchbook, Kambi (Unibet…), Bovada : cotes lisibles mais AUCUN résultat après la fin.
 - Myriad : monnaie de points, presque aucun marché ouvert. Azuro : ancienne API vide, nouvelle API
   (api.onchainfeed.org) à explorer. Hyperliquid (marchés « outcome ») : résultats introuvables pour l'instant.
-- SX Bet : les cotes ne sont plus publiques (« OrderBook V2 is no longer supported »).
+- Bybit, Binance (options) : bloqués depuis les serveurs de GitHub (pays). Coincall : règlements non publics.
+- HKJC (Hong Kong), TAB (Australie), Betfair, Sportsbet, bwin, FDJ, Sporttery (Chine), Sofascore : bloqués
+  ou clé obligatoire. Pinnacle : cotes lisibles mais pas de résultats. PMU : rapports jamais > 97 %.
 
 ## À faire, par ordre d'intérêt
 1. Historique Kalshi : chandeliers de prix (/series/{serie}/markets/{ticker}/candlesticks), cote 24 h avant la fin.
 2. Historique Limitless : trouver la liste des marchés résolus (status RESOLVED) et l'historique des prix.
-3. Azuro (paris sportifs décentralisés) : api.onchainfeed.org/api/v1/public/market-manager (sports,
-   games-by-filters avec environment=PolygonUSDT, orderBy, orderDirection, page=1) -> trouver les cotes
-   (conditions) et les résultats.
+3. Vérifier sur les premiers résultats réels que Azuro, SX Bet et Polymarket US lisent bien les résultats
+   (champs state/wonOutcomeIds, status SETTLED/outcome, state/settlementPx) ; corriger sinon.
 4. Hyperliquid « outcomes » (POST api.hyperliquid.xyz/info, type outcomeMeta + allMids) : trouver le résultat.
 5. Smarkets : élargir aux autres catégories de marchés que « winner » si le temps de passage le permet.
 6. Bourses d'actions d'autres pays (Europe, États-Unis, Japon…) via les données gratuites accessibles depuis

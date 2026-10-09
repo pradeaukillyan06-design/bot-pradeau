@@ -1,7 +1,7 @@
 # Bot Pradeau — paris fictifs
 
 Bot d'entraînement en **argent fictif** : il ne parie jamais en vrai. Il lit les marchés de prédiction
-(Polymarket, Kalshi, Manifold, Limitless, Gemini, Smarkets, ESPN/DraftKings, Futuur), note ce qu'il *aurait* parié sur les issues cotées à plus de 97 %,
+(20 sites : Polymarket, Polymarket US, Kalshi, Gemini, Manifold, Limitless, Smarkets, ESPN/DraftKings, Futuur, Azuro, SX Bet, et les options de Deribit, OKX, Delta Inde, Delta international, Gate, Aevo, Thalex, Derive et CBOE), note ce qu'il *aurait* parié sur les issues cotées à plus de 97 %,
 attend le résultat réel et apprend si ces cotes disent vrai.
 
 - `cerveau.py` : programme chef (un seul programme, un seul cahier d'apprentissage commun).
