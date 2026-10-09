@@ -21,6 +21,8 @@ def _par_lots(ids, n=20):
 class Smarkets:
     nom = "smarkets"
     argent_reel = True
+    pause_lectures = 1.5                    # le site limite les lectures rapides : on relit plus lentement
+    verifs_max = 20                         # … donc moins de vérifications par passage (le passage reste court)
 
     def frais(self, prix):
         return 0.02 * (1 - prix) / prix        # commission 2 % sur le gain net, ramenée à la mise

@@ -10,7 +10,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 import cerveau as C                      # noqa: E402
 import sites.commun as SC                # noqa: E402
-from sites import espn, gemini, kalshi, limitless, manifold, polymarket, smarkets  # noqa: E402
+from sites import espn, futuur, gemini, kalshi, limitless, manifold, polymarket, smarkets  # noqa: E402
 
 T0 = SC.maintenant()
 FIN = (T0 + timedelta(days=2)).strftime("%Y-%m-%dT%H:%M:%SZ")
@@ -85,6 +85,10 @@ def match_espn(eid, etat="pre", fini=False, gagnant=None):
 
 
 ES = {"77": match_espn("77")}
+FU = {"id": 900, "title": "Brazil vs. Bolivia", "slug": "brazil-bolivia", "status": "open", "outcomes_type": "custom",
+      "event_type": "soccer_match", "bet_end_date": FIN, "resolution": None,
+      "outcomes": [{"id": 3, "title": "Bolivia", "price": {"OOM": 0.01}}, {"id": 1, "title": "Brazil", "price": {"OOM": 0.985}},
+                   {"id": 2, "title": "Tie", "price": {"OOM": 0.02}}]}
 ETAT_SITE = {"pm": copy.deepcopy(PM), "ka": copy.deepcopy(KA), "ma": copy.deepcopy(MA), "discord": set()}
 
 
@@ -104,6 +108,12 @@ def faux_internet(url, *a, **k):
         if "/events?" in url:
             return {"data": [GE]} if "category=Crypto" in url and "offset=0" in url else {"data": []}
         return GE if url.split("#")[0].endswith("/events/BTC2610") else {}
+    if "api.futuur.com" in url:
+        if "/markets/?" in url:
+            return {"results": [FU] if "offset=0" in url else [], "pagination": {"next": None}}
+        fu = copy.deepcopy(FU)
+        fu["outcomes"].reverse()                       # l'ordre des issues peut changer d'une lecture à l'autre
+        return fu if url.endswith("/markets/900/") else {}
     if "api.smarkets.com" in url:
         if "/events/?" in url:
             return {"events": [SM["ev"]], "pagination": {"next_page": None}}
@@ -118,7 +128,7 @@ def faux_internet(url, *a, **k):
         jours = url.split("dates=")[1].split("&")[0]
         if "college-football" not in url:
             return {"events": []}
-        if "-" in jours:
+        if jours >= (T0 - timedelta(hours=5)).strftime("%Y%m%d"):
             return {"events": list(ES.values())}
         return {"events": [match_espn("88", "post", True, "home")]}   # match déjà joué (historique)
     if "manifold.markets" in url and "filter=resolved" in url:
@@ -147,7 +157,7 @@ def faux_internet(url, *a, **k):
     raise AssertionError("adresse inattendue " + url)
 
 
-for mod in (polymarket, kalshi, manifold, limitless, gemini, smarkets, espn):
+for mod in (polymarket, kalshi, manifold, limitless, gemini, smarkets, espn, futuur):
     mod.lire_json = faux_internet
 C.CFG["pause_lectures_s"] = 0
 ERREURS = []
@@ -185,6 +195,8 @@ with tempfile.TemporaryDirectory() as d:
     verifier("Limitless écart achat/vente énorme -> pas achetable", ("limitless", "btc-5min-2") not in obs)
     verifier("Gemini contrat à 98,5 % observé", ("gemini", "GEMI-BTC-HI1") in obs)
     verifier("Gemini contrat à 50 % ignoré", ("gemini", "GEMI-BTC-HI2") not in obs)
+    verifier("Futuur favori à 98,5 % observé (ordre des issues stable)",
+             any(o["site"] == "futuur" and o["cote"] == "Brazil" for o in e["observations"]))
     verifier("Smarkets « pas de match nul » à 98 % observé", ("smarkets", "M1:K1") in obs)
     verifier("Smarkets contrat à 50 % ignoré", ("smarkets", "M1:K2") not in obs)
     verifier("ESPN gros favori (cote -20000) observé", ("espn", "football/college-football/77") in obs)
@@ -227,6 +239,7 @@ with tempfile.TemporaryDirectory() as d:
     k2.update(status="settled", result="yes")                      # le favori (Non) perd
     ETAT_SITE["ma"][0].update(isResolved=True, resolution="MKT", resolutionProbability=0.6)
     LI[0].update(status="RESOLVED", winningOutcomeIndex=1)               # le favori Limitless perd
+    FU.update(status="resolved", resolution={"id": 1, "title": "Brazil"})
     GE["status"] = "settled"
     GE["contracts"][0].update(status="settled", marketState="closed", resolutionSide="yes")
     SM["contrats"][0]["state_or_outcome"] = "loser"                     # pas de nul -> « Non » gagne
@@ -242,6 +255,8 @@ with tempfile.TemporaryDirectory() as d:
     verifier("Kalshi annulé exclu de l'apprentissage", ("kalshi", "KXBTC-1") not in o)
     verifier("Kalshi favori perdant enregistré", ("kalshi", "KXNBA-2") in o and o[("kalshi", "KXNBA-2")]["gagne"] == 0)
     verifier("Limitless favori perdant enregistré", o.get(("limitless", "sol-hourly-1"), {}).get("gagne") == 0)
+    verifier("Futuur favori gagnant", o.get(("futuur", "900"), {}).get("gagne") == 1)
+    verifier("jamais de mise sur Futuur (monnaie de jeu)", not any(x["site"] == "futuur" for x in e["resolus"]))
     verifier("Gemini favori gagnant", o.get(("gemini", "GEMI-BTC-HI1"), {}).get("gagne") == 1)
     verifier("Smarkets côté Non gagnant", o.get(("smarkets", "M1:K1"), {}).get("gagne") == 1)
     verifier("ESPN favori perdant enregistré", o.get(("espn", "football/college-football/77"), {}).get("gagne") == 0)

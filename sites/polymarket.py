@@ -72,7 +72,7 @@ class Polymarket:
         i = marche["id"]
         for url in (f"{BASE}/markets?id={i}&closed=true", f"{BASE}/markets?id={i}&closed=true&limit=1"):
             r = lire_json(url)
-            m = r[0] if isinstance(r, list) else r
+            m = (r[0] if r else None) if isinstance(r, list) else r   # liste vide : pas encore fermé
             if not m or not m.get("closed") or str(m.get("umaResolutionStatus", "")).lower() != "resolved":
                 return {"fini": False}
             c = self._normaliser(m)

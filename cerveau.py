@@ -194,7 +194,7 @@ def preselection(e, site, marches):
         if par_cat.get(m["cat"], 0) < CFG["max_par_categorie"]:
             par_cat[m["cat"]] = par_cat.get(m["cat"], 0) + 1
             choisis.append(m)
-    return choisis[:CFG["verifs_max_par_site"]]
+    return choisis[:getattr(site, "verifs_max", CFG["verifs_max_par_site"])]
 
 
 def verifier(site, m):
@@ -207,7 +207,7 @@ def verifier(site, m):
             l = None
         if l and l["id"] == m["id"]:
             lectures.append(l)
-        time.sleep(CFG["pause_lectures_s"])
+        time.sleep(getattr(site, "pause_lectures", CFG["pause_lectures_s"]) if CFG["pause_lectures_s"] else 0)
     if len(lectures) < CFG["lectures_min"]:
         return None, f"seulement {len(lectures)}/{CFG['lectures_min']} lectures"
     i = m["idx"]

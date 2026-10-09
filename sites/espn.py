@@ -45,25 +45,23 @@ class Espn:
     def frais(self, prix):
         return 0.0                        # la marge du bookmaker est déjà dans le prix
 
-    def _url(self, sport, ligue, jours):
-        return f"{BASE}/{sport}/{ligue}/scoreboard?dates={jours}&limit=300"
-
-    @staticmethod
-    def _plage(t0, n):
-        return f"{t0:%Y%m%d}-{t0 + timedelta(days=n):%Y%m%d}"
+    def _url(self, sport, ligue, jour):
+        return f"{BASE}/{sport}/{ligue}/scoreboard?dates={jour}&limit=300"     # un seul jour par adresse
 
     def candidats(self, jours_max, jours=3):
-        t0 = maintenant()
-        out = []
+        t0 = maintenant() - timedelta(hours=5)             # les journées d'ESPN suivent l'heure américaine
+        out, vus = [], set()
         for sport, ligue, cat in LIGUES:
-            try:
-                r = lire_json(self._url(sport, ligue, self._plage(t0, min(jours, jours_max))), essais=2, pause=1)
-            except Exception:
-                continue                                   # ligue hors saison ou absente : on passe
-            for ev in r.get("events", []):
-                c = self._normaliser(ev, sport, ligue, cat)
-                if c and c["_etat"] == "pre":
-                    out.append(c)
+            for n in range(min(jours, jours_max)):
+                try:
+                    r = lire_json(self._url(sport, ligue, f"{t0 + timedelta(days=n):%Y%m%d}"), essais=2, pause=1)
+                except Exception:
+                    break                                  # ligue hors saison ou absente : on passe
+                for ev in r.get("events", []):
+                    c = self._normaliser(ev, sport, ligue, cat)
+                    if c and c["_etat"] == "pre" and c["id"] not in vus:
+                        vus.add(c["id"])
+                        out.append(c)
         return out
 
     def _normaliser(self, ev, sport, ligue, cat, cle_cote="close"):
@@ -92,7 +90,7 @@ class Espn:
         debut = date_iso(ev.get("date"))
         if not debut:
             return None
-        return {"site": self.nom, "id": f"{sport}/{ligue}/{ev['id']}", "slug": f"{debut - timedelta(days=1):%Y%m%d}-{debut:%Y%m%d}",
+        return {"site": self.nom, "id": f"{sport}/{ligue}/{ev['id']}", "slug": ",".join(sorted({f"{debut - timedelta(hours=5):%Y%m%d}", f"{debut:%Y%m%d}"})),
                 "question": f"{ev.get('name', '')} ({ligue})", "issues": [noms[c] for c in issues],
                 # sans la marge du bookmaker (marge retirée à parts égales, méthode additive : sur un gros
                 # favori elle ne l'écrase pas comme la division proportionnelle)
@@ -107,11 +105,15 @@ class Espn:
         return [self._url(sport, ligue, marche["slug"]) + f"#{marche['id']}"] * 6
 
     def _trouver(self, url):
+        """L'adresse peut porter deux jours (« 20261009,20261010 ») : on cherche le match dans chacun."""
         base, mid = url.split("#", 1)
         sport, ligue, eid = mid.split("/")
-        for ev in lire_json(base).get("events", []):
-            if str(ev.get("id")) == eid:
-                return self._normaliser(ev, sport, ligue, "")
+        racine, jours = base.split("dates=", 1)
+        jours, reste = (jours.split("&", 1) + [""])[:2]
+        for jour in jours.split(","):
+            for ev in lire_json(f"{racine}dates={jour}&{reste}").get("events", []):
+                if str(ev.get("id")) == eid:
+                    return self._normaliser(ev, sport, ligue, "")
         return None
 
     def lire(self, url):
