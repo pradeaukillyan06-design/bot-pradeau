@@ -1,14 +1,5 @@
 [
- "https://api.onchainfeed.org/api/v1/public/market-manager/games-by-filters?gameState=Prematch&environment=PolygonUSDT&orderBy=startsAt&orderDirection=asc&perPage=2",
- "https://api.onchainfeed.org/api/v1/public/market-manager/sports?gameState=Prematch&environment=PolygonUSDT&orderBy=startsAt&orderDirection=asc",
- "https://api.futuur.com/api/v1/markets/?limit=100&offset=100",
- "https://api.futuur.com/api/v1/markets/?limit=20&resolved_only=true&offset=300",
- {
-  "url": "https://api.hyperliquid.xyz/info",
-  "corps": {
-   "type": "outcomeSettlements"
-  }
- },
- "https://eu-offering-api.kambicdn.com/offering/v2018/ub/event/1029422876.json?lang=fr_FR&market=FR",
- "https://eu-offering-api.kambicdn.com/offering/v2018/ub/betoffer/event/1029422876.json?lang=fr_FR&market=FR"
+ "https://site.web.api.espn.com/apis/site/v2/sports/football/college-football/scoreboard?dates=20261009-20261012&limit=300",
+ "https://site.web.api.espn.com/apis/site/v2/sports/football/college-football/scoreboard?dates=20261004&limit=300",
+ "https://site.web.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard?dates=20261009-20261012&limit=300"
 ]
