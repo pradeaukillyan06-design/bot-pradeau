@@ -11,4 +11,6 @@ attend le résultat réel et apprend si ces cotes disent vrai.
 - `tests/test_bot.py` : tests avec un faux Internet (lancés avant chaque passage).
 - `.github/workflows/bot.yml` : lance un passage toutes les 15 minutes.
 
+Un agent par site travaille en parallèle ; le chef est le seul à écrire. À chaque passage, le bot étudie aussi 100 marchés déjà terminés par site (cote la veille de la fin -> a-t-il gagné ?) : de l'expérience immédiate.
+
 Règles : seuil > 97 % ; chaque cote lue 6 fois et concordante à 0,5 point près ; chaque résultat lu 2 fois.

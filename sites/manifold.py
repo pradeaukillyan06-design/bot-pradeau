@@ -73,3 +73,32 @@ class Manifold:
         if lectures[0] == "rembourse":
             return {"fini": True, "rembourse": True}
         return {"fini": True, "paiement": lectures[0]}
+
+    def historique(self, curseur, nombre_max=60, heures_avant=24, parieurs_min=10):
+        """Marchés Manifold terminés : probabilité `heures_avant` heures avant la fin (dernier pari
+        avant ce moment). Si un côté était > 97 %, on note s'il a gagné."""
+        lot = lire_json(f"{BASE}/search-markets?term=&filter=resolved&contractType=BINARY"
+                        f"&sort=most-popular&limit={nombre_max}&offset={curseur}")
+        out = []
+        for m in lot or []:
+            try:
+                if m.get("resolution") not in ("YES", "NO") or (m.get("uniqueBettorCount") or 0) < parieurs_min:
+                    continue
+                fin_ms = min(x for x in (m.get("closeTime"), m.get("resolutionTime")) if x)
+                t_obs = int(fin_ms - heures_avant * 3600 * 1000)
+                paris = lire_json(f"{BASE}/bets?contractId={m['id']}&beforeTime={t_obs}&limit=1")
+                if not paris:
+                    continue
+                p_oui = nombre(paris[0].get("probAfter"))
+                if p_oui is None:
+                    continue
+                gagnant = 0 if m["resolution"] == "YES" else 1
+                for idx, p in ((0, p_oui), (1, 1 - p_oui)):
+                    if 0.97 < p < 1.0:
+                        out.append({"site": self.nom, "id": m["id"], "question": m.get("question", ""),
+                                    "cat": categorie(m.get("question", ""), m.get("slug", "")), "idx": idx,
+                                    "prix": round(p, 4), "gagne": int(idx == gagnant), "horizon_h": heures_avant,
+                                    "fin": date_iso(fin_ms).isoformat(), "source": "historique"})
+            except Exception:
+                continue
+        return out, curseur + len(lot or [])

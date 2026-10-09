@@ -82,3 +82,43 @@ class Polymarket:
         if lectures[0] != lectures[1]:
             return {"fini": False, "contradiction": True}
         return {"fini": True, "paiement": lectures[0]}
+
+    # ------------------------------------------------------------------
+    # Historique : marchés déjà terminés, cote la veille de la fin
+    # ------------------------------------------------------------------
+    def historique(self, curseur, nombre_max=60, heures_avant=24):
+        """Renvoie (observations historiques, nouveau curseur). Pour chaque marché terminé,
+        on regarde la cote `heures_avant` heures avant la fin : si un côté était > 97 %,
+        on note s'il a gagné. C'est de l'expérience immédiate, sans attendre."""
+        import time as _t
+        CLOB = "https://clob.polymarket.com"
+        lot = lire_json(f"{BASE}/markets?closed=true&limit={nombre_max}&offset={curseur}"
+                        f"&order=volumeNum&ascending=false&volume_num_min=5000")
+        out = []
+        for m in lot or []:
+            try:
+                if str(m.get("umaResolutionStatus", "")).lower() != "resolved":
+                    continue
+                c = self._normaliser(m)
+                jetons = json.loads(m["clobTokenIds"]) if isinstance(m.get("clobTokenIds"), str) else m.get("clobTokenIds")
+                ct = (m.get("closedTime") or "").replace(" ", "T")
+                ct = ct + ":00" if ct.endswith("+00") else ct
+                fin = date_iso(ct) or (c and c["fin"])
+                if not c or not jetons or not fin or sorted(c["cotes"]) != [0.0, 1.0]:
+                    continue
+                t_obs = int(fin.timestamp()) - heures_avant * 3600
+                h = lire_json(f"{CLOB}/prices-history?market={jetons[0]}&startTs={t_obs - 3 * 86400}"
+                              f"&endTs={t_obs}&fidelity=60").get("history", [])
+                avant = [pt for pt in h if pt.get("t", 0) <= t_obs]
+                if not avant:
+                    continue
+                p0 = float(avant[-1]["p"])
+                for idx, p in ((0, p0), (1, 1 - p0)):
+                    if 0.97 < p < 1.0:
+                        out.append({"site": self.nom, "id": c["id"], "question": c["question"], "cat": c["cat"],
+                                    "idx": idx, "prix": round(p, 4), "gagne": int(c["cotes"][idx] >= 0.99),
+                                    "horizon_h": heures_avant, "fin": fin.isoformat(), "source": "historique"})
+                _t.sleep(0.1)
+            except Exception:
+                continue
+        return out, curseur + len(lot or [])

@@ -46,11 +46,29 @@ KA = {"markets": [
 MA = [{"id": "m1", "slug": "will-x", "question": "Will X happen?", "outcomeType": "BINARY", "probability": 0.985,
        "closeTime": FIN_MS, "isResolved": False, "volume": 1000, "uniqueBettorCount": 40}]
 
+HIST_PM = [{"id": "h1", "slug": "nba-x", "question": "NBA: X vs Y", "outcomes": '["X", "Y"]', "outcomePrices": '["1", "0"]',
+            "endDate": FIN, "closedTime": "2026-09-01 20:00:00+00", "umaResolutionStatus": "resolved", "volumeNum": 9e4,
+            "clobTokenIds": '["111", "222"]', "closed": True},
+           {"id": "h2", "slug": "btc-y", "question": "Bitcoin above 200k?", "outcomes": '["Yes", "No"]', "outcomePrices": '["1", "0"]',
+            "endDate": FIN, "closedTime": "2026-09-02 20:00:00+00", "umaResolutionStatus": "resolved", "volumeNum": 9e4,
+            "clobTokenIds": '["333", "444"]', "closed": True}]
+HIST_MA = [{"id": "r1", "slug": "will-z", "question": "Will Z happen?", "resolution": "NO", "closeTime": FIN_MS,
+            "resolutionTime": FIN_MS, "uniqueBettorCount": 50, "outcomeType": "BINARY"}]
 ETAT_SITE = {"pm": copy.deepcopy(PM), "ka": copy.deepcopy(KA), "ma": copy.deepcopy(MA), "discord": set()}
 
 
 def faux_internet(url, *a, **k):
     s = ETAT_SITE
+    if "clob.polymarket.com/prices-history" in url:            # jeton 111 : X à 0,985 la veille ; 333 : 0,40
+        p = 0.985 if "market=111" in url else 0.40
+        fin_obs = int(url.split("endTs=")[1].split("&")[0])
+        return {"history": [{"t": fin_obs - 7200, "p": p}, {"t": fin_obs + 3600, "p": 0.999}]}
+    if "gamma-api.polymarket.com" in url and "closed=true&limit=" in url and "order=" in url:
+        return HIST_PM if "offset=0" in url else []
+    if "manifold.markets" in url and "filter=resolved" in url:
+        return HIST_MA if "offset=0" in url else []
+    if "manifold.markets" in url and "/bets?" in url:
+        return [{"createdTime": 1, "probAfter": 0.02}]              # Oui à 2 % -> Non favori à 98 %
     if "gamma-api.polymarket.com" in url:
         if "/markets?" in url and ("closed=false&active=true" in url):
             return list(s["pm"].values()) if "offset=0" in url and "volumeNum" in url else []
@@ -102,12 +120,18 @@ with tempfile.TemporaryDirectory() as d:
     verifier("Kalshi combinés exclus", ("kalshi", "KXMVECOMBO-3") not in obs)
     verifier("Manifold observé", ("manifold", "m1") in obs)
     verifier("côté sans vendeur -> pas observé (déjà joué)", ("polymarket", "4") not in obs)
+    hist = {(h["site"], h["id"], h["idx"]): h for h in e["historique"]}
+    verifier("historique Polymarket : favori 98,5 % la veille, gagnant", hist.get(("polymarket", "h1", 0), {}).get("gagne") == 1)
+    verifier("historique : pas de favori > 97 % -> rien noté", not any(k[1] == "h2" for k in hist))
+    verifier("historique Manifold : Non à 98 % la veille, gagnant", hist.get(("manifold", "r1", 1), {}).get("gagne") == 1)
+    verifier("historique : cote lue AVANT la fin, pas après", hist.get(("polymarket", "h1", 0), {}).get("prix") == 0.985)
     verifier("aucune mise sans expérience", e["ouverts"] == [] and e["cash"] == 1000)
     n_obs = len(e["observations"])
 
     # 2) second passage : pas de doublon
     C.passage()
     verifier("pas de doublon au 2e passage", len(C.charger()["observations"]) == n_obs)
+    verifier("historique : pas de doublon au 2e passage", len(C.charger()["historique"]) == len(e["historique"]))
 
     # 3) expérience : sur Polymarket, les favoris ~0,98 gagnent à 100 % -> le bot doit miser
     e = C.charger()

@@ -19,7 +19,6 @@ import json
 import statistics
 import sys
 import time
-import traceback
 from datetime import timedelta
 from pathlib import Path
 
@@ -36,13 +35,15 @@ CFG = {
     "ecart_lectures_max": 0.005,
     "pause_lectures_s": 0.5,
     "jours_max": 21,
-    "verifs_max_par_site": 30,      # nouvelles cotes vérifiées par site et par passage
+    "verifs_max_par_site": 40,      # nouvelles cotes vérifiées par site et par passage
     "max_par_categorie": 5,         # variété : pas plus de 5 nouvelles cotes d'une même catégorie par passage
     "resolutions_max": 60,
     "force_prior": 30,
     "fraction_kelly": 0.25,
     "max_paris_ouverts": 60,
     "bankroll": 1000.0,
+    "historique_par_site": 100,     # marchés terminés étudiés par site et par passage (expérience immédiate)
+    "historique_heures_avant": 24,  # cote regardée 24 h avant la fin
 }
 
 
@@ -52,7 +53,8 @@ CFG = {
 def etat_vide():
     return {"bankroll_depart": CFG["bankroll"], "cash": CFG["bankroll"], "ouverts": [], "resolus": [],
             "observations": [], "obs_resolues": [], "apprentissage": {}, "fraction_kelly": CFG["fraction_kelly"],
-            "pic": CFG["bankroll"], "dernier_ajust": 0, "rejets": 0, "journal": [], "passages": 0, "sites": {}}
+            "pic": CFG["bankroll"], "dernier_ajust": 0, "rejets": 0, "journal": [], "passages": 0, "sites": {},
+            "historique": [], "curseurs": {}, "non_achetables": {}}
 
 
 def charger():
@@ -97,7 +99,7 @@ def cles(site, cat, prix):
 
 def reapprendre(e):
     app, vus = {}, set()
-    for r in e["obs_resolues"] + e["resolus"]:
+    for r in e["obs_resolues"] + e["resolus"] + e["historique"]:
         cle_unique = (r["site"], r["id"])
         if cle_unique in vus or r.get("annule"):
             continue
@@ -149,27 +151,6 @@ def site_par_nom(nom):
     return next(s for s in TOUS if s.nom == nom)
 
 
-def resoudre(e):
-    t = maintenant()
-    a_voir = [x for x in e["ouverts"] + e["observations"] if date_iso(x["fin"]) and date_iso(x["fin"]) <= t]
-    deja, faits = set(), 0
-    for x in a_voir:
-        cle = (x["site"], x["id"])
-        if cle in deja or faits >= CFG["resolutions_max"]:
-            continue
-        deja.add(cle)
-        faits += 1
-        try:
-            r = site_par_nom(x["site"]).resultat(x)
-        except Exception as err:
-            log(e, f"[{x['site']}] résultat illisible pour {x['id']} : {err}")
-            continue
-        if r.get("contradiction"):
-            log(e, f"[{x['site']}] résultat contradictoire, relu plus tard : {x['question'][:60]}")
-        if r.get("fini"):
-            appliquer_resultat(e, x["site"], x["id"], r)
-
-
 def appliquer_resultat(e, site, mid, r):
     rembourse = r.get("rembourse", False)
     for o in [o for o in e["ouverts"] if (o["site"], o["id"]) == (site, mid)]:
@@ -198,10 +179,7 @@ def preselection(e, site, marches):
     t = maintenant()
     deja = {(x["site"], x["id"]) for x in e["ouverts"] + e["observations"]}
     deja |= {(x["site"], x["id"]) for x in e["obs_resolues"][-20000:] + e["resolus"][-5000:]}
-    na = e.setdefault("non_achetables", {})
-    for k in [k for k, fin in na.items() if (date_iso(fin) or t) < t]:
-        del na[k]                                   # nettoyage : marchés terminés
-    deja |= {tuple(k.split("|", 1)) for k in na}
+    deja |= {tuple(k.split("|", 1)) for k in e.get("non_achetables", {})}
     out = []
     for m in marches:
         if (site.nom, m["id"]) in deja or not m.get("fin") or not (t < m["fin"] <= t + timedelta(days=CFG["jours_max"])):
@@ -278,39 +256,91 @@ def traiter(e, site, m, v):
            f"{m['question'][:60]} (prix {prix}, proba bot {p:.1%})")
 
 
+def agent(site, e):
+    """Travail d'UN site, fait en parallèle des autres (un agent par site). L'agent ne modifie
+    jamais l'état : il rapporte ce qu'il a trouvé, et c'est le chef qui écrit (un seul écrivain)."""
+    rap = {"site": site.nom, "resultats": [], "verifies": [], "rejets": [], "historique": [],
+           "marches_vus": 0, "candidats": 0, "erreurs": [], "curseur": e["curseurs"].get(site.nom, 0)}
+    t = maintenant()
+    # 1) résultats des paris et observations terminés de ce site
+    dus = {(x["id"]): x for x in e["ouverts"] + e["observations"]
+           if x["site"] == site.nom and date_iso(x["fin"]) and date_iso(x["fin"]) <= t}
+    for x in list(dus.values())[:CFG["resolutions_max"]]:
+        try:
+            rap["resultats"].append((x["id"], site.resultat(x), x["question"]))
+        except Exception as err:
+            rap["erreurs"].append(f"résultat illisible pour {x['id']} : {err}")
+    # 2) nouveaux marchés > 97 %, vérifiés 6 fois
+    try:
+        marches = site.candidats(CFG["jours_max"])
+        rap["marches_vus"] = len(marches)
+        for m in preselection(e, site, marches):
+            rap["candidats"] += 1
+            v, raison = verifier(site, m)
+            (rap["verifies"].append((m, v)) if v else rap["rejets"].append((m["question"], raison)))
+    except Exception as err:
+        rap["erreurs"].append(f"liste des marchés illisible : {err}")
+    # 3) expérience immédiate : marchés déjà terminés (si le site le permet)
+    if hasattr(site, "historique"):
+        try:
+            h, rap["curseur"] = site.historique(rap["curseur"], CFG["historique_par_site"],
+                                                CFG["historique_heures_avant"])
+            rap["historique"] = h
+        except Exception as err:
+            rap["erreurs"].append(f"historique illisible : {err}")
+    return rap
+
+
 def passage():
+    from concurrent.futures import ThreadPoolExecutor
     e = charger()
     e["passages"] += 1
     debut = maintenant()
-    try:
-        resoudre(e)
-    except Exception:
-        log(e, "Erreur pendant les résolutions : " + traceback.format_exc(limit=2))
+    na = e["non_achetables"]
+    for k in [k for k, fin in na.items() if (date_iso(fin) or debut) < debut]:
+        del na[k]                                   # nettoyage : marchés terminés
+    # les agents travaillent en même temps, un par site
+    with ThreadPoolExecutor(max_workers=len(TOUS)) as pool:
+        rapports = list(pool.map(lambda s: agent(s, e), TOUS))
+    # le chef applique tout, dans l'ordre, seul à écrire.
+    # Étape A : résultats et historique -> il apprend AVANT de décider de nouveaux paris
+    deja_hist = {(h["site"], h["id"], h["idx"]) for h in e["historique"]}
+    for rap in rapports:
+        site = site_par_nom(rap["site"])
+        st = e["sites"].setdefault(site.nom, {"marches_vus": 0, "candidats": 0, "retenus": 0, "rejets": 0,
+                                               "erreurs": 0, "dernier_ok": None, "historique": 0})
+        st.setdefault("historique", 0)
+        for err in rap["erreurs"]:
+            st["erreurs"] += 1
+            log(e, f"[{site.nom}] {err}")
+        for mid, r, question in rap["resultats"]:
+            if r.get("contradiction"):
+                log(e, f"[{site.nom}] résultat contradictoire, relu plus tard : {question[:60]}")
+            if r.get("fini"):
+                appliquer_resultat(e, site.nom, mid, r)
+        nouveaux = [h for h in rap["historique"] if (h["site"], h["id"], h["idx"]) not in deja_hist]
+        deja_hist |= {(h["site"], h["id"], h["idx"]) for h in nouveaux}
+        e["historique"].extend(nouveaux)
+        st["historique"] += len(nouveaux)
+        e["curseurs"][site.nom] = rap["curseur"]
+    e["historique"] = e["historique"][-60000:]
     reapprendre(e)
     ajuster_risque(e)
-    sauver(e)
-    for site in TOUS:
-        st = e["sites"].setdefault(site.nom, {"marches_vus": 0, "candidats": 0, "retenus": 0, "rejets": 0,
-                                               "erreurs": 0, "dernier_ok": None})
-        try:
-            marches = site.candidats(CFG["jours_max"])
-        except Exception as err:
-            st["erreurs"] += 1
-            log(e, f"[{site.nom}] liste des marchés illisible : {err}")
-            continue
-        st["marches_vus"] += len(marches)
-        for m in preselection(e, site, marches):
-            st["candidats"] += 1
-            v, raison = verifier(site, m)
-            if not v:
-                st["rejets"] += 1
-                e["rejets"] += 1
-                log(e, f"[{site.nom}] rejet ({raison}) : {m['question'][:60]}")
-                continue
+    # Étape B : nouvelles cotes vérifiées -> observations et paris fictifs
+    for rap in rapports:
+        site = site_par_nom(rap["site"])
+        st = e["sites"][site.nom]
+        for question, raison in rap["rejets"]:
+            st["rejets"] += 1
+            e["rejets"] += 1
+            log(e, f"[{site.nom}] rejet ({raison}) : {question[:60]}")
+        st["marches_vus"] += rap["marches_vus"]
+        st["candidats"] += rap["candidats"]
+        for m, v in rap["verifies"]:
             st["retenus"] += 1
             traiter(e, site, m, v)
-        st["dernier_ok"] = maintenant().isoformat(timespec="minutes")
-        sauver(e)                           # sauvegarde après chaque site
+        if not rap["erreurs"]:
+            st["dernier_ok"] = maintenant().isoformat(timespec="minutes")
     e["dernier_passage"] = {"debut": debut.isoformat(timespec="minutes"),
                             "duree_s": round((maintenant() - debut).total_seconds())}
     sauver(e)
@@ -326,6 +356,10 @@ def bilan(e):
               f"Observations : {len(e['observations'])} en attente, {len(o)} résolues"
               + (f", favoris gagnants {sum(x['gagne'] for x in o) / len(o):.1%} pour une cote moyenne "
                  f"{sum(x['prix'] for x in o) / len(o):.1%}" if o else "")]
+    h = e.get("historique", [])
+    if h:
+        lignes.append(f"Historique étudié : {len(h)} favoris > 97 % la veille de la fin, gagnants "
+                      f"{sum(x['gagne'] for x in h) / len(h):.1%} pour une cote moyenne {sum(x['prix'] for x in h) / len(h):.1%}")
     for k, a in sorted(e["apprentissage"].items(), key=lambda kv: -kv[1]["n"])[:20]:
         lignes.append(f"  {k:<32} n={a['n']:<5} cote {a['prix_moy']:.3f} réel {a['taux_reel']:.3f}")
     return "\n".join(lignes)
