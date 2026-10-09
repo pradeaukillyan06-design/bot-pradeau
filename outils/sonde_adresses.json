@@ -1,30 +1,60 @@
 [
  {
-  "url": "https://api.onchainfeed.org/api/v1/public/market-manager/games-by-filters?gameState=Prematch&environment=PolygonUSDT&orderBy=startsAt&orderDirection=asc&page=1&perPage=10",
-  "taille": 20000
+  "url": "https://api.india.delta.exchange/v2/tickers?contract_types=call_options&underlying_asset_symbols=BTC",
+  "taille": 3000
  },
  {
-  "url": "https://api.onchainfeed.org/api/v1/public/market-manager/conditions-by-game-ids",
+  "url": "https://api.delta.exchange/v2/tickers?contract_types=call_options&underlying_asset_symbols=BTC",
+  "taille": 3000
+ },
+ {
+  "url": "https://api.delta.exchange/v2/products?states=expired&contract_types=call_options&page_size=2",
+  "taille": 3000
+ },
+ {
+  "url": "https://api.aevo.xyz/markets?asset=BTC&instrument_type=OPTION",
+  "taille": 2000
+ },
+ {
+  "url": "https://api.aevo.xyz/settlement-history?asset=BTC&limit=2",
+  "taille": 2000
+ },
+ {
+  "url": "https://api.lyra.finance/public/get_tickers",
   "corps": {
-   "gameIds": [
-    "1006000000000085745677"
-   ],
-   "environment": "PolygonUSDT"
+   "instrument_type": "option",
+   "currency": "BTC"
   },
-  "taille": 6000
+  "taille": 2000
  },
- "https://api.onchainfeed.org/api/v1/public/market-manager/games-by-filters?gameState=Finished&environment=PolygonUSDT&orderBy=startsAt&orderDirection=desc&page=1&perPage=10",
- "https://api.onchainfeed.org/api/v1/public/market-manager/games-by-filters?gameState=Resolved&environment=PolygonUSDT&orderBy=startsAt&orderDirection=desc&page=1&perPage=10",
  {
-  "url": "https://www.deribit.com/api/v2/public/get_book_summary_by_currency?currency=BTC&kind=option",
-  "taille": 4000
+  "url": "https://api.gateio.ws/api/v4/options/tickers?underlying=BTC_USDT",
+  "taille": 2000
  },
- "https://www.okx.com/api/v5/public/opt-summary?uly=BTC-USD",
- "https://www.okx.com/api/v5/public/delivery-exercise-history?instType=OPTION&uly=BTC-USD&limit=2",
- "https://api.bybit.com/v5/market/tickers?category=option&baseCoin=BTC",
- "https://api.bybit.com/v5/market/delivery-price?category=option&baseCoin=BTC&limit=2",
- "https://eapi.binance.com/eapi/v1/mark",
- "https://eapi.binance.com/eapi/v1/exerciseHistory?underlying=BTCUSDT&limit=2",
- "https://guest.api.arcadia.pinnacle.com/0.1/sports/29/matchups?withSpecials=false&brandId=0",
- "https://guest.api.arcadia.pinnacle.com/0.1/sports/29/markets/straight?primaryOnly=true&withSpecials=false"
+ {
+  "url": "https://api.gateio.ws/api/v4/options/settlements?underlying=BTC_USDT&limit=2",
+  "taille": 2000
+ },
+ {
+  "url": "https://api.hyperliquid.xyz/info",
+  "corps": {
+   "type": "outcomeMeta"
+  },
+  "taille": 200000
+ },
+ {
+  "url": "https://api.crypto.com/exchange/v1/public/get-instruments",
+  "taille": 1500
+ },
+ {
+  "url": "https://www.bitmex.com/api/v1/instrument?filter=%7B%22typ%22%3A%22IFXXXP%22%7D&count=2",
+  "taille": 1500
+ },
+ {
+  "url": "https://api.hyperliquid.xyz/info",
+  "corps": {
+   "type": "spotMeta"
+  },
+  "taille": 300
+ }
 ]
