@@ -1,60 +1,40 @@
 [
  {
-  "url": "https://api.india.delta.exchange/v2/tickers?contract_types=call_options&underlying_asset_symbols=BTC",
-  "taille": 3000
+  "url": "https://thalex.com/api/v2/public/instruments",
+  "taille": 1500
  },
  {
-  "url": "https://api.delta.exchange/v2/tickers?contract_types=call_options&underlying_asset_symbols=BTC",
-  "taille": 3000
+  "url": "https://thalex.com/api/v2/public/all_instruments",
+  "taille": 800
  },
  {
-  "url": "https://api.delta.exchange/v2/products?states=expired&contract_types=call_options&page_size=2",
-  "taille": 3000
- },
- {
-  "url": "https://api.aevo.xyz/markets?asset=BTC&instrument_type=OPTION",
-  "taille": 2000
- },
- {
-  "url": "https://api.aevo.xyz/settlement-history?asset=BTC&limit=2",
-  "taille": 2000
+  "url": "https://api.lyra.finance/public/get_instruments",
+  "corps": {
+   "currency": "BTC",
+   "instrument_type": "option",
+   "expired": false
+  },
+  "taille": 1500
  },
  {
   "url": "https://api.lyra.finance/public/get_tickers",
   "corps": {
    "instrument_type": "option",
-   "currency": "BTC"
+   "currency": "BTC",
+   "expiry_date": "20261016"
   },
-  "taille": 2000
- },
- {
-  "url": "https://api.gateio.ws/api/v4/options/tickers?underlying=BTC_USDT",
-  "taille": 2000
- },
- {
-  "url": "https://api.gateio.ws/api/v4/options/settlements?underlying=BTC_USDT&limit=2",
-  "taille": 2000
- },
- {
-  "url": "https://api.hyperliquid.xyz/info",
-  "corps": {
-   "type": "outcomeMeta"
-  },
-  "taille": 200000
- },
- {
-  "url": "https://api.crypto.com/exchange/v1/public/get-instruments",
   "taille": 1500
  },
  {
-  "url": "https://www.bitmex.com/api/v1/instrument?filter=%7B%22typ%22%3A%22IFXXXP%22%7D&count=2",
-  "taille": 1500
+  "url": "https://api.coincall.com/open/option/getInstruments/BTCUSD",
+  "taille": 800
  },
  {
-  "url": "https://api.hyperliquid.xyz/info",
-  "corps": {
-   "type": "spotMeta"
-  },
-  "taille": 300
+  "url": "https://api.coincall.com/open/option/get/v1/BTCUSD",
+  "taille": 800
+ },
+ {
+  "url": "https://api.rysk.finance/markets",
+  "taille": 500
  }
 ]
