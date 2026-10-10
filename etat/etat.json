@@ -1,6 +1,6 @@
 {
  "bankroll_depart": 1000.0,
- "cash": 887.14,
+ "cash": 787.14,
  "ouverts": [
   {
    "site": "gemini",
@@ -43,6 +43,27 @@
    "esperance": 0.03849,
    "mise": 95.9,
    "mise_pct": 0.0959
+  },
+  {
+   "site": "gemini",
+   "id": "GEMI-NHL-2610092300-SEA-DET-M-DET",
+   "slug": "NHL-2610092300-SEA-DET-M",
+   "question": "Seattle vs Detroit",
+   "cote": "Non",
+   "idx": 1,
+   "prix": 0.81,
+   "cat": "sport US",
+   "fin": "2026-10-11T11:00:00+00:00",
+   "date": "2026-10-10T01:33+00:00",
+   "groupe": "NHL-2610092300-SEA-DET-M",
+   "cote_juste": 0.98,
+   "frais": 0.0133,
+   "proba_bot": 0.9822,
+   "version": "chef-1.8",
+   "p_prudent": 0.9691,
+   "esperance": 0.19935,
+   "mise": 100.0,
+   "mise_pct": 0.1
   }
  ],
  "resolus": [
@@ -358,7 +379,7 @@
    "cat": "météo",
    "fin": "2026-10-09T12:00:00+00:00",
    "date": "2026-10-09T06:24+00:00",
-   "dernier_essai": "2026-10-10T01:08+00:00"
+   "dernier_essai": "2026-10-10T01:33+00:00"
   },
   {
    "site": "kalshi",
@@ -683,7 +704,7 @@
    "cat": "autre",
    "fin": "2026-10-09T23:59:00+00:00",
    "date": "2026-10-09T06:46+00:00",
-   "dernier_essai": "2026-10-10T01:08+00:00"
+   "dernier_essai": "2026-10-10T01:33+00:00"
   },
   {
    "site": "polymarket",
@@ -696,7 +717,7 @@
    "cat": "autre",
    "fin": "2026-10-09T23:59:00+00:00",
    "date": "2026-10-09T06:46+00:00",
-   "dernier_essai": "2026-10-10T01:08+00:00"
+   "dernier_essai": "2026-10-10T01:33+00:00"
   },
   {
    "site": "polymarket",
@@ -1813,7 +1834,7 @@
    "cat": "autre",
    "fin": "2026-10-09T22:00:00+00:00",
    "date": "2026-10-09T07:40+00:00",
-   "dernier_essai": "2026-10-10T01:08+00:00"
+   "dernier_essai": "2026-10-10T01:33+00:00"
   },
   {
    "site": "gemini",
@@ -1826,7 +1847,7 @@
    "cat": "autre",
    "fin": "2026-10-09T22:00:00+00:00",
    "date": "2026-10-09T07:40+00:00",
-   "dernier_essai": "2026-10-10T01:08+00:00"
+   "dernier_essai": "2026-10-10T01:33+00:00"
   },
   {
    "site": "gemini",
@@ -1959,7 +1980,7 @@
    "cat": "météo",
    "fin": "2026-10-09T12:00:00+00:00",
    "date": "2026-10-09T07:47+00:00",
-   "dernier_essai": "2026-10-10T01:08+00:00"
+   "dernier_essai": "2026-10-10T01:33+00:00"
   },
   {
    "site": "polymarket",
@@ -2140,7 +2161,7 @@
    "cat": "autre",
    "fin": "2026-10-09T22:00:00+00:00",
    "date": "2026-10-09T07:47+00:00",
-   "dernier_essai": "2026-10-10T01:08+00:00"
+   "dernier_essai": "2026-10-10T01:33+00:00"
   },
   {
    "site": "polymarket",
@@ -2153,7 +2174,7 @@
    "cat": "météo",
    "fin": "2026-10-09T12:00:00+00:00",
    "date": "2026-10-09T07:55+00:00",
-   "dernier_essai": "2026-10-10T01:08+00:00"
+   "dernier_essai": "2026-10-10T01:33+00:00"
   },
   {
    "site": "polymarket",
@@ -2370,7 +2391,7 @@
    "cat": "autre",
    "fin": "2026-10-09T22:00:00+00:00",
    "date": "2026-10-09T07:55+00:00",
-   "dernier_essai": "2026-10-10T01:08+00:00"
+   "dernier_essai": "2026-10-10T01:33+00:00"
   },
   {
    "site": "polymarket",
@@ -3115,7 +3136,7 @@
    "cat": "météo",
    "fin": "2026-10-09T12:00:00+00:00",
    "date": "2026-10-09T08:31+00:00",
-   "dernier_essai": "2026-10-10T01:08+00:00"
+   "dernier_essai": "2026-10-10T01:33+00:00"
   },
   {
    "site": "polymarket",
@@ -4076,7 +4097,7 @@
    "cat": "bourse US",
    "fin": "2026-10-09T20:00:00+00:00",
    "date": "2026-10-09T08:36+00:00",
-   "dernier_essai": "2026-10-10T00:44+00:00"
+   "dernier_essai": "2026-10-10T01:33+00:00"
   },
   {
    "site": "cboe",
@@ -4089,7 +4110,7 @@
    "cat": "bourse US",
    "fin": "2026-10-09T20:00:00+00:00",
    "date": "2026-10-09T08:36+00:00",
-   "dernier_essai": "2026-10-10T00:44+00:00"
+   "dernier_essai": "2026-10-10T01:33+00:00"
   },
   {
    "site": "cboe",
@@ -4102,7 +4123,7 @@
    "cat": "bourse US",
    "fin": "2026-10-09T20:00:00+00:00",
    "date": "2026-10-09T08:36+00:00",
-   "dernier_essai": "2026-10-10T00:44+00:00"
+   "dernier_essai": "2026-10-10T01:33+00:00"
   },
   {
    "site": "cboe",
@@ -4115,7 +4136,7 @@
    "cat": "bourse US",
    "fin": "2026-10-09T20:00:00+00:00",
    "date": "2026-10-09T08:36+00:00",
-   "dernier_essai": "2026-10-10T00:44+00:00"
+   "dernier_essai": "2026-10-10T01:33+00:00"
   },
   {
    "site": "cboe",
@@ -4128,7 +4149,7 @@
    "cat": "bourse US",
    "fin": "2026-10-09T20:00:00+00:00",
    "date": "2026-10-09T08:36+00:00",
-   "dernier_essai": "2026-10-10T00:44+00:00"
+   "dernier_essai": "2026-10-10T01:33+00:00"
   },
   {
    "site": "polymarket",
@@ -4261,7 +4282,7 @@
    "cat": "autre",
    "fin": "2026-10-09T22:00:00+00:00",
    "date": "2026-10-09T08:40+00:00",
-   "dernier_essai": "2026-10-10T01:08+00:00"
+   "dernier_essai": "2026-10-10T01:33+00:00"
   },
   {
    "site": "deribit",
@@ -4574,7 +4595,7 @@
    "cat": "bourse US",
    "fin": "2026-10-09T20:00:00+00:00",
    "date": "2026-10-09T08:40+00:00",
-   "dernier_essai": "2026-10-10T00:44+00:00"
+   "dernier_essai": "2026-10-10T01:33+00:00"
   },
   {
    "site": "cboe",
@@ -4587,7 +4608,7 @@
    "cat": "bourse US",
    "fin": "2026-10-09T20:00:00+00:00",
    "date": "2026-10-09T08:40+00:00",
-   "dernier_essai": "2026-10-10T00:44+00:00"
+   "dernier_essai": "2026-10-10T01:33+00:00"
   },
   {
    "site": "cboe",
@@ -4600,7 +4621,7 @@
    "cat": "bourse US",
    "fin": "2026-10-09T20:00:00+00:00",
    "date": "2026-10-09T08:40+00:00",
-   "dernier_essai": "2026-10-10T00:44+00:00"
+   "dernier_essai": "2026-10-10T01:33+00:00"
   },
   {
    "site": "cboe",
@@ -4613,7 +4634,7 @@
    "cat": "bourse US",
    "fin": "2026-10-09T20:00:00+00:00",
    "date": "2026-10-09T08:40+00:00",
-   "dernier_essai": "2026-10-10T00:44+00:00"
+   "dernier_essai": "2026-10-10T01:33+00:00"
   },
   {
    "site": "cboe",
@@ -4626,7 +4647,7 @@
    "cat": "bourse US",
    "fin": "2026-10-09T20:00:00+00:00",
    "date": "2026-10-09T08:40+00:00",
-   "dernier_essai": "2026-10-10T00:44+00:00"
+   "dernier_essai": "2026-10-10T01:33+00:00"
   },
   {
    "site": "kalshi",
@@ -5011,7 +5032,7 @@
    "cat": "bourse US",
    "fin": "2026-10-09T20:00:00+00:00",
    "date": "2026-10-09T08:47+00:00",
-   "dernier_essai": "2026-10-10T00:44+00:00"
+   "dernier_essai": "2026-10-10T01:33+00:00"
   },
   {
    "site": "cboe",
@@ -5024,7 +5045,7 @@
    "cat": "bourse US",
    "fin": "2026-10-09T20:00:00+00:00",
    "date": "2026-10-09T08:47+00:00",
-   "dernier_essai": "2026-10-10T00:44+00:00"
+   "dernier_essai": "2026-10-10T01:33+00:00"
   },
   {
    "site": "cboe",
@@ -5037,7 +5058,7 @@
    "cat": "bourse US",
    "fin": "2026-10-09T20:00:00+00:00",
    "date": "2026-10-09T08:47+00:00",
-   "dernier_essai": "2026-10-10T00:44+00:00"
+   "dernier_essai": "2026-10-10T01:33+00:00"
   },
   {
    "site": "cboe",
@@ -5050,7 +5071,7 @@
    "cat": "bourse US",
    "fin": "2026-10-09T20:00:00+00:00",
    "date": "2026-10-09T08:47+00:00",
-   "dernier_essai": "2026-10-10T00:44+00:00"
+   "dernier_essai": "2026-10-10T01:33+00:00"
   },
   {
    "site": "cboe",
@@ -5063,7 +5084,7 @@
    "cat": "bourse US",
    "fin": "2026-10-09T20:00:00+00:00",
    "date": "2026-10-09T08:47+00:00",
-   "dernier_essai": "2026-10-10T00:44+00:00"
+   "dernier_essai": "2026-10-10T01:33+00:00"
   },
   {
    "site": "kalshi",
@@ -5148,7 +5169,7 @@
    "cat": "autre",
    "fin": "2026-10-09T22:00:00+00:00",
    "date": "2026-10-09T08:58+00:00",
-   "dernier_essai": "2026-10-10T01:08+00:00"
+   "dernier_essai": "2026-10-10T01:33+00:00"
   },
   {
    "site": "deribit",
@@ -5461,7 +5482,7 @@
    "cat": "bourse US",
    "fin": "2026-10-09T20:00:00+00:00",
    "date": "2026-10-09T08:58+00:00",
-   "dernier_essai": "2026-10-10T00:44+00:00"
+   "dernier_essai": "2026-10-10T01:33+00:00"
   },
   {
    "site": "cboe",
@@ -5474,7 +5495,7 @@
    "cat": "bourse US",
    "fin": "2026-10-09T20:00:00+00:00",
    "date": "2026-10-09T08:58+00:00",
-   "dernier_essai": "2026-10-10T00:44+00:00"
+   "dernier_essai": "2026-10-10T01:33+00:00"
   },
   {
    "site": "cboe",
@@ -5487,7 +5508,7 @@
    "cat": "bourse US",
    "fin": "2026-10-09T20:00:00+00:00",
    "date": "2026-10-09T08:58+00:00",
-   "dernier_essai": "2026-10-10T00:44+00:00"
+   "dernier_essai": "2026-10-10T01:33+00:00"
   },
   {
    "site": "cboe",
@@ -5500,7 +5521,7 @@
    "cat": "bourse US",
    "fin": "2026-10-09T20:00:00+00:00",
    "date": "2026-10-09T08:58+00:00",
-   "dernier_essai": "2026-10-10T00:44+00:00"
+   "dernier_essai": "2026-10-10T01:33+00:00"
   },
   {
    "site": "cboe",
@@ -5513,7 +5534,7 @@
    "cat": "bourse US",
    "fin": "2026-10-09T20:00:00+00:00",
    "date": "2026-10-09T08:58+00:00",
-   "dernier_essai": "2026-10-10T00:44+00:00"
+   "dernier_essai": "2026-10-10T01:33+00:00"
   },
   {
    "site": "polymarket",
@@ -5910,7 +5931,7 @@
    "cat": "bourse US",
    "fin": "2026-10-09T20:00:00+00:00",
    "date": "2026-10-09T09:16+00:00",
-   "dernier_essai": "2026-10-10T00:44+00:00"
+   "dernier_essai": "2026-10-10T01:33+00:00"
   },
   {
    "site": "cboe",
@@ -5923,7 +5944,7 @@
    "cat": "bourse US",
    "fin": "2026-10-09T20:00:00+00:00",
    "date": "2026-10-09T09:16+00:00",
-   "dernier_essai": "2026-10-10T00:44+00:00"
+   "dernier_essai": "2026-10-10T01:33+00:00"
   },
   {
    "site": "cboe",
@@ -5936,7 +5957,7 @@
    "cat": "bourse US",
    "fin": "2026-10-09T20:00:00+00:00",
    "date": "2026-10-09T09:16+00:00",
-   "dernier_essai": "2026-10-10T00:44+00:00"
+   "dernier_essai": "2026-10-10T01:33+00:00"
   },
   {
    "site": "cboe",
@@ -5949,7 +5970,7 @@
    "cat": "bourse US",
    "fin": "2026-10-09T20:00:00+00:00",
    "date": "2026-10-09T09:16+00:00",
-   "dernier_essai": "2026-10-10T00:44+00:00"
+   "dernier_essai": "2026-10-10T01:33+00:00"
   },
   {
    "site": "cboe",
@@ -5962,7 +5983,7 @@
    "cat": "bourse US",
    "fin": "2026-10-09T20:00:00+00:00",
    "date": "2026-10-09T09:16+00:00",
-   "dernier_essai": "2026-10-10T00:44+00:00"
+   "dernier_essai": "2026-10-10T01:33+00:00"
   },
   {
    "site": "polymarket",
@@ -6359,7 +6380,7 @@
    "cat": "bourse US",
    "fin": "2026-10-09T20:00:00+00:00",
    "date": "2026-10-09T09:36+00:00",
-   "dernier_essai": "2026-10-10T00:44+00:00"
+   "dernier_essai": "2026-10-10T01:33+00:00"
   },
   {
    "site": "cboe",
@@ -6424,7 +6445,7 @@
    "cat": "météo",
    "fin": "2026-10-09T12:00:00+00:00",
    "date": "2026-10-09T09:58+00:00",
-   "dernier_essai": "2026-10-10T01:08+00:00"
+   "dernier_essai": "2026-10-10T01:33+00:00"
   },
   {
    "site": "polymarket",
@@ -12110,7 +12131,7 @@
    "fin": "2026-10-09T20:00:00+00:00",
    "date": "2026-10-09T13:04+00:00",
    "groupe": "TSLA|2026-10-09",
-   "dernier_essai": "2026-10-09T23:58+00:00"
+   "dernier_essai": "2026-10-10T01:33+00:00"
   },
   {
    "site": "cboe",
@@ -12124,7 +12145,7 @@
    "fin": "2026-10-09T20:00:00+00:00",
    "date": "2026-10-09T13:04+00:00",
    "groupe": "TSLA|2026-10-09",
-   "dernier_essai": "2026-10-09T23:58+00:00"
+   "dernier_essai": "2026-10-10T01:33+00:00"
   },
   {
    "site": "cboe",
@@ -12138,7 +12159,7 @@
    "fin": "2026-10-09T20:00:00+00:00",
    "date": "2026-10-09T13:04+00:00",
    "groupe": "TSLA|2026-10-09",
-   "dernier_essai": "2026-10-09T23:58+00:00"
+   "dernier_essai": "2026-10-10T01:33+00:00"
   },
   {
    "site": "cboe",
@@ -12152,7 +12173,7 @@
    "fin": "2026-10-09T20:00:00+00:00",
    "date": "2026-10-09T13:04+00:00",
    "groupe": "TSLA|2026-10-09",
-   "dernier_essai": "2026-10-09T23:58+00:00"
+   "dernier_essai": "2026-10-10T01:33+00:00"
   },
   {
    "site": "polymarket",
@@ -12542,7 +12563,7 @@
    "fin": "2026-10-09T20:00:00+00:00",
    "date": "2026-10-09T13:33+00:00",
    "groupe": "MSFT|2026-10-09",
-   "dernier_essai": "2026-10-09T23:58+00:00"
+   "dernier_essai": "2026-10-10T01:33+00:00"
   },
   {
    "site": "cboe",
@@ -12556,7 +12577,7 @@
    "fin": "2026-10-09T20:00:00+00:00",
    "date": "2026-10-09T13:33+00:00",
    "groupe": "MSFT|2026-10-09",
-   "dernier_essai": "2026-10-09T23:58+00:00"
+   "dernier_essai": "2026-10-10T01:33+00:00"
   },
   {
    "site": "cboe",
@@ -12570,7 +12591,7 @@
    "fin": "2026-10-09T20:00:00+00:00",
    "date": "2026-10-09T13:33+00:00",
    "groupe": "MSFT|2026-10-09",
-   "dernier_essai": "2026-10-09T23:58+00:00"
+   "dernier_essai": "2026-10-10T01:33+00:00"
   },
   {
    "site": "cboe",
@@ -12584,7 +12605,7 @@
    "fin": "2026-10-09T20:00:00+00:00",
    "date": "2026-10-09T13:33+00:00",
    "groupe": "MSFT|2026-10-09",
-   "dernier_essai": "2026-10-09T23:58+00:00"
+   "dernier_essai": "2026-10-10T01:33+00:00"
   },
   {
    "site": "cboe",
@@ -12598,7 +12619,7 @@
    "fin": "2026-10-09T20:00:00+00:00",
    "date": "2026-10-09T13:33+00:00",
    "groupe": "TSLA|2026-10-09",
-   "dernier_essai": "2026-10-09T23:58+00:00"
+   "dernier_essai": "2026-10-10T01:33+00:00"
   },
   {
    "site": "polymarket",
@@ -13054,7 +13075,7 @@
    "fin": "2026-10-09T20:00:00+00:00",
    "date": "2026-10-09T13:59+00:00",
    "groupe": "SPY|2026-10-09",
-   "dernier_essai": "2026-10-09T23:58+00:00"
+   "dernier_essai": "2026-10-10T01:33+00:00"
   },
   {
    "site": "cboe",
@@ -13068,7 +13089,7 @@
    "fin": "2026-10-09T20:00:00+00:00",
    "date": "2026-10-09T13:59+00:00",
    "groupe": "SPY|2026-10-09",
-   "dernier_essai": "2026-10-09T23:58+00:00"
+   "dernier_essai": "2026-10-10T01:33+00:00"
   },
   {
    "site": "cboe",
@@ -13082,7 +13103,7 @@
    "fin": "2026-10-09T20:00:00+00:00",
    "date": "2026-10-09T13:59+00:00",
    "groupe": "SPY|2026-10-09",
-   "dernier_essai": "2026-10-09T23:58+00:00"
+   "dernier_essai": "2026-10-10T01:33+00:00"
   },
   {
    "site": "cboe",
@@ -13096,7 +13117,7 @@
    "fin": "2026-10-09T20:00:00+00:00",
    "date": "2026-10-09T13:59+00:00",
    "groupe": "SPY|2026-10-09",
-   "dernier_essai": "2026-10-09T23:58+00:00"
+   "dernier_essai": "2026-10-10T01:33+00:00"
   },
   {
    "site": "kalshi",
@@ -13487,7 +13508,7 @@
    "fin": "2026-10-09T20:00:00+00:00",
    "date": "2026-10-09T14:17+00:00",
    "groupe": "SPY|2026-10-09",
-   "dernier_essai": "2026-10-09T23:58+00:00"
+   "dernier_essai": "2026-10-10T01:33+00:00"
   },
   {
    "site": "cboe",
@@ -13501,7 +13522,7 @@
    "fin": "2026-10-09T20:00:00+00:00",
    "date": "2026-10-09T14:17+00:00",
    "groupe": "SPY|2026-10-09",
-   "dernier_essai": "2026-10-09T23:58+00:00"
+   "dernier_essai": "2026-10-10T01:33+00:00"
   },
   {
    "site": "cboe",
@@ -13515,7 +13536,7 @@
    "fin": "2026-10-09T20:00:00+00:00",
    "date": "2026-10-09T14:17+00:00",
    "groupe": "SPY|2026-10-09",
-   "dernier_essai": "2026-10-09T23:58+00:00"
+   "dernier_essai": "2026-10-10T01:33+00:00"
   },
   {
    "site": "cboe",
@@ -13529,7 +13550,7 @@
    "fin": "2026-10-09T20:00:00+00:00",
    "date": "2026-10-09T14:17+00:00",
    "groupe": "SPY|2026-10-09",
-   "dernier_essai": "2026-10-09T23:58+00:00"
+   "dernier_essai": "2026-10-10T01:33+00:00"
   },
   {
    "site": "cboe",
@@ -13543,7 +13564,7 @@
    "fin": "2026-10-09T20:00:00+00:00",
    "date": "2026-10-09T14:17+00:00",
    "groupe": "SPY|2026-10-09",
-   "dernier_essai": "2026-10-09T23:58+00:00"
+   "dernier_essai": "2026-10-10T01:33+00:00"
   },
   {
    "site": "polymarket",
@@ -13647,7 +13668,7 @@
    "cat": "crypto",
    "fin": "2026-10-09T16:00:00+00:00",
    "date": "2026-10-09T14:47+00:00",
-   "dernier_essai": "2026-10-10T01:08+00:00"
+   "dernier_essai": "2026-10-10T01:33+00:00"
   },
   {
    "site": "deribit",
@@ -13921,7 +13942,7 @@
    "fin": "2026-10-09T20:00:00+00:00",
    "date": "2026-10-09T14:47+00:00",
    "groupe": "SPY|2026-10-09",
-   "dernier_essai": "2026-10-09T23:58+00:00"
+   "dernier_essai": "2026-10-10T01:33+00:00"
   },
   {
    "site": "cboe",
@@ -13935,7 +13956,7 @@
    "fin": "2026-10-09T20:00:00+00:00",
    "date": "2026-10-09T14:47+00:00",
    "groupe": "SPY|2026-10-09",
-   "dernier_essai": "2026-10-09T23:58+00:00"
+   "dernier_essai": "2026-10-10T01:33+00:00"
   },
   {
    "site": "cboe",
@@ -13949,7 +13970,7 @@
    "fin": "2026-10-09T20:00:00+00:00",
    "date": "2026-10-09T14:47+00:00",
    "groupe": "SPY|2026-10-09",
-   "dernier_essai": "2026-10-09T23:58+00:00"
+   "dernier_essai": "2026-10-10T01:33+00:00"
   },
   {
    "site": "cboe",
@@ -13963,7 +13984,7 @@
    "fin": "2026-10-09T20:00:00+00:00",
    "date": "2026-10-09T14:47+00:00",
    "groupe": "SPY|2026-10-09",
-   "dernier_essai": "2026-10-09T23:58+00:00"
+   "dernier_essai": "2026-10-10T01:33+00:00"
   },
   {
    "site": "cboe",
@@ -13977,7 +13998,7 @@
    "fin": "2026-10-09T20:00:00+00:00",
    "date": "2026-10-09T14:47+00:00",
    "groupe": "SPY|2026-10-09",
-   "dernier_essai": "2026-10-09T23:58+00:00"
+   "dernier_essai": "2026-10-10T01:33+00:00"
   },
   {
    "site": "kalshi",
@@ -14430,7 +14451,7 @@
    "fin": "2026-10-09T20:00:00+00:00",
    "date": "2026-10-09T15:13+00:00",
    "groupe": "SPY|2026-10-09",
-   "dernier_essai": "2026-10-09T23:58+00:00"
+   "dernier_essai": "2026-10-10T01:33+00:00"
   },
   {
    "site": "cboe",
@@ -14444,7 +14465,7 @@
    "fin": "2026-10-09T20:00:00+00:00",
    "date": "2026-10-09T15:13+00:00",
    "groupe": "SPY|2026-10-09",
-   "dernier_essai": "2026-10-09T23:58+00:00"
+   "dernier_essai": "2026-10-10T01:33+00:00"
   },
   {
    "site": "cboe",
@@ -14458,7 +14479,7 @@
    "fin": "2026-10-09T20:00:00+00:00",
    "date": "2026-10-09T15:13+00:00",
    "groupe": "SPY|2026-10-09",
-   "dernier_essai": "2026-10-09T23:58+00:00"
+   "dernier_essai": "2026-10-10T01:33+00:00"
   },
   {
    "site": "cboe",
@@ -14472,7 +14493,7 @@
    "fin": "2026-10-09T20:00:00+00:00",
    "date": "2026-10-09T15:13+00:00",
    "groupe": "SPY|2026-10-09",
-   "dernier_essai": "2026-10-09T23:58+00:00"
+   "dernier_essai": "2026-10-10T01:33+00:00"
   },
   {
    "site": "cboe",
@@ -14486,7 +14507,7 @@
    "fin": "2026-10-09T20:00:00+00:00",
    "date": "2026-10-09T15:13+00:00",
    "groupe": "SPY|2026-10-09",
-   "dernier_essai": "2026-10-09T23:58+00:00"
+   "dernier_essai": "2026-10-10T01:33+00:00"
   },
   {
    "site": "polymarket",
@@ -14890,7 +14911,7 @@
    "fin": "2026-10-09T20:00:00+00:00",
    "date": "2026-10-09T15:31+00:00",
    "groupe": "SPY|2026-10-09",
-   "dernier_essai": "2026-10-09T23:58+00:00"
+   "dernier_essai": "2026-10-10T01:33+00:00"
   },
   {
    "site": "cboe",
@@ -14904,7 +14925,7 @@
    "fin": "2026-10-09T20:00:00+00:00",
    "date": "2026-10-09T15:31+00:00",
    "groupe": "SPY|2026-10-09",
-   "dernier_essai": "2026-10-09T23:58+00:00"
+   "dernier_essai": "2026-10-10T01:33+00:00"
   },
   {
    "site": "cboe",
@@ -14918,7 +14939,7 @@
    "fin": "2026-10-09T20:00:00+00:00",
    "date": "2026-10-09T15:31+00:00",
    "groupe": "SPY|2026-10-09",
-   "dernier_essai": "2026-10-09T23:58+00:00"
+   "dernier_essai": "2026-10-10T01:33+00:00"
   },
   {
    "site": "cboe",
@@ -14932,7 +14953,7 @@
    "fin": "2026-10-09T20:00:00+00:00",
    "date": "2026-10-09T15:31+00:00",
    "groupe": "SPY|2026-10-09",
-   "dernier_essai": "2026-10-09T23:58+00:00"
+   "dernier_essai": "2026-10-10T01:33+00:00"
   },
   {
    "site": "cboe",
@@ -14946,7 +14967,7 @@
    "fin": "2026-10-09T20:00:00+00:00",
    "date": "2026-10-09T15:31+00:00",
    "groupe": "SPY|2026-10-09",
-   "dernier_essai": "2026-10-09T23:58+00:00"
+   "dernier_essai": "2026-10-10T01:33+00:00"
   },
   {
    "site": "polymarket",
@@ -15323,7 +15344,7 @@
    "fin": "2026-10-09T20:00:00+00:00",
    "date": "2026-10-09T15:50+00:00",
    "groupe": "SPY|2026-10-09",
-   "dernier_essai": "2026-10-09T23:58+00:00"
+   "dernier_essai": "2026-10-10T01:33+00:00"
   },
   {
    "site": "cboe",
@@ -24479,7 +24500,7 @@
    "fin": "2026-10-10T00:30:00+00:00",
    "date": "2026-10-09T23:58+00:00",
    "groupe": "1086902",
-   "dernier_essai": "2026-10-10T01:08+00:00"
+   "dernier_essai": "2026-10-10T01:33+00:00"
   },
   {
    "site": "polymarket",
@@ -25297,6 +25318,292 @@
    "fin": "2026-10-12T20:00:00+00:00",
    "date": "2026-10-10T01:08+00:00",
    "groupe": "QQQ|2026-10-12"
+  },
+  {
+   "site": "polymarket",
+   "id": "5423757",
+   "slug": "highest-temperature-in-singapore-on-october-10-2026-29c",
+   "question": "Will the highest temperature in Singapore be 29°C on October 10?",
+   "cote": "No",
+   "idx": 1,
+   "prix": 0.995,
+   "cat": "météo",
+   "fin": "2026-10-10T12:00:00+00:00",
+   "date": "2026-10-10T01:33+00:00",
+   "groupe": "1152066"
+  },
+  {
+   "site": "polymarket",
+   "id": "5423924",
+   "slug": "highest-temperature-in-helsinki-on-october-10-2026-10c",
+   "question": "Will the highest temperature in Helsinki be 10°C on October 10?",
+   "cote": "No",
+   "idx": 1,
+   "prix": 0.982,
+   "cat": "météo",
+   "fin": "2026-10-10T12:00:00+00:00",
+   "date": "2026-10-10T01:33+00:00",
+   "groupe": "1152088"
+  },
+  {
+   "site": "polymarket",
+   "id": "4377628",
+   "slug": "will-craig-hodge-win-the-2026-coquitlam-mayoral-election",
+   "question": "Will Craig Hodge win the 2026 Coquitlam mayoral election?",
+   "cote": "Yes",
+   "idx": 0,
+   "prix": 0.985,
+   "cat": "politique",
+   "fin": "2026-10-17T00:00:00+00:00",
+   "date": "2026-10-10T01:33+00:00",
+   "groupe": "990069"
+  },
+  {
+   "site": "kalshi",
+   "id": "KXTRUMPMENTION-26OCT09-FENT",
+   "slug": "kxtrumpmention-26oct09-fent",
+   "question": "What will Donald Trump say during Midterm Rally in Syracuse, New York originally scheduled for October 9, 2026? — Fentanyl",
+   "cote": "Non",
+   "idx": 1,
+   "prix": 0.975,
+   "cat": "politique",
+   "fin": "2026-10-23T14:00:00+00:00",
+   "date": "2026-10-10T01:33+00:00",
+   "groupe": "KXTRUMPMENTION-26OCT09"
+  },
+  {
+   "site": "gemini",
+   "id": "GEMI-NHL-2610092300-SEA-DET-M-SEA",
+   "slug": "NHL-2610092300-SEA-DET-M",
+   "question": "Seattle vs Detroit",
+   "cote": "Oui",
+   "idx": 0,
+   "prix": 0.99,
+   "cat": "sport US",
+   "fin": "2026-10-11T11:00:00+00:00",
+   "date": "2026-10-10T01:33+00:00",
+   "groupe": "NHL-2610092300-SEA-DET-M"
+  },
+  {
+   "site": "gemini",
+   "id": "GEMI-NHL-2610092300-SEA-DET-M-DET",
+   "slug": "NHL-2610092300-SEA-DET-M",
+   "question": "Seattle vs Detroit",
+   "cote": "Non",
+   "idx": 1,
+   "prix": 0.98,
+   "cat": "sport US",
+   "fin": "2026-10-11T11:00:00+00:00",
+   "date": "2026-10-10T01:33+00:00",
+   "groupe": "NHL-2610092300-SEA-DET-M"
+  },
+  {
+   "site": "smarkets",
+   "id": "168349214:464649247",
+   "slug": "168349214",
+   "question": "Sporting San Jose FC vs C.S. Cartaginés — Correct score : 0 - 3",
+   "cote": "Non",
+   "idx": 1,
+   "prix": 0.9826,
+   "cat": "foot",
+   "fin": "2026-10-10T05:00:00+00:00",
+   "date": "2026-10-10T01:33+00:00",
+   "groupe": "45356433"
+  },
+  {
+   "site": "smarkets",
+   "id": "168349214:464649255",
+   "slug": "168349214",
+   "question": "Sporting San Jose FC vs C.S. Cartaginés — Correct score : 2 - 3",
+   "cote": "Non",
+   "idx": 1,
+   "prix": 0.9812,
+   "cat": "foot",
+   "fin": "2026-10-10T05:00:00+00:00",
+   "date": "2026-10-10T01:33+00:00",
+   "groupe": "45356433"
+  },
+  {
+   "site": "smarkets",
+   "id": "168349214:464649258",
+   "slug": "168349214",
+   "question": "Sporting San Jose FC vs C.S. Cartaginés — Correct score : 3 - 2",
+   "cote": "Non",
+   "idx": 1,
+   "prix": 0.9767,
+   "cat": "foot",
+   "fin": "2026-10-10T05:00:00+00:00",
+   "date": "2026-10-10T01:33+00:00",
+   "groupe": "45356433"
+  },
+  {
+   "site": "smarkets",
+   "id": "168349214:464649259",
+   "slug": "168349214",
+   "question": "Sporting San Jose FC vs C.S. Cartaginés — Correct score : 3 - 3",
+   "cote": "Non",
+   "idx": 1,
+   "prix": 0.9932,
+   "cat": "foot",
+   "fin": "2026-10-10T05:00:00+00:00",
+   "date": "2026-10-10T01:33+00:00",
+   "groupe": "45356433"
+  },
+  {
+   "site": "smarkets",
+   "id": "169691760:468148743",
+   "slug": "169691760",
+   "question": "Sprint - Grand Prix of Indonesia — Winner : Enea Bastianini",
+   "cote": "Non",
+   "idx": 1,
+   "prix": 0.995,
+   "cat": "autres sports",
+   "fin": "2026-10-10T10:00:00+00:00",
+   "date": "2026-10-10T01:33+00:00",
+   "groupe": "45368891"
+  },
+  {
+   "site": "smarkets",
+   "id": "169691760:468148741",
+   "slug": "169691760",
+   "question": "Sprint - Grand Prix of Indonesia — Winner : Fabio Quartararo",
+   "cote": "Non",
+   "idx": 1,
+   "prix": 0.995,
+   "cat": "autres sports",
+   "fin": "2026-10-10T10:00:00+00:00",
+   "date": "2026-10-10T01:33+00:00",
+   "groupe": "45368891"
+  },
+  {
+   "site": "smarkets",
+   "id": "169691760:468148733",
+   "slug": "169691760",
+   "question": "Sprint - Grand Prix of Indonesia — Winner : Fermin Aldeguer",
+   "cote": "Non",
+   "idx": 1,
+   "prix": 0.9899,
+   "cat": "autres sports",
+   "fin": "2026-10-10T10:00:00+00:00",
+   "date": "2026-10-10T01:33+00:00",
+   "groupe": "45368891"
+  },
+  {
+   "site": "smarkets",
+   "id": "169691760:468148737",
+   "slug": "169691760",
+   "question": "Sprint - Grand Prix of Indonesia — Winner : Franco Morbidelli",
+   "cote": "Non",
+   "idx": 1,
+   "prix": 0.9966,
+   "cat": "autres sports",
+   "fin": "2026-10-10T10:00:00+00:00",
+   "date": "2026-10-10T01:33+00:00",
+   "groupe": "45368891"
+  },
+  {
+   "site": "smarkets",
+   "id": "169672529:468101899",
+   "slug": "169672529",
+   "question": "Mobis Phoebus vs Daegu Pegasus — Half-time/full-time : Draw / Mobis Phoebus",
+   "cote": "Non",
+   "idx": 1,
+   "prix": 0.9833,
+   "cat": "basket",
+   "fin": "2026-10-10T10:30:00+00:00",
+   "date": "2026-10-10T01:33+00:00",
+   "groupe": "45255915"
+  },
+  {
+   "site": "smarkets",
+   "id": "169678133:468115082",
+   "slug": "169678133",
+   "question": "Mobis Phoebus vs Daegu Pegasus — First half winner and over/under 87.5 points : Draw / over 87.5 points",
+   "cote": "Non",
+   "idx": 1,
+   "prix": 0.986,
+   "cat": "basket",
+   "fin": "2026-10-10T10:30:00+00:00",
+   "date": "2026-10-10T01:33+00:00",
+   "groupe": "45255915"
+  },
+  {
+   "site": "okx",
+   "id": "BTC-USD_UM-261010-81500-C",
+   "slug": "BTC|2026-10-10|81500",
+   "question": "BTC au-dessus de 81 500 $ le 10/10/2026 à 8 h UTC ?",
+   "cote": "Au-dessus",
+   "idx": 0,
+   "prix": 0.971,
+   "cat": "crypto",
+   "fin": "2026-10-10T08:00:00+00:00",
+   "date": "2026-10-10T01:33+00:00",
+   "groupe": "BTC|2026-10-10T08"
+  },
+  {
+   "site": "cboe",
+   "id": "QQQ261012C00782000",
+   "slug": "QQQ|2026-10-12|782",
+   "question": "QQQ au-dessus de 782 $ à la clôture du 12/10/2026 ?",
+   "cote": "En dessous",
+   "idx": 1,
+   "prix": 0.9988,
+   "cat": "bourse US",
+   "fin": "2026-10-12T20:00:00+00:00",
+   "date": "2026-10-10T01:33+00:00",
+   "groupe": "QQQ|2026-10-12"
+  },
+  {
+   "site": "cboe",
+   "id": "QQQ261012C00783000",
+   "slug": "QQQ|2026-10-12|783",
+   "question": "QQQ au-dessus de 783 $ à la clôture du 12/10/2026 ?",
+   "cote": "En dessous",
+   "idx": 1,
+   "prix": 0.9989,
+   "cat": "bourse US",
+   "fin": "2026-10-12T20:00:00+00:00",
+   "date": "2026-10-10T01:33+00:00",
+   "groupe": "QQQ|2026-10-12"
+  },
+  {
+   "site": "cboe",
+   "id": "QQQ261012C00784000",
+   "slug": "QQQ|2026-10-12|784",
+   "question": "QQQ au-dessus de 784 $ à la clôture du 12/10/2026 ?",
+   "cote": "En dessous",
+   "idx": 1,
+   "prix": 0.9989,
+   "cat": "bourse US",
+   "fin": "2026-10-12T20:00:00+00:00",
+   "date": "2026-10-10T01:33+00:00",
+   "groupe": "QQQ|2026-10-12"
+  },
+  {
+   "site": "cboe",
+   "id": "QQQ261012C00785000",
+   "slug": "QQQ|2026-10-12|785",
+   "question": "QQQ au-dessus de 785 $ à la clôture du 12/10/2026 ?",
+   "cote": "En dessous",
+   "idx": 1,
+   "prix": 0.9989,
+   "cat": "bourse US",
+   "fin": "2026-10-12T20:00:00+00:00",
+   "date": "2026-10-10T01:33+00:00",
+   "groupe": "QQQ|2026-10-12"
+  },
+  {
+   "site": "cboe",
+   "id": "IWM261012C00265000",
+   "slug": "IWM|2026-10-12|265",
+   "question": "IWM au-dessus de 265 $ à la clôture du 12/10/2026 ?",
+   "cote": "Au-dessus",
+   "idx": 0,
+   "prix": 0.9975,
+   "cat": "bourse US",
+   "fin": "2026-10-12T20:00:00+00:00",
+   "date": "2026-10-10T01:33+00:00",
+   "groupe": "IWM|2026-10-12"
   }
  ],
  "obs_resolues": [
@@ -31973,72 +32280,8 @@
  "fraction_kelly": 0.25,
  "pic": 1000.0,
  "dernier_ajust": 0,
- "rejets": 417,
+ "rejets": 425,
  "journal": [
-  {
-   "quand": "2026-10-09T12:38+00:00",
-   "texte": "[polymarket] ignoré (pas achetable, souvent déjà joué) : Counter-Strike: Vitality vs PARIVISION - Map 1 Winner"
-  },
-  {
-   "quand": "2026-10-09T12:38+00:00",
-   "texte": "[polymarket] ignoré (pas achetable, souvent déjà joué) : W35 Villeneuve d'Ascq: Mariella Thamm vs Stephanie Judith Vi"
-  },
-  {
-   "quand": "2026-10-09T12:38+00:00",
-   "texte": "[polymarket] ignoré (pas achetable, souvent déjà joué) : Shanghai Rolex Masters: Karen Khachanov vs Arthur Fery"
-  },
-  {
-   "quand": "2026-10-09T12:38+00:00",
-   "texte": "[polymarket] ignoré (pas achetable, souvent déjà joué) : Shanghai Rolex Masters: Completed Match: Karen Khachanov vs "
-  },
-  {
-   "quand": "2026-10-09T12:38+00:00",
-   "texte": "[gemini] rejet (cote relue 0.970, sous le seuil) : ETH price on October 9 — $2,600 or above"
-  },
-  {
-   "quand": "2026-10-09T12:38+00:00",
-   "texte": "[smarkets] rejet (seulement 3/6 lectures) : Ajman vs Bani Yas FC — Correct score : 0 - 3"
-  },
-  {
-   "quand": "2026-10-09T12:38+00:00",
-   "texte": "[smarkets] rejet (seulement 4/6 lectures) : Ajman vs Bani Yas FC — Half-time/full-time : Ajman / Bani Ya"
-  },
-  {
-   "quand": "2026-10-09T12:38+00:00",
-   "texte": "[smarkets] rejet (seulement 5/6 lectures) : Norrkoping Dolphins vs Sodertalje BBK — Half-time/full-time "
-  },
-  {
-   "quand": "2026-10-09T12:38+00:00",
-   "texte": "[smarkets] rejet (seulement 5/6 lectures) : Norrkoping Dolphins vs Sodertalje BBK — First half winner an"
-  },
-  {
-   "quand": "2026-10-09T12:38+00:00",
-   "texte": "[smarkets] rejet (seulement 4/6 lectures) : Florida A&M Rattlers at Alabama State Hornets — Half-time/fu"
-  },
-  {
-   "quand": "2026-10-09T12:38+00:00",
-   "texte": "[smarkets] ignoré (pas achetable, souvent déjà joué) : Soyaux Angouleme vs Provence Rugby — Full-time result : Draw"
-  },
-  {
-   "quand": "2026-10-09T12:50+00:00",
-   "texte": "[FICTIF][polymarket] pari annulé (ancien modèle trop sûr de lui), mise rendue 86.99 € : Will \"Patient Zero - Taylor Swift\" be the #2 song this week?"
-  },
-  {
-   "quand": "2026-10-09T12:50+00:00",
-   "texte": "[FICTIF][polymarket] pari annulé (ancien modèle trop sûr de lui), mise rendue 86.99 € : Will the International Association of Judges win the Nobel P"
-  },
-  {
-   "quand": "2026-10-09T12:50+00:00",
-   "texte": "[FICTIF][polymarket] pari annulé (ancien modèle trop sûr de lui), mise rendue 103.24 € : Will ICRC win the Nobel Peace Prize in 2026?"
-  },
-  {
-   "quand": "2026-10-09T12:50+00:00",
-   "texte": "[FICTIF][polymarket] pari annulé (ancien modèle trop sûr de lui), mise rendue 103.24 € : Will the Parents Circle – Families Forum win the Nobel Peace"
-  },
-  {
-   "quand": "2026-10-09T12:50+00:00",
-   "texte": "[FICTIF][polymarket] pari annulé (ancien modèle trop sûr de lui), mise rendue 34.32 € : Will Elon Musk post 80-99 tweets from October 9 to October 1"
-  },
   {
    "quand": "2026-10-09T12:50+00:00",
    "texte": "[FICTIF][polymarket] pari annulé (ancien modèle trop sûr de lui), mise rendue 15.76 € : Will Ana Brnabić be the next Prime Minister of Serbia?"
@@ -33974,194 +34217,258 @@
   {
    "quand": "2026-10-10T01:08+00:00",
    "texte": "[smarkets] rejet (seulement 2/6 lectures) : Mobis Phoebus vs Daegu Pegasus — Half-time/full-time : Draw "
+  },
+  {
+   "quand": "2026-10-10T01:33+00:00",
+   "texte": "[polymarket] historique illisible : lecture impossible : https://gamma-api.polymarket.com/markets?closed=true&limit=250&offset=2100&order=volumeNum&ascending=false&volume_num_min=5000 (HTTP Error 422: Unprocessable Entity)"
+  },
+  {
+   "quand": "2026-10-10T01:33+00:00",
+   "texte": "[polymarket] rejet (lectures discordantes [0.885, 0.435, 0.825, 0.825, 0.805, 0.825]) : Bitcoin Up or Down - October 9, 9:15PM-9:30PM ET"
+  },
+  {
+   "quand": "2026-10-10T01:33+00:00",
+   "texte": "[polymarket] ignoré (pas achetable, souvent déjà joué) : Game Handicap: DSG (-2.5) vs Fuego (+2.5)"
+  },
+  {
+   "quand": "2026-10-10T01:33+00:00",
+   "texte": "[polymarket] ignoré (pas achetable, souvent déjà joué) : LoL: Disguised vs Fuego - Game 3 Winner"
+  },
+  {
+   "quand": "2026-10-10T01:33+00:00",
+   "texte": "[polymarket] ignoré (pas achetable, souvent déjà joué) : Games Total: O/U 3.5"
+  },
+  {
+   "quand": "2026-10-10T01:33+00:00",
+   "texte": "[polymarket] ignoré (pas achetable, souvent déjà joué) : Game Handicap: DSG (-1.5) vs Fuego (+1.5)"
+  },
+  {
+   "quand": "2026-10-10T01:33+00:00",
+   "texte": "[polymarket] ignoré (pas achetable, souvent déjà joué) : Will the highest temperature in Busan be 22°C on October 10?"
+  },
+  {
+   "quand": "2026-10-10T01:33+00:00",
+   "texte": "[polymarket] ignoré (pas achetable, souvent déjà joué) : Will the highest temperature in Busan be 23°C on October 10?"
+  },
+  {
+   "quand": "2026-10-10T01:33+00:00",
+   "texte": "[limitless] rejet (cote relue 0.515, sous le seuil) : BTC Up or Down - 5 Min"
+  },
+  {
+   "quand": "2026-10-10T01:33+00:00",
+   "texte": "[limitless] rejet (cote relue 0.515, sous le seuil) : ETH Up or Down - 5 Min"
+  },
+  {
+   "quand": "2026-10-10T01:33+00:00",
+   "texte": "[FICTIF][gemini] Pari 100.00 € (10.0%) sur « Non » — Seattle vs Detroit (prix 0.81, proba bot 98.2%)"
+  },
+  {
+   "quand": "2026-10-10T01:33+00:00",
+   "texte": "[smarkets] rejet (seulement 3/6 lectures) : Sporting San Jose FC vs C.S. Cartaginés — Correct score : 1 "
+  },
+  {
+   "quand": "2026-10-10T01:33+00:00",
+   "texte": "[smarkets] rejet (seulement 2/6 lectures) : Ottawa Redblacks at British Columbia Lions — Half-time/full-"
+  },
+  {
+   "quand": "2026-10-10T01:33+00:00",
+   "texte": "[smarkets] rejet (seulement 2/6 lectures) : Sprint - Grand Prix of Indonesia — Winner : Francesco Bagnai"
+  },
+  {
+   "quand": "2026-10-10T01:33+00:00",
+   "texte": "[smarkets] rejet (seulement 2/6 lectures) : Mobis Phoebus vs Daegu Pegasus — First half winner and over/"
+  },
+  {
+   "quand": "2026-10-10T01:33+00:00",
+   "texte": "[delta_inde] rejet (cote relue 0.970, sous le seuil) : ETH au-dessus de 2 440 $ le 10/10/2026 à 12 h UTC ?"
   }
  ],
- "passages": 67,
+ "passages": 68,
  "sites": {
   "polymarket": {
-   "marches_vus": 44289,
-   "candidats": 840,
-   "retenus": 682,
-   "rejets": 158,
-   "erreurs": 27,
+   "marches_vus": 44948,
+   "candidats": 850,
+   "retenus": 691,
+   "rejets": 159,
+   "erreurs": 28,
    "dernier_ok": "2026-10-09T16:50+00:00",
    "historique": 520
   },
   "kalshi": {
-   "marches_vus": 27462,
-   "candidats": 256,
-   "retenus": 249,
+   "marches_vus": 27860,
+   "candidats": 257,
+   "retenus": 250,
    "rejets": 7,
    "erreurs": 0,
-   "dernier_ok": "2026-10-10T01:08+00:00",
+   "dernier_ok": "2026-10-10T01:33+00:00",
    "historique": 0
   },
   "manifold": {
-   "marches_vus": 4247,
+   "marches_vus": 4316,
    "candidats": 10,
    "retenus": 10,
    "rejets": 0,
    "erreurs": 4,
-   "dernier_ok": "2026-10-10T01:08+00:00",
+   "dernier_ok": "2026-10-10T01:33+00:00",
    "historique": 920
   },
   "limitless": {
-   "marches_vus": 21790,
-   "candidats": 94,
+   "marches_vus": 22126,
+   "candidats": 96,
    "retenus": 80,
-   "rejets": 14,
+   "rejets": 16,
    "erreurs": 0,
-   "dernier_ok": "2026-10-10T01:08+00:00",
+   "dernier_ok": "2026-10-10T01:33+00:00",
    "historique": 0
   },
   "gemini": {
-   "marches_vus": 128779,
-   "candidats": 195,
-   "retenus": 144,
+   "marches_vus": 130706,
+   "candidats": 197,
+   "retenus": 146,
    "rejets": 51,
    "erreurs": 0,
-   "dernier_ok": "2026-10-10T01:08+00:00",
+   "dernier_ok": "2026-10-10T01:33+00:00",
    "historique": 0
   },
   "smarkets": {
-   "marches_vus": 99656,
-   "candidats": 548,
-   "retenus": 377,
-   "rejets": 171,
+   "marches_vus": 101775,
+   "candidats": 562,
+   "retenus": 387,
+   "rejets": 175,
    "erreurs": 13,
-   "dernier_ok": "2026-10-10T01:08+00:00",
+   "dernier_ok": "2026-10-10T01:33+00:00",
    "historique": 0
   },
   "espn": {
-   "marches_vus": 13902,
+   "marches_vus": 14127,
    "candidats": 0,
    "retenus": 0,
    "rejets": 0,
    "erreurs": 2,
-   "dernier_ok": "2026-10-10T01:08+00:00",
+   "dernier_ok": "2026-10-10T01:33+00:00",
    "historique": 0
   },
   "futuur": {
-   "marches_vus": 16311,
+   "marches_vus": 16570,
    "candidats": 1,
    "retenus": 1,
    "rejets": 0,
    "erreurs": 0,
-   "dernier_ok": "2026-10-10T01:08+00:00",
+   "dernier_ok": "2026-10-10T01:33+00:00",
    "historique": 0
   },
   "azuro": {
-   "marches_vus": 703119,
+   "marches_vus": 715694,
    "candidats": 0,
    "retenus": 0,
    "rejets": 0,
    "erreurs": 0,
-   "dernier_ok": "2026-10-10T01:08+00:00",
+   "dernier_ok": "2026-10-10T01:33+00:00",
    "historique": 0
   },
   "deribit": {
-   "marches_vus": 43597,
+   "marches_vus": 44380,
    "candidats": 169,
    "retenus": 169,
    "rejets": 0,
    "erreurs": 0,
-   "dernier_ok": "2026-10-10T01:08+00:00",
+   "dernier_ok": "2026-10-10T01:33+00:00",
    "historique": 0
   },
   "okx": {
-   "marches_vus": 47039,
-   "candidats": 214,
-   "retenus": 214,
+   "marches_vus": 47898,
+   "candidats": 215,
+   "retenus": 215,
    "rejets": 0,
    "erreurs": 0,
-   "dernier_ok": "2026-10-10T01:08+00:00",
+   "dernier_ok": "2026-10-10T01:33+00:00",
    "historique": 0
   },
   "delta_inde": {
-   "marches_vus": 22825,
-   "candidats": 119,
+   "marches_vus": 23233,
+   "candidats": 120,
    "retenus": 118,
-   "rejets": 1,
+   "rejets": 2,
    "erreurs": 0,
-   "dernier_ok": "2026-10-10T01:08+00:00",
+   "dernier_ok": "2026-10-10T01:33+00:00",
    "historique": 0
   },
   "gate": {
-   "marches_vus": 35112,
+   "marches_vus": 35739,
    "candidats": 173,
    "retenus": 171,
    "rejets": 2,
    "erreurs": 0,
-   "dernier_ok": "2026-10-10T01:08+00:00",
+   "dernier_ok": "2026-10-10T01:33+00:00",
    "historique": 0
   },
   "aevo": {
-   "marches_vus": 50189,
+   "marches_vus": 51086,
    "candidats": 225,
    "retenus": 223,
    "rejets": 2,
    "erreurs": 0,
-   "dernier_ok": "2026-10-10T01:08+00:00",
+   "dernier_ok": "2026-10-10T01:33+00:00",
    "historique": 0
   },
   "thalex": {
-   "marches_vus": 4498,
+   "marches_vus": 4587,
    "candidats": 27,
    "retenus": 27,
    "rejets": 0,
    "erreurs": 0,
-   "dernier_ok": "2026-10-10T01:08+00:00",
+   "dernier_ok": "2026-10-10T01:33+00:00",
    "historique": 0
   },
   "derive": {
-   "marches_vus": 6600,
+   "marches_vus": 6720,
    "candidats": 88,
    "retenus": 88,
    "rejets": 0,
    "erreurs": 0,
-   "dernier_ok": "2026-10-10T01:08+00:00",
+   "dernier_ok": "2026-10-10T01:33+00:00",
    "historique": 0
   },
   "cboe": {
-   "marches_vus": 1027849,
-   "candidats": 270,
-   "retenus": 264,
+   "marches_vus": 1046979,
+   "candidats": 275,
+   "retenus": 269,
    "rejets": 6,
    "erreurs": 0,
-   "dernier_ok": "2026-10-10T01:08+00:00",
+   "dernier_ok": "2026-10-10T01:33+00:00",
    "historique": 0
   },
   "sxbet": {
-   "marches_vus": 9946,
+   "marches_vus": 10133,
    "candidats": 0,
    "retenus": 0,
    "rejets": 0,
    "erreurs": 0,
-   "dernier_ok": "2026-10-10T01:08+00:00",
+   "dernier_ok": "2026-10-10T01:33+00:00",
    "historique": 0
   },
   "delta_monde": {
-   "marches_vus": 1191,
+   "marches_vus": 1218,
    "candidats": 12,
    "retenus": 12,
    "rejets": 0,
    "erreurs": 0,
-   "dernier_ok": "2026-10-10T01:08+00:00",
+   "dernier_ok": "2026-10-10T01:33+00:00",
    "historique": 0
   },
   "polymarket_us": {
-   "marches_vus": 62400,
+   "marches_vus": 63600,
    "candidats": 33,
    "retenus": 28,
    "rejets": 5,
    "erreurs": 0,
-   "dernier_ok": "2026-10-10T01:08+00:00",
+   "dernier_ok": "2026-10-10T01:33+00:00",
    "historique": 0
   }
  },
  "dernier_passage": {
-  "debut": "2026-10-10T01:03+00:00",
-  "duree_s": 287
+  "debut": "2026-10-10T01:29+00:00",
+  "duree_s": 265
  },
  "non_achetables": {
   "polymarket|2915095": "2026-10-10T03:59:00+00:00",
@@ -34351,7 +34658,13 @@
   "polymarket|608552": "2026-10-31T00:00:00+00:00",
   "polymarket|608559": "2026-10-31T00:00:00+00:00",
   "polymarket|608562": "2026-10-31T00:00:00+00:00",
-  "polymarket|608561": "2026-10-31T00:00:00+00:00"
+  "polymarket|608561": "2026-10-31T00:00:00+00:00",
+  "polymarket|5428446": "2026-10-10T05:00:00+00:00",
+  "polymarket|5428440": "2026-10-10T05:00:00+00:00",
+  "polymarket|5428443": "2026-10-10T05:00:00+00:00",
+  "polymarket|5428445": "2026-10-10T05:00:00+00:00",
+  "polymarket|5423896": "2026-10-10T12:00:00+00:00",
+  "polymarket|5423897": "2026-10-10T12:00:00+00:00"
  },
  "historique": [
   {
@@ -51916,7 +52229,7 @@
  "curseurs": {
   "polymarket": 2100,
   "kalshi": 0,
-  "manifold": 12750,
+  "manifold": 13000,
   "limitless": 0,
   "gemini": 0,
   "smarkets": 0,
