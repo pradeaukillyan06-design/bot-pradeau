@@ -1260,84 +1260,6 @@
  ],
  "observations": [
   {
-   "site": "polymarket",
-   "id": "682711",
-   "slug": "will-yossi-cohen-be-the-next-prime-minister-of-israel",
-   "question": "Will Yossi Cohen be the next Prime Minister of Israel?",
-   "cote": "No",
-   "idx": 1,
-   "prix": 0.9985,
-   "cat": "politique",
-   "fin": "2026-10-28T03:59:00+00:00",
-   "date": "2026-10-09T07:13+00:00",
-   "dernier_essai": "2026-11-26T23:17+00:00"
-  },
-  {
-   "site": "polymarket",
-   "id": "682710",
-   "slug": "will-avigdor-lieberman-be-the-next-prime-minister-of-israel",
-   "question": "Will Avigdor Lieberman be the next Prime Minister of Israel?",
-   "cote": "No",
-   "idx": 1,
-   "prix": 0.9798,
-   "cat": "politique",
-   "fin": "2026-10-28T03:59:00+00:00",
-   "date": "2026-10-09T07:34+00:00",
-   "dernier_essai": "2026-11-26T23:17+00:00"
-  },
-  {
-   "site": "polymarket",
-   "id": "682712",
-   "slug": "will-yair-golan-be-the-next-prime-minister-of-israel",
-   "question": "Will Yair Golan be the next Prime Minister of Israel?",
-   "cote": "No",
-   "idx": 1,
-   "prix": 0.9985,
-   "cat": "politique",
-   "fin": "2026-10-28T03:59:00+00:00",
-   "date": "2026-10-09T07:34+00:00",
-   "dernier_essai": "2026-11-26T23:17+00:00"
-  },
-  {
-   "site": "polymarket",
-   "id": "682707",
-   "slug": "will-yair-lapid-be-the-next-prime-minister-of-israel",
-   "question": "Will Yair Lapid be the next Prime Minister of Israel?",
-   "cote": "No",
-   "idx": 1,
-   "prix": 0.9985,
-   "cat": "politique",
-   "fin": "2026-10-28T03:59:00+00:00",
-   "date": "2026-10-09T07:34+00:00",
-   "dernier_essai": "2026-11-26T23:17+00:00"
-  },
-  {
-   "site": "polymarket",
-   "id": "682713",
-   "slug": "will-itamar-ben-gvir-be-the-next-prime-minister-of-israel",
-   "question": "Will Itamar Ben Gvir be the next Prime Minister of Israel?",
-   "cote": "No",
-   "idx": 1,
-   "prix": 0.9925,
-   "cat": "politique",
-   "fin": "2026-10-28T03:59:00+00:00",
-   "date": "2026-10-09T07:34+00:00",
-   "dernier_essai": "2026-11-26T23:17+00:00"
-  },
-  {
-   "site": "polymarket",
-   "id": "682723",
-   "slug": "will-ofer-winter-be-the-next-prime-minister-of-israel",
-   "question": "Will Ofer Winter be the next Prime Minister of Israel?",
-   "cote": "No",
-   "idx": 1,
-   "prix": 0.9935,
-   "cat": "politique",
-   "fin": "2026-10-28T03:59:00+00:00",
-   "date": "2026-10-09T07:34+00:00",
-   "dernier_essai": "2026-11-26T23:17+00:00"
-  },
-  {
    "site": "okx",
    "id": "BTC-USD-261030-110000-C",
    "slug": "BTC|2026-10-30|110000",
@@ -1349,7 +1271,7 @@
    "fin": "2026-10-30T08:00:00+00:00",
    "date": "2026-10-09T17:44+00:00",
    "groupe": "BTC|2026-10-30T08",
-   "dernier_essai": "2026-11-26T23:17+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "okx",
@@ -1363,7 +1285,7 @@
    "fin": "2026-10-30T08:00:00+00:00",
    "date": "2026-10-09T17:59+00:00",
    "groupe": "BTC|2026-10-30T08",
-   "dernier_essai": "2026-11-26T23:17+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "okx",
@@ -1377,7 +1299,7 @@
    "fin": "2026-10-30T08:00:00+00:00",
    "date": "2026-10-09T19:52+00:00",
    "groupe": "BTC|2026-10-30T08",
-   "dernier_essai": "2026-11-26T23:17+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "okx",
@@ -1391,7 +1313,7 @@
    "fin": "2026-10-30T08:00:00+00:00",
    "date": "2026-10-09T20:12+00:00",
    "groupe": "BTC|2026-10-30T08",
-   "dernier_essai": "2026-11-26T23:17+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "manifold",
@@ -1404,7 +1326,7 @@
    "cat": "politique",
    "fin": "2026-11-02T07:59:00+00:00",
    "date": "2026-10-12T08:14+00:00",
-   "dernier_essai": "2026-11-26T23:17+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "okx",
@@ -1418,7 +1340,7 @@
    "fin": "2026-10-30T08:00:00+00:00",
    "date": "2026-10-12T19:32+00:00",
    "groupe": "BTC|2026-10-30T08",
-   "dernier_essai": "2026-11-26T23:17+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "polymarket",
@@ -1432,7 +1354,7 @@
    "fin": "2026-11-04T04:59:00+00:00",
    "date": "2026-10-14T05:55+00:00",
    "groupe": "215753",
-   "dernier_essai": "2026-11-26T23:17+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "polymarket",
@@ -1446,7 +1368,7 @@
    "fin": "2026-11-04T04:59:00+00:00",
    "date": "2026-10-14T06:22+00:00",
    "groupe": "289908",
-   "dernier_essai": "2026-11-26T23:17+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "manifold",
@@ -1459,7 +1381,7 @@
    "cat": "politique",
    "fin": "2026-11-04T05:59:00+00:00",
    "date": "2026-10-14T06:22+00:00",
-   "dernier_essai": "2026-11-26T23:17+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "manifold",
@@ -1472,7 +1394,7 @@
    "cat": "politique",
    "fin": "2026-11-04T05:59:00+00:00",
    "date": "2026-10-14T06:22+00:00",
-   "dernier_essai": "2026-11-26T23:17+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "okx",
@@ -1486,7 +1408,7 @@
    "fin": "2026-10-30T08:00:00+00:00",
    "date": "2026-10-15T05:52+00:00",
    "groupe": "ETH|2026-10-30T08",
-   "dernier_essai": "2026-11-26T23:17+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "okx",
@@ -1500,7 +1422,7 @@
    "fin": "2026-10-30T08:00:00+00:00",
    "date": "2026-10-15T13:46+00:00",
    "groupe": "BTC|2026-10-30T08",
-   "dernier_essai": "2026-11-26T23:17+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "manifold",
@@ -1513,7 +1435,7 @@
    "cat": "autre",
    "fin": "2026-11-01T07:59:00+00:00",
    "date": "2026-10-16T11:32+00:00",
-   "dernier_essai": "2026-11-26T23:17+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "manifold",
@@ -1526,7 +1448,7 @@
    "cat": "autre",
    "fin": "2026-11-07T06:59:00+00:00",
    "date": "2026-10-17T08:55+00:00",
-   "dernier_essai": "2026-11-26T23:17+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "polymarket",
@@ -1540,7 +1462,7 @@
    "fin": "2026-11-01T03:59:00+00:00",
    "date": "2026-10-17T12:38+00:00",
    "groupe": "1099776",
-   "dernier_essai": "2026-11-26T23:17+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "gemini",
@@ -1554,7 +1476,7 @@
    "fin": "2026-11-10T01:00:00+00:00",
    "date": "2026-10-20T21:22+00:00",
    "groupe": "HOUSE26LA-06",
-   "dernier_essai": "2026-11-26T23:17+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "gemini",
@@ -1568,7 +1490,7 @@
    "fin": "2026-11-10T01:00:00+00:00",
    "date": "2026-10-20T21:22+00:00",
    "groupe": "HOUSE26LA-06",
-   "dernier_essai": "2026-11-26T23:17+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "manifold",
@@ -1581,7 +1503,7 @@
    "cat": "autre",
    "fin": "2026-11-10T23:59:00+00:00",
    "date": "2026-10-21T03:11+00:00",
-   "dernier_essai": "2026-11-26T23:17+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "manifold",
@@ -1594,7 +1516,7 @@
    "cat": "politique",
    "fin": "2026-11-11T07:59:00+00:00",
    "date": "2026-10-21T08:37+00:00",
-   "dernier_essai": "2026-11-26T23:17+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "polymarket",
@@ -1608,7 +1530,7 @@
    "fin": "2026-10-31T20:59:00+00:00",
    "date": "2026-10-25T03:33+00:00",
    "groupe": "996000",
-   "dernier_essai": "2026-11-26T23:17+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "manifold",
@@ -1621,7 +1543,7 @@
    "cat": "politique",
    "fin": "2026-11-04T05:59:00+00:00",
    "date": "2026-10-25T17:21+00:00",
-   "dernier_essai": "2026-11-26T23:17+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "gate",
@@ -1635,21 +1557,7 @@
    "fin": "2026-10-28T08:00:00+00:00",
    "date": "2026-10-25T17:21+00:00",
    "groupe": "ETH|2026-10-28T08",
-   "dernier_essai": "2026-11-26T23:17+00:00"
-  },
-  {
-   "site": "polymarket",
-   "id": "3192169",
-   "slug": "will-exactly-3-israeli-legislative-elections-occur-before-a-government-is-formed-20260728195012187",
-   "question": "Will exactly 3 Israeli legislative elections occur before a government is formed?",
-   "cote": "No",
-   "idx": 1,
-   "prix": 0.975,
-   "cat": "politique",
-   "fin": "2026-10-27T23:59:00+00:00",
-   "date": "2026-10-26T05:19+00:00",
-   "groupe": "765647",
-   "dernier_essai": "2026-11-26T23:17+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "manifold",
@@ -1662,21 +1570,7 @@
    "cat": "autre",
    "fin": "2026-11-01T03:59:00+00:00",
    "date": "2026-10-26T05:19+00:00",
-   "dernier_essai": "2026-11-26T23:17+00:00"
-  },
-  {
-   "site": "sxbet",
-   "id": "0x38f0edca69b11838b418e9d5c7436eb7b9a4b692c273741194a3db608c8dd64e",
-   "slug": "L20213936",
-   "question": "Fleetwood Town vs Arsenal — Fleetwood Town / Not Fleetwood Town (EFL Cup)",
-   "cote": "Not Fleetwood Town",
-   "idx": 1,
-   "prix": 0.9707,
-   "cat": "foot",
-   "fin": "2026-10-28T00:00:00+00:00",
-   "date": "2026-10-26T17:34+00:00",
-   "groupe": "L20213936",
-   "dernier_essai": "2026-11-26T23:17+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "sxbet",
@@ -1732,21 +1626,7 @@
    "fin": "2026-10-28T20:00:00+00:00",
    "date": "2026-10-27T01:05+00:00",
    "groupe": "XBTCUSDT-ABOVE-20261028",
-   "dernier_essai": "2026-11-26T14:33+00:00"
-  },
-  {
-   "site": "sxbet",
-   "id": "0x1cfd18f8cb5ab7b6946b9e48f4cdbd458d6db31b19fbf036dc693b790aa6adcc",
-   "slug": "L20213936",
-   "question": "Fleetwood Town vs Arsenal — Fleetwood Town / Arsenal (EFL Cup)",
-   "cote": "Arsenal",
-   "idx": 1,
-   "prix": 0.9744,
-   "cat": "foot",
-   "fin": "2026-10-28T00:00:00+00:00",
-   "date": "2026-10-27T17:01+00:00",
-   "groupe": "L20213936",
-   "dernier_essai": "2026-11-26T14:33+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "okx",
@@ -1760,7 +1640,7 @@
    "fin": "2026-10-28T08:00:00+00:00",
    "date": "2026-10-27T21:18+00:00",
    "groupe": "BTC|2026-10-28T08",
-   "dernier_essai": "2026-11-26T23:17+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "sxbet",
@@ -1774,7 +1654,7 @@
    "fin": "2026-10-28T20:00:00+00:00",
    "date": "2026-10-27T21:18+00:00",
    "groupe": "XBTCUSDT-ABOVE-20261028",
-   "dernier_essai": "2026-11-26T14:33+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "sxbet",
@@ -1788,7 +1668,7 @@
    "fin": "2026-10-29T20:00:00+00:00",
    "date": "2026-10-27T21:18+00:00",
    "groupe": "XBTCUSDT-ABOVE-20261029",
-   "dernier_essai": "2026-11-26T14:33+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "sxbet",
@@ -1802,7 +1682,7 @@
    "fin": "2026-10-29T20:00:00+00:00",
    "date": "2026-10-27T21:18+00:00",
    "groupe": "XBTCUSDT-ABOVE-20261029",
-   "dernier_essai": "2026-11-26T14:33+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "sxbet",
@@ -1816,7 +1696,7 @@
    "fin": "2026-10-29T20:00:00+00:00",
    "date": "2026-10-27T21:18+00:00",
    "groupe": "XBTCUSDT-ABOVE-20261029",
-   "dernier_essai": "2026-11-26T14:33+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "sxbet",
@@ -1830,7 +1710,7 @@
    "fin": "2026-10-29T20:00:00+00:00",
    "date": "2026-10-27T21:18+00:00",
    "groupe": "XBTCUSDT-ABOVE-20261029",
-   "dernier_essai": "2026-11-26T14:33+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "sxbet",
@@ -1844,7 +1724,7 @@
    "fin": "2026-10-29T20:00:00+00:00",
    "date": "2026-10-28T00:43+00:00",
    "groupe": "XBTCUSDT-ABOVE-20261029",
-   "dernier_essai": "2026-11-26T14:33+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "sxbet",
@@ -1858,7 +1738,7 @@
    "fin": "2026-10-29T20:00:00+00:00",
    "date": "2026-10-28T18:50+00:00",
    "groupe": "XBTCUSDT-ABOVE-20261029",
-   "dernier_essai": "2026-11-26T14:33+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "manifold",
@@ -1871,7 +1751,7 @@
    "cat": "politique",
    "fin": "2026-11-04T05:59:00+00:00",
    "date": "2026-10-28T23:04+00:00",
-   "dernier_essai": "2026-11-26T23:17+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "manifold",
@@ -1884,7 +1764,7 @@
    "cat": "politique",
    "fin": "2026-11-04T05:59:00+00:00",
    "date": "2026-10-28T23:04+00:00",
-   "dernier_essai": "2026-11-26T23:17+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "okx",
@@ -1898,7 +1778,7 @@
    "fin": "2026-10-29T08:00:00+00:00",
    "date": "2026-10-28T23:04+00:00",
    "groupe": "BTC|2026-10-29T08",
-   "dernier_essai": "2026-11-26T23:17+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "sxbet",
@@ -1912,7 +1792,7 @@
    "fin": "2026-10-29T20:00:00+00:00",
    "date": "2026-10-28T23:04+00:00",
    "groupe": "XBTCUSDT-ABOVE-20261029",
-   "dernier_essai": "2026-11-26T14:33+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "sxbet",
@@ -1926,7 +1806,7 @@
    "fin": "2026-10-30T20:00:00+00:00",
    "date": "2026-10-28T23:04+00:00",
    "groupe": "XBTCUSDT-ABOVE-20261030",
-   "dernier_essai": "2026-11-26T14:33+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "sxbet",
@@ -1982,7 +1862,7 @@
    "fin": "2026-10-29T08:00:00+00:00",
    "date": "2026-10-29T02:16+00:00",
    "groupe": "BTC|2026-10-29T08",
-   "dernier_essai": "2026-11-26T23:17+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "sxbet",
@@ -2094,7 +1974,7 @@
    "fin": "2026-10-31T08:00:00+00:00",
    "date": "2026-10-30T21:43+00:00",
    "groupe": "BTC|2026-10-31T08",
-   "dernier_essai": "2026-11-26T23:17+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "okx",
@@ -2108,7 +1988,7 @@
    "fin": "2026-10-31T08:00:00+00:00",
    "date": "2026-10-30T21:43+00:00",
    "groupe": "BTC|2026-10-31T08",
-   "dernier_essai": "2026-11-26T23:17+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "okx",
@@ -2122,7 +2002,7 @@
    "fin": "2026-10-31T08:00:00+00:00",
    "date": "2026-10-30T21:43+00:00",
    "groupe": "BTC|2026-10-31T08",
-   "dernier_essai": "2026-11-26T23:17+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "sxbet",
@@ -2136,7 +2016,7 @@
    "fin": "2026-10-31T02:30:00+00:00",
    "date": "2026-10-30T21:43+00:00",
    "groupe": "L20644224",
-   "dernier_essai": "2026-11-26T14:33+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "sxbet",
@@ -2150,7 +2030,7 @@
    "fin": "2026-10-31T02:30:00+00:00",
    "date": "2026-10-30T21:43+00:00",
    "groupe": "L20644224",
-   "dernier_essai": "2026-11-26T14:33+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "polymarket",
@@ -2164,7 +2044,7 @@
    "fin": "2026-10-31T20:59:00+00:00",
    "date": "2026-10-31T21:06+00:00",
    "groupe": "1065782",
-   "dernier_essai": "2026-11-26T23:17+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "okx",
@@ -2178,7 +2058,7 @@
    "fin": "2026-11-01T08:00:00+00:00",
    "date": "2026-10-31T21:06+00:00",
    "groupe": "BTC|2026-11-01T08",
-   "dernier_essai": "2026-11-26T23:17+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "okx",
@@ -2192,7 +2072,7 @@
    "fin": "2026-11-01T08:00:00+00:00",
    "date": "2026-10-31T21:06+00:00",
    "groupe": "BTC|2026-11-01T08",
-   "dernier_essai": "2026-11-26T23:17+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "okx",
@@ -2206,7 +2086,7 @@
    "fin": "2026-11-01T08:00:00+00:00",
    "date": "2026-10-31T21:06+00:00",
    "groupe": "BTC|2026-11-01T08",
-   "dernier_essai": "2026-11-26T23:17+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "okx",
@@ -2220,7 +2100,7 @@
    "fin": "2026-11-01T08:00:00+00:00",
    "date": "2026-10-31T21:06+00:00",
    "groupe": "BTC|2026-11-01T08",
-   "dernier_essai": "2026-11-26T23:17+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "gate",
@@ -2234,7 +2114,7 @@
    "fin": "2026-11-01T08:00:00+00:00",
    "date": "2026-10-31T21:06+00:00",
    "groupe": "ETH|2026-11-01T08",
-   "dernier_essai": "2026-11-26T23:17+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "sxbet",
@@ -2248,7 +2128,7 @@
    "fin": "2026-11-01T21:00:00+00:00",
    "date": "2026-10-31T21:06+00:00",
    "groupe": "XBTCUSDT-ABOVE-20261101",
-   "dernier_essai": "2026-11-26T14:33+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "sxbet",
@@ -2262,7 +2142,7 @@
    "fin": "2026-11-01T21:00:00+00:00",
    "date": "2026-10-31T21:06+00:00",
    "groupe": "XBTCUSDT-ABOVE-20261101",
-   "dernier_essai": "2026-11-26T14:33+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "okx",
@@ -2276,7 +2156,7 @@
    "fin": "2026-11-01T08:00:00+00:00",
    "date": "2026-11-01T00:07+00:00",
    "groupe": "BTC|2026-11-01T08",
-   "dernier_essai": "2026-11-26T23:17+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "okx",
@@ -2290,7 +2170,7 @@
    "fin": "2026-11-01T08:00:00+00:00",
    "date": "2026-11-01T00:07+00:00",
    "groupe": "BTC|2026-11-01T08",
-   "dernier_essai": "2026-11-26T23:17+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "okx",
@@ -2304,7 +2184,7 @@
    "fin": "2026-11-01T08:00:00+00:00",
    "date": "2026-11-01T00:07+00:00",
    "groupe": "BTC|2026-11-01T08",
-   "dernier_essai": "2026-11-26T23:17+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "gate",
@@ -2318,7 +2198,7 @@
    "fin": "2026-11-01T08:00:00+00:00",
    "date": "2026-11-01T00:07+00:00",
    "groupe": "ETH|2026-11-01T08",
-   "dernier_essai": "2026-11-26T23:17+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "okx",
@@ -2332,7 +2212,7 @@
    "fin": "2026-11-01T08:00:00+00:00",
    "date": "2026-11-01T04:07+00:00",
    "groupe": "BTC|2026-11-01T08",
-   "dernier_essai": "2026-11-26T23:17+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "sxbet",
@@ -2346,7 +2226,7 @@
    "fin": "2026-11-01T21:00:00+00:00",
    "date": "2026-11-01T04:07+00:00",
    "groupe": "XBTCUSDT-ABOVE-20261101",
-   "dernier_essai": "2026-11-26T14:33+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "okx",
@@ -2360,7 +2240,7 @@
    "fin": "2026-11-02T08:00:00+00:00",
    "date": "2026-11-01T17:16+00:00",
    "groupe": "BTC|2026-11-02T08",
-   "dernier_essai": "2026-11-26T23:17+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "okx",
@@ -2374,7 +2254,7 @@
    "fin": "2026-11-02T08:00:00+00:00",
    "date": "2026-11-01T17:16+00:00",
    "groupe": "BTC|2026-11-02T08",
-   "dernier_essai": "2026-11-26T23:17+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "okx",
@@ -2388,7 +2268,7 @@
    "fin": "2026-11-02T08:00:00+00:00",
    "date": "2026-11-01T17:16+00:00",
    "groupe": "BTC|2026-11-02T08",
-   "dernier_essai": "2026-11-26T23:17+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "okx",
@@ -2402,7 +2282,7 @@
    "fin": "2026-11-02T08:00:00+00:00",
    "date": "2026-11-01T17:16+00:00",
    "groupe": "BTC|2026-11-02T08",
-   "dernier_essai": "2026-11-26T23:17+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "okx",
@@ -2416,7 +2296,7 @@
    "fin": "2026-11-02T08:00:00+00:00",
    "date": "2026-11-01T17:16+00:00",
    "groupe": "BTC|2026-11-02T08",
-   "dernier_essai": "2026-11-26T23:17+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "manifold",
@@ -2429,7 +2309,7 @@
    "cat": "autre",
    "fin": "2026-11-19T22:24:00+00:00",
    "date": "2026-11-01T21:23+00:00",
-   "dernier_essai": "2026-11-26T23:17+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "gate",
@@ -2443,7 +2323,7 @@
    "fin": "2026-11-02T08:00:00+00:00",
    "date": "2026-11-01T21:23+00:00",
    "groupe": "ETH|2026-11-02T08",
-   "dernier_essai": "2026-11-26T23:17+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "sxbet",
@@ -2457,7 +2337,7 @@
    "fin": "2026-11-02T21:00:00+00:00",
    "date": "2026-11-01T21:23+00:00",
    "groupe": "XBTCUSDT-ABOVE-20261102",
-   "dernier_essai": "2026-11-26T14:33+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "sxbet",
@@ -2471,7 +2351,7 @@
    "fin": "2026-11-02T21:00:00+00:00",
    "date": "2026-11-01T21:23+00:00",
    "groupe": "XBTCUSDT-ABOVE-20261102",
-   "dernier_essai": "2026-11-26T14:33+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "gate",
@@ -2485,7 +2365,7 @@
    "fin": "2026-11-03T08:00:00+00:00",
    "date": "2026-11-02T07:05+00:00",
    "groupe": "BTC|2026-11-03T08",
-   "dernier_essai": "2026-11-26T23:17+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "sxbet",
@@ -2499,7 +2379,7 @@
    "fin": "2026-11-02T21:00:00+00:00",
    "date": "2026-11-02T07:05+00:00",
    "groupe": "XBTCUSDT-ABOVE-20261102",
-   "dernier_essai": "2026-11-26T14:33+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "okx",
@@ -2513,7 +2393,7 @@
    "fin": "2026-11-03T08:00:00+00:00",
    "date": "2026-11-02T16:58+00:00",
    "groupe": "BTC|2026-11-03T08",
-   "dernier_essai": "2026-11-26T23:17+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "sxbet",
@@ -2541,7 +2421,7 @@
    "fin": "2026-11-03T21:00:00+00:00",
    "date": "2026-11-02T23:58+00:00",
    "groupe": "XBTCUSDT-ABOVE-20261103",
-   "dernier_essai": "2026-11-26T04:42+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "sxbet",
@@ -2555,7 +2435,7 @@
    "fin": "2026-11-04T21:00:00+00:00",
    "date": "2026-11-02T23:58+00:00",
    "groupe": "XBTCUSDT-ABOVE-20261104",
-   "dernier_essai": "2026-11-26T04:42+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "sxbet",
@@ -2569,7 +2449,7 @@
    "fin": "2026-11-04T21:00:00+00:00",
    "date": "2026-11-02T23:58+00:00",
    "groupe": "XBTCUSDT-ABOVE-20261104",
-   "dernier_essai": "2026-11-26T14:33+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "sxbet",
@@ -2596,7 +2476,7 @@
    "cat": "autre",
    "fin": "2026-11-05T01:10:00+00:00",
    "date": "2026-11-03T05:12+00:00",
-   "dernier_essai": "2026-11-26T23:17+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "okx",
@@ -2610,7 +2490,7 @@
    "fin": "2026-11-03T08:00:00+00:00",
    "date": "2026-11-03T05:12+00:00",
    "groupe": "BTC|2026-11-03T08",
-   "dernier_essai": "2026-11-26T23:17+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "sxbet",
@@ -2666,7 +2546,7 @@
    "fin": "2026-11-04T08:00:00+00:00",
    "date": "2026-11-03T20:02+00:00",
    "groupe": "BTC|2026-11-04T08",
-   "dernier_essai": "2026-11-26T23:17+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "sxbet",
@@ -2694,7 +2574,7 @@
    "fin": "2026-11-05T04:59:00+00:00",
    "date": "2026-11-04T07:01+00:00",
    "groupe": "871002",
-   "dernier_essai": "2026-11-26T23:17+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "okx",
@@ -2708,7 +2588,7 @@
    "fin": "2026-11-05T08:00:00+00:00",
    "date": "2026-11-04T07:01+00:00",
    "groupe": "BTC|2026-11-05T08",
-   "dernier_essai": "2026-11-26T23:17+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "sxbet",
@@ -2778,35 +2658,7 @@
    "fin": "2026-11-05T04:59:00+00:00",
    "date": "2026-11-04T15:13+00:00",
    "groupe": "871002",
-   "dernier_essai": "2026-11-26T23:17+00:00"
-  },
-  {
-   "site": "polymarket",
-   "id": "2116911",
-   "slug": "will-the-labour-party-win-45-49-seats-in-the-new-zealand-house-of-representatives-in-the-2026-new-zealand-legislative-election",
-   "question": "Will the Labour Party win 45-49 seats in the New Zealand House of Representatives in the 2026 New Zealand legislative election?",
-   "cote": "No",
-   "idx": 1,
-   "prix": 0.975,
-   "cat": "politique",
-   "fin": "2026-11-08T04:59:00+00:00",
-   "date": "2026-11-04T15:13+00:00",
-   "groupe": "431601",
-   "dernier_essai": "2026-11-26T23:17+00:00"
-  },
-  {
-   "site": "polymarket",
-   "id": "2117121",
-   "slug": "will-labour-party-win-the-popular-vote-in-the-2026-new-zealand-legislative-election-by-10-15",
-   "question": "Will Labour Party win the popular vote in the 2026 New Zealand legislative election by 10-15%?",
-   "cote": "No",
-   "idx": 1,
-   "prix": 0.9845,
-   "cat": "politique",
-   "fin": "2026-11-08T04:59:00+00:00",
-   "date": "2026-11-04T15:13+00:00",
-   "groupe": "431707",
-   "dernier_essai": "2026-11-26T23:17+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "sxbet",
@@ -2847,7 +2699,7 @@
    "cat": "politique",
    "fin": "2026-11-05T23:59:00+00:00",
    "date": "2026-11-04T21:32+00:00",
-   "dernier_essai": "2026-11-26T23:17+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "sxbet",
@@ -2889,49 +2741,7 @@
    "fin": "2026-11-05T04:59:00+00:00",
    "date": "2026-11-05T01:48+00:00",
    "groupe": "871001",
-   "dernier_essai": "2026-11-26T23:17+00:00"
-  },
-  {
-   "site": "polymarket",
-   "id": "2117406",
-   "slug": "will-new-zealand-first-party-win-the-third-most-seats-in-the-new-zealand-house-of-representatives-in-the-2026-new-zealand-legislative-election",
-   "question": "Will New Zealand First Party win the third-most seats in the New Zealand House of Representatives in the 2026 New Zealand legislative election?",
-   "cote": "No",
-   "idx": 1,
-   "prix": 0.996,
-   "cat": "politique",
-   "fin": "2026-11-08T04:59:00+00:00",
-   "date": "2026-11-05T01:48+00:00",
-   "groupe": "431793",
-   "dernier_essai": "2026-11-26T23:17+00:00"
-  },
-  {
-   "site": "polymarket",
-   "id": "2117126",
-   "slug": "will-national-party-win-the-popular-vote-in-the-2026-new-zealand-legislative-election-by-10-or-more",
-   "question": "Will National Party win the popular vote in the 2026 New Zealand legislative election by 10% or more?",
-   "cote": "No",
-   "idx": 1,
-   "prix": 0.9905,
-   "cat": "politique",
-   "fin": "2026-11-08T04:59:00+00:00",
-   "date": "2026-11-05T01:48+00:00",
-   "groupe": "431707",
-   "dernier_essai": "2026-11-26T23:17+00:00"
-  },
-  {
-   "site": "polymarket",
-   "id": "2117404",
-   "slug": "will-green-party-win-the-third-most-seats-in-the-new-zealand-house-of-representatives-in-the-2026-new-zealand-legislative-election",
-   "question": "Will Green Party win the third-most seats in the New Zealand House of Representatives in the 2026 New Zealand legislative election?",
-   "cote": "Yes",
-   "idx": 0,
-   "prix": 0.9735,
-   "cat": "politique",
-   "fin": "2026-11-08T04:59:00+00:00",
-   "date": "2026-11-05T08:42+00:00",
-   "groupe": "431793",
-   "dernier_essai": "2026-11-26T23:17+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "sxbet",
@@ -2959,7 +2769,7 @@
    "fin": "2026-11-26T15:00:00+00:00",
    "date": "2026-11-05T16:55+00:00",
    "groupe": "KXBTCPRICE-130000",
-   "dernier_essai": "2026-11-26T23:17+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "sxbet",
@@ -3043,7 +2853,7 @@
    "fin": "2026-11-06T08:00:00+00:00",
    "date": "2026-11-06T02:53+00:00",
    "groupe": "BTC|2026-11-06T08",
-   "dernier_essai": "2026-11-26T23:17+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "okx",
@@ -3057,7 +2867,7 @@
    "fin": "2026-11-06T08:00:00+00:00",
    "date": "2026-11-06T02:53+00:00",
    "groupe": "BTC|2026-11-06T08",
-   "dernier_essai": "2026-11-26T23:17+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "sxbet",
@@ -3072,34 +2882,6 @@
    "date": "2026-11-06T02:53+00:00",
    "groupe": "XBTCUSDT-ABOVE-20261107",
    "dernier_essai": "2026-11-26T14:33+00:00"
-  },
-  {
-   "site": "polymarket",
-   "id": "2117405",
-   "slug": "will-act-new-zealand-win-the-third-most-seats-in-the-new-zealand-house-of-representatives-in-the-2026-new-zealand-legislative-election",
-   "question": "Will ACT New Zealand win the third-most seats in the New Zealand House of Representatives in the 2026 New Zealand legislative election?",
-   "cote": "No",
-   "idx": 1,
-   "prix": 0.9935,
-   "cat": "politique",
-   "fin": "2026-11-08T04:59:00+00:00",
-   "date": "2026-11-06T10:06+00:00",
-   "groupe": "431793",
-   "dernier_essai": "2026-11-26T23:17+00:00"
-  },
-  {
-   "site": "polymarket",
-   "id": "2118146",
-   "slug": "will-green-party-win-the-second-most-seats-in-the-new-zealand-house-of-representatives-in-the-2026-new-zealand-legislative-election",
-   "question": "Will Green Party win the second-most seats in the New Zealand House of Representatives in the 2026 New Zealand legislative election?",
-   "cote": "No",
-   "idx": 1,
-   "prix": 0.995,
-   "cat": "politique",
-   "fin": "2026-11-08T04:59:00+00:00",
-   "date": "2026-11-06T10:06+00:00",
-   "groupe": "431847",
-   "dernier_essai": "2026-11-26T23:17+00:00"
   },
   {
    "site": "sxbet",
@@ -3154,7 +2936,7 @@
    "cat": "autre",
    "fin": "2026-11-19T23:59:00+00:00",
    "date": "2026-11-06T17:19+00:00",
-   "dernier_essai": "2026-11-26T23:17+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "sxbet",
@@ -3211,34 +2993,6 @@
   },
   {
    "site": "polymarket",
-   "id": "2116493",
-   "slug": "will-national-party-win-the-most-seats-in-the-new-zealand-house-of-representatives-in-the-2026-new-zealand-legislative-election",
-   "question": "Will National Party win the most seats in the New Zealand House of Representatives in the 2026 New Zealand legislative election?",
-   "cote": "Yes",
-   "idx": 0,
-   "prix": 0.9855,
-   "cat": "politique",
-   "fin": "2026-11-08T04:59:00+00:00",
-   "date": "2026-11-07T15:06+00:00",
-   "groupe": "431450",
-   "dernier_essai": "2026-11-26T23:17+00:00"
-  },
-  {
-   "site": "polymarket",
-   "id": "2116494",
-   "slug": "will-labour-party-win-the-most-seats-in-the-new-zealand-house-of-representatives-in-the-2026-new-zealand-legislative-election",
-   "question": "Will Labour Party win the most seats in the New Zealand House of Representatives in the 2026 New Zealand legislative election?",
-   "cote": "No",
-   "idx": 1,
-   "prix": 0.9855,
-   "cat": "politique",
-   "fin": "2026-11-08T04:59:00+00:00",
-   "date": "2026-11-07T15:06+00:00",
-   "groupe": "431450",
-   "dernier_essai": "2026-11-26T23:17+00:00"
-  },
-  {
-   "site": "polymarket",
    "id": "2128413",
    "slug": "will-another-result-occur-for-the-next-governing-coalition-of-new-zealand",
    "question": "Will another result occur for the next governing coalition of New Zealand?",
@@ -3249,35 +3003,7 @@
    "fin": "2026-11-08T04:59:00+00:00",
    "date": "2026-11-07T15:06+00:00",
    "groupe": "435884",
-   "dernier_essai": "2026-11-26T23:17+00:00"
-  },
-  {
-   "site": "polymarket",
-   "id": "2117123",
-   "slug": "will-labour-party-win-the-popular-vote-in-the-2026-new-zealand-legislative-election-by-0-5",
-   "question": "Will Labour Party win the popular vote in the 2026 New Zealand legislative election by 0-5%?",
-   "cote": "Yes",
-   "idx": 0,
-   "prix": 0.975,
-   "cat": "politique",
-   "fin": "2026-11-08T04:59:00+00:00",
-   "date": "2026-11-07T15:06+00:00",
-   "groupe": "431707",
-   "dernier_essai": "2026-11-26T23:17+00:00"
-  },
-  {
-   "site": "polymarket",
-   "id": "2117124",
-   "slug": "will-national-party-win-the-popular-vote-in-the-2026-new-zealand-legislative-election-by-0-5",
-   "question": "Will National Party win the popular vote in the 2026 New Zealand legislative election by 0-5%?",
-   "cote": "No",
-   "idx": 1,
-   "prix": 0.9795,
-   "cat": "politique",
-   "fin": "2026-11-08T04:59:00+00:00",
-   "date": "2026-11-07T15:06+00:00",
-   "groupe": "431707",
-   "dernier_essai": "2026-11-26T23:17+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "polymarket",
@@ -3291,77 +3017,7 @@
    "fin": "2026-11-08T04:59:00+00:00",
    "date": "2026-11-07T15:06+00:00",
    "groupe": "435884",
-   "dernier_essai": "2026-11-26T23:17+00:00"
-  },
-  {
-   "site": "polymarket",
-   "id": "2118144",
-   "slug": "will-national-party-win-the-second-most-seats-in-the-new-zealand-house-of-representatives-in-the-2026-new-zealand-legislative-election-992",
-   "question": "Will National Party win the second-most seats in the New Zealand House of Representatives in the 2026 New Zealand legislative election?",
-   "cote": "No",
-   "idx": 1,
-   "prix": 0.9935,
-   "cat": "politique",
-   "fin": "2026-11-08T04:59:00+00:00",
-   "date": "2026-11-07T19:26+00:00",
-   "groupe": "431847",
-   "dernier_essai": "2026-11-26T23:17+00:00"
-  },
-  {
-   "site": "polymarket",
-   "id": "2116891",
-   "slug": "will-the-national-party-win-40-44-seats-in-the-new-zealand-house-of-representatives-in-the-2026-new-zealand-legislative-election",
-   "question": "Will the National Party win 40-44 seats in the New Zealand House of Representatives in the 2026 New Zealand legislative election?",
-   "cote": "Yes",
-   "idx": 0,
-   "prix": 0.99,
-   "cat": "politique",
-   "fin": "2026-11-08T04:59:00+00:00",
-   "date": "2026-11-07T19:26+00:00",
-   "groupe": "431593",
-   "dernier_essai": "2026-11-26T23:17+00:00"
-  },
-  {
-   "site": "polymarket",
-   "id": "2116890",
-   "slug": "will-the-national-party-win-35-39-seats-in-the-new-zealand-house-of-representatives-in-the-2026-new-zealand-legislative-election",
-   "question": "Will the National Party win 35-39 seats in the New Zealand House of Representatives in the 2026 New Zealand legislative election?",
-   "cote": "No",
-   "idx": 1,
-   "prix": 0.9905,
-   "cat": "politique",
-   "fin": "2026-11-08T04:59:00+00:00",
-   "date": "2026-11-07T19:26+00:00",
-   "groupe": "431593",
-   "dernier_essai": "2026-11-26T23:17+00:00"
-  },
-  {
-   "site": "polymarket",
-   "id": "2116908",
-   "slug": "will-the-labour-party-win-30-34-seats-in-the-new-zealand-house-of-representatives-in-the-2026-new-zealand-legislative-election",
-   "question": "Will the Labour Party win 30-34 seats in the New Zealand House of Representatives in the 2026 New Zealand legislative election?",
-   "cote": "No",
-   "idx": 1,
-   "prix": 0.9985,
-   "cat": "politique",
-   "fin": "2026-11-08T04:59:00+00:00",
-   "date": "2026-11-07T19:26+00:00",
-   "groupe": "431601",
-   "dernier_essai": "2026-11-26T23:17+00:00"
-  },
-  {
-   "site": "polymarket",
-   "id": "2116909",
-   "slug": "will-the-labour-party-win-35-39-seats-in-the-new-zealand-house-of-representatives-in-the-2026-new-zealand-legislative-election",
-   "question": "Will the Labour Party win 35-39 seats in the New Zealand House of Representatives in the 2026 New Zealand legislative election?",
-   "cote": "Yes",
-   "idx": 0,
-   "prix": 0.986,
-   "cat": "politique",
-   "fin": "2026-11-08T04:59:00+00:00",
-   "date": "2026-11-07T19:26+00:00",
-   "groupe": "431601",
-   "dernier_essai": "2026-11-26T23:17+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "polymarket",
@@ -3375,7 +3031,7 @@
    "fin": "2026-11-08T15:30:00+00:00",
    "date": "2026-11-07T19:26+00:00",
    "groupe": "1258225",
-   "dernier_essai": "2026-11-26T23:17+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "sxbet",
@@ -3417,35 +3073,7 @@
    "fin": "2026-11-08T04:59:00+00:00",
    "date": "2026-11-07T22:59+00:00",
    "groupe": "435884",
-   "dernier_essai": "2026-11-26T23:17+00:00"
-  },
-  {
-   "site": "polymarket",
-   "id": "2116910",
-   "slug": "will-the-labour-party-win-40-44-seats-in-the-new-zealand-house-of-representatives-in-the-2026-new-zealand-legislative-election",
-   "question": "Will the Labour Party win 40-44 seats in the New Zealand House of Representatives in the 2026 New Zealand legislative election?",
-   "cote": "No",
-   "idx": 1,
-   "prix": 0.9945,
-   "cat": "politique",
-   "fin": "2026-11-08T04:59:00+00:00",
-   "date": "2026-11-07T22:59+00:00",
-   "groupe": "431601",
-   "dernier_essai": "2026-11-26T23:17+00:00"
-  },
-  {
-   "site": "polymarket",
-   "id": "2118145",
-   "slug": "will-labour-party-win-the-second-most-seats-in-the-new-zealand-house-of-representatives-in-the-2026-new-zealand-legislative-election",
-   "question": "Will Labour Party win the second-most seats in the New Zealand House of Representatives in the 2026 New Zealand legislative election?",
-   "cote": "Yes",
-   "idx": 0,
-   "prix": 0.9845,
-   "cat": "politique",
-   "fin": "2026-11-08T04:59:00+00:00",
-   "date": "2026-11-08T02:12+00:00",
-   "groupe": "431847",
-   "dernier_essai": "2026-11-26T23:17+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "polymarket",
@@ -3459,7 +3087,7 @@
    "fin": "2026-11-08T15:30:00+00:00",
    "date": "2026-11-08T02:12+00:00",
    "groupe": "1258225",
-   "dernier_essai": "2026-11-26T23:17+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "okx",
@@ -3473,7 +3101,7 @@
    "fin": "2026-11-08T08:00:00+00:00",
    "date": "2026-11-08T02:12+00:00",
    "groupe": "BTC|2026-11-08T08",
-   "dernier_essai": "2026-11-26T23:17+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "sxbet",
@@ -3501,7 +3129,7 @@
    "fin": "2026-11-09T08:00:00+00:00",
    "date": "2026-11-08T09:03+00:00",
    "groupe": "BTC|2026-11-09T08",
-   "dernier_essai": "2026-11-26T23:17+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "kalshi",
@@ -3554,7 +3182,7 @@
    "fin": "2026-11-09T08:00:00+00:00",
    "date": "2026-11-08T15:56+00:00",
    "groupe": "BTC|2026-11-09T08",
-   "dernier_essai": "2026-11-26T23:17+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "okx",
@@ -3568,7 +3196,7 @@
    "fin": "2026-11-09T08:00:00+00:00",
    "date": "2026-11-08T15:56+00:00",
    "groupe": "BTC|2026-11-09T08",
-   "dernier_essai": "2026-11-26T23:17+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "gate",
@@ -3582,7 +3210,7 @@
    "fin": "2026-11-09T08:00:00+00:00",
    "date": "2026-11-08T15:56+00:00",
    "groupe": "BTC|2026-11-09T08",
-   "dernier_essai": "2026-11-26T23:17+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "polymarket",
@@ -3621,7 +3249,7 @@
    "cat": "autre",
    "fin": "2026-11-12T07:59:00+00:00",
    "date": "2026-11-08T20:11+00:00",
-   "dernier_essai": "2026-11-26T23:17+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "okx",
@@ -3635,7 +3263,7 @@
    "fin": "2026-11-09T08:00:00+00:00",
    "date": "2026-11-08T20:11+00:00",
    "groupe": "BTC|2026-11-09T08",
-   "dernier_essai": "2026-11-26T23:17+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "sxbet",
@@ -3649,7 +3277,7 @@
    "fin": "2026-11-09T21:00:00+00:00",
    "date": "2026-11-08T20:11+00:00",
    "groupe": "XBTCUSDT-ABOVE-20261109",
-   "dernier_essai": "2026-11-26T04:42+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "sxbet",
@@ -3663,7 +3291,7 @@
    "fin": "2026-11-09T21:00:00+00:00",
    "date": "2026-11-08T20:11+00:00",
    "groupe": "XBTCUSDT-ABOVE-20261109",
-   "dernier_essai": "2026-11-26T04:42+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "sxbet",
@@ -3677,7 +3305,7 @@
    "fin": "2026-11-09T21:00:00+00:00",
    "date": "2026-11-08T20:11+00:00",
    "groupe": "XBTCUSDT-ABOVE-20261109",
-   "dernier_essai": "2026-11-26T04:42+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "kalshi",
@@ -3717,7 +3345,7 @@
    "fin": "2026-11-10T21:00:00+00:00",
    "date": "2026-11-08T23:42+00:00",
    "groupe": "XBTCUSDT-ABOVE-20261110",
-   "dernier_essai": "2026-11-26T04:42+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "sxbet",
@@ -3786,7 +3414,7 @@
    "fin": "2026-11-09T08:00:00+00:00",
    "date": "2026-11-09T03:07+00:00",
    "groupe": "BTC|2026-11-09T08",
-   "dernier_essai": "2026-11-26T23:17+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "sxbet",
@@ -3917,7 +3545,7 @@
    "cat": "autre",
    "fin": "2026-11-10T23:59:00+00:00",
    "date": "2026-11-09T11:01+00:00",
-   "dernier_essai": "2026-11-26T23:17+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "gemini",
@@ -3931,7 +3559,7 @@
    "fin": "2026-11-10T01:00:00+00:00",
    "date": "2026-11-09T11:01+00:00",
    "groupe": "HOUSE26LA-06",
-   "dernier_essai": "2026-11-26T23:17+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "gate",
@@ -3945,7 +3573,7 @@
    "fin": "2026-11-10T08:00:00+00:00",
    "date": "2026-11-09T11:01+00:00",
    "groupe": "BTC|2026-11-10T08",
-   "dernier_essai": "2026-11-26T23:17+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "sxbet",
@@ -4078,7 +3706,7 @@
    "fin": "2026-11-10T23:00:00+00:00",
    "date": "2026-11-09T21:28+00:00",
    "groupe": "L20766591",
-   "dernier_essai": "2026-11-26T04:42+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "sxbet",
@@ -4267,7 +3895,7 @@
    "fin": "2026-11-10T08:00:00+00:00",
    "date": "2026-11-10T03:54+00:00",
    "groupe": "BTC|2026-11-10T08",
-   "dernier_essai": "2026-11-26T23:17+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "okx",
@@ -4281,7 +3909,7 @@
    "fin": "2026-11-10T08:00:00+00:00",
    "date": "2026-11-10T03:54+00:00",
    "groupe": "BTC|2026-11-10T08",
-   "dernier_essai": "2026-11-26T23:17+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "sxbet",
@@ -4684,7 +4312,7 @@
    "fin": "2026-11-10T22:00:00+00:00",
    "date": "2026-11-10T12:00+00:00",
    "groupe": "L20791044",
-   "dernier_essai": "2026-11-26T04:42+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "sxbet",
@@ -4961,18 +4589,6 @@
    "groupe": "KXHURRICANE-26DEC01EPACTOT"
   },
   {
-   "site": "manifold",
-   "id": "UNllLhtsAQ",
-   "slug": "gta-vi-to-release-by-november-19-20",
-   "question": "GTA VI to release by November 19, 2026?",
-   "cote": "Oui",
-   "idx": 0,
-   "prix": 0.9724,
-   "cat": "autre",
-   "fin": "2026-11-26T23:59:00+00:00",
-   "date": "2026-11-10T19:21+00:00"
-  },
-  {
    "site": "sxbet",
    "id": "0x296591da8b75b296f121ead189c278c48b3055a085958d2659c33f1093b31bf5",
    "slug": "XBTCUSDT-ABOVE-20261111",
@@ -4984,7 +4600,7 @@
    "fin": "2026-11-11T21:00:00+00:00",
    "date": "2026-11-10T19:21+00:00",
    "groupe": "XBTCUSDT-ABOVE-20261111",
-   "dernier_essai": "2026-11-26T04:42+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "sxbet",
@@ -5528,7 +5144,7 @@
    "fin": "2026-11-12T08:00:00+00:00",
    "date": "2026-11-11T14:26+00:00",
    "groupe": "BTC|2026-11-12T08",
-   "dernier_essai": "2026-11-26T23:17+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "okx",
@@ -5542,7 +5158,7 @@
    "fin": "2026-11-12T08:00:00+00:00",
    "date": "2026-11-11T14:26+00:00",
    "groupe": "BTC|2026-11-12T08",
-   "dernier_essai": "2026-11-26T23:17+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "okx",
@@ -5556,7 +5172,7 @@
    "fin": "2026-11-12T08:00:00+00:00",
    "date": "2026-11-11T14:26+00:00",
    "groupe": "BTC|2026-11-12T08",
-   "dernier_essai": "2026-11-26T23:17+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "sxbet",
@@ -5570,7 +5186,7 @@
    "fin": "2026-11-11T21:00:00+00:00",
    "date": "2026-11-11T14:26+00:00",
    "groupe": "XBTCUSDT-ABOVE-20261111",
-   "dernier_essai": "2026-11-26T04:42+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "sxbet",
@@ -5805,7 +5421,7 @@
    "fin": "2026-11-12T08:00:00+00:00",
    "date": "2026-11-11T21:37+00:00",
    "groupe": "BTC|2026-11-12T08",
-   "dernier_essai": "2026-11-26T23:17+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "sxbet",
@@ -6655,7 +6271,7 @@
    "fin": "2026-11-13T08:00:00+00:00",
    "date": "2026-11-12T23:52+00:00",
    "groupe": "BTC|2026-11-13T08",
-   "dernier_essai": "2026-11-26T23:17+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "sxbet",
@@ -6787,7 +6403,7 @@
    "fin": "2026-11-16T08:00:00+00:00",
    "date": "2026-11-13T03:45+00:00",
    "groupe": "HOUSE26MN-01",
-   "dernier_essai": "2026-11-26T23:17+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "okx",
@@ -6801,7 +6417,7 @@
    "fin": "2026-11-13T08:00:00+00:00",
    "date": "2026-11-13T03:45+00:00",
    "groupe": "BTC|2026-11-13T08",
-   "dernier_essai": "2026-11-26T23:17+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "sxbet",
@@ -7145,7 +6761,7 @@
    "fin": "2026-11-14T08:00:00+00:00",
    "date": "2026-11-13T18:53+00:00",
    "groupe": "BTC|2026-11-14T08",
-   "dernier_essai": "2026-11-26T23:17+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "okx",
@@ -7159,7 +6775,7 @@
    "fin": "2026-11-14T08:00:00+00:00",
    "date": "2026-11-13T18:53+00:00",
    "groupe": "BTC|2026-11-14T08",
-   "dernier_essai": "2026-11-26T23:17+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "sxbet",
@@ -7421,7 +7037,7 @@
    "fin": "2026-11-14T23:00:00+00:00",
    "date": "2026-11-14T06:24+00:00",
    "groupe": "L20817131",
-   "dernier_essai": "2026-11-26T04:42+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "kalshi",
@@ -7603,7 +7219,7 @@
    "fin": "2026-11-15T08:00:00+00:00",
    "date": "2026-11-14T13:50+00:00",
    "groupe": "BTC|2026-11-15T08",
-   "dernier_essai": "2026-11-26T14:33+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "sxbet",
@@ -7747,7 +7363,7 @@
    "cat": "autre",
    "fin": "2026-11-19T23:59:00+00:00",
    "date": "2026-11-14T18:59+00:00",
-   "dernier_essai": "2026-11-26T23:17+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "gemini",
@@ -7761,7 +7377,7 @@
    "fin": "2026-11-16T08:00:00+00:00",
    "date": "2026-11-14T18:59+00:00",
    "groupe": "HOUSE26MN-01",
-   "dernier_essai": "2026-11-26T23:17+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "kalshi",
@@ -7853,7 +7469,7 @@
    "fin": "2026-11-15T21:00:00+00:00",
    "date": "2026-11-14T22:58+00:00",
    "groupe": "XBTCUSDT-ABOVE-20261115",
-   "dernier_essai": "2026-11-26T04:42+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "sxbet",
@@ -7867,7 +7483,7 @@
    "fin": "2026-11-15T21:00:00+00:00",
    "date": "2026-11-14T22:58+00:00",
    "groupe": "XBTCUSDT-ABOVE-20261115",
-   "dernier_essai": "2026-11-26T04:42+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "polymarket",
@@ -8036,7 +7652,7 @@
    "fin": "2026-11-15T08:00:00+00:00",
    "date": "2026-11-15T02:27+00:00",
    "groupe": "BTC|2026-11-15T08",
-   "dernier_essai": "2026-11-26T14:33+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "okx",
@@ -8050,7 +7666,7 @@
    "fin": "2026-11-15T08:00:00+00:00",
    "date": "2026-11-15T02:27+00:00",
    "groupe": "BTC|2026-11-15T08",
-   "dernier_essai": "2026-11-26T14:33+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "okx",
@@ -8064,7 +7680,7 @@
    "fin": "2026-11-15T08:00:00+00:00",
    "date": "2026-11-15T02:27+00:00",
    "groupe": "BTC|2026-11-15T08",
-   "dernier_essai": "2026-11-26T14:33+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "okx",
@@ -8078,7 +7694,7 @@
    "fin": "2026-11-15T08:00:00+00:00",
    "date": "2026-11-15T02:27+00:00",
    "groupe": "BTC|2026-11-15T08",
-   "dernier_essai": "2026-11-26T14:33+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "kalshi",
@@ -8248,7 +7864,7 @@
    "fin": "2026-11-16T08:00:00+00:00",
    "date": "2026-11-15T09:50+00:00",
    "groupe": "BTC|2026-11-16T08",
-   "dernier_essai": "2026-11-26T23:17+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "gate",
@@ -8262,7 +7878,7 @@
    "fin": "2026-11-16T08:00:00+00:00",
    "date": "2026-11-15T09:50+00:00",
    "groupe": "BTC|2026-11-16T08",
-   "dernier_essai": "2026-11-26T23:17+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "polymarket",
@@ -8378,7 +7994,7 @@
    "fin": "2026-11-16T08:00:00+00:00",
    "date": "2026-11-15T16:40+00:00",
    "groupe": "BTC|2026-11-16T08",
-   "dernier_essai": "2026-11-26T23:17+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "okx",
@@ -8392,7 +8008,7 @@
    "fin": "2026-11-16T08:00:00+00:00",
    "date": "2026-11-15T16:40+00:00",
    "groupe": "BTC|2026-11-16T08",
-   "dernier_essai": "2026-11-26T23:17+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "sxbet",
@@ -8406,7 +8022,7 @@
    "fin": "2026-11-16T21:00:00+00:00",
    "date": "2026-11-15T16:40+00:00",
    "groupe": "XBTCUSDT-ABOVE-20261116",
-   "dernier_essai": "2026-11-26T04:42+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "sxbet",
@@ -8420,7 +8036,7 @@
    "fin": "2026-11-16T21:00:00+00:00",
    "date": "2026-11-15T16:40+00:00",
    "groupe": "XBTCUSDT-ABOVE-20261116",
-   "dernier_essai": "2026-11-26T04:42+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "polymarket",
@@ -8434,7 +8050,7 @@
    "fin": "2026-11-16T04:59:00+00:00",
    "date": "2026-11-15T21:25+00:00",
    "groupe": "1147374",
-   "dernier_essai": "2026-11-26T14:33+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "polymarket",
@@ -8448,21 +8064,7 @@
    "fin": "2026-11-21T04:59:00+00:00",
    "date": "2026-11-15T21:25+00:00",
    "groupe": "1315385",
-   "dernier_essai": "2026-11-26T14:33+00:00"
-  },
-  {
-   "site": "polymarket",
-   "id": "6690561",
-   "slug": "will-the-democratic-party-candidate-win-the-2026-mississippi-senate-election-by-0pt3-0pt6",
-   "question": "Will the Democratic Party candidate win the 2026 Mississippi Senate election by 0.3%-0.6%?",
-   "cote": "No",
-   "idx": 1,
-   "prix": 0.9965,
-   "cat": "politique",
-   "fin": "2026-11-21T04:59:00+00:00",
-   "date": "2026-11-15T21:25+00:00",
-   "groupe": "1315385",
-   "dernier_essai": "2026-11-26T14:33+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "polymarket",
@@ -8476,7 +8078,7 @@
    "fin": "2026-11-21T04:59:00+00:00",
    "date": "2026-11-15T21:25+00:00",
    "groupe": "1315385",
-   "dernier_essai": "2026-11-26T14:33+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "kalshi",
@@ -8567,7 +8169,7 @@
    "fin": "2026-11-16T19:00:00+00:00",
    "date": "2026-11-15T21:25+00:00",
    "groupe": "L20817156",
-   "dernier_essai": "2026-11-26T04:42+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "sxbet",
@@ -8581,7 +8183,7 @@
    "fin": "2026-11-16T19:00:00+00:00",
    "date": "2026-11-15T21:25+00:00",
    "groupe": "L20817156",
-   "dernier_essai": "2026-11-26T04:42+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "sxbet",
@@ -8595,7 +8197,7 @@
    "fin": "2026-11-17T21:00:00+00:00",
    "date": "2026-11-15T21:25+00:00",
    "groupe": "XBTCUSDT-ABOVE-20261117",
-   "dernier_essai": "2026-11-26T04:42+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "sxbet",
@@ -8609,7 +8211,7 @@
    "fin": "2026-11-17T21:00:00+00:00",
    "date": "2026-11-15T21:25+00:00",
    "groupe": "XBTCUSDT-ABOVE-20261117",
-   "dernier_essai": "2026-11-26T04:42+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "polymarket",
@@ -8779,7 +8381,7 @@
    "fin": "2026-11-17T06:00:00+00:00",
    "date": "2026-11-16T08:17+00:00",
    "groupe": "NFL-2611151800-MIN-GB-PPRYDS",
-   "dernier_essai": "2026-11-26T23:17+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "gemini",
@@ -8832,7 +8434,7 @@
    "fin": "2026-11-16T21:00:00+00:00",
    "date": "2026-11-16T08:17+00:00",
    "groupe": "XBTCUSDT-ABOVE-20261116",
-   "dernier_essai": "2026-11-26T04:42+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "sxbet",
@@ -8846,7 +8448,7 @@
    "fin": "2026-11-17T21:00:00+00:00",
    "date": "2026-11-16T08:17+00:00",
    "groupe": "XBTCUSDT-ABOVE-20261117",
-   "dernier_essai": "2026-11-26T04:42+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "sxbet",
@@ -8860,7 +8462,7 @@
    "fin": "2026-11-18T00:00:00+00:00",
    "date": "2026-11-16T08:17+00:00",
    "groupe": "L20817192",
-   "dernier_essai": "2026-11-26T04:42+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "polymarket",
@@ -9043,7 +8645,7 @@
    "fin": "2026-11-17T08:00:00+00:00",
    "date": "2026-11-16T18:41+00:00",
    "groupe": "BTC|2026-11-17T08",
-   "dernier_essai": "2026-11-26T23:17+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "okx",
@@ -9057,7 +8659,7 @@
    "fin": "2026-11-17T08:00:00+00:00",
    "date": "2026-11-16T18:41+00:00",
    "groupe": "BTC|2026-11-17T08",
-   "dernier_essai": "2026-11-26T14:33+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "okx",
@@ -9071,7 +8673,7 @@
    "fin": "2026-11-17T08:00:00+00:00",
    "date": "2026-11-16T18:41+00:00",
    "groupe": "BTC|2026-11-17T08",
-   "dernier_essai": "2026-11-26T14:33+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "polymarket",
@@ -9163,7 +8765,7 @@
    "fin": "2026-11-17T21:00:00+00:00",
    "date": "2026-11-17T02:09+00:00",
    "groupe": "XBTCUSDT-ABOVE-20261117",
-   "dernier_essai": "2026-11-26T04:42+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "sxbet",
@@ -9177,7 +8779,7 @@
    "fin": "2026-11-18T21:00:00+00:00",
    "date": "2026-11-17T02:09+00:00",
    "groupe": "XBTCUSDT-ABOVE-20261118",
-   "dernier_essai": "2026-11-26T04:42+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "sxbet",
@@ -9191,7 +8793,7 @@
    "fin": "2026-11-18T21:00:00+00:00",
    "date": "2026-11-17T02:09+00:00",
    "groupe": "XBTCUSDT-ABOVE-20261118",
-   "dernier_essai": "2026-11-26T04:42+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "polymarket",
@@ -9205,7 +8807,7 @@
    "fin": "2026-11-17T23:59:00+00:00",
    "date": "2026-11-17T10:44+00:00",
    "groupe": "578085",
-   "dernier_essai": "2026-11-26T14:33+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "polymarket",
@@ -9219,7 +8821,7 @@
    "fin": "2026-11-17T23:59:00+00:00",
    "date": "2026-11-17T10:44+00:00",
    "groupe": "578085",
-   "dernier_essai": "2026-11-26T14:33+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "polymarket",
@@ -9350,7 +8952,7 @@
    "fin": "2026-11-18T08:00:00+00:00",
    "date": "2026-11-17T10:44+00:00",
    "groupe": "BTC|2026-11-18T08",
-   "dernier_essai": "2026-11-26T23:17+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "okx",
@@ -9378,7 +8980,7 @@
    "fin": "2026-11-18T21:00:00+00:00",
    "date": "2026-11-17T10:44+00:00",
    "groupe": "XBTCUSDT-ABOVE-20261118",
-   "dernier_essai": "2026-11-26T04:42+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "polymarket",
@@ -9511,7 +9113,7 @@
    "fin": "2026-11-18T00:00:00+00:00",
    "date": "2026-11-17T19:27+00:00",
    "groupe": "L20817192",
-   "dernier_essai": "2026-11-26T04:42+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "sxbet",
@@ -9539,7 +9141,7 @@
    "fin": "2026-11-20T21:00:00+00:00",
    "date": "2026-11-17T19:27+00:00",
    "groupe": "XBTCUSDT-ABOVE-20261120",
-   "dernier_essai": "2026-11-26T04:42+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "sxbet",
@@ -9553,7 +9155,7 @@
    "fin": "2026-11-20T21:00:00+00:00",
    "date": "2026-11-17T19:27+00:00",
    "groupe": "XBTCUSDT-ABOVE-20261120",
-   "dernier_essai": "2026-11-26T04:42+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "kalshi",
@@ -9656,7 +9258,7 @@
    "fin": "2026-11-20T21:00:00+00:00",
    "date": "2026-11-18T01:48+00:00",
    "groupe": "XBTCUSDT-ABOVE-20261120",
-   "dernier_essai": "2026-11-26T04:42+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "polymarket",
@@ -9941,7 +9543,7 @@
    "cat": "politique",
    "fin": "2026-11-19T22:59:00+00:00",
    "date": "2026-11-18T18:11+00:00",
-   "dernier_essai": "2026-11-26T23:17+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "manifold",
@@ -9979,7 +9581,7 @@
    "fin": "2026-11-19T08:00:00+00:00",
    "date": "2026-11-18T18:11+00:00",
    "groupe": "BTC|2026-11-19T08",
-   "dernier_essai": "2026-11-26T14:33+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "gate",
@@ -9993,7 +9595,7 @@
    "fin": "2026-11-19T08:00:00+00:00",
    "date": "2026-11-18T18:11+00:00",
    "groupe": "BTC|2026-11-19T08",
-   "dernier_essai": "2026-11-26T23:17+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "sxbet",
@@ -10021,7 +9623,7 @@
    "fin": "2026-11-20T21:00:00+00:00",
    "date": "2026-11-18T18:11+00:00",
    "groupe": "XBTCUSDT-ABOVE-20261120",
-   "dernier_essai": "2026-11-26T04:42+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "polymarket",
@@ -10308,7 +9910,7 @@
    "fin": "2026-11-20T23:30:00+00:00",
    "date": "2026-11-19T07:47+00:00",
    "groupe": "L20740538",
-   "dernier_essai": "2026-11-26T04:42+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "polymarket",
@@ -10762,7 +10364,7 @@
    "cat": "autre",
    "fin": "2026-11-20T09:40:00+00:00",
    "date": "2026-11-19T23:27+00:00",
-   "dernier_essai": "2026-11-26T23:17+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "manifold",
@@ -10813,7 +10415,7 @@
    "fin": "2026-11-20T21:00:00+00:00",
    "date": "2026-11-19T23:27+00:00",
    "groupe": "XBTCUSDT-ABOVE-20261120",
-   "dernier_essai": "2026-11-26T04:42+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "polymarket",
@@ -11100,7 +10702,7 @@
    "fin": "2026-11-21T08:00:00+00:00",
    "date": "2026-11-20T12:55+00:00",
    "groupe": "BTC|2026-11-21T08",
-   "dernier_essai": "2026-11-26T23:17+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "thalex",
@@ -11270,7 +10872,7 @@
    "fin": "2026-11-21T04:59:00+00:00",
    "date": "2026-11-21T02:01+00:00",
    "groupe": "1315385",
-   "dernier_essai": "2026-11-26T14:33+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "polymarket",
@@ -11415,7 +11017,7 @@
    "fin": "2026-11-21T21:00:00+00:00",
    "date": "2026-11-21T02:01+00:00",
    "groupe": "XBTCUSDT-ABOVE-20261121",
-   "dernier_essai": "2026-11-26T04:42+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "sxbet",
@@ -11429,7 +11031,7 @@
    "fin": "2026-11-21T21:00:00+00:00",
    "date": "2026-11-21T02:01+00:00",
    "groupe": "XBTCUSDT-ABOVE-20261121",
-   "dernier_essai": "2026-11-26T04:42+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "kalshi",
@@ -12394,7 +11996,7 @@
    "fin": "2026-11-24T06:00:00+00:00",
    "date": "2026-11-22T22:43+00:00",
    "groupe": "NFL-2611221800-ARI-KC-PPYDS",
-   "dernier_essai": "2026-11-26T23:17+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "gemini",
@@ -12712,7 +12314,7 @@
    "fin": "2026-11-24T21:00:00+00:00",
    "date": "2026-11-23T03:11+00:00",
    "groupe": "XBTCUSDT-ABOVE-20261124",
-   "dernier_essai": "2026-11-26T04:42+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "sxbet",
@@ -12726,7 +12328,7 @@
    "fin": "2026-11-24T21:00:00+00:00",
    "date": "2026-11-23T03:11+00:00",
    "groupe": "XBTCUSDT-ABOVE-20261124",
-   "dernier_essai": "2026-11-26T04:42+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "sxbet",
@@ -12740,7 +12342,7 @@
    "fin": "2026-11-24T21:00:00+00:00",
    "date": "2026-11-23T03:11+00:00",
    "groupe": "XBTCUSDT-ABOVE-20261124",
-   "dernier_essai": "2026-11-26T04:42+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "polymarket",
@@ -12960,7 +12562,7 @@
    "fin": "2026-11-24T21:00:00+00:00",
    "date": "2026-11-23T12:33+00:00",
    "groupe": "XBTCUSDT-ABOVE-20261124",
-   "dernier_essai": "2026-11-26T04:42+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "polymarket",
@@ -13167,7 +12769,7 @@
    "fin": "2026-11-24T21:00:00+00:00",
    "date": "2026-11-24T10:16+00:00",
    "groupe": "XBTCUSDT-ABOVE-20261124",
-   "dernier_essai": "2026-11-26T04:42+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "delta_monde",
@@ -13233,7 +12835,7 @@
    "fin": "2026-11-25T22:00:00+00:00",
    "date": "2026-11-24T20:45+00:00",
    "groupe": "1420178",
-   "dernier_essai": "2026-11-26T14:33+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "polymarket",
@@ -13247,7 +12849,7 @@
    "fin": "2026-11-25T22:00:00+00:00",
    "date": "2026-11-24T20:45+00:00",
    "groupe": "1420180",
-   "dernier_essai": "2026-11-26T14:33+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "polymarket",
@@ -13261,7 +12863,7 @@
    "fin": "2026-11-25T22:00:00+00:00",
    "date": "2026-11-24T20:45+00:00",
    "groupe": "1420498",
-   "dernier_essai": "2026-11-26T23:17+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "polymarket",
@@ -13442,7 +13044,7 @@
    "fin": "2026-11-26T18:30:00+00:00",
    "date": "2026-11-24T20:45+00:00",
    "groupe": "NCAAM-2611241830-PITT-OU-M",
-   "dernier_essai": "2026-11-26T23:17+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "sxbet",
@@ -13693,7 +13295,7 @@
    "fin": "2026-11-26T19:30:00+00:00",
    "date": "2026-11-25T03:48+00:00",
    "groupe": "NCAAM-2611241930-BYU-MISS-M",
-   "dernier_essai": "2026-11-26T23:17+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "gemini",
@@ -13707,7 +13309,7 @@
    "fin": "2026-11-26T20:00:00+00:00",
    "date": "2026-11-25T03:48+00:00",
    "groupe": "NCAAM-2611242000-UMD-TENN-M",
-   "dernier_essai": "2026-11-26T23:17+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "gemini",
@@ -13721,7 +13323,7 @@
    "fin": "2026-11-26T22:00:00+00:00",
    "date": "2026-11-25T03:48+00:00",
    "groupe": "NCAAM-2611242200-ARI-PROV-M",
-   "dernier_essai": "2026-11-26T23:17+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "gemini",
@@ -13734,7 +13336,8 @@
    "cat": "sport US",
    "fin": "2026-11-27T01:00:00+00:00",
    "date": "2026-11-25T03:48+00:00",
-   "groupe": "NCAAM-2611250100-LOU-TTU-M"
+   "groupe": "NCAAM-2611250100-LOU-TTU-M",
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "sxbet",
@@ -13983,7 +13586,7 @@
    "fin": "2026-11-26T16:00:00+00:00",
    "date": "2026-11-25T13:37+00:00",
    "groupe": "NCAAM-2611241600-NMSU-OHIO-M",
-   "dernier_essai": "2026-11-26T23:17+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "gemini",
@@ -13997,7 +13600,7 @@
    "fin": "2026-11-26T20:00:00+00:00",
    "date": "2026-11-25T13:37+00:00",
    "groupe": "NCAAM-2611242000-TCU-MIA-M",
-   "dernier_essai": "2026-11-26T23:17+00:00"
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "gemini",
@@ -14010,20 +13613,8 @@
    "cat": "sport US",
    "fin": "2026-11-27T01:00:00+00:00",
    "date": "2026-11-25T13:37+00:00",
-   "groupe": "NCAAM-2611250100-LOU-TTU-M"
-  },
-  {
-   "site": "gemini",
-   "id": "GEMI-NCAAM-2611250330-CSU-VCU-M-CSU",
-   "slug": "NCAAM-2611250330-CSU-VCU-M",
-   "question": "Colorado State vs VCU",
-   "cote": "Non",
-   "idx": 1,
-   "prix": 0.98,
-   "cat": "sport US",
-   "fin": "2026-11-27T03:30:00+00:00",
-   "date": "2026-11-25T13:37+00:00",
-   "groupe": "NCAAM-2611250330-CSU-VCU-M"
+   "groupe": "NCAAM-2611250100-LOU-TTU-M",
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "gemini",
@@ -14036,7 +13627,8 @@
    "cat": "sport US",
    "fin": "2026-11-27T03:30:00+00:00",
    "date": "2026-11-25T13:37+00:00",
-   "groupe": "NCAAM-2611250330-STJN-ORE-M"
+   "groupe": "NCAAM-2611250330-STJN-ORE-M",
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "thalex",
@@ -14093,20 +13685,6 @@
   },
   {
    "site": "polymarket",
-   "id": "7303069",
-   "slug": "lowest-temperature-in-hong-kong-on-november-26-2026-18c",
-   "question": "Will the lowest temperature in Hong Kong be 18°C on November 26?",
-   "cote": "No",
-   "idx": 1,
-   "prix": 0.9985,
-   "cat": "météo",
-   "fin": "2026-11-26T12:00:00+00:00",
-   "date": "2026-11-25T22:50+00:00",
-   "groupe": "1451362",
-   "dernier_essai": "2026-11-26T14:33+00:00"
-  },
-  {
-   "site": "polymarket",
    "id": "7254821",
    "slug": "will-jynxzi-finish-gta-vi-by-november-26",
    "question": "Will Jynxzi finish GTA VI by November 26?",
@@ -14116,7 +13694,8 @@
    "cat": "autre",
    "fin": "2026-11-27T04:59:00+00:00",
    "date": "2026-11-25T22:50+00:00",
-   "groupe": "1442368"
+   "groupe": "1442368",
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "polymarket",
@@ -14129,7 +13708,8 @@
    "cat": "autre",
    "fin": "2026-11-27T04:59:00+00:00",
    "date": "2026-11-25T22:50+00:00",
-   "groupe": "1442369"
+   "groupe": "1442369",
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "polymarket",
@@ -14418,62 +13998,6 @@
   },
   {
    "site": "polymarket",
-   "id": "7302626",
-   "slug": "highest-temperature-in-paris-on-november-26-2026-7c",
-   "question": "Will the highest temperature in Paris be 7°C on November 26?",
-   "cote": "No",
-   "idx": 1,
-   "prix": 0.9955,
-   "cat": "météo",
-   "fin": "2026-11-26T12:00:00+00:00",
-   "date": "2026-11-26T04:42+00:00",
-   "groupe": "1451296",
-   "dernier_essai": "2026-11-26T14:33+00:00"
-  },
-  {
-   "site": "polymarket",
-   "id": "7302637",
-   "slug": "highest-temperature-in-seoul-on-november-26-2026-17c",
-   "question": "Will the highest temperature in Seoul (Incheon) be 17°C on November 26?",
-   "cote": "No",
-   "idx": 1,
-   "prix": 0.979,
-   "cat": "météo",
-   "fin": "2026-11-26T12:00:00+00:00",
-   "date": "2026-11-26T04:42+00:00",
-   "groupe": "1451297",
-   "dernier_essai": "2026-11-26T14:33+00:00"
-  },
-  {
-   "site": "polymarket",
-   "id": "7302837",
-   "slug": "highest-temperature-in-shenzhen-on-november-26-2026-22c",
-   "question": "Will the highest temperature in Shenzhen be 22°C on November 26?",
-   "cote": "No",
-   "idx": 1,
-   "prix": 0.983,
-   "cat": "météo",
-   "fin": "2026-11-26T12:00:00+00:00",
-   "date": "2026-11-26T04:42+00:00",
-   "groupe": "1451329",
-   "dernier_essai": "2026-11-26T14:33+00:00"
-  },
-  {
-   "site": "polymarket",
-   "id": "7303001",
-   "slug": "lowest-temperature-in-seoul-on-november-26-2026-8c",
-   "question": "Will the lowest temperature in Seoul (Incheon) be 8°C on November 26?",
-   "cote": "No",
-   "idx": 1,
-   "prix": 0.9905,
-   "cat": "météo",
-   "fin": "2026-11-26T12:00:00+00:00",
-   "date": "2026-11-26T04:42+00:00",
-   "groupe": "1451356",
-   "dernier_essai": "2026-11-26T14:33+00:00"
-  },
-  {
-   "site": "polymarket",
    "id": "7292185",
    "slug": "es2-leg-sab-2026-11-27-exact-score-3-0",
    "question": "Exact Score: CD Leganés 3 - 0 CE Sabadell FC?",
@@ -14680,18 +14204,6 @@
    "date": "2026-11-26T04:42+00:00"
   },
   {
-   "site": "limitless",
-   "id": "packers-vs-rams-1795482365644",
-   "slug": "packers-vs-rams-1795482365644",
-   "question": "Packers vs. Rams",
-   "cote": "Non",
-   "idx": 1,
-   "prix": 0.992,
-   "cat": "autre",
-   "fin": "2026-11-27T01:00:00+00:00",
-   "date": "2026-11-26T04:42+00:00"
-  },
-  {
    "site": "gemini",
    "id": "GEMI-NBA-2611260300-SAC-GSW-PPREB-DRAYO1",
    "slug": "NBA-2611260300-SAC-GSW-PPREB",
@@ -14755,20 +14267,6 @@
    "fin": "2026-11-28T06:00:00+00:00",
    "date": "2026-11-26T04:42+00:00",
    "groupe": "NFL-2611261800-CHI-DET-1HT"
-  },
-  {
-   "site": "polymarket",
-   "id": "6995982",
-   "slug": "col-gen-crv-2026-11-26-exact-score-any-other",
-   "question": "Exact Score: Any Other Score?",
-   "cote": "No",
-   "idx": 1,
-   "prix": 0.971,
-   "cat": "autre",
-   "fin": "2026-11-26T20:00:00+00:00",
-   "date": "2026-11-26T14:33+00:00",
-   "groupe": "1373815",
-   "dernier_essai": "2026-11-26T23:17+00:00"
   },
   {
    "site": "polymarket",
@@ -14988,7 +14486,8 @@
    "prix": 0.9744,
    "cat": "autre",
    "fin": "2026-11-26T23:59:00+00:00",
-   "date": "2026-11-26T14:33+00:00"
+   "date": "2026-11-26T14:33+00:00",
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "limitless",
@@ -15527,7 +15026,8 @@
    "cat": "crypto",
    "fin": "2026-11-27T05:00:00+00:00",
    "date": "2026-11-26T23:17+00:00",
-   "groupe": "1461958"
+   "groupe": "1461958",
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "polymarket",
@@ -15540,7 +15040,8 @@
    "cat": "crypto",
    "fin": "2026-11-27T05:00:00+00:00",
    "date": "2026-11-26T23:17+00:00",
-   "groupe": "1461958"
+   "groupe": "1461958",
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "polymarket",
@@ -15553,7 +15054,8 @@
    "cat": "crypto",
    "fin": "2026-11-27T05:00:00+00:00",
    "date": "2026-11-26T23:17+00:00",
-   "groupe": "1461958"
+   "groupe": "1461958",
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "polymarket",
@@ -15566,7 +15068,8 @@
    "cat": "crypto",
    "fin": "2026-11-27T05:00:00+00:00",
    "date": "2026-11-26T23:17+00:00",
-   "groupe": "1461958"
+   "groupe": "1461958",
+   "dernier_essai": "2026-11-27T05:07+00:00"
   },
   {
    "site": "polymarket",
@@ -15887,162 +15390,6 @@
    "cat": "autre",
    "fin": "2026-11-27T19:45:00+00:00",
    "date": "2026-11-26T23:17+00:00"
-  },
-  {
-   "site": "gemini",
-   "id": "GEMI-ETH2611270000-HI1660",
-   "slug": "ETH2611270000",
-   "question": "ETH price today at 7pm EST — $1,660 or above",
-   "cote": "Oui",
-   "idx": 0,
-   "prix": 0.985,
-   "cat": "crypto",
-   "fin": "2026-11-27T00:00:00+00:00",
-   "date": "2026-11-26T23:17+00:00",
-   "groupe": "ETH2611270000"
-  },
-  {
-   "site": "smarkets",
-   "id": "181569094:499976736",
-   "slug": "181569094",
-   "question": "SMU Mustangs at LSU Tigers — Half-time/full-time : LSU Tigers / Draw",
-   "cote": "Non",
-   "idx": 1,
-   "prix": 0.9749,
-   "cat": "basket",
-   "fin": "2026-11-27T03:00:00+00:00",
-   "date": "2026-11-26T23:17+00:00",
-   "groupe": "45393673"
-  },
-  {
-   "site": "smarkets",
-   "id": "181569094:499976739",
-   "slug": "181569094",
-   "question": "SMU Mustangs at LSU Tigers — Half-time/full-time : SMU Mustangs / Draw",
-   "cote": "Non",
-   "idx": 1,
-   "prix": 0.9782,
-   "cat": "basket",
-   "fin": "2026-11-27T03:00:00+00:00",
-   "date": "2026-11-26T23:17+00:00",
-   "groupe": "45393673"
-  },
-  {
-   "site": "smarkets",
-   "id": "181569094:499976741",
-   "slug": "181569094",
-   "question": "SMU Mustangs at LSU Tigers — Half-time/full-time : Draw / SMU Mustangs",
-   "cote": "Non",
-   "idx": 1,
-   "prix": 0.9922,
-   "cat": "basket",
-   "fin": "2026-11-27T03:00:00+00:00",
-   "date": "2026-11-26T23:17+00:00",
-   "groupe": "45393673"
-  },
-  {
-   "site": "smarkets",
-   "id": "181569094:499976742",
-   "slug": "181569094",
-   "question": "SMU Mustangs at LSU Tigers — Half-time/full-time : Draw / Draw",
-   "cote": "Non",
-   "idx": 1,
-   "prix": 0.9974,
-   "cat": "basket",
-   "fin": "2026-11-27T03:00:00+00:00",
-   "date": "2026-11-26T23:17+00:00",
-   "groupe": "45393673"
-  },
-  {
-   "site": "smarkets",
-   "id": "181076720:498748833",
-   "slug": "181076720",
-   "question": "Montevideo City Torque vs Club Nacional — Correct score : 0 - 3",
-   "cote": "Non",
-   "idx": 1,
-   "prix": 0.9725,
-   "cat": "foot",
-   "fin": "2026-11-27T03:30:00+00:00",
-   "date": "2026-11-26T23:17+00:00",
-   "groupe": "45463076"
-  },
-  {
-   "site": "smarkets",
-   "id": "181076720:498748842",
-   "slug": "181076720",
-   "question": "Montevideo City Torque vs Club Nacional — Correct score : 3 - 0",
-   "cote": "Non",
-   "idx": 1,
-   "prix": 0.9748,
-   "cat": "foot",
-   "fin": "2026-11-27T03:30:00+00:00",
-   "date": "2026-11-26T23:17+00:00",
-   "groupe": "45463076"
-  },
-  {
-   "site": "smarkets",
-   "id": "181076720:498748844",
-   "slug": "181076720",
-   "question": "Montevideo City Torque vs Club Nacional — Correct score : 3 - 2",
-   "cote": "Non",
-   "idx": 1,
-   "prix": 0.9734,
-   "cat": "foot",
-   "fin": "2026-11-27T03:30:00+00:00",
-   "date": "2026-11-26T23:17+00:00",
-   "groupe": "45463076"
-  },
-  {
-   "site": "smarkets",
-   "id": "181076720:498748845",
-   "slug": "181076720",
-   "question": "Montevideo City Torque vs Club Nacional — Correct score : 3 - 3",
-   "cote": "Non",
-   "idx": 1,
-   "prix": 0.9854,
-   "cat": "foot",
-   "fin": "2026-11-27T03:30:00+00:00",
-   "date": "2026-11-26T23:17+00:00",
-   "groupe": "45463076"
-  },
-  {
-   "site": "smarkets",
-   "id": "180960022:498439903",
-   "slug": "180960022",
-   "question": "TCU Horned Frogs at Texas Tech Red Raiders — Half-time/full-time : TCU / Draw",
-   "cote": "Non",
-   "idx": 1,
-   "prix": 0.9909,
-   "cat": "sport US",
-   "fin": "2026-11-27T04:00:00+00:00",
-   "date": "2026-11-26T23:17+00:00",
-   "groupe": "45451058"
-  },
-  {
-   "site": "smarkets",
-   "id": "180960022:498439905",
-   "slug": "180960022",
-   "question": "TCU Horned Frogs at Texas Tech Red Raiders — Half-time/full-time : Draw / TCU",
-   "cote": "Non",
-   "idx": 1,
-   "prix": 0.9944,
-   "cat": "sport US",
-   "fin": "2026-11-27T04:00:00+00:00",
-   "date": "2026-11-26T23:17+00:00",
-   "groupe": "45451058"
-  },
-  {
-   "site": "smarkets",
-   "id": "180960022:498439906",
-   "slug": "180960022",
-   "question": "TCU Horned Frogs at Texas Tech Red Raiders — Half-time/full-time : Draw / Draw",
-   "cote": "Non",
-   "idx": 1,
-   "prix": 0.995,
-   "cat": "sport US",
-   "fin": "2026-11-27T04:00:00+00:00",
-   "date": "2026-11-26T23:17+00:00",
-   "groupe": "45451058"
   },
   {
    "site": "espn",
@@ -16509,604 +15856,956 @@
    "fin": "2026-11-27T12:00:00+00:00",
    "date": "2026-11-26T23:17+00:00",
    "groupe": "ETH|2026-11-27T12"
-  }
- ],
- "obs_resolues": [
-  {
-   "site": "gemini",
-   "id": "GEMI-ETH05M2610121315-UP",
-   "slug": "ETH05M2610121315",
-   "question": "ETH price today at 9:15am EDT — Up",
-   "cote": "Oui",
-   "idx": 0,
-   "prix": 0.99,
-   "cat": "crypto",
-   "fin": "2026-10-12T13:15:00+00:00",
-   "date": "2026-10-12T13:12+00:00",
-   "groupe": "ETH05M2610121315",
-   "gagne": 0,
-   "resolu_le": "2026-10-12T13:44+00:00"
-  },
-  {
-   "site": "gemini",
-   "id": "GEMI-SOL05M2610121315-UP",
-   "slug": "SOL05M2610121315",
-   "question": "SOL price today at 9:15am EDT — Up",
-   "cote": "Oui",
-   "idx": 0,
-   "prix": 0.99,
-   "cat": "crypto",
-   "fin": "2026-10-12T13:15:00+00:00",
-   "date": "2026-10-12T13:12+00:00",
-   "groupe": "SOL05M2610121315",
-   "gagne": 0,
-   "resolu_le": "2026-10-12T13:44+00:00"
   },
   {
    "site": "polymarket",
-   "id": "5583754",
-   "slug": "dota2-ch1-pckcp-2026-10-12-game1",
-   "question": "Dota 2: CyberHero vs PuckChamp - Game 1 Winner",
-   "cote": "CyberHero",
+   "id": "7336611",
+   "slug": "highest-temperature-in-seoul-on-november-27-2026-16c",
+   "question": "Will the highest temperature in Seoul (Incheon) be 16°C on November 27?",
+   "cote": "Yes",
    "idx": 0,
-   "prix": 0.9795,
-   "cat": "esport",
-   "fin": "2026-10-12T14:00:00+00:00",
-   "date": "2026-10-12T11:02+00:00",
-   "groupe": "1173356",
-   "gagne": 1,
-   "resolu_le": "2026-10-12T14:09+00:00"
+   "prix": 0.979,
+   "cat": "météo",
+   "fin": "2026-11-27T12:00:00+00:00",
+   "date": "2026-11-27T05:07+00:00",
+   "groupe": "1456792"
+  },
+  {
+   "site": "polymarket",
+   "id": "7336612",
+   "slug": "highest-temperature-in-seoul-on-november-27-2026-17c",
+   "question": "Will the highest temperature in Seoul (Incheon) be 17°C on November 27?",
+   "cote": "No",
+   "idx": 1,
+   "prix": 0.99,
+   "cat": "météo",
+   "fin": "2026-11-27T12:00:00+00:00",
+   "date": "2026-11-27T05:07+00:00",
+   "groupe": "1456792"
+  },
+  {
+   "site": "polymarket",
+   "id": "7336613",
+   "slug": "highest-temperature-in-seoul-on-november-27-2026-18c",
+   "question": "Will the highest temperature in Seoul (Incheon) be 18°C on November 27?",
+   "cote": "No",
+   "idx": 1,
+   "prix": 0.998,
+   "cat": "météo",
+   "fin": "2026-11-27T12:00:00+00:00",
+   "date": "2026-11-27T05:07+00:00",
+   "groupe": "1456792"
+  },
+  {
+   "site": "polymarket",
+   "id": "7203532",
+   "slug": "bitcoin-above-68k-on-november-27-2026",
+   "question": "Will the price of Bitcoin be above $68,000 on November 27?",
+   "cote": "No",
+   "idx": 1,
+   "prix": 0.9985,
+   "cat": "crypto",
+   "fin": "2026-11-27T17:00:00+00:00",
+   "date": "2026-11-27T05:07+00:00",
+   "groupe": "1432563"
+  },
+  {
+   "site": "polymarket",
+   "id": "7203524",
+   "slug": "bitcoin-above-58k-on-november-27-2026",
+   "question": "Will the price of Bitcoin be above $58,000 on November 27?",
+   "cote": "Yes",
+   "idx": 0,
+   "prix": 0.9855,
+   "cat": "crypto",
+   "fin": "2026-11-27T17:00:00+00:00",
+   "date": "2026-11-27T05:07+00:00",
+   "groupe": "1432563"
+  },
+  {
+   "site": "polymarket",
+   "id": "7203530",
+   "slug": "bitcoin-above-66k-on-november-27-2026",
+   "question": "Will the price of Bitcoin be above $66,000 on November 27?",
+   "cote": "No",
+   "idx": 1,
+   "prix": 0.984,
+   "cat": "crypto",
+   "fin": "2026-11-27T17:00:00+00:00",
+   "date": "2026-11-27T05:07+00:00",
+   "groupe": "1432563"
+  },
+  {
+   "site": "polymarket",
+   "id": "7203520",
+   "slug": "bitcoin-above-54k-on-november-27-2026",
+   "question": "Will the price of Bitcoin be above $54,000 on November 27?",
+   "cote": "Yes",
+   "idx": 0,
+   "prix": 0.9985,
+   "cat": "crypto",
+   "fin": "2026-11-27T17:00:00+00:00",
+   "date": "2026-11-27T05:07+00:00",
+   "groupe": "1432563"
+  },
+  {
+   "site": "polymarket",
+   "id": "7203499",
+   "slug": "will-the-price-of-bitcoin-be-between-54000-56000-on-november-27-2026",
+   "question": "Will the price of Bitcoin be between $54,000 and $56,000 on November 27?",
+   "cote": "No",
+   "idx": 1,
+   "prix": 0.9955,
+   "cat": "crypto",
+   "fin": "2026-11-27T17:00:00+00:00",
+   "date": "2026-11-27T05:07+00:00",
+   "groupe": "1432561"
+  },
+  {
+   "site": "polymarket",
+   "id": "7109773",
+   "slug": "elon-musk-of-tweets-november-20-november-27-2026-300-319",
+   "question": "Will Elon Musk post 300-319 tweets from November 20 to November 27, 2026?",
+   "cote": "No",
+   "idx": 1,
+   "prix": 0.9905,
+   "cat": "tweets",
+   "fin": "2026-11-27T17:00:00+00:00",
+   "date": "2026-11-27T05:07+00:00",
+   "groupe": "1407037"
+  },
+  {
+   "site": "polymarket",
+   "id": "7194765",
+   "slug": "democratic-2028-presidential-odds-64-66-on-november-27",
+   "question": "Democratic 2028 presidential odds 64-66% on November 27?",
+   "cote": "No",
+   "idx": 1,
+   "prix": 0.984,
+   "cat": "politique",
+   "fin": "2026-11-27T17:00:00+00:00",
+   "date": "2026-11-27T05:07+00:00",
+   "groupe": "1430704"
+  },
+  {
+   "site": "polymarket",
+   "id": "7182204",
+   "slug": "epl-not-che-2026-11-27-exact-score-any-other",
+   "question": "Exact Score: Any Other Score?",
+   "cote": "No",
+   "idx": 1,
+   "prix": 0.9725,
+   "cat": "foot",
+   "fin": "2026-11-27T20:00:00+00:00",
+   "date": "2026-11-27T05:07+00:00",
+   "groupe": "1427399"
+  },
+  {
+   "site": "polymarket",
+   "id": "7182070",
+   "slug": "por-csm-nac-2026-11-27-exact-score-any-other",
+   "question": "Exact Score: Any Other Score?",
+   "cote": "No",
+   "idx": 1,
+   "prix": 0.9725,
+   "cat": "foot",
+   "fin": "2026-11-27T20:15:00+00:00",
+   "date": "2026-11-27T05:07+00:00",
+   "groupe": "1427370"
+  },
+  {
+   "site": "polymarket",
+   "id": "7318363",
+   "slug": "itsb-vic-ces-2026-11-28-exact-score-3-0",
+   "question": "Exact Score: L.R. Vicenza 3 - 0 Cesena FC?",
+   "cote": "No",
+   "idx": 1,
+   "prix": 0.978,
+   "cat": "autre",
+   "fin": "2026-11-28T16:15:00+00:00",
+   "date": "2026-11-27T05:07+00:00",
+   "groupe": "1453948"
+  },
+  {
+   "site": "polymarket",
+   "id": "7328066",
+   "slug": "ere-cam-spa-2026-11-28-exact-score-4-1",
+   "question": "Exact Score: SC Cambuur-Leeuwarden 4 - 1 Sparta Rotterdam?",
+   "cote": "No",
+   "idx": 1,
+   "prix": 0.9785,
+   "cat": "foot",
+   "fin": "2026-11-28T20:00:00+00:00",
+   "date": "2026-11-27T05:07+00:00",
+   "groupe": "1455351"
+  },
+  {
+   "site": "polymarket",
+   "id": "5457496",
+   "slug": "will-liberal-national-win-the-most-seats-in-the-next-victorian-legislative-council-election-20261008161713819",
+   "question": "Will Liberal–National win the most seats in the next Victorian Legislative Council election?",
+   "cote": "Yes",
+   "idx": 0,
+   "prix": 0.9735,
+   "cat": "politique",
+   "fin": "2026-11-29T04:59:00+00:00",
+   "date": "2026-11-27T05:07+00:00",
+   "groupe": "1159373"
+  },
+  {
+   "site": "polymarket",
+   "id": "7231270",
+   "slug": "will-there-be-0-earthquakes-of-6pt5-or-above-magnitude-worldwide-oct19-25-copy-copy-copy-copy-copy",
+   "question": "Will there be 0 earthquakes of 6.5 or above magnitude worldwide?",
+   "cote": "No",
+   "idx": 1,
+   "prix": 0.9945,
+   "cat": "autre",
+   "fin": "2026-11-29T23:59:00+00:00",
+   "date": "2026-11-27T05:07+00:00",
+   "groupe": "1437545"
+  },
+  {
+   "site": "polymarket",
+   "id": "1429058",
+   "slug": "will-richard-van-de-water-win-the-bachelorette-season-22",
+   "question": "Will Richard Van De Water win The Bachelorette Season 22?",
+   "cote": "No",
+   "idx": 1,
+   "prix": 0.9985,
+   "cat": "autre",
+   "fin": "2026-11-30T00:00:00+00:00",
+   "date": "2026-11-27T05:07+00:00",
+   "groupe": "228429"
+  },
+  {
+   "site": "polymarket",
+   "id": "1429060",
+   "slug": "will-ronn-perez-win-the-bachelorette-season-22",
+   "question": "Will Ronn Perez win The Bachelorette Season 22?",
+   "cote": "No",
+   "idx": 1,
+   "prix": 0.9985,
+   "cat": "autre",
+   "fin": "2026-11-30T00:00:00+00:00",
+   "date": "2026-11-27T05:07+00:00",
+   "groupe": "228429"
+  },
+  {
+   "site": "polymarket",
+   "id": "1429048",
+   "slug": "will-doug-mason-win-the-bachelorette-season-22",
+   "question": "Will Doug Mason win The Bachelorette Season 22?",
+   "cote": "No",
+   "idx": 1,
+   "prix": 0.9975,
+   "cat": "autre",
+   "fin": "2026-11-30T00:00:00+00:00",
+   "date": "2026-11-27T05:07+00:00",
+   "groupe": "228429"
+  },
+  {
+   "site": "polymarket",
+   "id": "7217524",
+   "slug": "donald-trump-of-truth-social-posts-november-24-december-1-2026-200plus",
+   "question": "Will Donald Trump post 200+ Truth Social posts from November 24 to December 1, 2026?",
+   "cote": "No",
+   "idx": 1,
+   "prix": 0.98,
+   "cat": "tweets",
+   "fin": "2026-12-01T17:00:00+00:00",
+   "date": "2026-11-27T05:07+00:00",
+   "groupe": "1435242"
+  },
+  {
+   "site": "polymarket",
+   "id": "4713372",
+   "slug": "bank-of-japan-decreases-interest-rates-by-50-bps-after-the-december-2026-meeting-20260918",
+   "question": "Bank of Japan decreases interest rates by 50+ bps after the December 2026 meeting?",
+   "cote": "No",
+   "idx": 1,
+   "prix": 0.9985,
+   "cat": "marchés",
+   "fin": "2026-12-18T00:00:00+00:00",
+   "date": "2026-11-27T05:07+00:00",
+   "groupe": "1045438"
+  },
+  {
+   "site": "kalshi",
+   "id": "KXDPWORLDTOUR-BMAPC26-WDIN",
+   "slug": "kxdpworldtour-bmapc26-wdin",
+   "question": "BMW Australian PGA Championship: Wenyi Ding wins — Wenyi Ding",
+   "cote": "Non",
+   "idx": 1,
+   "prix": 0.986,
+   "cat": "autre",
+   "fin": "2026-12-13T00:00:00+00:00",
+   "date": "2026-11-27T05:07+00:00",
+   "groupe": "KXDPWORLDTOUR-BMAPC26"
+  },
+  {
+   "site": "kalshi",
+   "id": "KXDPWORLDTOUR-BMAPC26-SSCO",
+   "slug": "kxdpworldtour-bmapc26-ssco",
+   "question": "BMW Australian PGA Championship: Sandy Scott wins — Sandy Scott",
+   "cote": "Non",
+   "idx": 1,
+   "prix": 0.985,
+   "cat": "autre",
+   "fin": "2026-12-13T00:00:00+00:00",
+   "date": "2026-11-27T05:07+00:00",
+   "groupe": "KXDPWORLDTOUR-BMAPC26"
+  },
+  {
+   "site": "kalshi",
+   "id": "KXDPWORLDTOUR-BMAPC26-MLEE",
+   "slug": "kxdpworldtour-bmapc26-mlee",
+   "question": "BMW Australian PGA Championship: Min Woo Lee wins — Min Woo Lee",
+   "cote": "Non",
+   "idx": 1,
+   "prix": 0.982,
+   "cat": "autre",
+   "fin": "2026-12-13T00:00:00+00:00",
+   "date": "2026-11-27T05:07+00:00",
+   "groupe": "KXDPWORLDTOUR-BMAPC26"
+  },
+  {
+   "site": "kalshi",
+   "id": "KXDPWORLDTOUR-BMAPC26-MLAS",
+   "slug": "kxdpworldtour-bmapc26-mlas",
+   "question": "BMW Australian PGA Championship: Michael La Sasso wins — Michael La Sasso",
+   "cote": "Non",
+   "idx": 1,
+   "prix": 0.9805,
+   "cat": "autre",
+   "fin": "2026-12-13T00:00:00+00:00",
+   "date": "2026-11-27T05:07+00:00",
+   "groupe": "KXDPWORLDTOUR-BMAPC26"
+  },
+  {
+   "site": "kalshi",
+   "id": "KXDPWORLDTOUR-BMAPC26-KKOB",
+   "slug": "kxdpworldtour-bmapc26-kkob",
+   "question": "BMW Australian PGA Championship: Kazuma Kobori wins — Kazuma Kobori",
+   "cote": "Non",
+   "idx": 1,
+   "prix": 0.9825,
+   "cat": "autre",
+   "fin": "2026-12-13T00:00:00+00:00",
+   "date": "2026-11-27T05:07+00:00",
+   "groupe": "KXDPWORLDTOUR-BMAPC26"
+  },
+  {
+   "site": "kalshi",
+   "id": "KXHMONTHRANGE-26NOV-B1.060",
+   "slug": "kxhmonthrange-26nov-b1.060",
+   "question": "Nov 2026 temperature increase? — 1.03 to 1.09",
+   "cote": "Non",
+   "idx": 1,
+   "prix": 0.98,
+   "cat": "météo",
+   "fin": "2026-12-16T04:59:00+00:00",
+   "date": "2026-11-27T05:07+00:00",
+   "groupe": "KXHMONTHRANGE-26NOV"
+  },
+  {
+   "site": "manifold",
+   "id": "l5sntA2EOt",
+   "slug": "will-i-get-uploaded-before-dune-3",
+   "question": "will i get uploaded before dune 3",
+   "cote": "Non",
+   "idx": 1,
+   "prix": 0.986,
+   "cat": "autre",
+   "fin": "2026-12-17T23:59:00+00:00",
+   "date": "2026-11-27T05:07+00:00"
   },
   {
    "site": "gemini",
-   "id": "GEMI-NHL-2610110200-LAK-VGK-T-O2",
-   "slug": "NHL-2610110200-LAK-VGK-T",
-   "question": "Los Angeles vs Vegas: Total Goals — More than 2.5 goals scored",
+   "id": "GEMI-ETH05M2611270505-UP",
+   "slug": "ETH05M2611270505",
+   "question": "ETH price today at 12:05am EST — Up",
    "cote": "Oui",
    "idx": 0,
-   "prix": 0.975,
-   "cat": "sport US",
-   "fin": "2026-10-12T14:00:00+00:00",
-   "date": "2026-10-11T03:32+00:00",
-   "groupe": "NHL-2610110200-LAK-VGK-T",
-   "gagne": 1,
-   "resolu_le": "2026-10-12T14:09+00:00"
+   "prix": 0.99,
+   "cat": "crypto",
+   "fin": "2026-11-27T05:05:00+00:00",
+   "date": "2026-11-27T05:07+00:00",
+   "groupe": "ETH05M2611270505"
   },
   {
    "site": "gemini",
-   "id": "GEMI-NHL-2610110200-ANA-CGY-T-O2",
-   "slug": "NHL-2610110200-ANA-CGY-T",
-   "question": "Anaheim vs Calgary: Total Goals — More than 2.5 goals scored",
-   "cote": "Oui",
-   "idx": 0,
-   "prix": 0.975,
-   "cat": "sport US",
-   "fin": "2026-10-12T14:00:00+00:00",
-   "date": "2026-10-11T03:32+00:00",
-   "groupe": "NHL-2610110200-ANA-CGY-T",
-   "gagne": 1,
-   "resolu_le": "2026-10-12T14:09+00:00"
-  },
-  {
-   "site": "gemini",
-   "id": "GEMI-NHL-2610110200-ANA-CGY-T-O1",
-   "slug": "NHL-2610110200-ANA-CGY-T",
-   "question": "Anaheim vs Calgary: Total Goals — More than 1.5 goals scored",
-   "cote": "Oui",
-   "idx": 0,
-   "prix": 0.975,
-   "cat": "sport US",
-   "fin": "2026-10-12T14:00:00+00:00",
-   "date": "2026-10-11T03:51+00:00",
-   "groupe": "NHL-2610110200-ANA-CGY-T",
-   "gagne": 1,
-   "resolu_le": "2026-10-12T14:09+00:00"
-  },
-  {
-   "site": "gemini",
-   "id": "GEMI-NHL-2610110200-ANA-CGY-T-O3",
-   "slug": "NHL-2610110200-ANA-CGY-T",
-   "question": "Anaheim vs Calgary: Total Goals — More than 3.5 goals scored",
-   "cote": "Oui",
-   "idx": 0,
-   "prix": 0.975,
-   "cat": "sport US",
-   "fin": "2026-10-12T14:00:00+00:00",
-   "date": "2026-10-11T04:11+00:00",
-   "groupe": "NHL-2610110200-ANA-CGY-T",
-   "gagne": 1,
-   "resolu_le": "2026-10-12T14:09+00:00"
-  },
-  {
-   "site": "gemini",
-   "id": "GEMI-NHL-2610110200-ANA-CGY-M-ANA",
-   "slug": "NHL-2610110200-ANA-CGY-M",
-   "question": "Anaheim vs Calgary",
+   "id": "GEMI-BTC2611272200-HI57500",
+   "slug": "BTC2611272200",
+   "question": "BTC price on November 27 — $57,500 or above",
    "cote": "Oui",
    "idx": 0,
    "prix": 0.985,
-   "cat": "sport US",
-   "fin": "2026-10-12T14:00:00+00:00",
-   "date": "2026-10-11T04:50+00:00",
-   "groupe": "NHL-2610110200-ANA-CGY-M",
-   "gagne": 1,
-   "resolu_le": "2026-10-12T14:09+00:00"
+   "cat": "crypto",
+   "fin": "2026-11-27T22:00:00+00:00",
+   "date": "2026-11-27T05:07+00:00",
+   "groupe": "BTC2611272200"
   },
   {
-   "site": "limitless",
-   "id": "oleksandr-ovcharenko-vs-dimitris-sakellaridis-1791724934795",
-   "slug": "oleksandr-ovcharenko-vs-dimitris-sakellaridis-1791724934795",
-   "question": "Oleksandr Ovcharenko vs Dimitris Sakellaridis",
+   "site": "gemini",
+   "id": "GEMI-BTC2611272200-HI57000",
+   "slug": "BTC2611272200",
+   "question": "BTC price on November 27 — $57,000 or above",
+   "cote": "Oui",
+   "idx": 0,
+   "prix": 0.985,
+   "cat": "crypto",
+   "fin": "2026-11-27T22:00:00+00:00",
+   "date": "2026-11-27T05:07+00:00",
+   "groupe": "BTC2611272200"
+  },
+  {
+   "site": "gemini",
+   "id": "GEMI-NFL-2611272000-DEN-PIT-1HT-O3",
+   "slug": "NFL-2611272000-DEN-PIT-1HT",
+   "question": "Denver vs Pittsburgh: 1st Half Point Total — More than 3.5 points scored in the 1st half",
    "cote": "Oui",
    "idx": 0,
    "prix": 0.975,
-   "cat": "autre",
-   "fin": "2026-10-12T14:30:00+00:00",
-   "date": "2026-10-11T15:31+00:00",
-   "gagne": 1,
-   "resolu_le": "2026-10-12T14:38+00:00"
+   "cat": "sport US",
+   "fin": "2026-11-29T08:00:00+00:00",
+   "date": "2026-11-27T05:07+00:00",
+   "groupe": "NFL-2611272000-DEN-PIT-1HT"
   },
   {
-   "site": "limitless",
-   "id": "real-sociedad-and-deportivo-la-coruna-both-to-score-1791279044071",
-   "slug": "real-sociedad-and-deportivo-la-coruna-both-to-score-1791279044071",
-   "question": "Real Sociedad and Deportivo La Coruna both to score?",
-   "cote": "Oui",
+   "site": "gemini",
+   "id": "GEMI-NFL-2611272000-DEN-PIT-1HT-O38",
+   "slug": "NFL-2611272000-DEN-PIT-1HT",
+   "question": "Denver vs Pittsburgh: 1st Half Point Total — More than 38.5 points scored in the 1st half",
+   "cote": "Non",
+   "idx": 1,
+   "prix": 0.975,
+   "cat": "sport US",
+   "fin": "2026-11-29T08:00:00+00:00",
+   "date": "2026-11-27T05:07+00:00",
+   "groupe": "NFL-2611272000-DEN-PIT-1HT"
+  },
+  {
+   "site": "gemini",
+   "id": "GEMI-NFL-2611272000-DEN-PIT-1QT-O17",
+   "slug": "NFL-2611272000-DEN-PIT-1QT",
+   "question": "Denver vs Pittsburgh: 1st Quarter Point Total — More than 17.5 points scored in the 1st quarter",
+   "cote": "Non",
+   "idx": 1,
+   "prix": 0.975,
+   "cat": "sport US",
+   "fin": "2026-11-29T08:00:00+00:00",
+   "date": "2026-11-27T05:07+00:00",
+   "groupe": "NFL-2611272000-DEN-PIT-1QT"
+  },
+  {
+   "site": "smarkets",
+   "id": "181491958:499791537",
+   "slug": "181491958",
+   "question": "Jordan vs New Zealand — Half-time/full-time : New Zealand / Jordan",
+   "cote": "Non",
+   "idx": 1,
+   "prix": 0.9807,
+   "cat": "basket",
+   "fin": "2026-11-27T09:00:00+00:00",
+   "date": "2026-11-27T05:07+00:00",
+   "groupe": "45403346"
+  },
+  {
+   "site": "smarkets",
+   "id": "181491958:499791539",
+   "slug": "181491958",
+   "question": "Jordan vs New Zealand — Half-time/full-time : New Zealand / Draw",
+   "cote": "Non",
+   "idx": 1,
+   "prix": 0.9899,
+   "cat": "basket",
+   "fin": "2026-11-27T09:00:00+00:00",
+   "date": "2026-11-27T05:07+00:00",
+   "groupe": "45403346"
+  },
+  {
+   "site": "smarkets",
+   "id": "181491958:499791540",
+   "slug": "181491958",
+   "question": "Jordan vs New Zealand — Half-time/full-time : Draw / Jordan",
+   "cote": "Non",
+   "idx": 1,
+   "prix": 0.9974,
+   "cat": "basket",
+   "fin": "2026-11-27T09:00:00+00:00",
+   "date": "2026-11-27T05:07+00:00",
+   "groupe": "45403346"
+  },
+  {
+   "site": "smarkets",
+   "id": "180795837:498041446",
+   "slug": "180795837",
+   "question": "Broadmeadow Magic FC vs Lions FC — Correct score : 2 - 0",
+   "cote": "Non",
+   "idx": 1,
+   "prix": 0.9777,
+   "cat": "foot",
+   "fin": "2026-11-27T11:30:00+00:00",
+   "date": "2026-11-27T05:07+00:00",
+   "groupe": "45460638"
+  },
+  {
+   "site": "smarkets",
+   "id": "180795837:498041450",
+   "slug": "180795837",
+   "question": "Broadmeadow Magic FC vs Lions FC — Correct score : 3 - 0",
+   "cote": "Non",
+   "idx": 1,
+   "prix": 0.989,
+   "cat": "foot",
+   "fin": "2026-11-27T11:30:00+00:00",
+   "date": "2026-11-27T05:07+00:00",
+   "groupe": "45460638"
+  },
+  {
+   "site": "smarkets",
+   "id": "180795837:498041451",
+   "slug": "180795837",
+   "question": "Broadmeadow Magic FC vs Lions FC — Correct score : 3 - 1",
+   "cote": "Non",
+   "idx": 1,
+   "prix": 0.9758,
+   "cat": "foot",
+   "fin": "2026-11-27T11:30:00+00:00",
+   "date": "2026-11-27T05:07+00:00",
+   "groupe": "45460638"
+  },
+  {
+   "site": "deribit",
+   "id": "BTC-27NOV26-59000-C",
+   "slug": "BTC|2026-11-27|59000",
+   "question": "BTC au-dessus de 59 000 $ le 27/11/2026 à 8 h UTC ?",
+   "cote": "Au-dessus",
    "idx": 0,
-   "prix": 0.9945,
-   "cat": "autre",
-   "fin": "2026-10-12T14:15:00+00:00",
-   "date": "2026-10-11T15:47+00:00",
-   "gagne": 1,
-   "resolu_le": "2026-10-12T14:38+00:00"
+   "prix": 0.9965,
+   "cat": "crypto",
+   "fin": "2026-11-27T08:00:00+00:00",
+   "date": "2026-11-27T05:07+00:00",
+   "groupe": "BTC|2026-11-27T08"
   },
   {
-   "site": "limitless",
-   "id": "real-sociedad-and-deportivo-la-coruna-have-3-or-more-total-goals-1791279063168",
-   "slug": "real-sociedad-and-deportivo-la-coruna-have-3-or-more-total-goals-1791279063168",
-   "question": "Real Sociedad and Deportivo La Coruna have 3 or more total goals?",
-   "cote": "Oui",
+   "site": "deribit",
+   "id": "BTC-27NOV26-60000-C",
+   "slug": "BTC|2026-11-27|60000",
+   "question": "BTC au-dessus de 60 000 $ le 27/11/2026 à 8 h UTC ?",
+   "cote": "Au-dessus",
    "idx": 0,
-   "prix": 0.9945,
-   "cat": "autre",
-   "fin": "2026-10-12T14:15:00+00:00",
-   "date": "2026-10-11T15:47+00:00",
-   "gagne": 1,
-   "resolu_le": "2026-10-12T14:38+00:00"
+   "prix": 0.982,
+   "cat": "crypto",
+   "fin": "2026-11-27T08:00:00+00:00",
+   "date": "2026-11-27T05:07+00:00",
+   "groupe": "BTC|2026-11-27T08"
   },
   {
-   "site": "smarkets",
-   "id": "169892909:468671439",
-   "slug": "169892909",
-   "question": "Hougang United vs Balestier Khalsa — Correct score : 0 - 3",
-   "cote": "Non",
-   "idx": 1,
-   "prix": 0.9765,
-   "cat": "foot",
-   "fin": "2026-10-12T14:30:00+00:00",
-   "date": "2026-10-12T01:39+00:00",
-   "groupe": "45370890",
-   "gagne": 1,
-   "resolu_le": "2026-10-12T14:38+00:00"
-  },
-  {
-   "site": "smarkets",
-   "id": "169892909:468671451",
-   "slug": "169892909",
-   "question": "Hougang United vs Balestier Khalsa — Correct score : 3 - 3",
-   "cote": "Non",
-   "idx": 1,
-   "prix": 0.9708,
-   "cat": "foot",
-   "fin": "2026-10-12T14:30:00+00:00",
-   "date": "2026-10-12T01:39+00:00",
-   "groupe": "45370890",
-   "gagne": 1,
-   "resolu_le": "2026-10-12T14:38+00:00"
-  },
-  {
-   "site": "smarkets",
-   "id": "169892909:468671454",
-   "slug": "169892909",
-   "question": "Hougang United vs Balestier Khalsa — Correct score : Any other draw",
-   "cote": "Non",
-   "idx": 1,
-   "prix": 0.9925,
-   "cat": "foot",
-   "fin": "2026-10-12T14:30:00+00:00",
-   "date": "2026-10-12T01:39+00:00",
-   "groupe": "45370890",
-   "gagne": 1,
-   "resolu_le": "2026-10-12T14:38+00:00"
-  },
-  {
-   "site": "smarkets",
-   "id": "169892909:468671436",
-   "slug": "169892909",
-   "question": "Hougang United vs Balestier Khalsa — Correct score : 0 - 0",
-   "cote": "Non",
-   "idx": 1,
-   "prix": 0.9752,
-   "cat": "foot",
-   "fin": "2026-10-12T14:30:00+00:00",
-   "date": "2026-10-12T02:00+00:00",
-   "groupe": "45370890",
-   "gagne": 1,
-   "resolu_le": "2026-10-12T14:38+00:00"
-  },
-  {
-   "site": "smarkets",
-   "id": "169892918:468671495",
-   "slug": "169892918",
-   "question": "Hougang United vs Balestier Khalsa — Winner and both teams to score : Draw / No",
-   "cote": "Non",
-   "idx": 1,
-   "prix": 0.9752,
-   "cat": "foot",
-   "fin": "2026-10-12T14:30:00+00:00",
-   "date": "2026-10-12T02:00+00:00",
-   "groupe": "45370890",
-   "gagne": 1,
-   "resolu_le": "2026-10-12T14:38+00:00"
-  },
-  {
-   "site": "smarkets",
-   "id": "169892934:468671549",
-   "slug": "169892934",
-   "question": "Hougang United vs Balestier Khalsa — Winner and over/under 1.5 : Draw / under 1.5 goals",
-   "cote": "Non",
-   "idx": 1,
-   "prix": 0.9739,
-   "cat": "foot",
-   "fin": "2026-10-12T14:30:00+00:00",
-   "date": "2026-10-12T02:16+00:00",
-   "groupe": "45370890",
-   "gagne": 1,
-   "resolu_le": "2026-10-12T14:38+00:00"
-  },
-  {
-   "site": "smarkets",
-   "id": "169892911:468671458",
-   "slug": "169892911",
-   "question": "Hougang United vs Balestier Khalsa — Half-time/full-time : Hougang United / Balestier Khalsa",
-   "cote": "Non",
-   "idx": 1,
-   "prix": 0.9722,
-   "cat": "foot",
-   "fin": "2026-10-12T14:30:00+00:00",
-   "date": "2026-10-12T06:22+00:00",
-   "groupe": "45370890",
-   "gagne": 1,
-   "resolu_le": "2026-10-12T14:38+00:00"
-  },
-  {
-   "site": "smarkets",
-   "id": "169892937:468671564",
-   "slug": "169892937",
-   "question": "Hougang United vs Balestier Khalsa — Winner and over/under 4.5 : Draw / over 4.5 goals",
-   "cote": "Non",
-   "idx": 1,
-   "prix": 0.9702,
-   "cat": "foot",
-   "fin": "2026-10-12T14:30:00+00:00",
-   "date": "2026-10-12T06:58+00:00",
-   "groupe": "45370890",
-   "gagne": 1,
-   "resolu_le": "2026-10-12T14:38+00:00"
-  },
-  {
-   "site": "smarkets",
-   "id": "169892934:468671550",
-   "slug": "169892934",
-   "question": "Hougang United vs Balestier Khalsa — Winner and over/under 1.5 : Balestier Khalsa / under 1.5 goals",
-   "cote": "Non",
-   "idx": 1,
-   "prix": 0.9734,
-   "cat": "foot",
-   "fin": "2026-10-12T14:30:00+00:00",
-   "date": "2026-10-12T10:14+00:00",
-   "groupe": "45370890",
-   "gagne": 1,
-   "resolu_le": "2026-10-12T14:38+00:00"
-  },
-  {
-   "site": "limitless",
-   "id": "vitality-vs-mouz-map-1-winner-1791677101333",
-   "slug": "vitality-vs-mouz-map-1-winner-1791677101333",
-   "question": "Vitality vs MOUZ: Map 1 Winner",
-   "cote": "Oui",
+   "site": "deribit",
+   "id": "BTC-27NOV26-58500-C",
+   "slug": "BTC|2026-11-27|58500",
+   "question": "BTC au-dessus de 58 500 $ le 27/11/2026 à 8 h UTC ?",
+   "cote": "Au-dessus",
    "idx": 0,
-   "prix": 0.9945,
-   "cat": "autre",
-   "fin": "2026-10-12T15:00:00+00:00",
-   "date": "2026-10-11T16:00+00:00",
-   "gagne": 1,
-   "resolu_le": "2026-10-12T15:06+00:00"
+   "prix": 0.9988,
+   "cat": "crypto",
+   "fin": "2026-11-27T08:00:00+00:00",
+   "date": "2026-11-27T05:07+00:00",
+   "groupe": "BTC|2026-11-27T08"
   },
   {
-   "site": "limitless",
-   "id": "vitality-vs-mouz-map-2-winner-1791677101350",
-   "slug": "vitality-vs-mouz-map-2-winner-1791677101350",
-   "question": "Vitality vs MOUZ: Map 2 Winner",
-   "cote": "Oui",
+   "site": "deribit",
+   "id": "BTC-27NOV26-59500-C",
+   "slug": "BTC|2026-11-27|59500",
+   "question": "BTC au-dessus de 59 500 $ le 27/11/2026 à 8 h UTC ?",
+   "cote": "Au-dessus",
    "idx": 0,
-   "prix": 0.9945,
-   "cat": "autre",
-   "fin": "2026-10-12T15:00:00+00:00",
-   "date": "2026-10-11T17:09+00:00",
-   "gagne": 1,
-   "resolu_le": "2026-10-12T15:06+00:00"
+   "prix": 0.9946,
+   "cat": "crypto",
+   "fin": "2026-11-27T08:00:00+00:00",
+   "date": "2026-11-27T05:07+00:00",
+   "groupe": "BTC|2026-11-27T08"
   },
   {
-   "site": "smarkets",
-   "id": "168893058:466080262",
-   "slug": "168893058",
-   "question": "Panionios GSS vs PAOK B — Correct score : 0 - 2",
-   "cote": "Non",
-   "idx": 1,
-   "prix": 0.9879,
-   "cat": "foot",
-   "fin": "2026-10-12T14:45:00+00:00",
-   "date": "2026-10-12T02:00+00:00",
-   "groupe": "45360975",
-   "gagne": 1,
-   "resolu_le": "2026-10-12T15:06+00:00"
+   "site": "deribit",
+   "id": "ETH-27NOV26-1670-C",
+   "slug": "ETH|2026-11-27|1670",
+   "question": "ETH au-dessus de 1 670 $ le 27/11/2026 à 8 h UTC ?",
+   "cote": "Au-dessus",
+   "idx": 0,
+   "prix": 0.993,
+   "cat": "crypto",
+   "fin": "2026-11-27T08:00:00+00:00",
+   "date": "2026-11-27T05:07+00:00",
+   "groupe": "ETH|2026-11-27T08"
   },
   {
-   "site": "smarkets",
-   "id": "168893058:466080263",
-   "slug": "168893058",
-   "question": "Panionios GSS vs PAOK B — Correct score : 0 - 3",
-   "cote": "Non",
-   "idx": 1,
-   "prix": 0.9966,
-   "cat": "foot",
-   "fin": "2026-10-12T14:45:00+00:00",
-   "date": "2026-10-12T02:00+00:00",
-   "groupe": "45360975",
-   "gagne": 1,
-   "resolu_le": "2026-10-12T15:06+00:00"
+   "site": "okx",
+   "id": "BTC-USD_UM-261127-57000-C",
+   "slug": "BTC|2026-11-27|57000",
+   "question": "BTC au-dessus de 57 000 $ le 27/11/2026 à 8 h UTC ?",
+   "cote": "Au-dessus",
+   "idx": 0,
+   "prix": 0.9978,
+   "cat": "crypto",
+   "fin": "2026-11-27T08:00:00+00:00",
+   "date": "2026-11-27T05:07+00:00",
+   "groupe": "BTC|2026-11-27T08"
   },
   {
-   "site": "smarkets",
-   "id": "168893058:466080266",
-   "slug": "168893058",
-   "question": "Panionios GSS vs PAOK B — Correct score : 1 - 2",
-   "cote": "Non",
-   "idx": 1,
-   "prix": 0.9715,
-   "cat": "foot",
-   "fin": "2026-10-12T14:45:00+00:00",
-   "date": "2026-10-12T02:16+00:00",
-   "groupe": "45360975",
-   "gagne": 1,
-   "resolu_le": "2026-10-12T15:06+00:00"
+   "site": "okx",
+   "id": "BTC-USD_UM-261127-59000-C",
+   "slug": "BTC|2026-11-27|59000",
+   "question": "BTC au-dessus de 59 000 $ le 27/11/2026 à 8 h UTC ?",
+   "cote": "Au-dessus",
+   "idx": 0,
+   "prix": 0.9774,
+   "cat": "crypto",
+   "fin": "2026-11-27T08:00:00+00:00",
+   "date": "2026-11-27T05:07+00:00",
+   "groupe": "BTC|2026-11-27T08"
   },
   {
-   "site": "smarkets",
-   "id": "168893058:466080271",
-   "slug": "168893058",
-   "question": "Panionios GSS vs PAOK B — Correct score : 2 - 3",
-   "cote": "Non",
-   "idx": 1,
+   "site": "okx",
+   "id": "BTC-USD_UM-261127-58500-C",
+   "slug": "BTC|2026-11-27|58500",
+   "question": "BTC au-dessus de 58 500 $ le 27/11/2026 à 8 h UTC ?",
+   "cote": "Au-dessus",
+   "idx": 0,
+   "prix": 0.9849,
+   "cat": "crypto",
+   "fin": "2026-11-27T08:00:00+00:00",
+   "date": "2026-11-27T05:07+00:00",
+   "groupe": "BTC|2026-11-27T08"
+  },
+  {
+   "site": "okx",
+   "id": "BTC-USD_UM-261127-58000-C",
+   "slug": "BTC|2026-11-27|58000",
+   "question": "BTC au-dessus de 58 000 $ le 27/11/2026 à 8 h UTC ?",
+   "cote": "Au-dessus",
+   "idx": 0,
+   "prix": 0.9909,
+   "cat": "crypto",
+   "fin": "2026-11-27T08:00:00+00:00",
+   "date": "2026-11-27T05:07+00:00",
+   "groupe": "BTC|2026-11-27T08"
+  },
+  {
+   "site": "okx",
+   "id": "BTC-USD_UM-261127-57500-C",
+   "slug": "BTC|2026-11-27|57500",
+   "question": "BTC au-dessus de 57 500 $ le 27/11/2026 à 8 h UTC ?",
+   "cote": "Au-dessus",
+   "idx": 0,
+   "prix": 0.9952,
+   "cat": "crypto",
+   "fin": "2026-11-27T08:00:00+00:00",
+   "date": "2026-11-27T05:07+00:00",
+   "groupe": "BTC|2026-11-27T08"
+  },
+  {
+   "site": "delta_inde",
+   "id": "C-BTC-59800-271126",
+   "slug": "BTC|2026-11-27|59800",
+   "question": "BTC au-dessus de 59 800 $ le 27/11/2026 à 12 h UTC ?",
+   "cote": "Au-dessus",
+   "idx": 0,
+   "prix": 0.9714,
+   "cat": "crypto",
+   "fin": "2026-11-27T12:00:00+00:00",
+   "date": "2026-11-27T05:07+00:00",
+   "groupe": "BTC|2026-11-27T12"
+  },
+  {
+   "site": "delta_inde",
+   "id": "C-BTC-59600-271126",
+   "slug": "BTC|2026-11-27|59600",
+   "question": "BTC au-dessus de 59 600 $ le 27/11/2026 à 12 h UTC ?",
+   "cote": "Au-dessus",
+   "idx": 0,
+   "prix": 0.9793,
+   "cat": "crypto",
+   "fin": "2026-11-27T12:00:00+00:00",
+   "date": "2026-11-27T05:07+00:00",
+   "groupe": "BTC|2026-11-27T12"
+  },
+  {
+   "site": "delta_inde",
+   "id": "C-BTC-59500-271126",
+   "slug": "BTC|2026-11-27|59500",
+   "question": "BTC au-dessus de 59 500 $ le 27/11/2026 à 12 h UTC ?",
+   "cote": "Au-dessus",
+   "idx": 0,
+   "prix": 0.9909,
+   "cat": "crypto",
+   "fin": "2026-11-27T12:00:00+00:00",
+   "date": "2026-11-27T05:07+00:00",
+   "groupe": "BTC|2026-11-27T12"
+  },
+  {
+   "site": "delta_inde",
+   "id": "C-BTC-59400-271126",
+   "slug": "BTC|2026-11-27|59400",
+   "question": "BTC au-dessus de 59 400 $ le 27/11/2026 à 12 h UTC ?",
+   "cote": "Au-dessus",
+   "idx": 0,
    "prix": 0.9937,
-   "cat": "foot",
-   "fin": "2026-10-12T14:45:00+00:00",
-   "date": "2026-10-12T02:16+00:00",
-   "groupe": "45360975",
-   "gagne": 1,
-   "resolu_le": "2026-10-12T15:06+00:00"
+   "cat": "crypto",
+   "fin": "2026-11-27T12:00:00+00:00",
+   "date": "2026-11-27T05:07+00:00",
+   "groupe": "BTC|2026-11-27T12"
   },
   {
-   "site": "smarkets",
-   "id": "168893058:466080274",
-   "slug": "168893058",
-   "question": "Panionios GSS vs PAOK B — Correct score : 3 - 2",
-   "cote": "Non",
-   "idx": 1,
-   "prix": 0.9803,
-   "cat": "foot",
-   "fin": "2026-10-12T14:45:00+00:00",
-   "date": "2026-10-12T02:16+00:00",
-   "groupe": "45360975",
-   "gagne": 1,
-   "resolu_le": "2026-10-12T15:06+00:00"
+   "site": "delta_inde",
+   "id": "C-BTC-59200-271126",
+   "slug": "BTC|2026-11-27|59200",
+   "question": "BTC au-dessus de 59 200 $ le 27/11/2026 à 12 h UTC ?",
+   "cote": "Au-dessus",
+   "idx": 0,
+   "prix": 0.9886,
+   "cat": "crypto",
+   "fin": "2026-11-27T12:00:00+00:00",
+   "date": "2026-11-27T05:07+00:00",
+   "groupe": "BTC|2026-11-27T12"
   },
   {
-   "site": "smarkets",
-   "id": "168893058:466080267",
-   "slug": "168893058",
-   "question": "Panionios GSS vs PAOK B — Correct score : 1 - 3",
-   "cote": "Non",
-   "idx": 1,
-   "prix": 0.9936,
-   "cat": "foot",
-   "fin": "2026-10-12T14:45:00+00:00",
-   "date": "2026-10-12T02:36+00:00",
-   "groupe": "45360975",
-   "gagne": 1,
-   "resolu_le": "2026-10-12T15:06+00:00"
-  },
-  {
-   "site": "smarkets",
-   "id": "168893058:466080275",
-   "slug": "168893058",
-   "question": "Panionios GSS vs PAOK B — Correct score : 3 - 3",
-   "cote": "Non",
-   "idx": 1,
+   "site": "gate",
+   "id": "BTC_USDT-20261127-59000-C",
+   "slug": "BTC|2026-11-27|59000",
+   "question": "BTC au-dessus de 59 000 $ le 27/11/2026 à 8 h UTC ?",
+   "cote": "Au-dessus",
+   "idx": 0,
    "prix": 0.9953,
-   "cat": "foot",
-   "fin": "2026-10-12T14:45:00+00:00",
-   "date": "2026-10-12T02:36+00:00",
-   "groupe": "45360975",
-   "gagne": 1,
-   "resolu_le": "2026-10-12T15:06+00:00"
+   "cat": "crypto",
+   "fin": "2026-11-27T08:00:00+00:00",
+   "date": "2026-11-27T05:07+00:00",
+   "groupe": "BTC|2026-11-27T08"
   },
   {
-   "site": "smarkets",
-   "id": "168893060:466080282",
-   "slug": "168893060",
-   "question": "Panionios GSS vs PAOK B — Half-time/full-time : Panionios GSS / PAOK B",
-   "cote": "Non",
-   "idx": 1,
-   "prix": 0.9911,
-   "cat": "foot",
-   "fin": "2026-10-12T14:45:00+00:00",
-   "date": "2026-10-12T02:36+00:00",
-   "groupe": "45360975",
-   "gagne": 1,
-   "resolu_le": "2026-10-12T15:06+00:00"
+   "site": "gate",
+   "id": "BTC_USDT-20261127-59500-C",
+   "slug": "BTC|2026-11-27|59500",
+   "question": "BTC au-dessus de 59 500 $ le 27/11/2026 à 8 h UTC ?",
+   "cote": "Au-dessus",
+   "idx": 0,
+   "prix": 0.9907,
+   "cat": "crypto",
+   "fin": "2026-11-27T08:00:00+00:00",
+   "date": "2026-11-27T05:07+00:00",
+   "groupe": "BTC|2026-11-27T08"
   },
   {
-   "site": "smarkets",
-   "id": "168893060:466080284",
-   "slug": "168893060",
-   "question": "Panionios GSS vs PAOK B — Half-time/full-time : PAOK B / Panionios GSS",
-   "cote": "Non",
-   "idx": 1,
-   "prix": 0.9713,
-   "cat": "foot",
-   "fin": "2026-10-12T14:45:00+00:00",
-   "date": "2026-10-12T02:36+00:00",
-   "groupe": "45360975",
-   "gagne": 1,
-   "resolu_le": "2026-10-12T15:06+00:00"
+   "site": "gate",
+   "id": "BTC_USDT-20261127-60000-C",
+   "slug": "BTC|2026-11-27|60000",
+   "question": "BTC au-dessus de 60 000 $ le 27/11/2026 à 8 h UTC ?",
+   "cote": "Au-dessus",
+   "idx": 0,
+   "prix": 0.9786,
+   "cat": "crypto",
+   "fin": "2026-11-27T08:00:00+00:00",
+   "date": "2026-11-27T05:07+00:00",
+   "groupe": "BTC|2026-11-27T08"
   },
   {
-   "site": "smarkets",
-   "id": "168893058:466080277",
-   "slug": "168893058",
-   "question": "Panionios GSS vs PAOK B — Correct score : Any other away win",
-   "cote": "Non",
-   "idx": 1,
-   "prix": 0.994,
-   "cat": "foot",
-   "fin": "2026-10-12T14:45:00+00:00",
-   "date": "2026-10-12T02:59+00:00",
-   "groupe": "45360975",
-   "gagne": 1,
-   "resolu_le": "2026-10-12T15:06+00:00"
+   "site": "gate",
+   "id": "BTC_USDT-20261127-58000-C",
+   "slug": "BTC|2026-11-27|58000",
+   "question": "BTC au-dessus de 58 000 $ le 27/11/2026 à 8 h UTC ?",
+   "cote": "Au-dessus",
+   "idx": 0,
+   "prix": 0.9985,
+   "cat": "crypto",
+   "fin": "2026-11-27T08:00:00+00:00",
+   "date": "2026-11-27T05:07+00:00",
+   "groupe": "BTC|2026-11-27T08"
   },
   {
-   "site": "smarkets",
-   "id": "168893085:466080383",
-   "slug": "168893085",
-   "question": "Panionios GSS vs PAOK B — Winner and over/under 3.5 : PAOK B / over 3.5 goals",
-   "cote": "Non",
-   "idx": 1,
-   "prix": 0.9854,
-   "cat": "foot",
-   "fin": "2026-10-12T14:45:00+00:00",
-   "date": "2026-10-12T02:59+00:00",
-   "groupe": "45360975",
-   "gagne": 1,
-   "resolu_le": "2026-10-12T15:06+00:00"
+   "site": "gate",
+   "id": "BTC_USDT-20261127-58500-C",
+   "slug": "BTC|2026-11-27|58500",
+   "question": "BTC au-dessus de 58 500 $ le 27/11/2026 à 8 h UTC ?",
+   "cote": "Au-dessus",
+   "idx": 0,
+   "prix": 0.9975,
+   "cat": "crypto",
+   "fin": "2026-11-27T08:00:00+00:00",
+   "date": "2026-11-27T05:07+00:00",
+   "groupe": "BTC|2026-11-27T08"
   },
   {
-   "site": "smarkets",
-   "id": "168893086:466080389",
-   "slug": "168893086",
-   "question": "Panionios GSS vs PAOK B — Winner and over/under 4.5 : PAOK B / over 4.5 goals",
-   "cote": "Non",
-   "idx": 1,
-   "prix": 0.9915,
-   "cat": "foot",
-   "fin": "2026-10-12T14:45:00+00:00",
-   "date": "2026-10-12T02:59+00:00",
-   "groupe": "45360975",
-   "gagne": 1,
-   "resolu_le": "2026-10-12T15:06+00:00"
+   "site": "aevo",
+   "id": "BTC-27NOV26-58500-C",
+   "slug": "BTC|2026-11-27|58500",
+   "question": "BTC au-dessus de 58 500 $ le 27/11/2026 à 8 h UTC ?",
+   "cote": "Au-dessus",
+   "idx": 0,
+   "prix": 0.9988,
+   "cat": "crypto",
+   "fin": "2026-11-27T08:00:00+00:00",
+   "date": "2026-11-27T05:07+00:00",
+   "groupe": "BTC|2026-11-27T08"
   },
   {
-   "site": "smarkets",
-   "id": "168884074:466057588",
-   "slug": "168884074",
-   "question": "Real Valladolid vs Albacete Balompié — Correct score : 0 - 3",
-   "cote": "Non",
-   "idx": 1,
-   "prix": 0.9873,
-   "cat": "foot",
-   "fin": "2026-10-12T15:00:00+00:00",
-   "date": "2026-10-12T02:59+00:00",
-   "groupe": "45360912",
-   "gagne": 1,
-   "resolu_le": "2026-10-12T15:06+00:00"
+   "site": "aevo",
+   "id": "BTC-27NOV26-59000-C",
+   "slug": "BTC|2026-11-27|59000",
+   "question": "BTC au-dessus de 59 000 $ le 27/11/2026 à 8 h UTC ?",
+   "cote": "Au-dessus",
+   "idx": 0,
+   "prix": 0.9965,
+   "cat": "crypto",
+   "fin": "2026-11-27T08:00:00+00:00",
+   "date": "2026-11-27T05:07+00:00",
+   "groupe": "BTC|2026-11-27T08"
   },
   {
-   "site": "smarkets",
-   "id": "168893086:466080388",
-   "slug": "168893086",
-   "question": "Panionios GSS vs PAOK B — Winner and over/under 4.5 : Draw / over 4.5 goals",
-   "cote": "Non",
-   "idx": 1,
-   "prix": 0.9929,
-   "cat": "foot",
-   "fin": "2026-10-12T14:45:00+00:00",
-   "date": "2026-10-12T03:16+00:00",
-   "groupe": "45360975",
-   "gagne": 1,
-   "resolu_le": "2026-10-12T15:06+00:00"
+   "site": "aevo",
+   "id": "BTC-27NOV26-59500-C",
+   "slug": "BTC|2026-11-27|59500",
+   "question": "BTC au-dessus de 59 500 $ le 27/11/2026 à 8 h UTC ?",
+   "cote": "Au-dessus",
+   "idx": 0,
+   "prix": 0.9948,
+   "cat": "crypto",
+   "fin": "2026-11-27T08:00:00+00:00",
+   "date": "2026-11-27T05:07+00:00",
+   "groupe": "BTC|2026-11-27T08"
   },
   {
-   "site": "smarkets",
-   "id": "168884074:466057592",
-   "slug": "168884074",
-   "question": "Real Valladolid vs Albacete Balompié — Correct score : 1 - 3",
-   "cote": "Non",
-   "idx": 1,
-   "prix": 0.9803,
-   "cat": "foot",
-   "fin": "2026-10-12T15:00:00+00:00",
-   "date": "2026-10-12T03:16+00:00",
-   "groupe": "45360912",
-   "gagne": 1,
-   "resolu_le": "2026-10-12T15:06+00:00"
+   "site": "aevo",
+   "id": "BTC-27NOV26-60000-C",
+   "slug": "BTC|2026-11-27|60000",
+   "question": "BTC au-dessus de 60 000 $ le 27/11/2026 à 8 h UTC ?",
+   "cote": "Au-dessus",
+   "idx": 0,
+   "prix": 0.9825,
+   "cat": "crypto",
+   "fin": "2026-11-27T08:00:00+00:00",
+   "date": "2026-11-27T05:07+00:00",
+   "groupe": "BTC|2026-11-27T08"
   },
   {
-   "site": "smarkets",
-   "id": "168884074:466057599",
-   "slug": "168884074",
-   "question": "Real Valladolid vs Albacete Balompié — Correct score : 3 - 2",
-   "cote": "Non",
-   "idx": 1,
-   "prix": 0.9712,
-   "cat": "foot",
-   "fin": "2026-10-12T15:00:00+00:00",
-   "date": "2026-10-12T03:16+00:00",
-   "groupe": "45360912",
-   "gagne": 1,
-   "resolu_le": "2026-10-12T15:06+00:00"
+   "site": "aevo",
+   "id": "ETH-27NOV26-1650-C",
+   "slug": "ETH|2026-11-27|1650",
+   "question": "ETH au-dessus de 1 650 $ le 27/11/2026 à 8 h UTC ?",
+   "cote": "Au-dessus",
+   "idx": 0,
+   "prix": 0.999,
+   "cat": "crypto",
+   "fin": "2026-11-27T08:00:00+00:00",
+   "date": "2026-11-27T05:07+00:00",
+   "groupe": "ETH|2026-11-27T08"
   },
   {
-   "site": "smarkets",
-   "id": "168884074:466057600",
-   "slug": "168884074",
-   "question": "Real Valladolid vs Albacete Balompié — Correct score : 3 - 3",
-   "cote": "Non",
-   "idx": 1,
-   "prix": 0.9885,
-   "cat": "foot",
-   "fin": "2026-10-12T15:00:00+00:00",
-   "date": "2026-10-12T03:16+00:00",
-   "groupe": "45360912",
-   "gagne": 1,
-   "resolu_le": "2026-10-12T15:06+00:00"
+   "site": "thalex",
+   "id": "ETH-27NOV26-1670-C",
+   "slug": "ETH|2026-11-27|1670",
+   "question": "ETH au-dessus de 1 670 $ le 27/11/2026 à 8 h UTC ?",
+   "cote": "Au-dessus",
+   "idx": 0,
+   "prix": 0.9933,
+   "cat": "crypto",
+   "fin": "2026-11-27T08:00:00+00:00",
+   "date": "2026-11-27T05:07+00:00",
+   "groupe": "ETH|2026-11-27T08"
   },
   {
-   "site": "smarkets",
-   "id": "168884074:466057596",
-   "slug": "168884074",
-   "question": "Real Valladolid vs Albacete Balompié — Correct score : 2 - 3",
-   "cote": "Non",
-   "idx": 1,
-   "prix": 0.9829,
-   "cat": "foot",
-   "fin": "2026-10-12T15:00:00+00:00",
-   "date": "2026-10-12T03:40+00:00",
-   "groupe": "45360912",
-   "gagne": 1,
-   "resolu_le": "2026-10-12T15:06+00:00"
+   "site": "thalex",
+   "id": "BTC-27NOV26-58500-C",
+   "slug": "BTC|2026-11-27|58500",
+   "question": "BTC au-dessus de 58 500 $ le 27/11/2026 à 8 h UTC ?",
+   "cote": "Au-dessus",
+   "idx": 0,
+   "prix": 0.9988,
+   "cat": "crypto",
+   "fin": "2026-11-27T08:00:00+00:00",
+   "date": "2026-11-27T05:07+00:00",
+   "groupe": "BTC|2026-11-27T08"
   },
+  {
+   "site": "thalex",
+   "id": "BTC-27NOV26-60000-C",
+   "slug": "BTC|2026-11-27|60000",
+   "question": "BTC au-dessus de 60 000 $ le 27/11/2026 à 8 h UTC ?",
+   "cote": "Au-dessus",
+   "idx": 0,
+   "prix": 0.9821,
+   "cat": "crypto",
+   "fin": "2026-11-27T08:00:00+00:00",
+   "date": "2026-11-27T05:07+00:00",
+   "groupe": "BTC|2026-11-27T08"
+  },
+  {
+   "site": "thalex",
+   "id": "ETH-27NOV26-1660-C",
+   "slug": "ETH|2026-11-27|1660",
+   "question": "ETH au-dessus de 1 660 $ le 27/11/2026 à 8 h UTC ?",
+   "cote": "Au-dessus",
+   "idx": 0,
+   "prix": 0.9975,
+   "cat": "crypto",
+   "fin": "2026-11-27T08:00:00+00:00",
+   "date": "2026-11-27T05:07+00:00",
+   "groupe": "ETH|2026-11-27T08"
+  },
+  {
+   "site": "thalex",
+   "id": "ETH-27NOV26-1690-C",
+   "slug": "ETH|2026-11-27|1690",
+   "question": "ETH au-dessus de 1 690 $ le 27/11/2026 à 8 h UTC ?",
+   "cote": "Au-dessus",
+   "idx": 0,
+   "prix": 0.9799,
+   "cat": "crypto",
+   "fin": "2026-11-27T08:00:00+00:00",
+   "date": "2026-11-27T05:07+00:00",
+   "groupe": "ETH|2026-11-27T08"
+  },
+  {
+   "site": "sxbet",
+   "id": "0xab821d6e1fa94af0964ad45e119066a86606f630d6d8136ee3dfd90052800c62",
+   "slug": "XBTCUSDT-ABOVE-20261127",
+   "question": "Bitcoin (BTC) above on November 27 vs  — BTC above $58,000 / BTC at or below $58,000 (Bitcoin)",
+   "cote": "BTC above $58,000",
+   "idx": 0,
+   "prix": 0.9857,
+   "cat": "crypto",
+   "fin": "2026-11-27T21:00:00+00:00",
+   "date": "2026-11-27T05:07+00:00",
+   "groupe": "XBTCUSDT-ABOVE-20261127"
+  },
+  {
+   "site": "sxbet",
+   "id": "0x726a207fe6b1bfae2537b9851e99f7ef789232bc0e8c2c88619fb1394ab7c414",
+   "slug": "XBTCUSDT-ABOVE-20261127",
+   "question": "Bitcoin (BTC) above on November 27 vs  — BTC above $66,000 / BTC at or below $66,000 (Bitcoin)",
+   "cote": "BTC at or below $66,000",
+   "idx": 1,
+   "prix": 0.9838,
+   "cat": "crypto",
+   "fin": "2026-11-27T21:00:00+00:00",
+   "date": "2026-11-27T05:07+00:00",
+   "groupe": "XBTCUSDT-ABOVE-20261127"
+  },
+  {
+   "site": "polymarket_us",
+   "id": "ccrc-sptfy-1-artst-us-yr-2026-brumar",
+   "slug": "ccrc-sptfy-1-artst-us-yr-2026-brumar",
+   "question": "Top Artist in the US 2026?",
+   "cote": "No",
+   "idx": 1,
+   "prix": 0.985,
+   "cat": "autre",
+   "fin": "2026-12-17T04:00:00+00:00",
+   "date": "2026-11-27T05:07+00:00"
+  }
+ ],
+ "obs_resolues": [
   {
    "site": "smarkets",
    "id": "168884074:466057602",
@@ -320167,98 +319866,661 @@
    "groupe": "45462218",
    "gagne": 1,
    "resolu_le": "2026-11-26T23:17+00:00"
+  },
+  {
+   "site": "polymarket",
+   "id": "6690561",
+   "slug": "will-the-democratic-party-candidate-win-the-2026-mississippi-senate-election-by-0pt3-0pt6",
+   "question": "Will the Democratic Party candidate win the 2026 Mississippi Senate election by 0.3%-0.6%?",
+   "cote": "No",
+   "idx": 1,
+   "prix": 0.9965,
+   "cat": "politique",
+   "fin": "2026-11-21T04:59:00+00:00",
+   "date": "2026-11-15T21:25+00:00",
+   "groupe": "1315385",
+   "dernier_essai": "2026-11-26T14:33+00:00",
+   "gagne": 1,
+   "resolu_le": "2026-11-27T05:07+00:00"
+  },
+  {
+   "site": "polymarket",
+   "id": "7303069",
+   "slug": "lowest-temperature-in-hong-kong-on-november-26-2026-18c",
+   "question": "Will the lowest temperature in Hong Kong be 18°C on November 26?",
+   "cote": "No",
+   "idx": 1,
+   "prix": 0.9985,
+   "cat": "météo",
+   "fin": "2026-11-26T12:00:00+00:00",
+   "date": "2026-11-25T22:50+00:00",
+   "groupe": "1451362",
+   "dernier_essai": "2026-11-26T14:33+00:00",
+   "gagne": 1,
+   "resolu_le": "2026-11-27T05:07+00:00"
+  },
+  {
+   "site": "polymarket",
+   "id": "7302626",
+   "slug": "highest-temperature-in-paris-on-november-26-2026-7c",
+   "question": "Will the highest temperature in Paris be 7°C on November 26?",
+   "cote": "No",
+   "idx": 1,
+   "prix": 0.9955,
+   "cat": "météo",
+   "fin": "2026-11-26T12:00:00+00:00",
+   "date": "2026-11-26T04:42+00:00",
+   "groupe": "1451296",
+   "dernier_essai": "2026-11-26T14:33+00:00",
+   "gagne": 1,
+   "resolu_le": "2026-11-27T05:07+00:00"
+  },
+  {
+   "site": "polymarket",
+   "id": "7302637",
+   "slug": "highest-temperature-in-seoul-on-november-26-2026-17c",
+   "question": "Will the highest temperature in Seoul (Incheon) be 17°C on November 26?",
+   "cote": "No",
+   "idx": 1,
+   "prix": 0.979,
+   "cat": "météo",
+   "fin": "2026-11-26T12:00:00+00:00",
+   "date": "2026-11-26T04:42+00:00",
+   "groupe": "1451297",
+   "dernier_essai": "2026-11-26T14:33+00:00",
+   "gagne": 1,
+   "resolu_le": "2026-11-27T05:07+00:00"
+  },
+  {
+   "site": "polymarket",
+   "id": "7302837",
+   "slug": "highest-temperature-in-shenzhen-on-november-26-2026-22c",
+   "question": "Will the highest temperature in Shenzhen be 22°C on November 26?",
+   "cote": "No",
+   "idx": 1,
+   "prix": 0.983,
+   "cat": "météo",
+   "fin": "2026-11-26T12:00:00+00:00",
+   "date": "2026-11-26T04:42+00:00",
+   "groupe": "1451329",
+   "dernier_essai": "2026-11-26T14:33+00:00",
+   "gagne": 1,
+   "resolu_le": "2026-11-27T05:07+00:00"
+  },
+  {
+   "site": "polymarket",
+   "id": "7303001",
+   "slug": "lowest-temperature-in-seoul-on-november-26-2026-8c",
+   "question": "Will the lowest temperature in Seoul (Incheon) be 8°C on November 26?",
+   "cote": "No",
+   "idx": 1,
+   "prix": 0.9905,
+   "cat": "météo",
+   "fin": "2026-11-26T12:00:00+00:00",
+   "date": "2026-11-26T04:42+00:00",
+   "groupe": "1451356",
+   "dernier_essai": "2026-11-26T14:33+00:00",
+   "gagne": 1,
+   "resolu_le": "2026-11-27T05:07+00:00"
+  },
+  {
+   "site": "polymarket",
+   "id": "2116911",
+   "slug": "will-the-labour-party-win-45-49-seats-in-the-new-zealand-house-of-representatives-in-the-2026-new-zealand-legislative-election",
+   "question": "Will the Labour Party win 45-49 seats in the New Zealand House of Representatives in the 2026 New Zealand legislative election?",
+   "cote": "No",
+   "idx": 1,
+   "prix": 0.975,
+   "cat": "politique",
+   "fin": "2026-11-08T04:59:00+00:00",
+   "date": "2026-11-04T15:13+00:00",
+   "groupe": "431601",
+   "dernier_essai": "2026-11-26T23:17+00:00",
+   "gagne": 1,
+   "resolu_le": "2026-11-27T05:07+00:00"
+  },
+  {
+   "site": "polymarket",
+   "id": "2117121",
+   "slug": "will-labour-party-win-the-popular-vote-in-the-2026-new-zealand-legislative-election-by-10-15",
+   "question": "Will Labour Party win the popular vote in the 2026 New Zealand legislative election by 10-15%?",
+   "cote": "No",
+   "idx": 1,
+   "prix": 0.9845,
+   "cat": "politique",
+   "fin": "2026-11-08T04:59:00+00:00",
+   "date": "2026-11-04T15:13+00:00",
+   "groupe": "431707",
+   "dernier_essai": "2026-11-26T23:17+00:00",
+   "gagne": 1,
+   "resolu_le": "2026-11-27T05:07+00:00"
+  },
+  {
+   "site": "polymarket",
+   "id": "2117406",
+   "slug": "will-new-zealand-first-party-win-the-third-most-seats-in-the-new-zealand-house-of-representatives-in-the-2026-new-zealand-legislative-election",
+   "question": "Will New Zealand First Party win the third-most seats in the New Zealand House of Representatives in the 2026 New Zealand legislative election?",
+   "cote": "No",
+   "idx": 1,
+   "prix": 0.996,
+   "cat": "politique",
+   "fin": "2026-11-08T04:59:00+00:00",
+   "date": "2026-11-05T01:48+00:00",
+   "groupe": "431793",
+   "dernier_essai": "2026-11-26T23:17+00:00",
+   "gagne": 1,
+   "resolu_le": "2026-11-27T05:07+00:00"
+  },
+  {
+   "site": "polymarket",
+   "id": "2117126",
+   "slug": "will-national-party-win-the-popular-vote-in-the-2026-new-zealand-legislative-election-by-10-or-more",
+   "question": "Will National Party win the popular vote in the 2026 New Zealand legislative election by 10% or more?",
+   "cote": "No",
+   "idx": 1,
+   "prix": 0.9905,
+   "cat": "politique",
+   "fin": "2026-11-08T04:59:00+00:00",
+   "date": "2026-11-05T01:48+00:00",
+   "groupe": "431707",
+   "dernier_essai": "2026-11-26T23:17+00:00",
+   "gagne": 1,
+   "resolu_le": "2026-11-27T05:07+00:00"
+  },
+  {
+   "site": "polymarket",
+   "id": "2117404",
+   "slug": "will-green-party-win-the-third-most-seats-in-the-new-zealand-house-of-representatives-in-the-2026-new-zealand-legislative-election",
+   "question": "Will Green Party win the third-most seats in the New Zealand House of Representatives in the 2026 New Zealand legislative election?",
+   "cote": "Yes",
+   "idx": 0,
+   "prix": 0.9735,
+   "cat": "politique",
+   "fin": "2026-11-08T04:59:00+00:00",
+   "date": "2026-11-05T08:42+00:00",
+   "groupe": "431793",
+   "dernier_essai": "2026-11-26T23:17+00:00",
+   "gagne": 1,
+   "resolu_le": "2026-11-27T05:07+00:00"
+  },
+  {
+   "site": "polymarket",
+   "id": "2117405",
+   "slug": "will-act-new-zealand-win-the-third-most-seats-in-the-new-zealand-house-of-representatives-in-the-2026-new-zealand-legislative-election",
+   "question": "Will ACT New Zealand win the third-most seats in the New Zealand House of Representatives in the 2026 New Zealand legislative election?",
+   "cote": "No",
+   "idx": 1,
+   "prix": 0.9935,
+   "cat": "politique",
+   "fin": "2026-11-08T04:59:00+00:00",
+   "date": "2026-11-06T10:06+00:00",
+   "groupe": "431793",
+   "dernier_essai": "2026-11-26T23:17+00:00",
+   "gagne": 1,
+   "resolu_le": "2026-11-27T05:07+00:00"
+  },
+  {
+   "site": "polymarket",
+   "id": "2118146",
+   "slug": "will-green-party-win-the-second-most-seats-in-the-new-zealand-house-of-representatives-in-the-2026-new-zealand-legislative-election",
+   "question": "Will Green Party win the second-most seats in the New Zealand House of Representatives in the 2026 New Zealand legislative election?",
+   "cote": "No",
+   "idx": 1,
+   "prix": 0.995,
+   "cat": "politique",
+   "fin": "2026-11-08T04:59:00+00:00",
+   "date": "2026-11-06T10:06+00:00",
+   "groupe": "431847",
+   "dernier_essai": "2026-11-26T23:17+00:00",
+   "gagne": 1,
+   "resolu_le": "2026-11-27T05:07+00:00"
+  },
+  {
+   "site": "polymarket",
+   "id": "2116493",
+   "slug": "will-national-party-win-the-most-seats-in-the-new-zealand-house-of-representatives-in-the-2026-new-zealand-legislative-election",
+   "question": "Will National Party win the most seats in the New Zealand House of Representatives in the 2026 New Zealand legislative election?",
+   "cote": "Yes",
+   "idx": 0,
+   "prix": 0.9855,
+   "cat": "politique",
+   "fin": "2026-11-08T04:59:00+00:00",
+   "date": "2026-11-07T15:06+00:00",
+   "groupe": "431450",
+   "dernier_essai": "2026-11-26T23:17+00:00",
+   "gagne": 1,
+   "resolu_le": "2026-11-27T05:07+00:00"
+  },
+  {
+   "site": "polymarket",
+   "id": "2116494",
+   "slug": "will-labour-party-win-the-most-seats-in-the-new-zealand-house-of-representatives-in-the-2026-new-zealand-legislative-election",
+   "question": "Will Labour Party win the most seats in the New Zealand House of Representatives in the 2026 New Zealand legislative election?",
+   "cote": "No",
+   "idx": 1,
+   "prix": 0.9855,
+   "cat": "politique",
+   "fin": "2026-11-08T04:59:00+00:00",
+   "date": "2026-11-07T15:06+00:00",
+   "groupe": "431450",
+   "dernier_essai": "2026-11-26T23:17+00:00",
+   "gagne": 1,
+   "resolu_le": "2026-11-27T05:07+00:00"
+  },
+  {
+   "site": "polymarket",
+   "id": "2117123",
+   "slug": "will-labour-party-win-the-popular-vote-in-the-2026-new-zealand-legislative-election-by-0-5",
+   "question": "Will Labour Party win the popular vote in the 2026 New Zealand legislative election by 0-5%?",
+   "cote": "Yes",
+   "idx": 0,
+   "prix": 0.975,
+   "cat": "politique",
+   "fin": "2026-11-08T04:59:00+00:00",
+   "date": "2026-11-07T15:06+00:00",
+   "groupe": "431707",
+   "dernier_essai": "2026-11-26T23:17+00:00",
+   "gagne": 1,
+   "resolu_le": "2026-11-27T05:07+00:00"
+  },
+  {
+   "site": "polymarket",
+   "id": "2117124",
+   "slug": "will-national-party-win-the-popular-vote-in-the-2026-new-zealand-legislative-election-by-0-5",
+   "question": "Will National Party win the popular vote in the 2026 New Zealand legislative election by 0-5%?",
+   "cote": "No",
+   "idx": 1,
+   "prix": 0.9795,
+   "cat": "politique",
+   "fin": "2026-11-08T04:59:00+00:00",
+   "date": "2026-11-07T15:06+00:00",
+   "groupe": "431707",
+   "dernier_essai": "2026-11-26T23:17+00:00",
+   "gagne": 1,
+   "resolu_le": "2026-11-27T05:07+00:00"
+  },
+  {
+   "site": "polymarket",
+   "id": "2118144",
+   "slug": "will-national-party-win-the-second-most-seats-in-the-new-zealand-house-of-representatives-in-the-2026-new-zealand-legislative-election-992",
+   "question": "Will National Party win the second-most seats in the New Zealand House of Representatives in the 2026 New Zealand legislative election?",
+   "cote": "No",
+   "idx": 1,
+   "prix": 0.9935,
+   "cat": "politique",
+   "fin": "2026-11-08T04:59:00+00:00",
+   "date": "2026-11-07T19:26+00:00",
+   "groupe": "431847",
+   "dernier_essai": "2026-11-26T23:17+00:00",
+   "gagne": 1,
+   "resolu_le": "2026-11-27T05:07+00:00"
+  },
+  {
+   "site": "polymarket",
+   "id": "2116891",
+   "slug": "will-the-national-party-win-40-44-seats-in-the-new-zealand-house-of-representatives-in-the-2026-new-zealand-legislative-election",
+   "question": "Will the National Party win 40-44 seats in the New Zealand House of Representatives in the 2026 New Zealand legislative election?",
+   "cote": "Yes",
+   "idx": 0,
+   "prix": 0.99,
+   "cat": "politique",
+   "fin": "2026-11-08T04:59:00+00:00",
+   "date": "2026-11-07T19:26+00:00",
+   "groupe": "431593",
+   "dernier_essai": "2026-11-26T23:17+00:00",
+   "gagne": 1,
+   "resolu_le": "2026-11-27T05:07+00:00"
+  },
+  {
+   "site": "polymarket",
+   "id": "2116890",
+   "slug": "will-the-national-party-win-35-39-seats-in-the-new-zealand-house-of-representatives-in-the-2026-new-zealand-legislative-election",
+   "question": "Will the National Party win 35-39 seats in the New Zealand House of Representatives in the 2026 New Zealand legislative election?",
+   "cote": "No",
+   "idx": 1,
+   "prix": 0.9905,
+   "cat": "politique",
+   "fin": "2026-11-08T04:59:00+00:00",
+   "date": "2026-11-07T19:26+00:00",
+   "groupe": "431593",
+   "dernier_essai": "2026-11-26T23:17+00:00",
+   "gagne": 1,
+   "resolu_le": "2026-11-27T05:07+00:00"
+  },
+  {
+   "site": "polymarket",
+   "id": "2116908",
+   "slug": "will-the-labour-party-win-30-34-seats-in-the-new-zealand-house-of-representatives-in-the-2026-new-zealand-legislative-election",
+   "question": "Will the Labour Party win 30-34 seats in the New Zealand House of Representatives in the 2026 New Zealand legislative election?",
+   "cote": "No",
+   "idx": 1,
+   "prix": 0.9985,
+   "cat": "politique",
+   "fin": "2026-11-08T04:59:00+00:00",
+   "date": "2026-11-07T19:26+00:00",
+   "groupe": "431601",
+   "dernier_essai": "2026-11-26T23:17+00:00",
+   "gagne": 1,
+   "resolu_le": "2026-11-27T05:07+00:00"
+  },
+  {
+   "site": "polymarket",
+   "id": "2116909",
+   "slug": "will-the-labour-party-win-35-39-seats-in-the-new-zealand-house-of-representatives-in-the-2026-new-zealand-legislative-election",
+   "question": "Will the Labour Party win 35-39 seats in the New Zealand House of Representatives in the 2026 New Zealand legislative election?",
+   "cote": "Yes",
+   "idx": 0,
+   "prix": 0.986,
+   "cat": "politique",
+   "fin": "2026-11-08T04:59:00+00:00",
+   "date": "2026-11-07T19:26+00:00",
+   "groupe": "431601",
+   "dernier_essai": "2026-11-26T23:17+00:00",
+   "gagne": 1,
+   "resolu_le": "2026-11-27T05:07+00:00"
+  },
+  {
+   "site": "polymarket",
+   "id": "2116910",
+   "slug": "will-the-labour-party-win-40-44-seats-in-the-new-zealand-house-of-representatives-in-the-2026-new-zealand-legislative-election",
+   "question": "Will the Labour Party win 40-44 seats in the New Zealand House of Representatives in the 2026 New Zealand legislative election?",
+   "cote": "No",
+   "idx": 1,
+   "prix": 0.9945,
+   "cat": "politique",
+   "fin": "2026-11-08T04:59:00+00:00",
+   "date": "2026-11-07T22:59+00:00",
+   "groupe": "431601",
+   "dernier_essai": "2026-11-26T23:17+00:00",
+   "gagne": 1,
+   "resolu_le": "2026-11-27T05:07+00:00"
+  },
+  {
+   "site": "polymarket",
+   "id": "2118145",
+   "slug": "will-labour-party-win-the-second-most-seats-in-the-new-zealand-house-of-representatives-in-the-2026-new-zealand-legislative-election",
+   "question": "Will Labour Party win the second-most seats in the New Zealand House of Representatives in the 2026 New Zealand legislative election?",
+   "cote": "Yes",
+   "idx": 0,
+   "prix": 0.9845,
+   "cat": "politique",
+   "fin": "2026-11-08T04:59:00+00:00",
+   "date": "2026-11-08T02:12+00:00",
+   "groupe": "431847",
+   "dernier_essai": "2026-11-26T23:17+00:00",
+   "gagne": 1,
+   "resolu_le": "2026-11-27T05:07+00:00"
+  },
+  {
+   "site": "polymarket",
+   "id": "6995982",
+   "slug": "col-gen-crv-2026-11-26-exact-score-any-other",
+   "question": "Exact Score: Any Other Score?",
+   "cote": "No",
+   "idx": 1,
+   "prix": 0.971,
+   "cat": "autre",
+   "fin": "2026-11-26T20:00:00+00:00",
+   "date": "2026-11-26T14:33+00:00",
+   "groupe": "1373815",
+   "dernier_essai": "2026-11-26T23:17+00:00",
+   "gagne": 1,
+   "resolu_le": "2026-11-27T05:07+00:00"
+  },
+  {
+   "site": "manifold",
+   "id": "UNllLhtsAQ",
+   "slug": "gta-vi-to-release-by-november-19-20",
+   "question": "GTA VI to release by November 19, 2026?",
+   "cote": "Oui",
+   "idx": 0,
+   "prix": 0.9724,
+   "cat": "autre",
+   "fin": "2026-11-26T23:59:00+00:00",
+   "date": "2026-11-10T19:21+00:00",
+   "gagne": 1,
+   "resolu_le": "2026-11-27T05:07+00:00"
+  },
+  {
+   "site": "limitless",
+   "id": "packers-vs-rams-1795482365644",
+   "slug": "packers-vs-rams-1795482365644",
+   "question": "Packers vs. Rams",
+   "cote": "Non",
+   "idx": 1,
+   "prix": 0.992,
+   "cat": "autre",
+   "fin": "2026-11-27T01:00:00+00:00",
+   "date": "2026-11-26T04:42+00:00",
+   "gagne": 1,
+   "resolu_le": "2026-11-27T05:07+00:00"
+  },
+  {
+   "site": "gemini",
+   "id": "GEMI-NCAAM-2611250330-CSU-VCU-M-CSU",
+   "slug": "NCAAM-2611250330-CSU-VCU-M",
+   "question": "Colorado State vs VCU",
+   "cote": "Non",
+   "idx": 1,
+   "prix": 0.98,
+   "cat": "sport US",
+   "fin": "2026-11-27T03:30:00+00:00",
+   "date": "2026-11-25T13:37+00:00",
+   "groupe": "NCAAM-2611250330-CSU-VCU-M",
+   "gagne": 1,
+   "resolu_le": "2026-11-27T05:07+00:00"
+  },
+  {
+   "site": "gemini",
+   "id": "GEMI-ETH2611270000-HI1660",
+   "slug": "ETH2611270000",
+   "question": "ETH price today at 7pm EST — $1,660 or above",
+   "cote": "Oui",
+   "idx": 0,
+   "prix": 0.985,
+   "cat": "crypto",
+   "fin": "2026-11-27T00:00:00+00:00",
+   "date": "2026-11-26T23:17+00:00",
+   "groupe": "ETH2611270000",
+   "gagne": 1,
+   "resolu_le": "2026-11-27T05:07+00:00"
+  },
+  {
+   "site": "smarkets",
+   "id": "181569094:499976736",
+   "slug": "181569094",
+   "question": "SMU Mustangs at LSU Tigers — Half-time/full-time : LSU Tigers / Draw",
+   "cote": "Non",
+   "idx": 1,
+   "prix": 0.9749,
+   "cat": "basket",
+   "fin": "2026-11-27T03:00:00+00:00",
+   "date": "2026-11-26T23:17+00:00",
+   "groupe": "45393673",
+   "gagne": 1,
+   "resolu_le": "2026-11-27T05:07+00:00"
+  },
+  {
+   "site": "smarkets",
+   "id": "181569094:499976739",
+   "slug": "181569094",
+   "question": "SMU Mustangs at LSU Tigers — Half-time/full-time : SMU Mustangs / Draw",
+   "cote": "Non",
+   "idx": 1,
+   "prix": 0.9782,
+   "cat": "basket",
+   "fin": "2026-11-27T03:00:00+00:00",
+   "date": "2026-11-26T23:17+00:00",
+   "groupe": "45393673",
+   "gagne": 0,
+   "resolu_le": "2026-11-27T05:07+00:00"
+  },
+  {
+   "site": "smarkets",
+   "id": "181569094:499976741",
+   "slug": "181569094",
+   "question": "SMU Mustangs at LSU Tigers — Half-time/full-time : Draw / SMU Mustangs",
+   "cote": "Non",
+   "idx": 1,
+   "prix": 0.9922,
+   "cat": "basket",
+   "fin": "2026-11-27T03:00:00+00:00",
+   "date": "2026-11-26T23:17+00:00",
+   "groupe": "45393673",
+   "gagne": 1,
+   "resolu_le": "2026-11-27T05:07+00:00"
+  },
+  {
+   "site": "smarkets",
+   "id": "181569094:499976742",
+   "slug": "181569094",
+   "question": "SMU Mustangs at LSU Tigers — Half-time/full-time : Draw / Draw",
+   "cote": "Non",
+   "idx": 1,
+   "prix": 0.9974,
+   "cat": "basket",
+   "fin": "2026-11-27T03:00:00+00:00",
+   "date": "2026-11-26T23:17+00:00",
+   "groupe": "45393673",
+   "gagne": 1,
+   "resolu_le": "2026-11-27T05:07+00:00"
+  },
+  {
+   "site": "smarkets",
+   "id": "181076720:498748833",
+   "slug": "181076720",
+   "question": "Montevideo City Torque vs Club Nacional — Correct score : 0 - 3",
+   "cote": "Non",
+   "idx": 1,
+   "prix": 0.9725,
+   "cat": "foot",
+   "fin": "2026-11-27T03:30:00+00:00",
+   "date": "2026-11-26T23:17+00:00",
+   "groupe": "45463076",
+   "gagne": 1,
+   "resolu_le": "2026-11-27T05:07+00:00"
+  },
+  {
+   "site": "smarkets",
+   "id": "181076720:498748842",
+   "slug": "181076720",
+   "question": "Montevideo City Torque vs Club Nacional — Correct score : 3 - 0",
+   "cote": "Non",
+   "idx": 1,
+   "prix": 0.9748,
+   "cat": "foot",
+   "fin": "2026-11-27T03:30:00+00:00",
+   "date": "2026-11-26T23:17+00:00",
+   "groupe": "45463076",
+   "gagne": 1,
+   "resolu_le": "2026-11-27T05:07+00:00"
+  },
+  {
+   "site": "smarkets",
+   "id": "181076720:498748844",
+   "slug": "181076720",
+   "question": "Montevideo City Torque vs Club Nacional — Correct score : 3 - 2",
+   "cote": "Non",
+   "idx": 1,
+   "prix": 0.9734,
+   "cat": "foot",
+   "fin": "2026-11-27T03:30:00+00:00",
+   "date": "2026-11-26T23:17+00:00",
+   "groupe": "45463076",
+   "gagne": 1,
+   "resolu_le": "2026-11-27T05:07+00:00"
+  },
+  {
+   "site": "smarkets",
+   "id": "181076720:498748845",
+   "slug": "181076720",
+   "question": "Montevideo City Torque vs Club Nacional — Correct score : 3 - 3",
+   "cote": "Non",
+   "idx": 1,
+   "prix": 0.9854,
+   "cat": "foot",
+   "fin": "2026-11-27T03:30:00+00:00",
+   "date": "2026-11-26T23:17+00:00",
+   "groupe": "45463076",
+   "gagne": 1,
+   "resolu_le": "2026-11-27T05:07+00:00"
+  },
+  {
+   "site": "smarkets",
+   "id": "180960022:498439903",
+   "slug": "180960022",
+   "question": "TCU Horned Frogs at Texas Tech Red Raiders — Half-time/full-time : TCU / Draw",
+   "cote": "Non",
+   "idx": 1,
+   "prix": 0.9909,
+   "cat": "sport US",
+   "fin": "2026-11-27T04:00:00+00:00",
+   "date": "2026-11-26T23:17+00:00",
+   "groupe": "45451058",
+   "gagne": 1,
+   "resolu_le": "2026-11-27T05:07+00:00"
+  },
+  {
+   "site": "smarkets",
+   "id": "180960022:498439905",
+   "slug": "180960022",
+   "question": "TCU Horned Frogs at Texas Tech Red Raiders — Half-time/full-time : Draw / TCU",
+   "cote": "Non",
+   "idx": 1,
+   "prix": 0.9944,
+   "cat": "sport US",
+   "fin": "2026-11-27T04:00:00+00:00",
+   "date": "2026-11-26T23:17+00:00",
+   "groupe": "45451058",
+   "gagne": 1,
+   "resolu_le": "2026-11-27T05:07+00:00"
+  },
+  {
+   "site": "smarkets",
+   "id": "180960022:498439906",
+   "slug": "180960022",
+   "question": "TCU Horned Frogs at Texas Tech Red Raiders — Half-time/full-time : Draw / Draw",
+   "cote": "Non",
+   "idx": 1,
+   "prix": 0.995,
+   "cat": "sport US",
+   "fin": "2026-11-27T04:00:00+00:00",
+   "date": "2026-11-26T23:17+00:00",
+   "groupe": "45451058",
+   "gagne": 1,
+   "resolu_le": "2026-11-27T05:07+00:00"
   }
  ],
  "apprentissage": {
-  "gemini|cat:crypto": {
-   "n": 337,
-   "gagnes": 242,
-   "prix_moy": 0.98559,
-   "taux_reel": 0.7181
-  },
-  "gemini|tranche:>=0.99": {
-   "n": 417,
-   "gagnes": 254,
-   "prix_moy": 0.99,
-   "taux_reel": 0.60911
-  },
-  "polymarket|cat:esport": {
-   "n": 56,
-   "gagnes": 56,
-   "prix_moy": 0.99091,
-   "taux_reel": 1.0
-  },
-  "polymarket|tranche:>=0.975": {
-   "n": 313,
-   "gagnes": 309,
-   "prix_moy": 0.97712,
-   "taux_reel": 0.98722
-  },
-  "gemini|cat:sport US": {
-   "n": 425,
-   "gagnes": 358,
-   "prix_moy": 0.98196,
-   "taux_reel": 0.84235
-  },
-  "gemini|tranche:>=0.975": {
-   "n": 284,
-   "gagnes": 283,
-   "prix_moy": 0.975,
-   "taux_reel": 0.99648
-  },
-  "gemini|tranche:>=0.985": {
-   "n": 86,
-   "gagnes": 85,
-   "prix_moy": 0.985,
-   "taux_reel": 0.98837
-  },
-  "limitless|cat:autre": {
-   "n": 292,
-   "gagnes": 291,
-   "prix_moy": 0.99117,
-   "taux_reel": 0.99658
-  },
-  "limitless|tranche:>=0.975": {
-   "n": 50,
-   "gagnes": 50,
-   "prix_moy": 0.97724,
-   "taux_reel": 1.0
-  },
-  "limitless|tranche:>=0.99": {
-   "n": 299,
-   "gagnes": 299,
-   "prix_moy": 0.99383,
-   "taux_reel": 1.0
-  },
   "smarkets|cat:foot": {
    "n": 201,
    "gagnes": 197,
-   "prix_moy": 0.98099,
+   "prix_moy": 0.98087,
    "taux_reel": 0.9801
   },
-  "smarkets|tranche:>=0.975": {
-   "n": 95,
-   "gagnes": 93,
-   "prix_moy": 0.97809,
-   "taux_reel": 0.97895
+  "smarkets|tranche:>=0.98": {
+   "n": 150,
+   "gagnes": 146,
+   "prix_moy": 0.98241,
+   "taux_reel": 0.97333
   },
-  "smarkets|tranche:>=0.985": {
-   "n": 118,
-   "gagnes": 113,
-   "prix_moy": 0.98743,
-   "taux_reel": 0.95763
+  "smarkets|tranche:>=0.97": {
+   "n": 85,
+   "gagnes": 82,
+   "prix_moy": 0.97245,
+   "taux_reel": 0.96471
   },
   "polymarket|cat:météo": {
-   "n": 295,
-   "gagnes": 292,
-   "prix_moy": 0.99036,
-   "taux_reel": 0.98983
+   "n": 300,
+   "gagnes": 297,
+   "prix_moy": 0.99035,
+   "taux_reel": 0.99
   },
   "polymarket|tranche:>=0.995": {
-   "n": 501,
-   "gagnes": 500,
+   "n": 506,
+   "gagnes": 505,
    "prix_moy": 0.99701,
-   "taux_reel": 0.998
+   "taux_reel": 0.99802
   },
   "limitless|cat:foot": {
    "n": 5,
@@ -320266,11 +320528,41 @@
    "prix_moy": 0.9945,
    "taux_reel": 1.0
   },
+  "limitless|tranche:>=0.99": {
+   "n": 296,
+   "gagnes": 296,
+   "prix_moy": 0.99382,
+   "taux_reel": 1.0
+  },
+  "limitless|cat:autre": {
+   "n": 288,
+   "gagnes": 287,
+   "prix_moy": 0.99118,
+   "taux_reel": 0.99653
+  },
   "limitless|tranche:>=0.985": {
    "n": 69,
    "gagnes": 69,
    "prix_moy": 0.988,
    "taux_reel": 1.0
+  },
+  "limitless|tranche:>=0.975": {
+   "n": 49,
+   "gagnes": 49,
+   "prix_moy": 0.97729,
+   "taux_reel": 1.0
+  },
+  "gemini|cat:crypto": {
+   "n": 336,
+   "gagnes": 243,
+   "prix_moy": 0.98557,
+   "taux_reel": 0.72321
+  },
+  "gemini|tranche:>=0.99": {
+   "n": 415,
+   "gagnes": 254,
+   "prix_moy": 0.99,
+   "taux_reel": 0.61205
   },
   "polymarket|cat:crypto": {
    "n": 320,
@@ -320279,16 +320571,16 @@
    "taux_reel": 0.9875
   },
   "polymarket|tranche:>=0.99": {
-   "n": 362,
-   "gagnes": 358,
-   "prix_moy": 0.99264,
-   "taux_reel": 0.98895
+   "n": 364,
+   "gagnes": 360,
+   "prix_moy": 0.99262,
+   "taux_reel": 0.98901
   },
   "polymarket|tranche:>=0.985": {
-   "n": 292,
-   "gagnes": 290,
-   "prix_moy": 0.98732,
-   "taux_reel": 0.99315
+   "n": 293,
+   "gagnes": 291,
+   "prix_moy": 0.98731,
+   "taux_reel": 0.99317
   },
   "polymarket|cat:tweets": {
    "n": 80,
@@ -320297,16 +320589,28 @@
    "taux_reel": 0.975
   },
   "polymarket|tranche:>=0.97": {
-   "n": 283,
-   "gagnes": 275,
+   "n": 284,
+   "gagnes": 276,
    "prix_moy": 0.97208,
-   "taux_reel": 0.97173
+   "taux_reel": 0.97183
+  },
+  "polymarket|tranche:>=0.975": {
+   "n": 314,
+   "gagnes": 310,
+   "prix_moy": 0.97712,
+   "taux_reel": 0.98726
+  },
+  "polymarket|cat:esport": {
+   "n": 55,
+   "gagnes": 55,
+   "prix_moy": 0.99111,
+   "taux_reel": 1.0
   },
   "polymarket|tranche:>=0.98": {
-   "n": 263,
-   "gagnes": 259,
-   "prix_moy": 0.98236,
-   "taux_reel": 0.98479
+   "n": 265,
+   "gagnes": 261,
+   "prix_moy": 0.98237,
+   "taux_reel": 0.98491
   },
   "limitless|cat:crypto": {
    "n": 215,
@@ -320321,16 +320625,16 @@
    "taux_reel": 1.0
   },
   "polymarket|cat:autre": {
-   "n": 782,
-   "gagnes": 771,
-   "prix_moy": 0.98527,
-   "taux_reel": 0.98593
+   "n": 783,
+   "gagnes": 772,
+   "prix_moy": 0.98525,
+   "taux_reel": 0.98595
   },
   "manifold|cat:autre": {
-   "n": 859,
-   "gagnes": 854,
-   "prix_moy": 0.98541,
-   "taux_reel": 0.99418
+   "n": 860,
+   "gagnes": 855,
+   "prix_moy": 0.9854,
+   "taux_reel": 0.99419
   },
   "manifold|tranche:>=0.985": {
    "n": 267,
@@ -320338,17 +320642,23 @@
    "prix_moy": 0.98769,
    "taux_reel": 0.99625
   },
-  "smarkets|tranche:>=0.98": {
-   "n": 149,
-   "gagnes": 145,
-   "prix_moy": 0.98241,
-   "taux_reel": 0.97315
+  "smarkets|tranche:>=0.985": {
+   "n": 116,
+   "gagnes": 111,
+   "prix_moy": 0.98743,
+   "taux_reel": 0.9569
+  },
+  "smarkets|tranche:>=0.975": {
+   "n": 94,
+   "gagnes": 92,
+   "prix_moy": 0.97811,
+   "taux_reel": 0.97872
   },
   "smarkets|cat:basket": {
-   "n": 163,
-   "gagnes": 159,
-   "prix_moy": 0.98257,
-   "taux_reel": 0.97546
+   "n": 164,
+   "gagnes": 160,
+   "prix_moy": 0.98252,
+   "taux_reel": 0.97561
   },
   "smarkets|tranche:>=0.995": {
    "n": 27,
@@ -320357,22 +320667,16 @@
    "taux_reel": 1.0
   },
   "smarkets|tranche:>=0.99": {
-   "n": 38,
-   "gagnes": 37,
-   "prix_moy": 0.9922,
-   "taux_reel": 0.97368
-  },
-  "smarkets|tranche:>=0.97": {
-   "n": 82,
-   "gagnes": 79,
-   "prix_moy": 0.9724,
-   "taux_reel": 0.96341
+   "n": 39,
+   "gagnes": 38,
+   "prix_moy": 0.99217,
+   "taux_reel": 0.97436
   },
   "smarkets|cat:sport US": {
-   "n": 66,
-   "gagnes": 62,
-   "prix_moy": 0.98478,
-   "taux_reel": 0.93939
+   "n": 67,
+   "gagnes": 63,
+   "prix_moy": 0.98487,
+   "taux_reel": 0.9403
   },
   "polymarket|cat:foot": {
    "n": 184,
@@ -320380,17 +320684,35 @@
    "prix_moy": 0.98211,
    "taux_reel": 0.99457
   },
+  "gemini|tranche:>=0.975": {
+   "n": 282,
+   "gagnes": 281,
+   "prix_moy": 0.975,
+   "taux_reel": 0.99645
+  },
   "gemini|tranche:>=0.98": {
-   "n": 264,
-   "gagnes": 256,
+   "n": 265,
+   "gagnes": 257,
    "prix_moy": 0.98,
-   "taux_reel": 0.9697
+   "taux_reel": 0.96981
+  },
+  "gemini|cat:sport US": {
+   "n": 423,
+   "gagnes": 356,
+   "prix_moy": 0.98199,
+   "taux_reel": 0.84161
   },
   "gemini|cat:foot": {
    "n": 110,
    "gagnes": 108,
    "prix_moy": 0.98018,
    "taux_reel": 0.98182
+  },
+  "gemini|tranche:>=0.985": {
+   "n": 86,
+   "gagnes": 85,
+   "prix_moy": 0.985,
+   "taux_reel": 0.98837
   },
   "limitless|tranche:>=0.97": {
    "n": 19,
@@ -320417,8 +320739,8 @@
    "taux_reel": 1.0
   },
   "manifold|tranche:>=0.97": {
-   "n": 153,
-   "gagnes": 153,
+   "n": 154,
+   "gagnes": 154,
    "prix_moy": 0.97237,
    "taux_reel": 1.0
   },
@@ -320711,10 +321033,10 @@
    "taux_reel": 1.0
   },
   "polymarket|cat:politique": {
-   "n": 262,
-   "gagnes": 261,
-   "prix_moy": 0.99089,
-   "taux_reel": 0.99618
+   "n": 269,
+   "gagnes": 268,
+   "prix_moy": 0.99084,
+   "taux_reel": 0.99628
   },
   "deribit|tranche:>=0.98": {
    "n": 15,
@@ -321164,184 +321486,8 @@
  "fraction_kelly": 0.2,
  "pic": 1260.6884736721418,
  "dernier_ajust": 20,
- "rejets": 3277,
+ "rejets": 3284,
  "journal": [
-  {
-   "quand": "2026-11-22T09:38+00:00",
-   "texte": "[cboe] résultat illisible pour SPY261119C00711000 : lecture impossible : https://cdn.cboe.com/api/global/delayed_quotes/charts/historical/SPY.json (HTTP Error 403: Forbidden)"
-  },
-  {
-   "quand": "2026-11-22T09:38+00:00",
-   "texte": "[gate] pas de résultat après 30 jours, abandonné : ETH au-dessus de 2 900 $ le 23/10/2026 à 8 h UTC ?"
-  },
-  {
-   "quand": "2026-11-22T09:38+00:00",
-   "texte": "[okx] pas de résultat après 30 jours, abandonné : BTC au-dessus de 73 000 $ le 23/10/2026 à 8 h UTC ?"
-  },
-  {
-   "quand": "2026-11-22T09:38+00:00",
-   "texte": "[manifold] pas de résultat après 30 jours, abandonné : Will Paris win the match Barcelona VS Paris?"
-  },
-  {
-   "quand": "2026-11-22T09:38+00:00",
-   "texte": "[gate] pas de résultat après 30 jours, abandonné : ETH au-dessus de 2 150 $ le 23/10/2026 à 8 h UTC ?"
-  },
-  {
-   "quand": "2026-11-22T09:38+00:00",
-   "texte": "[okx] pas de résultat après 30 jours, abandonné : BTC au-dessus de 84 250 $ le 23/10/2026 à 8 h UTC ?"
-  },
-  {
-   "quand": "2026-11-22T09:38+00:00",
-   "texte": "[okx] pas de résultat après 30 jours, abandonné : BTC au-dessus de 84 750 $ le 23/10/2026 à 8 h UTC ?"
-  },
-  {
-   "quand": "2026-11-22T09:38+00:00",
-   "texte": "[okx] pas de résultat après 30 jours, abandonné : BTC au-dessus de 85 250 $ le 23/10/2026 à 8 h UTC ?"
-  },
-  {
-   "quand": "2026-11-22T09:38+00:00",
-   "texte": "[okx] pas de résultat après 30 jours, abandonné : BTC au-dessus de 83 750 $ le 23/10/2026 à 8 h UTC ?"
-  },
-  {
-   "quand": "2026-11-22T09:38+00:00",
-   "texte": "[okx] pas de résultat après 30 jours, abandonné : BTC au-dessus de 83 250 $ le 23/10/2026 à 8 h UTC ?"
-  },
-  {
-   "quand": "2026-11-22T09:38+00:00",
-   "texte": "[okx] pas de résultat après 30 jours, abandonné : BTC au-dessus de 82 750 $ le 23/10/2026 à 8 h UTC ?"
-  },
-  {
-   "quand": "2026-11-22T09:38+00:00",
-   "texte": "[polymarket] ignoré (pas achetable, souvent déjà joué) : Will \"The Hunger Games: Sunrise on the Reaping\" Opening Week"
-  },
-  {
-   "quand": "2026-11-22T09:38+00:00",
-   "texte": "[polymarket] ignoré (pas achetable, souvent déjà joué) : Will \"Ebenezer\" 2nd Weekend Box Office be between 9m and 10."
-  },
-  {
-   "quand": "2026-11-22T09:38+00:00",
-   "texte": "[polymarket] ignoré (pas achetable, souvent déjà joué) : Hersonissos 4: Imanol Lopez Morillo vs Georgios Dimitriou"
-  },
-  {
-   "quand": "2026-11-22T09:38+00:00",
-   "texte": "[polymarket] ignoré (pas achetable, souvent déjà joué) : Southern Indiana Screaming Eagles vs. Texas Longhorns"
-  },
-  {
-   "quand": "2026-11-22T09:38+00:00",
-   "texte": "[polymarket] ignoré (pas achetable, souvent déjà joué) : Will Kimi Antonelli win the 2026 F1 Las Vegas Grand Prix?"
-  },
-  {
-   "quand": "2026-11-22T09:38+00:00",
-   "texte": "[polymarket] ignoré (pas achetable, souvent déjà joué) : Will Lando Norris win the 2026 F1 Las Vegas Grand Prix?"
-  },
-  {
-   "quand": "2026-11-22T09:38+00:00",
-   "texte": "[polymarket] ignoré (pas achetable, souvent déjà joué) : Will Isack Hadjar win the 2026 F1 Las Vegas Grand Prix?"
-  },
-  {
-   "quand": "2026-11-22T09:38+00:00",
-   "texte": "[gemini] rejet (cote relue 0.970, sous le seuil) : SOL price today at 5am EST — $72 or above"
-  },
-  {
-   "quand": "2026-11-22T09:38+00:00",
-   "texte": "[gemini] ignoré (pas achetable, souvent déjà joué) : Highest temperature in Ankara on November 22, 2026? — 14°C"
-  },
-  {
-   "quand": "2026-11-22T09:38+00:00",
-   "texte": "[gemini] ignoré (pas achetable, souvent déjà joué) : Highest temperature in Ankara on November 22, 2026? — 7°C or"
-  },
-  {
-   "quand": "2026-11-22T09:38+00:00",
-   "texte": "[gemini] ignoré (pas achetable, souvent déjà joué) : Highest temperature in Ankara on November 22, 2026? — 8°C"
-  },
-  {
-   "quand": "2026-11-22T09:38+00:00",
-   "texte": "[gemini] ignoré (pas achetable, souvent déjà joué) : Highest temperature in Ankara on November 22, 2026? — 9°C"
-  },
-  {
-   "quand": "2026-11-22T09:38+00:00",
-   "texte": "[gemini] ignoré (pas achetable, souvent déjà joué) : Highest temperature in Ankara on November 22, 2026? — 15°C"
-  },
-  {
-   "quand": "2026-11-22T09:38+00:00",
-   "texte": "[gemini] ignoré (pas achetable, souvent déjà joué) : The RSM Classic Winner — Christiaan Bezuidenhout"
-  },
-  {
-   "quand": "2026-11-22T09:38+00:00",
-   "texte": "[gemini] ignoré (pas achetable, souvent déjà joué) : The RSM Classic Winner — Francisco Bidé"
-  },
-  {
-   "quand": "2026-11-22T09:38+00:00",
-   "texte": "[gemini] ignoré (pas achetable, souvent déjà joué) : The RSM Classic Winner — Chandler Blanchet"
-  },
-  {
-   "quand": "2026-11-22T09:38+00:00",
-   "texte": "[gemini] ignoré (pas achetable, souvent déjà joué) : The RSM Classic Winner — Ryan Brehm"
-  },
-  {
-   "quand": "2026-11-22T09:38+00:00",
-   "texte": "[gemini] ignoré (pas achetable, souvent déjà joué) : The RSM Classic Winner — Jonathan Byrd"
-  },
-  {
-   "quand": "2026-11-22T17:25+00:00",
-   "texte": "[polymarket] historique illisible : lecture impossible : https://gamma-api.polymarket.com/markets?closed=true&limit=250&offset=2100&order=volumeNum&ascending=false&volume_num_min=5000 (HTTP Error 422: Unknown)"
-  },
-  {
-   "quand": "2026-11-22T17:25+00:00",
-   "texte": "[kalshi] favori à 97.5% PERDANT : What will Donald Trump say during CBS: 60 Minutes originally scheduled"
-  },
-  {
-   "quand": "2026-11-22T17:25+00:00",
-   "texte": "[smarkets] liste des marchés illisible : lecture impossible : https://api.smarkets.com/v3/markets/178967715,178967724,178967740,178967741,178967742,178967743,178967719,178967717,178967718,179051680,179051681,179051690,179051706,179051707,179051708,179051709,179051685,179051683,179051684,179581422,179581423,179581432,179581448,179581449,179581450,179581451,179581427,179581425,179581426,179608140,179608141,179608150,179608166,179608167,179608168,179608169,179608145,179608143,179608144,179939398/quotes/ (HTTP Error 429: Too Many Requests)"
-  },
-  {
-   "quand": "2026-11-22T17:25+00:00",
-   "texte": "[azuro] liste des marchés illisible : lecture impossible : https://api.onchainfeed.org/api/v1/public/market-manager/games-by-filters?gameState=Prematch&environment=PolygonUSDT&orderBy=startsAt&orderDirection=asc&page=1&perPage=100 (HTTP Error 404: Not Found)"
-  },
-  {
-   "quand": "2026-11-22T17:25+00:00",
-   "texte": "[derive] liste des marchés illisible : lecture impossible : https://api.lyra.finance/public/get_instruments (HTTP Error 521: <none>)"
-  },
-  {
-   "quand": "2026-11-22T17:25+00:00",
-   "texte": "[cboe] résultat illisible pour SPY261119C00702000 : lecture impossible : https://cdn.cboe.com/api/global/delayed_quotes/charts/historical/SPY.json (HTTP Error 403: Forbidden)"
-  },
-  {
-   "quand": "2026-11-22T17:25+00:00",
-   "texte": "[cboe] résultat illisible pour SPY261119C00703000 : lecture impossible : https://cdn.cboe.com/api/global/delayed_quotes/charts/historical/SPY.json (HTTP Error 403: Forbidden)"
-  },
-  {
-   "quand": "2026-11-22T17:25+00:00",
-   "texte": "[cboe] résultat illisible pour SPY261119C00704000 : lecture impossible : https://cdn.cboe.com/api/global/delayed_quotes/charts/historical/SPY.json (HTTP Error 403: Forbidden)"
-  },
-  {
-   "quand": "2026-11-22T17:25+00:00",
-   "texte": "[cboe] résultat illisible pour SPY261119C00705000 : lecture impossible : https://cdn.cboe.com/api/global/delayed_quotes/charts/historical/SPY.json (HTTP Error 403: Forbidden)"
-  },
-  {
-   "quand": "2026-11-22T17:25+00:00",
-   "texte": "[cboe] résultat illisible pour SPY261119C00706000 : lecture impossible : https://cdn.cboe.com/api/global/delayed_quotes/charts/historical/SPY.json (HTTP Error 403: Forbidden)"
-  },
-  {
-   "quand": "2026-11-22T17:25+00:00",
-   "texte": "[cboe] résultat illisible pour SPY261119C00707000 : lecture impossible : https://cdn.cboe.com/api/global/delayed_quotes/charts/historical/SPY.json (HTTP Error 403: Forbidden)"
-  },
-  {
-   "quand": "2026-11-22T17:25+00:00",
-   "texte": "[cboe] résultat illisible pour SPY261119C00708000 : lecture impossible : https://cdn.cboe.com/api/global/delayed_quotes/charts/historical/SPY.json (HTTP Error 403: Forbidden)"
-  },
-  {
-   "quand": "2026-11-22T17:25+00:00",
-   "texte": "[cboe] résultat illisible pour SPY261119C00709000 : lecture impossible : https://cdn.cboe.com/api/global/delayed_quotes/charts/historical/SPY.json (HTTP Error 403: Forbidden)"
-  },
-  {
-   "quand": "2026-11-22T17:25+00:00",
-   "texte": "[cboe] résultat illisible pour SPY261119C00710000 : lecture impossible : https://cdn.cboe.com/api/global/delayed_quotes/charts/historical/SPY.json (HTTP Error 403: Forbidden)"
-  },
-  {
-   "quand": "2026-11-22T17:25+00:00",
-   "texte": "[cboe] résultat illisible pour SPY261119C00711000 : lecture impossible : https://cdn.cboe.com/api/global/delayed_quotes/charts/historical/SPY.json (HTTP Error 403: Forbidden)"
-  },
   {
    "quand": "2026-11-22T17:25+00:00",
    "texte": "[polymarket] ignoré (pas achetable, souvent déjà joué) : Counter-Strike: Rebels Gaming vs FC Famalicão Esports - Map "
@@ -323165,80 +323311,256 @@
   {
    "quand": "2026-11-26T23:17+00:00",
    "texte": "[polymarket_us] ignoré (pas achetable, souvent déjà joué) : Top Song 2026?"
+  },
+  {
+   "quand": "2026-11-27T05:07+00:00",
+   "texte": "[polymarket] historique illisible : lecture impossible : https://gamma-api.polymarket.com/markets?closed=true&limit=250&offset=2100&order=volumeNum&ascending=false&volume_num_min=5000 (HTTP Error 422: Unknown)"
+  },
+  {
+   "quand": "2026-11-27T05:07+00:00",
+   "texte": "[smarkets] favori à 97.8% PERDANT : SMU Mustangs at LSU Tigers — Half-time/full-time : SMU Mustangs / Draw"
+  },
+  {
+   "quand": "2026-11-27T05:07+00:00",
+   "texte": "[azuro] liste des marchés illisible : lecture impossible : https://api.onchainfeed.org/api/v1/public/market-manager/games-by-filters?gameState=Prematch&environment=PolygonUSDT&orderBy=startsAt&orderDirection=asc&page=1&perPage=100 (HTTP Error 404: Not Found)"
+  },
+  {
+   "quand": "2026-11-27T05:07+00:00",
+   "texte": "[derive] liste des marchés illisible : lecture impossible : https://api.lyra.finance/public/get_instruments (The read operation timed out)"
+  },
+  {
+   "quand": "2026-11-27T05:07+00:00",
+   "texte": "[cboe] résultat illisible pour SPY261119C00702000 : lecture impossible : https://cdn.cboe.com/api/global/delayed_quotes/charts/historical/SPY.json (HTTP Error 403: Forbidden)"
+  },
+  {
+   "quand": "2026-11-27T05:07+00:00",
+   "texte": "[cboe] résultat illisible pour SPY261119C00703000 : lecture impossible : https://cdn.cboe.com/api/global/delayed_quotes/charts/historical/SPY.json (HTTP Error 403: Forbidden)"
+  },
+  {
+   "quand": "2026-11-27T05:07+00:00",
+   "texte": "[cboe] résultat illisible pour SPY261119C00704000 : lecture impossible : https://cdn.cboe.com/api/global/delayed_quotes/charts/historical/SPY.json (HTTP Error 403: Forbidden)"
+  },
+  {
+   "quand": "2026-11-27T05:07+00:00",
+   "texte": "[cboe] résultat illisible pour SPY261119C00705000 : lecture impossible : https://cdn.cboe.com/api/global/delayed_quotes/charts/historical/SPY.json (HTTP Error 403: Forbidden)"
+  },
+  {
+   "quand": "2026-11-27T05:07+00:00",
+   "texte": "[cboe] résultat illisible pour SPY261119C00706000 : lecture impossible : https://cdn.cboe.com/api/global/delayed_quotes/charts/historical/SPY.json (HTTP Error 403: Forbidden)"
+  },
+  {
+   "quand": "2026-11-27T05:07+00:00",
+   "texte": "[cboe] résultat illisible pour SPY261119C00707000 : lecture impossible : https://cdn.cboe.com/api/global/delayed_quotes/charts/historical/SPY.json (HTTP Error 403: Forbidden)"
+  },
+  {
+   "quand": "2026-11-27T05:07+00:00",
+   "texte": "[cboe] résultat illisible pour SPY261119C00708000 : lecture impossible : https://cdn.cboe.com/api/global/delayed_quotes/charts/historical/SPY.json (HTTP Error 403: Forbidden)"
+  },
+  {
+   "quand": "2026-11-27T05:07+00:00",
+   "texte": "[cboe] résultat illisible pour SPY261119C00709000 : lecture impossible : https://cdn.cboe.com/api/global/delayed_quotes/charts/historical/SPY.json (HTTP Error 403: Forbidden)"
+  },
+  {
+   "quand": "2026-11-27T05:07+00:00",
+   "texte": "[cboe] résultat illisible pour SPY261119C00710000 : lecture impossible : https://cdn.cboe.com/api/global/delayed_quotes/charts/historical/SPY.json (HTTP Error 403: Forbidden)"
+  },
+  {
+   "quand": "2026-11-27T05:07+00:00",
+   "texte": "[cboe] résultat illisible pour SPY261119C00711000 : lecture impossible : https://cdn.cboe.com/api/global/delayed_quotes/charts/historical/SPY.json (HTTP Error 403: Forbidden)"
+  },
+  {
+   "quand": "2026-11-27T05:07+00:00",
+   "texte": "[polymarket] pas de résultat après 30 jours, abandonné : Will Yossi Cohen be the next Prime Minister of Israel?"
+  },
+  {
+   "quand": "2026-11-27T05:07+00:00",
+   "texte": "[polymarket] pas de résultat après 30 jours, abandonné : Will Avigdor Lieberman be the next Prime Minister of Israel?"
+  },
+  {
+   "quand": "2026-11-27T05:07+00:00",
+   "texte": "[polymarket] pas de résultat après 30 jours, abandonné : Will Yair Golan be the next Prime Minister of Israel?"
+  },
+  {
+   "quand": "2026-11-27T05:07+00:00",
+   "texte": "[polymarket] pas de résultat après 30 jours, abandonné : Will Yair Lapid be the next Prime Minister of Israel?"
+  },
+  {
+   "quand": "2026-11-27T05:07+00:00",
+   "texte": "[polymarket] pas de résultat après 30 jours, abandonné : Will Itamar Ben Gvir be the next Prime Minister of Israel?"
+  },
+  {
+   "quand": "2026-11-27T05:07+00:00",
+   "texte": "[polymarket] pas de résultat après 30 jours, abandonné : Will Ofer Winter be the next Prime Minister of Israel?"
+  },
+  {
+   "quand": "2026-11-27T05:07+00:00",
+   "texte": "[polymarket] pas de résultat après 30 jours, abandonné : Will exactly 3 Israeli legislative elections occur before a "
+  },
+  {
+   "quand": "2026-11-27T05:07+00:00",
+   "texte": "[sxbet] pas de résultat après 30 jours, abandonné : Fleetwood Town vs Arsenal — Fleetwood Town / Not Fleetwood T"
+  },
+  {
+   "quand": "2026-11-27T05:07+00:00",
+   "texte": "[sxbet] pas de résultat après 30 jours, abandonné : Fleetwood Town vs Arsenal — Fleetwood Town / Arsenal (EFL Cu"
+  },
+  {
+   "quand": "2026-11-27T05:07+00:00",
+   "texte": "[polymarket] rejet (lectures discordantes [0.982, 0.982, 0.9765, 0.982, 0.982, 0.982]) : Will the highest temperature in Beijing be 13°C on November "
+  },
+  {
+   "quand": "2026-11-27T05:07+00:00",
+   "texte": "[polymarket] ignoré (pas achetable, souvent déjà joué) : Will the lowest temperature in Seoul (Incheon) be 9°C on Nov"
+  },
+  {
+   "quand": "2026-11-27T05:07+00:00",
+   "texte": "[polymarket] ignoré (pas achetable, souvent déjà joué) : Yokohama: Masamichi Imamura vs David Jorda Sanchis"
+  },
+  {
+   "quand": "2026-11-27T05:07+00:00",
+   "texte": "[limitless] rejet (cote relue 0.970, sous le seuil) : ETH Up or Down - 5 Min"
+  },
+  {
+   "quand": "2026-11-27T05:07+00:00",
+   "texte": "[limitless] ignoré (pas achetable, souvent déjà joué) : BTC Up or Down - 5 Min"
+  },
+  {
+   "quand": "2026-11-27T05:07+00:00",
+   "texte": "[gemini] rejet (marché fermé) : SOL price today at 1am EST — $71 or above"
+  },
+  {
+   "quand": "2026-11-27T05:07+00:00",
+   "texte": "[gemini] rejet (lectures discordantes [0.97, 0.97, 0.96, 0.96, 0.97, 0.97]) : BTC price on November 27 — $65,000 or above"
+  },
+  {
+   "quand": "2026-11-27T05:07+00:00",
+   "texte": "[gemini] ignoré (pas achetable, souvent déjà joué) : Highest temperature in Mexico City on November 26, 2026? — 1"
+  },
+  {
+   "quand": "2026-11-27T05:07+00:00",
+   "texte": "[gemini] ignoré (pas achetable, souvent déjà joué) : Highest temperature in Mexico City on November 26, 2026? — 1"
+  },
+  {
+   "quand": "2026-11-27T05:07+00:00",
+   "texte": "[gemini] ignoré (pas achetable, souvent déjà joué) : Highest temperature in Mexico City on November 26, 2026? — 1"
+  },
+  {
+   "quand": "2026-11-27T05:07+00:00",
+   "texte": "[gemini] ignoré (pas achetable, souvent déjà joué) : Highest temperature in Mexico City on November 26, 2026? — 1"
+  },
+  {
+   "quand": "2026-11-27T05:07+00:00",
+   "texte": "[gemini] ignoré (pas achetable, souvent déjà joué) : Highest temperature in Mexico City on November 26, 2026? — 1"
+  },
+  {
+   "quand": "2026-11-27T05:07+00:00",
+   "texte": "[smarkets] rejet (seulement 1/6 lectures) : Jordan vs New Zealand — Half-time/full-time : Jordan / Draw"
+  },
+  {
+   "quand": "2026-11-27T05:07+00:00",
+   "texte": "[smarkets] rejet (seulement 2/6 lectures) : Broadmeadow Magic FC vs Lions FC — Correct score : 0 - 0"
+  },
+  {
+   "quand": "2026-11-27T05:07+00:00",
+   "texte": "[smarkets] rejet (seulement 2/6 lectures) : Broadmeadow Magic FC vs Lions FC — Correct score : 3 - 2"
+  },
+  {
+   "quand": "2026-11-27T05:07+00:00",
+   "texte": "[smarkets] ignoré (pas achetable, souvent déjà joué) : Jordan vs New Zealand — Half-time/full-time : Jordan / Jorda"
+  },
+  {
+   "quand": "2026-11-27T05:07+00:00",
+   "texte": "[smarkets] ignoré (pas achetable, souvent déjà joué) : Kevin Doets vs Ritchie Edhouse — King of the Oche (Match Tre"
+  },
+  {
+   "quand": "2026-11-27T05:07+00:00",
+   "texte": "[polymarket_us] ignoré (pas achetable, souvent déjà joué) : Top Artist in the US 2026?"
+  },
+  {
+   "quand": "2026-11-27T05:07+00:00",
+   "texte": "[polymarket_us] ignoré (pas achetable, souvent déjà joué) : Top Song 2026?"
+  },
+  {
+   "quand": "2026-11-27T05:07+00:00",
+   "texte": "[polymarket_us] ignoré (pas achetable, souvent déjà joué) : Top Song 2026?"
+  },
+  {
+   "quand": "2026-11-27T05:07+00:00",
+   "texte": "[polymarket_us] ignoré (pas achetable, souvent déjà joué) : Top Song in the US 2026?"
   }
  ],
- "passages": 592,
+ "passages": 593,
  "sites": {
   "polymarket": {
-   "marches_vus": 417894,
-   "candidats": 8153,
-   "retenus": 7262,
-   "rejets": 891,
-   "erreurs": 552,
+   "marches_vus": 418600,
+   "candidats": 8177,
+   "retenus": 7285,
+   "rejets": 892,
+   "erreurs": 553,
    "dernier_ok": "2026-10-09T16:50+00:00",
    "historique": 520
   },
   "kalshi": {
-   "marches_vus": 255018,
-   "candidats": 2564,
-   "retenus": 2493,
+   "marches_vus": 255243,
+   "candidats": 2570,
+   "retenus": 2499,
    "rejets": 71,
    "erreurs": 0,
-   "dernier_ok": "2026-11-26T23:17+00:00",
+   "dernier_ok": "2026-11-27T05:07+00:00",
    "historique": 0
   },
   "manifold": {
-   "marches_vus": 90742,
-   "candidats": 282,
-   "retenus": 281,
+   "marches_vus": 90870,
+   "candidats": 283,
+   "retenus": 282,
    "rejets": 1,
    "erreurs": 4,
-   "dernier_ok": "2026-11-26T23:17+00:00",
+   "dernier_ok": "2026-11-27T05:07+00:00",
    "historique": 1194
   },
   "limitless": {
-   "marches_vus": 176896,
-   "candidats": 1104,
-   "retenus": 952,
-   "rejets": 152,
+   "marches_vus": 177135,
+   "candidats": 1106,
+   "retenus": 953,
+   "rejets": 153,
    "erreurs": 0,
-   "dernier_ok": "2026-11-26T23:17+00:00",
+   "dernier_ok": "2026-11-27T05:07+00:00",
    "historique": 0
   },
   "gemini": {
-   "marches_vus": 1178648,
-   "candidats": 4386,
-   "retenus": 3749,
-   "rejets": 637,
+   "marches_vus": 1180405,
+   "candidats": 4399,
+   "retenus": 3760,
+   "rejets": 639,
    "erreurs": 3,
-   "dernier_ok": "2026-11-26T23:17+00:00",
+   "dernier_ok": "2026-11-27T05:07+00:00",
    "historique": 0
   },
   "smarkets": {
-   "marches_vus": 915098,
-   "candidats": 4403,
-   "retenus": 3055,
-   "rejets": 1348,
+   "marches_vus": 917333,
+   "candidats": 4414,
+   "retenus": 3063,
+   "rejets": 1351,
    "erreurs": 224,
-   "dernier_ok": "2026-11-26T23:17+00:00",
+   "dernier_ok": "2026-11-27T05:07+00:00",
    "historique": 0
   },
   "espn": {
-   "marches_vus": 74974,
+   "marches_vus": 75221,
    "candidats": 56,
    "retenus": 56,
    "rejets": 0,
    "erreurs": 2,
-   "dernier_ok": "2026-11-26T23:17+00:00",
+   "dernier_ok": "2026-11-27T05:07+00:00",
    "historique": 0
   },
   "futuur": {
-   "marches_vus": 144739,
+   "marches_vus": 144902,
    "candidats": 12,
    "retenus": 12,
    "rejets": 0,
    "erreurs": 18,
-   "dernier_ok": "2026-11-26T23:17+00:00",
+   "dernier_ok": "2026-11-27T05:07+00:00",
    "historique": 0
   },
   "azuro": {
@@ -323246,62 +323568,62 @@
    "candidats": 0,
    "retenus": 0,
    "rejets": 0,
-   "erreurs": 119,
+   "erreurs": 120,
    "dernier_ok": "2026-10-26T11:17+00:00",
    "historique": 0
   },
   "deribit": {
-   "marches_vus": 430341,
-   "candidats": 1278,
-   "retenus": 1267,
+   "marches_vus": 431152,
+   "candidats": 1283,
+   "retenus": 1272,
    "rejets": 11,
    "erreurs": 2,
-   "dernier_ok": "2026-11-26T23:17+00:00",
+   "dernier_ok": "2026-11-27T05:07+00:00",
    "historique": 0
   },
   "okx": {
-   "marches_vus": 488242,
-   "candidats": 1446,
-   "retenus": 1424,
+   "marches_vus": 489174,
+   "candidats": 1451,
+   "retenus": 1429,
    "rejets": 22,
    "erreurs": 0,
-   "dernier_ok": "2026-11-26T23:17+00:00",
+   "dernier_ok": "2026-11-27T05:07+00:00",
    "historique": 0
   },
   "delta_inde": {
-   "marches_vus": 233909,
-   "candidats": 1317,
-   "retenus": 1304,
+   "marches_vus": 234396,
+   "candidats": 1322,
+   "retenus": 1309,
    "rejets": 13,
    "erreurs": 0,
-   "dernier_ok": "2026-11-26T23:17+00:00",
+   "dernier_ok": "2026-11-27T05:07+00:00",
    "historique": 0
   },
   "gate": {
-   "marches_vus": 347034,
-   "candidats": 1288,
-   "retenus": 1267,
+   "marches_vus": 347706,
+   "candidats": 1293,
+   "retenus": 1272,
    "rejets": 21,
    "erreurs": 0,
-   "dernier_ok": "2026-11-26T23:17+00:00",
+   "dernier_ok": "2026-11-27T05:07+00:00",
    "historique": 0
   },
   "aevo": {
-   "marches_vus": 495361,
-   "candidats": 1441,
-   "retenus": 1425,
+   "marches_vus": 496297,
+   "candidats": 1446,
+   "retenus": 1430,
    "rejets": 16,
    "erreurs": 0,
-   "dernier_ok": "2026-11-26T23:17+00:00",
+   "dernier_ok": "2026-11-27T05:07+00:00",
    "historique": 0
   },
   "thalex": {
-   "marches_vus": 46030,
-   "candidats": 876,
-   "retenus": 861,
+   "marches_vus": 46135,
+   "candidats": 881,
+   "retenus": 866,
    "rejets": 15,
    "erreurs": 0,
-   "dernier_ok": "2026-11-26T23:17+00:00",
+   "dernier_ok": "2026-11-27T05:07+00:00",
    "historique": 0
   },
   "derive": {
@@ -323309,7 +323631,7 @@
    "candidats": 122,
    "retenus": 122,
    "rejets": 0,
-   "erreurs": 13395,
+   "erreurs": 13396,
    "dernier_ok": "2026-10-13T17:59+00:00",
    "historique": 0
   },
@@ -323318,41 +323640,41 @@
    "candidats": 2785,
    "retenus": 2729,
    "rejets": 56,
-   "erreurs": 220,
+   "erreurs": 230,
    "dernier_ok": "2026-11-19T16:53+00:00",
    "historique": 0
   },
   "sxbet": {
-   "marches_vus": 100570,
-   "candidats": 206,
-   "retenus": 201,
+   "marches_vus": 100761,
+   "candidats": 208,
+   "retenus": 203,
    "rejets": 5,
    "erreurs": 0,
-   "dernier_ok": "2026-11-26T23:17+00:00",
+   "dernier_ok": "2026-11-27T05:07+00:00",
    "historique": 0
   },
   "delta_monde": {
-   "marches_vus": 13032,
+   "marches_vus": 13057,
    "candidats": 327,
    "retenus": 320,
    "rejets": 7,
    "erreurs": 0,
-   "dernier_ok": "2026-11-26T23:17+00:00",
+   "dernier_ok": "2026-11-27T05:07+00:00",
    "historique": 0
   },
   "polymarket_us": {
-   "marches_vus": 686025,
-   "candidats": 70,
-   "retenus": 59,
+   "marches_vus": 687224,
+   "candidats": 75,
+   "retenus": 64,
    "rejets": 11,
    "erreurs": 4,
-   "dernier_ok": "2026-11-26T23:17+00:00",
+   "dernier_ok": "2026-11-27T05:07+00:00",
    "historique": 0
   }
  },
  "dernier_passage": {
-  "debut": "2026-11-26T23:12+00:00",
-  "duree_s": 267
+  "debut": "2026-11-27T05:03+00:00",
+  "duree_s": 220
  },
  "non_achetables": {
   "polymarket|3580934": "2026-11-29T04:59:00+00:00",
@@ -323406,25 +323728,27 @@
   "polymarket_us|ccrc-sptfy-1-artst-glbl-yr-2026-kenlam": "2026-12-17T04:00:00+00:00",
   "polymarket_us|ccrc-sptfy-1-artst-glbl-yr-2026-drake": "2026-12-17T04:00:00+00:00",
   "polymarket_us|ccrc-sptfy-1-artst-glbl-yr-2026-thewee": "2026-12-17T04:00:00+00:00",
-  "polymarket|7363480": "2026-11-27T05:00:00+00:00",
-  "polymarket|7356968": "2026-11-27T00:00:00+00:00",
-  "polymarket|7341472": "2026-11-27T00:00:00+00:00",
-  "polymarket|7341467": "2026-11-27T00:00:00+00:00",
-  "polymarket|7341471": "2026-11-27T00:00:00+00:00",
-  "polymarket|7359981": "2026-11-27T00:50:00+00:00",
   "polymarket|7336608": "2026-11-27T12:00:00+00:00",
   "polymarket|7217552": "2026-12-01T17:00:00+00:00",
-  "limitless|eth-up-or-down-15-min-1795734000": "2026-11-26T23:15:00+00:00",
-  "gemini|GEMI-WXHIGH-EGLC-2611262359-LO1": "2026-11-26T23:59:59+00:00",
-  "gemini|GEMI-WXHIGH-EGLC-2611262359-2TO2": "2026-11-26T23:59:59+00:00",
-  "gemini|GEMI-WXHIGH-EGLC-2611262359-3TO3": "2026-11-26T23:59:59+00:00",
-  "gemini|GEMI-WXHIGH-EGLC-2611262359-4TO4": "2026-11-26T23:59:59+00:00",
-  "gemini|GEMI-WXHIGH-EGLC-2611262359-5TO5": "2026-11-26T23:59:59+00:00",
   "polymarket_us|ccrc-sptfy-1-artst-us-yr-2026-ladgag": "2026-12-17T04:00:00+00:00",
   "polymarket_us|ccrc-sptfy-1-artst-us-yr-2026-beyonc": "2026-12-17T04:00:00+00:00",
   "polymarket_us|ccrc-sptfy-1-artst-us-yr-2026-charoa": "2026-12-17T04:00:00+00:00",
   "polymarket_us|ccrc-sptfy-1-artst-us-yr-2026-kenlam": "2026-12-17T04:00:00+00:00",
-  "polymarket_us|ccrc-sptfy-n1-song-glbl-yr-2026-riskit": "2026-12-17T04:00:00+00:00"
+  "polymarket_us|ccrc-sptfy-n1-song-glbl-yr-2026-riskit": "2026-12-17T04:00:00+00:00",
+  "polymarket|7336965": "2026-11-27T12:00:00+00:00",
+  "polymarket|7337653": "2026-12-04T01:00:00+00:00",
+  "limitless|btc-up-or-down-5-min-1795755600": "2026-11-27T05:05:00+00:00",
+  "gemini|GEMI-WXHIGH-MMMX-2611270559-LO14": "2026-11-27T05:59:59+00:00",
+  "gemini|GEMI-WXHIGH-MMMX-2611270559-15TO15": "2026-11-27T05:59:59+00:00",
+  "gemini|GEMI-WXHIGH-MMMX-2611270559-16TO16": "2026-11-27T05:59:59+00:00",
+  "gemini|GEMI-WXHIGH-MMMX-2611270559-17TO17": "2026-11-27T05:59:59+00:00",
+  "gemini|GEMI-WXHIGH-MMMX-2611270559-18TO18": "2026-11-27T05:59:59+00:00",
+  "smarkets|181491958:499791534": "2026-11-27T09:00:00+00:00",
+  "smarkets|180960763:498441605": "2026-11-27T16:45:00+00:00",
+  "polymarket_us|ccrc-sptfy-1-artst-us-yr-2026-sabcar": "2026-12-17T04:00:00+00:00",
+  "polymarket_us|ccrc-sptfy-n1-song-glbl-yr-2026-aptros": "2026-12-17T04:00:00+00:00",
+  "polymarket_us|ccrc-sptfy-n1-song-glbl-yr-2026-dropde": "2026-12-17T04:00:00+00:00",
+  "polymarket_us|ccrc-sptfy-n1-song-us-yr-2026-diewit": "2026-12-17T04:00:00+00:00"
  },
  "historique": [
   {
@@ -344277,7 +344601,7 @@
  "curseurs": {
   "polymarket": 2100,
   "kalshi": 0,
-  "manifold": 153500,
+  "manifold": 153750,
   "limitless": 0,
   "gemini": 0,
   "smarkets": 0,
